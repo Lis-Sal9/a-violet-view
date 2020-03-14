@@ -288,8 +288,14 @@ style quick_button_text:
 ##
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
+init -1 python:
+    def FinishEnterName():
+        if not player: return
+        persistent.playername = player
+        renpy.hide_screen("name_input")
+        renpy.jump_out_of_context("start")
 
-screen navigation():
+init -1 screen navigation():
 
     vbox:
         style_prefix "navigation"
@@ -301,7 +307,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
 
         else:
 
@@ -345,6 +351,39 @@ style navigation_button:
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
 
+
+##################### Name input screen : ask for player name ##########################
+init -1 screen name_input(message, ok_action):
+
+
+    modal True
+
+    zorder 200
+
+    style_prefix "confirm"
+
+    add "gui/overlay/confirm.png"
+    key "K_RETURN" action ok_action
+
+    frame:
+
+        has vbox:
+            xalign .5
+            yalign .5
+            spacing 30
+
+        label _(message):
+            style "confirm_prompt"
+            xalign 0.5
+
+        input default "" value VariableInputValue("player") length 20 allow "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+        hbox:
+            xalign 0.5
+            spacing 100
+
+            textbutton _("OK") action ok_action
+################################################################################
 
 ## Main Menu screen ############################################################
 ##
