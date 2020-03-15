@@ -11,7 +11,7 @@ label start:
 
     scene bg room
 
-    "HI THERE, [player]"
+    "Hola, [player]"
 
     # This ends the game.
     return
