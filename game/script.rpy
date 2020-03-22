@@ -5,10 +5,11 @@
 default persistent.playername = ""
 default player = persistent.playername
 
-# Player character
-define user = Character("Jo", color="#6E36CA")
+#Define characters
+define user = Character("[player]", color="#6E36CA")
 define unknown = Character("...", color="#FFFFFF")
 define unknown_girl = Character("Dona", color="#FFFFFF")
+define unknown_boy = Character("Home", color="#231F20")
 
 
 #########################################

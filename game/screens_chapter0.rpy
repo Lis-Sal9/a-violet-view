@@ -10,7 +10,6 @@ define mary_astell = Character("Mary Astell", color="#FED876")
 define mary_wollstonecraft = Character("Mary Wollstonecraft", color="#AFCFEA")
 define suzanne_voilquin = Character("Suzanne Voilquin", color="#F5B2AC")
 define elizabeth_montagu = Character("Elizabeth Montagu", color="#8CBA51")
-define unknown_boy = Character("Home", color="#231F20")
 
 
 label chapter_0:
@@ -152,7 +151,6 @@ label chapter_0:
                 else:
                     "[player] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
 
-                ## First puzzle
                 call portrait
 
             "Decideixes tornar cap a casa. Necessites descansar":
@@ -205,7 +203,7 @@ label chapter_0:
 
     ## Editorial scene ######################
     label editorial:
-        "Durant el camí cap a la feina, t'agrada notar el sol a la cara i la brisa com et bufa els cabells."
+        "Durant el camí cap a la feina, a [player] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
         user "Avui és l'últim dia abans del meu viatge, s'aventura llarg."
         "I, mentre [player] es fon en els seus pensaments, gairebé es passa la seva propera parada."
         "{i}La Tribunne des femmes{/i}."
