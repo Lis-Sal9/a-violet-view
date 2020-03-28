@@ -360,11 +360,11 @@ translate catalan strings:
 
     # renpy/common/00director.rpy:1636
     old "Cancel"
-    new ""
+    new "Cancel·lar"
 
     # renpy/common/00director.rpy:1639
     old "Remove"
-    new ""
+    new "Eliminar"
 
     # renpy/common/00director.rpy:1674
     old "Statement:"
@@ -440,11 +440,11 @@ translate catalan strings:
 
     # renpy/common/00keymap.rpy:267
     old "Failed to save screenshot as %s."
-    new ""
+    new "Fallida en guardar la captura de pantalla com a %s."
 
     # renpy/common/00keymap.rpy:279
     old "Saved screenshot as %s."
-    new ""
+    new "Guardada la captura de pantalla com a %s."
 
     # renpy/common/00library.rpy:195
     old "Skip Mode"

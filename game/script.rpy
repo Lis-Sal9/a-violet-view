@@ -4,6 +4,8 @@
 # Define the player name
 default persistent.playername = ""
 default player = persistent.playername
+# Define the temporary last save name
+default saveName = ""
 
 #Define characters
 define user = Character("[player]", color="#6E36CA")

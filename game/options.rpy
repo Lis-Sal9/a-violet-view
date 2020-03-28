@@ -45,9 +45,9 @@ define build.name = "Avioletview"
 ## These three variables control which mixers are shown to the player by
 ## default. Setting one of these to False will hide the appropriate mixer.
 
-define config.has_sound = True
+define config.has_sound = False
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -119,7 +119,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 30
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
@@ -213,3 +213,14 @@ define config.mouse = {"default":[ ("gui/cursor.png", 10, 10) ] }
 
 ## Config the default language
 define config.language = "catalan"
+
+## Config the number of slots used by quicksaves
+define config.quicksave_slots = 0
+## Config the number of slots used by autosaves
+define config.autosave_slots = 0
+## The game has disabled autosave
+define config.has_autosave = False
+define config.autosave_on_choice = False
+define config.autosave_on_quit = False
+## The game has not quicksave
+define config.has_quicksave = False
