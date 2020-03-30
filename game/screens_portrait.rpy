@@ -24,6 +24,7 @@ label portrait:
         #puzzle is not done
         scene black
         call puzzle
+        $ items_player.append("{i}La Liberté guidant le peuple{/i}")
 
     else:
         #puzzle is done
@@ -72,6 +73,9 @@ label portrait:
         mary_astell "En aquesta obra, va exposar quins i com els valors de la Il·lustració podien canviar la vida de les dones."
         mary_astell "I recordem que la Il·lustració promovia els principis igualitaris i l'individualisme."
         user "Sí, crec que n'havia escoltat a parlar d'aquesta obra, però no sabia ben bé el seu origen ni res la seva autora ..."
+
+        $ items_player.append("Olympe de Gouges")
+
         "I, amb aquesta conversa tan interessant, es van acomiadar al sortir del saló amb una gran abraçada."
         "[player] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
 

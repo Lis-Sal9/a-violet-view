@@ -245,7 +245,7 @@ init -1 python:
     def FinishEnterSaveName():
         if not saveName: return
         if renpy.can_load(saveName):
-            renpy.confirm("This game already exists. Do you want overwrite it?", SaveSlot(), Show("save_name_input"))
+            ##renpy.confirm("This game already exists. Do you want overwrite it?", SaveSlot(), Show("save_name_input"))
         else:
             renpy.hide_screen("save_name_input")
             renpy.notify("This game is saved!")
@@ -255,7 +255,8 @@ init -1 python:
 
     def SaveSlot():
         renpy.take_screenshot()
-        renpy.save(saveName, "save")
+        tmpInfo = "save," + ",".join(items_player)
+        renpy.save(saveName, tmpInfo)
 
 init -1 screen quick_menu():
     ## Ensure this appears on top of other screens.
@@ -447,16 +448,78 @@ screen pause():
 ###############################################################################
 
 
-
 ## Glossary screen ##############################################################
 ##
 ## This screen shows the achievements of the user until that moment.
 screen glossary():
-
     tag menu
 
-    use game_menu(_("Glossary"), scroll="viewport"):
-        text _("Work in progress ...")
+    default adj = ui.adjustment()
+
+    frame:
+        xalign .5 yalign .5
+        add "images/glossary/glossary.png"
+
+        textbutton _("Return"):
+            xpos gui.navigation_xpos
+            yalign .1
+            yoffset -45
+            action Return()
+
+        $ title = At(Text("Glossary", color='#ffffff', size=65), Transform(rotate=-10, xpos=gui.navigation_xpos + 70, ypos=570))
+        text (title)
+
+        vbox:
+            xsize 400
+            xalign 0.5
+            yanchor 0
+            ypos 100
+            spacing 10
+            at transform:
+                rotate 2
+
+            imagebutton:
+                idle "images/glossary/arrow_top.png"
+                hover "images/glossary/arrow_top_hover.png"
+                action Function(adj.change, 0)
+                xalign 0.5
+
+            vpgrid:
+                cols 1
+                xysize 400, 500
+                spacing 15
+                draggable False
+                pagekeys True
+                mousewheel True
+                yinitial 0
+                yadjustment adj
+                side_yfill True
+
+                for i in range(0, len(all_items_names)):
+                    fixed:
+                        xysize 400, 40
+
+                        if all_items_names[i] not in items_player:
+                            image "images/glossary/trunk.png":
+                                align 0.5, 0.5
+                        else:
+                            text all_items_names[i]:
+                                size 17
+                                align 0.5, 0.5
+
+                            imagebutton:
+                                idle "images/glossary/list_item_idle.png"
+                                hover "images/glossary/list_item_hover.png"
+                                align 0.5, 0.5
+                                xysize 400, 40
+                                action Function(ShowItemContent, i)
+
+            imagebutton:
+                idle "images/glossary/arrow_bottom.png"
+                hover "images/glossary/arrow_bottom_hover.png"
+                xalign 0.5
+                action Function(adj.change, adj.get_range())
+
 
 ###################################################
 
@@ -744,6 +807,8 @@ screen load():
                 $ num_items_per_page = gui.file_slot_cols * gui.file_slot_rows
                 $ current_offset = current_page * num_items_per_page
                 $ saved_games = renpy.list_saved_games()
+                $ saved_games = filter(lambda x: 'reload' not in x[0], saved_games)
+                $ saved_games.reverse()
                 $ saved_games_len = len(saved_games)
                 $ num_filled_slots = 0
                 $ num_empty_slots = num_items_per_page

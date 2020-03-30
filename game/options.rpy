@@ -224,3 +224,8 @@ define config.autosave_on_choice = False
 define config.autosave_on_quit = False
 ## The game has not quicksave
 define config.has_quicksave = False
+## Config the skipping values
+define config.allow_skipping = True
+define config.fast_skipping = True
+default preferences.skip_after_choices = False
+default preferences.skip_unseen = True

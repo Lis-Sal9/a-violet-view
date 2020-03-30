@@ -6,6 +6,8 @@ default persistent.playername = ""
 default player = persistent.playername
 # Define the temporary last save name
 default saveName = ""
+# Define the achievements of player for the glossary
+default items_player = []
 
 #Define characters
 define user = Character("[player]", color="#6E36CA")
