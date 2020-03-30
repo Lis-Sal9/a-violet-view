@@ -2,8 +2,15 @@
 ## This chapter is a prologue of this game. It allows to know the gameplay and its style to the player.
 
 
-# Beginning background
-image room = "gui/main_menu.png"
+# Backgrounds
+image room = "images/chapter0/room.png"
+image street_home = "images/chapter0/street/street_home.png"
+image street_all = "images/chapter0/street/street_all.png"
+image editorial = "images/chapter0/editorial/editorial.png"
+image nigeria = "images/chapter0/editorial/nigeria.png"
+image salon_entrance = "images/chapter0/salon/salon_entrance.png"
+image salon_discussion = "images/chapter0/salon/salon_discussion.png"
+image salon_portrait = "images/chapter0/salon/salon_portrait.png"
 
 # Characters
 define mary_astell = Character("Mary Astell", color="#FED876")
@@ -34,6 +41,7 @@ label chapter_0:
 
     ## Home / street scene ######################
     label home:
+        scene street_home
         "De sobte, sent una veu que crida ... "
         unknown "[player]!!!!!!"
 
@@ -49,6 +57,7 @@ label chapter_0:
 
     ## Salon / street scene ######################
     label salon:
+        scene street_all
         "De camí al saló ... "
         unknown "[player]!!! [player]!!! Atura't!!"
         unknown "Que em recordes?"
@@ -88,6 +97,7 @@ label chapter_0:
 
     ## Discussion scene ######################
     label discussion:
+        scene salon_entrance
         "Davant la porta del saló es podia llegir un gran cartell que posava:"
         "'{i}Bluestockings{/i}, reunió de ments: debat literari amb poetes escandinaves'"
         user "Ostres, quin munt de persones han vingut! Fins i tot, homes!!"
@@ -98,6 +108,7 @@ label chapter_0:
         "Homes i dones havien estat congregades en aquell esdeveniment literari amb la finalitat de poder debatre com a iguals sobre literatura."
         "Novament, el saló d'Elizabeth Montagu tornava a ser un èxit rotund. Un saló artístic de gom a gom, crítiques literàries i escriptores vingudes d'arreu del món ... "
 
+        scene salon_discussion
         elizabeth_montagu "Benvolgudes a un nou capítol dels {i}Bluestockings{/i}."
 
         $ items_player.append("Elizabeth Montagu i les {i}Bluestockings{/i}")
@@ -155,6 +166,8 @@ label chapter_0:
 
         menu:
             "Et quedes al saló investigant":
+                scene salon_portrait
+
                 if astell_is_nice:
                     user "I tant! Em quedo amb tu. Anem a donar una volta per la sala."
                     "I, de sobte ..."
@@ -217,6 +230,7 @@ label chapter_0:
 
     ## Editorial scene ######################
     label editorial:
+        scene street_all
         "Durant el camí cap a la feina, a [player] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
         user "Avui és l'últim dia abans del meu viatge, s'aventura llarg."
         "I, mentre [player] es fon en els seus pensaments, gairebé es passa la seva propera parada."
@@ -224,6 +238,7 @@ label chapter_0:
 
         $ items_player.append("{i}La Tribune des femmes{/i}")
 
+        scene editorial
         "[player] acabava d'arribar a l'editorial."
         "La senyora Voilquin, com de costum, estava posant ordre. Era meticulosa amb la feina i volia que tot sortís a la perfecció."
 
@@ -245,6 +260,7 @@ label chapter_0:
                 user "Què llarg serà el viatge que m'espera ..."
                 "El que ningú sabia és que fos tan rellevant per a la seva vida futura allò que estava a punt de viure ... "
 
+        call train
         return
 
 
@@ -258,6 +274,7 @@ label chapter_0:
         user "No t'enrotllis més i explica-ho!"
         suzanne_voilquin "Està bé, està bé ... "
         "Suzanne va començar a narrar aquella història que semblà captivar a aquell grup de noies encuriosides ..."
+        scene nigeria
         suzanne_voilquin "En l'islam, l'educació es considera un deure de totes les persones, ja que el coneixement és considerat part de la humanitat."
         suzanne_voilquin "Amb la tendència patriarcal dels homes en acaparar l'àmbit públic, les dones musulmanes van deixar de tenir accés a una mateixa educació."
         suzanne_voilquin "Però la saviesa i posició rellevant de Nana Asma'u va suposar per l'actual Nigèria un gran canvi."
@@ -268,6 +285,7 @@ label chapter_0:
 
         $ items_player.append("Nana Asma'u")
 
+        scene editorial
         "Totes les noies es varen quedar bocabadades."
         "I Suzanne va continuar ..."
         suzanne_voilquin "Ara, la feina serà vostra d'investigar més a fons per a poder redactar un capítol de la revista sobre aquest tema."
