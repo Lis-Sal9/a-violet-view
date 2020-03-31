@@ -229,3 +229,96 @@ define config.allow_skipping = True
 define config.fast_skipping = True
 default preferences.skip_after_choices = False
 default preferences.skip_unseen = True
+
+## Config the keymap
+init -1 python:
+    config.keymap = dict(
+        # Bindings present almost everywhere, unless explicitly
+        # disabled.
+        rollback = [ ],
+        screenshot = [ ],
+        toggle_afm = [ ],
+        toggle_fullscreen = [ ],
+        game_menu = [ ],
+        hide_windows = [ ],
+        launch_editor = [ ],
+        dump_styles = [ ],
+        reload_game = [ ],
+        inspector = [ ],
+        full_inspector = [ ],
+        developer = [ 'D' ],
+        quit = [ ],
+        iconify = [ ],
+        help = [ ],
+        choose_renderer = [ ],
+        progress_screen = [ ],
+        # Accessibility.
+        self_voicing = [ ],
+        clipboard_voicing = [ ],
+        debug_voicing = [ ],
+        # Say.
+        rollforward = [ ],
+        dismiss = [ 'mouseup_1', 'K_RETURN', 'K_SPACE', 'K_KP_ENTER', 'K_SELECT' ],
+        dismiss_unfocused = [ ],
+        # Pause.
+        dismiss_hard_pause = [ ],
+        # Focus.
+        focus_left = [ ],
+        focus_right = [ ],
+        focus_up = [ ],
+        focus_down = [ ],
+        # Button.
+        button_ignore = [ 'mousedown_1' ],
+        button_select = [ 'mouseup_1' ],
+        button_alternate = [ ],
+        button_alternate_ignore = [ ],
+        # Input.
+        input_backspace = [ 'K_BACKSPACE', 'repeat_K_BACKSPACE' ],
+        input_enter = [ 'K_RETURN', 'K_KP_ENTER' ],
+        input_left = [ 'K_LEFT', 'repeat_K_LEFT' ],
+        input_right = [ 'K_RIGHT', 'repeat_K_RIGHT' ],
+        input_up = [ 'K_UP', 'repeat_K_UP' ],
+        input_down = [ 'K_DOWN', 'repeat_K_DOWN' ],
+        input_delete = [ 'K_DELETE', 'repeat_K_DELETE' ],
+        input_home = [ 'K_HOME' ],
+        input_end = [ 'K_END' ],
+        input_copy = [ 'ctrl_K_INSERT', 'ctrl_K_c' ],
+        input_paste = [ 'shift_K_INSERT', 'ctrl_K_v' ],
+        # Viewport.
+        viewport_leftarrow = [ ],
+        viewport_rightarrow = [ ],
+        viewport_uparrow = [ ],
+        viewport_downarrow = [ ],
+        viewport_wheelup = [ 'mousedown_4' ],
+        viewport_wheeldown = [ 'mousedown_5' ],
+        viewport_drag_start = [ 'mousedown_1' ],
+        viewport_drag_end = [ 'mouseup_1' ],
+        # These keys control skipping.
+        skip = [ ],
+        stop_skipping = [ ],
+        toggle_skip = [ ],
+        fast_skip = [ ],
+        # Bar.
+        bar_activate = [ 'mousedown_1', 'K_RETURN', 'K_KP_ENTER', 'K_SELECT' ],
+        bar_deactivate = [ 'mouseup_1', 'K_RETURN', 'K_KP_ENTER', 'K_SELECT' ],
+        bar_left = [ 'K_LEFT', 'repeat_K_LEFT' ],
+        bar_right = [ 'K_RIGHT', 'repeat_K_RIGHT' ],
+        bar_up = [ 'K_UP', 'repeat_K_UP' ],
+        bar_down = [ 'K_DOWN', 'repeat_K_DOWN' ],
+        # Delete a save.
+        save_delete = [ ],
+        # Draggable.
+        drag_activate = [ 'mousedown_1' ],
+        drag_deactivate = [ 'mouseup_1' ],
+        # Debug console.
+        console = [ 'shift_O' ],
+        console_older = [ 'K_UP', 'repeat_K_UP' ],
+        console_newer = [ 'K_DOWN', 'repeat_K_DOWN'],
+        # Ignored (kept for backwards compatibility).
+        toggle_music = [ 'm' ],
+        viewport_up = [ 'mousedown_4' ],
+        viewport_down = [ 'mousedown_5' ],
+        # Profile commands.
+        profile_once = [ 'K_F8' ],
+        memory_profile = [ 'K_F7' ]
+    )
