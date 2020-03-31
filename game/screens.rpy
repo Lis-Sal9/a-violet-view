@@ -245,7 +245,7 @@ init -1 python:
     def FinishEnterSaveName():
         if not saveName: return
         if renpy.can_load(saveName):
-            ##renpy.confirm("This game already exists. Do you want overwrite it?", SaveSlot(), Show("save_name_input"))
+            renpy.confirm("This game already exists. Do you want overwrite it?", SaveSlot(), Show("save_name_input"))
         else:
             renpy.hide_screen("save_name_input")
             renpy.notify("This game is saved!")
@@ -854,14 +854,9 @@ screen load():
                 $ k = 0
                 if num_empty_slots > 0:
                     for k in range(num_empty_slots):
-                        button:
-                            action NullAction()
-                            has vbox
-                            add "gui/button/slot_idle_background.png" xalign 0.5
-                            text "Empty slot":
-                                style "slot_name_text"
-
                         $ k = k + 1
+                        image "gui/button/slot_idle_background.png":
+                            xalign 0.5
 
             ## Buttons to access other pages.
             hbox:
