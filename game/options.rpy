@@ -243,7 +243,7 @@ init -1 python:
         hide_windows = [ ],
         launch_editor = [ ],
         dump_styles = [ ],
-        reload_game = [ ],
+        reload_game = [ 'shift_R' ],
         inspector = [ ],
         full_inspector = [ ],
         developer = [ 'D' ],
