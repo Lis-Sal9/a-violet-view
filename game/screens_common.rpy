@@ -241,23 +241,6 @@ style choice_button_text is default:
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
-init -1 python:
-    def FinishEnterSaveName():
-        if not saveName: return
-        if renpy.can_load(saveName):
-            renpy.confirm("This game already exists. Do you want overwrite it?", SaveSlot(), Show("save_name_input"))
-        else:
-            renpy.hide_screen("save_name_input")
-            renpy.notify("This game is saved!")
-            SaveSlot()
-
-        return
-
-    def SaveSlot():
-        renpy.take_screenshot()
-        tmpInfo = "save," + ",".join(items_player)
-        renpy.save(saveName, tmpInfo)
-
 init -1 screen quick_menu():
     ## Ensure this appears on top of other screens.
     zorder 100
@@ -280,14 +263,17 @@ init -1 screen quick_menu():
 
             button:
                 action Skip() alternate Skip(fast=True, confirm=True)
-                add "gui/icons/skip.png"
+                add "gui/icons/skip_action.png"
 
             button:
                 action ShowMenu('glossary')
-                add "gui/icons/glossary.png"
+                if len(glossary_unread_items) > 0:
+                    add "gui/icons/glossary_new_icon.png"
+                else:
+                    add "gui/icons/glossary_icon.png"
 
             button:
-                action Show(screen="save_name_input", message="Please enter a save name.\nOnly numbers and letters allowed.", ok_action=Function(FinishEnterSaveName))
+                action [Show(screen="save_menu"), FileTakeScreenshot()]
                 add "gui/icons/save.png"
 
             button:
@@ -335,7 +321,7 @@ init -1 screen navigation():
         spacing gui.navigation_spacing
 
         if main_menu:
-            textbutton _("Start") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
+            textbutton _("Start") action Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))
 
         textbutton _("Load") action ShowMenu("load")
 
@@ -385,42 +371,14 @@ init -1 screen name_input(message, ok_action):
             style "confirm_prompt"
             xalign 0.5
 
-        input default "" value VariableInputValue("player") length 20 allow "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz"
+        input default "" value VariableInputValue("player") length 20 allow "ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyz"
 
         hbox:
             xalign 0.5
             spacing 100
 
             textbutton _("OK") action ok_action
-################################################################################
-
-##################### SaveName input screen : ask for save slot name ##########################
-init -1 screen save_name_input(message, ok_action):
-    modal True
-    zorder 200
-    style_prefix "confirm"
-
-    add "gui/overlay/confirm.png"
-    key "K_RETURN" action ok_action
-
-    frame:
-        has vbox:
-            xalign .5
-            yalign .5
-            spacing 30
-
-        label _(message):
-            style "confirm_prompt"
-            xalign 0.5
-
-        input default "" value VariableInputValue("saveName") length 20 allow "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789"
-
-        hbox:
-            xalign 0.5
-            spacing 100
-
-            textbutton _("OK") action ok_action
-            textbutton _("Cancel") action Hide("save_name_input")
+            textbutton _("Cancel") action Hide("name_input")
 ################################################################################
 
 
@@ -845,11 +803,12 @@ screen load():
                         $ position = int(j + current_offset)
                         $ saved_slot = saved_games[position]
                         $ saved_slot_name = saved_slot[0]
+                        $ saved_slot_extra_info = saved_slot[1]
                         $ saved_slot_displayable = saved_slot[2]
                         $ slot_screenshot = renpy.slot_screenshot(saved_slot_name)
 
                         button:
-                            action Show("load_pause", slot=saved_slot_name)
+                            action Show("load_pause", slot=saved_slot_name, extra_info=saved_slot_extra_info)
                             has vbox
                             add slot_screenshot xalign 0.5
                             text saved_slot_name:
@@ -917,10 +876,11 @@ init -1 python:
     def DeleteSlot(slot):
         renpy.unlink_save(slot)
 
-    def LoadSlot(slot):
+    def LoadSlot(slot, extra_info):
         renpy.load(slot)
+        LoadPlayerDataJson(extra_info)
 
-screen load_pause(slot):
+screen load_pause(slot, extra_info):
     modal True
     zorder 200
     style_prefix "confirm"
@@ -931,7 +891,7 @@ screen load_pause(slot):
             yalign .5
             spacing 30
 
-        textbutton _("Load") action [Function(LoadSlot, slot), Hide("load_pause")]
+        textbutton _("Load") action [Function(LoadSlot, slot, extra_info), Hide("load_pause")]
 
         textbutton _("Remove") action [Function(DeleteSlot, slot), Hide("load_pause")]
 
