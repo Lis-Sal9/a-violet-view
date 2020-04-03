@@ -187,12 +187,15 @@ label puzzle:
 ## Call it when the puzzle is done.
 label puzzle_done:
 
-    $ persistent.portrait_done = True
+    $ portrait_done = True
     show black as bg_puzzle
     show expression img_to_play as puzzle_img at truecenter
     with dissolve
 
     user "Ho he aconseguit!!!"
+
+    $ items_player.append("{i}La Liberté guidant le peuple{/i}")
+    $ glossary_unread_items.append("{i}La Liberté guidant le peuple{/i}")
 
     hide bg_puzzle
     hide puzzle_img

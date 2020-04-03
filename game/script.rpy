@@ -2,12 +2,18 @@
 
 ######## Global Variables ################
 # Define the player name
-default persistent.playername = ""
-default player = persistent.playername
+default player = ""
 # Define the temporary last save name
 default saveName = ""
+default tmpSaveName = ""
 # Define the achievements of player for the glossary
 default items_player = []
+# Define if portrait is done
+default portrait_done = False
+# Define if Mary Astell is nice
+default astell_is_nice = False
+default wollstonecraft_is_seen = False
+default asmau_is_seen = False
 
 #Define characters
 define user = Character("[player]", color="#6E36CA")
@@ -24,8 +30,14 @@ define unknown_boy = Character("Home", color="#231F20")
 
 label start:
 
-    $ chapter = 0
-    $ astell_is_nice = False
+    python:
+        glossary_unread_items = []
+        items_player = []
+        chapter = 0
+        astell_is_nice = False
+        portrait_done = False
+        wollstonecraft_is_seen = False
+        asmau_is_seen = False
 
     ## Beginning: once upon a time
     call beginning

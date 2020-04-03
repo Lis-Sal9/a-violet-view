@@ -88,6 +88,7 @@ label chapter_0:
         "Però aquella trobada no era tan fortuïta com aparentment semblava ..."
 
         $ items_player.append("Mary Astell")
+        $ glossary_unread_items.append("Mary Astell")
 
         "De camí al saló, varen estar parlant de les seves inquietuds, de les seves vivències en aquest temps separades ... "
         call discussion
@@ -112,6 +113,7 @@ label chapter_0:
         elizabeth_montagu "Benvolgudes a un nou capítol dels {i}Bluestockings{/i}."
 
         $ items_player.append("Elizabeth Montagu i les {i}Bluestockings{/i}")
+        $ glossary_unread_items.append("Elizabeth Montagu i les {i}Bluestockings{/i}")
 
         elizabeth_montagu "Aquesta vegada, reflexionarem plegats sobre les poetes escandinaves més rellevants i sobre les seves idees."
         elizabeth_montagu "En plena {i}Era de la Llibertat{/i}, quan el govern va tenir el poder, es proliferà el debat polític i filosòfic, en el qual s'incloïa la demanda de llibertats per a les dones."
@@ -120,6 +122,7 @@ label chapter_0:
         unknown_girl "Equivalent en això i en tot, menys en l'aparença física!"
 
         $ items_player.append("Sophia Elisabet Brenner")
+        $ glossary_unread_items.append("Sophia Elisabet Brenner")
 
         unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
         unknown_girl "La Charlotta Nordenflycht?"
@@ -129,6 +132,7 @@ label chapter_0:
         "Va contestar la mateixa noia de la sala ..."
 
         $ items_player.append("Hedvig Charlotta Nordenflycht")
+        $ glossary_unread_items.append("Hedvig Charlotta Nordenflycht")
 
         if astell_is_nice:
             mary_astell "Doncs jo estava especialment captivada per la seva amiga, Catherina Ahlgren, sobretot per aquelles cartes d'{i}Adelaide{/i} dirigides a homes i dones."
@@ -152,6 +156,7 @@ label chapter_0:
             "Va cridar una noia a ple pulmó ..."
 
         $ items_player.append("Catherina Ahlgren")
+        $ glossary_unread_items.append("Catherina Ahlgren")
 
         elizabeth_montagu "Calmem-nos tots una mica. Teniu raó en tot allò que s'està debatint en aquesta sala."
         elizabeth_montagu "A més a més del què heu mencionat, jo també afegiria que tractava temes col·lectius com l'activisme social, la democràcia, la igualtat de gènere i la solidaritat entre dones respecte de la dominació masculina."
@@ -163,6 +168,15 @@ label chapter_0:
             mary_astell "Has vist la sala d'arts que hi ha al costat? És impressionant! Vols venir a veure-ho amb mi?"
         else:
             "[player] passejava pel saló, quan va trobar una sala d'arts i ..."
+
+        if astell_is_nice:
+            $ GiveGlossaryItemToPlayer("Mary Astell")
+
+        $ GiveGlossaryItemToPlayer("Elizabeth Montagu i les {i}Bluestockings{/i}")
+        $ GiveGlossaryItemToPlayer("Sophia Elisabet Brenner")
+        $ GiveGlossaryItemToPlayer("Hedvig Charlotta Nordenflycht")
+        $ GiveGlossaryItemToPlayer("Catherina Ahlgren")
+
 
         menu:
             "Et quedes al saló investigant":
@@ -221,7 +235,9 @@ label chapter_0:
         user "Ara me'n he d'anar, però et faig arribar els meus millors desitjos. M'agradaria de tot cor que pogués servir ni que sigui per a què una sola dona trenqui amb els lligams que l'ofeguen."
         "I amb un somriure i una salutació d'adéu, [player] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
 
+        $ wollstonecraft_is_seen = True
         $ items_player.append("Mary Wollstonecraft")
+        $ glossary_unread_items.append("Mary Wollstonecraft")
 
         call editorial
 
@@ -237,18 +253,26 @@ label chapter_0:
         "{i}La Tribune des femmes{/i}."
 
         $ items_player.append("{i}La Tribune des femmes{/i}")
+        $ glossary_unread_items.append("{i}La Tribune des femmes{/i}")
 
         scene editorial
         "[player] acabava d'arribar a l'editorial."
         "La senyora Voilquin, com de costum, estava posant ordre. Era meticulosa amb la feina i volia que tot sortís a la perfecció."
 
         $ items_player.append("Suzanne Voilquin")
+        $ glossary_unread_items.append("Suzanne Voilquin")
 
         suzanne_voilquin "Bon dia, [player]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
         user "D'acord, Suzanne. Vaig a fer-me un cafè i ara torno."
         "Una estona més tard ..."
         suzanne_voilquin "Benvolgudes. Us he reunit a totes per parlar-vos del proper projecte que durem a terme a l'editorial."
         suzanne_voilquin "Es tracta d'una investigació sobre l'educació de les dones, concretament de les {i}jajis{/i}."
+
+        if wollstonecraft_is_seen:
+            $ GiveGlossaryItemToPlayer("Mary Wollstonecraft")
+
+        $ GiveGlossaryItemToPlayer("{i}La Tribune des femmes{/i}")
+        $ GiveGlossaryItemToPlayer("Suzanne Voilquin")
 
         menu:
             "Segueixes escoltant perquè et resulta molt interessant":
@@ -261,7 +285,12 @@ label chapter_0:
                 "El que ningú sabia és que fos tan rellevant per a la seva vida futura allò que estava a punt de viure ... "
 
         call train
+
+        if asmau_is_seen:
+            $ GiveGlossaryItemToPlayer("Nana Asma'u")
+
         return
+
 
 
     ## Nana Asma'u scene ######################
@@ -283,7 +312,9 @@ label chapter_0:
         suzanne_voilquin "Per aquest motiu, va decidir crear una xarxa de mestres itinerants conegudes com a {i}jajis{/i}, la missió de les quals era instruir a les dones en les seves pròpies cases."
         suzanne_voilquin "Avui dia, el llegat d'aquesta magnífica dona perviu a Nigèria i, a més a més, és un recordatori de l'anterior mandat de l'islam."
 
+        $ asmau_is_seen = True
         $ items_player.append("Nana Asma'u")
+        $ glossary_unread_items.append("Nana Asma'u")
 
         scene editorial
         "Totes les noies es varen quedar bocabadades."

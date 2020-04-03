@@ -66,6 +66,20 @@ init python:
                 break
         renpy.show_screen("glossary_content", item_content)
 
+    glossary_unread_items = []
+    def HasUnreadGlossayItems():
+        return len(glossary_unread_items) > 0
+
+    def MarkGlossaryItemAsRead(item):
+        if item in glossary_unread_items:
+            glossary_unread_items.remove(item)
+
+    def GiveGlossaryItemToPlayer(item):
+        if item in all_items_names and item not in items_player:
+            items_player.append(item)
+            glossary_unread_items.append(item)
+
+
 # Screen to add the content of item on text element
 screen glossary_content(content):
     fixed:

@@ -322,7 +322,6 @@ style quick_button_text:
 init -1 python:
     def FinishEnterName():
         if not player: return
-        persistent.playername = player
         renpy.hide_screen("name_input")
         renpy.jump_out_of_context("start")
 
@@ -451,6 +450,7 @@ screen pause():
 ## Glossary screen ##############################################################
 ##
 ## This screen shows the achievements of the user until that moment.
+define current_glossary_index = -1
 screen glossary():
     tag menu
 
@@ -470,8 +470,9 @@ screen glossary():
         text (title)
 
         vbox:
-            xsize 400
+            xsize 450
             xalign 0.5
+            xoffset -50
             yanchor 0
             ypos 100
             spacing 10
@@ -486,7 +487,7 @@ screen glossary():
 
             vpgrid:
                 cols 1
-                xysize 400, 500
+                xysize 450, 500
                 spacing 15
                 draggable False
                 pagekeys True
@@ -497,22 +498,29 @@ screen glossary():
 
                 for i in range(0, len(all_items_names)):
                     fixed:
-                        xysize 400, 40
+                        xysize 450, 40
 
                         if all_items_names[i] not in items_player:
                             image "images/glossary/trunk.png":
                                 align 0.5, 0.5
                         else:
-                            text all_items_names[i]:
-                                size 17
+                            hbox:
                                 align 0.5, 0.5
-
+                                spacing 0
+                                text all_items_names[i]:
+                                    size 17
+                                    yalign 0.5
+                                if all_items_names[i] in glossary_unread_items:
+                                    image "images/glossary/glossary_item_new.png":
+                                        yalign 0.5
                             imagebutton:
                                 idle "images/glossary/list_item_idle.png"
                                 hover "images/glossary/list_item_hover.png"
+                                selected_idle "images/glossary/list_item_hover.png"
+                                selected_hover "images/glossary/list_item_hover.png"
                                 align 0.5, 0.5
-                                xysize 400, 40
-                                action Function(ShowItemContent, i)
+                                xysize 450, 40
+                                action [SetVariable("current_glossary_index", i), SelectedIf(current_glossary_index == i), Function(ShowItemContent, i), Function(MarkGlossaryItemAsRead, all_items_names[i])]
 
             imagebutton:
                 idle "images/glossary/arrow_bottom.png"
@@ -807,8 +815,8 @@ screen load():
                 $ num_items_per_page = gui.file_slot_cols * gui.file_slot_rows
                 $ current_offset = current_page * num_items_per_page
                 $ saved_games = renpy.list_saved_games()
-                $ saved_games = filter(lambda x: 'reload' not in x[0], saved_games)
-                $ saved_games.reverse()
+                $ saved_games = filter(lambda x: ('reload' not in x[0]) and ('quick' not in x[0]) and ('auto' not in x[0]), saved_games)
+                $ saved_games.sort(key = lambda x: x[-1], reverse = True)
                 $ saved_games_len = len(saved_games)
                 $ num_filled_slots = 0
                 $ num_empty_slots = num_items_per_page
@@ -817,8 +825,7 @@ screen load():
                 $ i = 0
                 if saved_games_len > 0:
                     for i in range(saved_games_len):
-                        if saved_games[i][1] == 'save':
-                            $ num_filled_slots = num_filled_slots + 1
+                        $ num_filled_slots = num_filled_slots + 1
                         $ i = i + 1
 
                     if saved_games_len <= current_offset:
@@ -1309,8 +1316,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("Yes") action [Hide("confirm"), yes_action]
+                textbutton _("No") action [Hide("confirm"), no_action]
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action

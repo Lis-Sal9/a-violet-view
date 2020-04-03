@@ -2,12 +2,6 @@
 ## Script for the portrait scene on the art hall.
 ## Here, there is the first puzzle.
 
-
-# Default if puzzle is done
-default persistent.portrait_done = ""
-default portrait_done = persistent.portrait_done
-
-
 ## Portrait scene ######################
 label portrait:
 
@@ -24,8 +18,6 @@ label portrait:
         #puzzle is not done
         scene black
         call puzzle
-        $ items_player.append("{i}La Liberté guidant le peuple{/i}")
-
     else:
         #puzzle is done
         "Ja has fet el puzzle anteriorment. Vols tornar-lo a fer?"
@@ -34,9 +26,11 @@ label portrait:
             "Sí":
                 scene black
                 call puzzle
-
             "No":
                 "D'acord. Continues amb la mateixa història com si l'haguessis fet."
+
+    if portrait_done:
+        $ GiveGlossaryItemToPlayer("{i}La Liberté guidant le peuple{/i}")
 
     if astell_is_nice:
         mary_astell "Diràs 'ho hem aconseguit' ..."
@@ -75,6 +69,7 @@ label portrait:
         user "Sí, crec que n'havia escoltat a parlar d'aquesta obra, però no sabia ben bé el seu origen ni res la seva autora ..."
 
         $ items_player.append("Olympe de Gouges")
+        $ glossary_unread_items.append("Olympe de Gouges")
 
         "I, amb aquesta conversa tan interessant, es van acomiadar al sortir del saló amb una gran abraçada."
         "[player] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
@@ -84,5 +79,8 @@ label portrait:
         "[player] va sortir del saló. Tornava cap a casa tot rumiant ..."
         user "Què hi devia fer aquell quadre allà? Segur que em volia transmetre alguna cosa que no he sabut interpretar ..."
         "No parava de preguntar-se [player] ..."
+
+    if astell_is_nice:
+        $ GiveGlossaryItemToPlayer("Olympe de Gouges")
 
     return
