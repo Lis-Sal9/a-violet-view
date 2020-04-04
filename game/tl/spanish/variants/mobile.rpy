@@ -4,16 +4,16 @@ translate spanish strings:
 
     # game/variants/mobile.rpy:25
     old "Back"
-    new ""
+    new "Volver"
 
     # game/variants/mobile.rpy:26
     old "Skip"
-    new ""
+    new "Saltar"
 
     # game/variants/mobile.rpy:27
     old "Auto"
-    new ""
+    new "Auto"
 
     # game/variants/mobile.rpy:28
     old "Menu"
-    new ""
+    new "Menú"

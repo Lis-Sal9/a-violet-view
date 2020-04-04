@@ -76,7 +76,7 @@ translate catalan salon_d1645802:
 translate catalan salon_a3b7bf0e:
 
     # unknown "Que em recordes?"
-    unknown "Que em recordes?"
+    unknown "Te'n recordes de mi?"
 
 # game/screens/chapter0/all.rpy:68
 translate catalan salon_f9fb3e36:
@@ -154,7 +154,7 @@ translate catalan discussion_99b1ecae:
 translate catalan discussion_12c10cc3:
 
     # "'{i}Bluestockings{/i}, reunió de ments: debat literari amb poetes escandinaves'"
-    "'{i}Bluestockings{/i}, reunió de ments: debat literari amb poetes escandinaves'"
+    "'{i}Bluestockings{/i}, reunió de ments: debat literari amb poetesses escandinaves'"
 
 # game/screens/chapter0/all.rpy:104
 translate catalan discussion_0e5ee696:
@@ -190,7 +190,7 @@ translate catalan discussion_f160c1ba:
 translate catalan discussion_5d2eecde:
 
     # elizabeth_montagu "Aquesta vegada, reflexionarem plegats sobre les poetes escandinaves més rellevants i sobre les seves idees."
-    elizabeth_montagu "Aquesta vegada, reflexionarem plegats sobre les poetes escandinaves més rellevants i sobre les seves idees."
+    elizabeth_montagu "Aquesta vegada, reflexionarem plegats sobre les poetesses escandinaves més rellevants i sobre les seves idees."
 
 # game/screens/chapter0/all.rpy:119
 translate catalan discussion_14d02da6:
@@ -220,7 +220,7 @@ translate catalan discussion_f124b864:
 translate catalan discussion_94590003:
 
     # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
-    unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
+    unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom vertader!!"
 
 # game/screens/chapter0/all.rpy:128
 translate catalan discussion_9a1695e0:

@@ -76,7 +76,7 @@ translate catalan portrait_318c7df6:
 translate catalan portrait_00520ce0:
 
     # user "Jajaja. Era broma dona, no t'ho prenguis així ..."
-    user "Jajaja. Era broma dona, no t'ho prenguis així ..."
+    user "Jajaja. Era broma, no t'ho prenguis així ..."
 
 # game/screens/chapter0/portrait.rpy:47
 translate catalan portrait_0ba4e8d4:
@@ -88,7 +88,7 @@ translate catalan portrait_0ba4e8d4:
 translate catalan portrait_ae2d8eea:
 
     # user "Ja ho donava per suposat que ho faries de totes maneres ..."
-    user "Ja ho donava per suposat que ho faries de totes maneres ..."
+    user "Ja donava per suposat que ho faries de totes maneres ..."
 
 # game/screens/chapter0/portrait.rpy:49
 translate catalan portrait_87a4ba2c:
@@ -124,7 +124,7 @@ translate catalan portrait_d2307f2e:
 translate catalan portrait_af8e75d7:
 
     # mary_astell "Jajaja. És broma dona. T'explico ..."
-    mary_astell "Jajaja. És broma dona. T'explico ..."
+    mary_astell "Jajaja. És broma. T'explico ..."
 
 # game/screens/chapter0/portrait.rpy:60
 translate catalan portrait_3ea55b5c:
@@ -154,7 +154,7 @@ translate catalan portrait_8bbaf0ab:
 translate catalan portrait_bcf8724a:
 
     # mary_astell "Sí, totalment d'acord amb la teva afirmació. Tanmateix, sí que durant l'època de Revolució Francesa hi va haver alguna dona rellevant."
-    mary_astell "Sí, totalment d'acord amb la teva afirmació. Tanmateix, sí que durant l'època de Revolució Francesa hi va haver alguna dona rellevant."
+    mary_astell "Sí, totalment d'acord amb la teva afirmació. Tanmateix, sí que durant l'època de la Revolució Francesa hi va haver alguna dona rellevant."
 
 # game/screens/chapter0/portrait.rpy:65
 translate catalan portrait_48516ece:

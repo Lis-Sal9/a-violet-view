@@ -156,7 +156,7 @@ translate catalan strings:
 
     # game/screens/common.rpy:768
     old "Rolls forward to later dialogue."
-    new "Passa a la següent pàgina."
+    new "Passa al següent diàleg."
 
     # game/screens/common.rpy:772
     old "Hides the user interface."
