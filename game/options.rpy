@@ -214,16 +214,16 @@ define config.mouse = {"default":[ ("gui/cursor.png", 10, 10) ] }
 ## Config the default language
 define config.language = "catalan"
 
-## Config the number of slots used by quicksaves
+## Config the quicksave
 define config.quicksave_slots = 0
-## Config the number of slots used by autosaves
+define config.has_quicksave = False
+
+## Config the autosave
 define config.autosave_slots = 0
-## The game has disabled autosave
 define config.has_autosave = False
 define config.autosave_on_choice = False
 define config.autosave_on_quit = False
-## The game has not quicksave
-define config.has_quicksave = False
+
 ## Config the skipping values
 define config.allow_skipping = True
 define config.fast_skipping = True
@@ -233,8 +233,6 @@ default preferences.skip_unseen = True
 ## Config the keymap
 init -1 python:
     config.keymap = dict(
-        # Bindings present almost everywhere, unless explicitly
-        # disabled.
         rollback = [ ],
         screenshot = [ ],
         toggle_afm = [ ],

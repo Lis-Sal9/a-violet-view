@@ -1,6 +1,9 @@
-﻿# The script of the game.
 
-######## Global Variables ################
+# The script of the game.
+
+
+######## Global Variables ######################################################
+
 # Define the player name
 default player = ""
 # Define the temporary last save name
@@ -8,9 +11,9 @@ default saveName = ""
 default tmpSaveName = ""
 # Define the achievements of player for the glossary
 default items_player = []
-# Define if portrait is done
+
+# Define variables for conditions
 default portrait_done = False
-# Define if Mary Astell is nice
 default astell_is_nice = False
 default wollstonecraft_is_seen = False
 default asmau_is_seen = False
@@ -21,8 +24,7 @@ define unknown = Character("...", color="#FFFFFF")
 define unknown_girl = Character("Dona", color="#FFFFFF")
 define unknown_boy = Character("Home", color="#231F20")
 
-
-#########################################
+################################################################################
 
 
 

@@ -19,8 +19,8 @@ define puzzle_piece_size = 623
 define active_area_size = puzzle_piece_size - (grip_size * 2)
 
 
-## Python function to manage dragged pieces. #################################################################
 init python:
+    ## Manage dragged pieces
     def piece_dragged(drags, drop):
         if not drop:
             return
@@ -50,7 +50,7 @@ init python:
         return
 
 
-## Create the picture puzzle and its parts. #################################################################
+## Create the picture puzzle and its parts. ####################################
 screen jigsaw_puzzle:
     key "rollback" action [[]]
     key "rollforward" action [[]]
@@ -75,18 +75,19 @@ screen jigsaw_puzzle:
                 drag:
                     drag_name name
                     child imagelist[i,j]
-                    #droppable False
                     dragged piece_dragged
                     xpos piecelist[i,j][0] ypos piecelist[i,j][1]
+################################################################################
 
 
-## Make a puzzle object. #################################################################
+## Make a puzzle object. #######################################################
 label puzzle:
+
     python:
         img_width, img_height = renpy.image_size(chosen_img)
         number_of_pieces = (grid_width*grid_height)
 
-        # scales down an image to fit the puzzle_field_size
+        # Scale down an image to fit the puzzle_field_size
         if img_width >= img_height and img_width > puzzle_field_size:
             img_scale_down_index = round( (1.00 * puzzle_field_size / img_width), 6)
             img_to_play = im.FactorScale(chosen_img, img_scale_down_index)
@@ -182,11 +183,11 @@ label puzzle:
     show puzzle_background as bg_puzzle
     call screen jigsaw_puzzle
     jump puzzle_done
+################################################################################
 
 
-## Call it when the puzzle is done.
+## Call it when the puzzle is done. ############################################
 label puzzle_done:
-
     $ portrait_done = True
     show black as bg_puzzle
     show expression img_to_play as puzzle_img at truecenter
@@ -201,3 +202,4 @@ label puzzle_done:
     hide puzzle_img
 
     return
+################################################################################

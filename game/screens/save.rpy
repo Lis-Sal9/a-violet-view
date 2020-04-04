@@ -1,11 +1,10 @@
 
-## The script for serialization data.
+## The script for saving data.
 ##
 ## The save file has two params: saveName required and an optional string parameter. This parameter is serialized to JSON in this script.
 define config.save_json_callbacks = [GetPlayerDataJson]
 
 init -1 python:
-
     import json, time
 
     def FinishEnterSaveName():
@@ -46,8 +45,10 @@ init -1 python:
         saveName = json_data["saveName"]
 
 
-##################### Save menu screen : ask player for save, and save name ##########################
-init -1 screen save_menu():
+## Save menu screen ############################################################
+## Ask player for save, and save name
+################################################################################
+screen save_menu():
     modal True
     zorder 200
     style_prefix "confirm"
@@ -66,12 +67,13 @@ init -1 screen save_menu():
 ################################################################################
 
 
-##################### SaveName input screen : ask for save slot name ##########################
-init -1 screen save_name_input(message, ok_action):
+## SaveName input screen #######################################################
+## Ask for save slot name
+################################################################################
+screen save_name_input(message, ok_action):
     modal True
     zorder 200
     style_prefix "confirm"
-
     add "gui/overlay/confirm.png"
     key "K_RETURN" action [Hide("save_name_input"), ok_action]
 

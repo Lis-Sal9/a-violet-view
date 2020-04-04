@@ -1,13 +1,12 @@
 
-## Script for the glossary section.
-## The player can achieve some items according to his selected path.
+## Dictionary in English for all items of glossary.
 
-init python:
-    ## TODO: Add items from other chapters
-    all_glossary_elements = {
+
+init -1 python:
+    glossary_dict_en = {
         0: {
             "name": "Catherina Ahlgren",
-            "content": "Catherina Ahlgren, amiga de Charlotta Nordenflycht, l’any 1772 va publicar una sèrie de cartes retòriques, dirigides a homes i dones, amb el pseudònim {i}Adelaide{/i}, en les quals parlava d’amistat, consideracions morals i consells dirigits a les filles, i de l’amor veritable, concepte únicament existent quan un home i una dona es tracten com a iguals. A més a més, era defensora de l’activisme social, la democràcia, la igualtat de gènere i la solidaritat de les dones respecte de la dominació masculina. L’any 1782, va ser editora de {i}De l’Art per Complaure Correctament{/i} ({i}Om att rätt behaga{/i}), un dels primers diaris finlandesos."
+            "content": "Catherina Ahlgren, friend of Charlotta Nordenflycht, l’any 1772 va publicar una sèrie de cartes retòriques, dirigides a homes i dones, amb el pseudònim {i}Adelaide{/i}, en les quals parlava d’amistat, consideracions morals i consells dirigits a les filles, i de l’amor veritable, concepte únicament existent quan un home i una dona es tracten com a iguals. A més a més, era defensora de l’activisme social, la democràcia, la igualtat de gènere i la solidaritat de les dones respecte de la dominació masculina. L’any 1782, va ser editora de {i}De l’Art per Complaure Correctament{/i} ({i}Om att rätt behaga{/i}), un dels primers diaris finlandesos."
         },
         1: {
             "name": "Elizabeth Montagu i les {i}Bluestockings{/i}",
@@ -50,48 +49,3 @@ init python:
             "content": "L’any 1832, Suzanne Voilquin va començar a treballar com a editora en la revista feminista de classe treballadora {i}La Tribune des femmes{/i}. Ella va decidir viure de manera independent, ja que volia ser un exemple per altres dones com a defensora dels valors sansimonians, sobretot després de la Revolució de 1830. El moviment sansimonià promovia un estil de vida comunal, lliure de la tirania del matrimoni, en el qual els principis femenins de la pau i la compassió substituïen els valors masculins més agressius."
         }
     }
-
-    # Array for save all item names sorted by alphabetical order
-    all_items_names = []
-    for i in range(0, len(all_glossary_elements)):
-        all_items_names.append(all_glossary_elements[i]["name"])
-
-    # Function for show the content of item
-    item_content = ""
-    def ShowItemContent(i):
-        tmp_name = all_items_names[i]
-        for i in all_glossary_elements:
-            if all_glossary_elements.get(i)["name"] == tmp_name:
-                item_content = all_glossary_elements.get(i)["content"]
-                break
-        renpy.show_screen("glossary_content", item_content)
-
-    glossary_unread_items = []
-    def HasUnreadGlossayItems():
-        return len(glossary_unread_items) > 0
-
-    def MarkGlossaryItemAsRead(item):
-        if item in glossary_unread_items:
-            glossary_unread_items.remove(item)
-
-    def GiveGlossaryItemToPlayer(item):
-        if item in all_items_names and item not in items_player:
-            items_player.append(item)
-            glossary_unread_items.append(item)
-
-
-# Screen to add the content of item on text element
-screen glossary_content(content):
-    fixed:
-        xysize 400, 600
-        align 0.5, 0.5
-        offset 490, -30
-        at transform:
-            rotate -3
-
-        text content:
-            xsize 400
-            ymaximum 600
-            align 0.5, 0
-            size 15
-            line_spacing 10

@@ -17,10 +17,9 @@ init python:
 ## GUI Configuration Variables
 ################################################################################
 
-
 ## Colors ######################################################################
-##
 ## The colors of text in the interface.
+################################################################################
 
 ## An accent color used throughout the interface to label and highlight text.
 define gui.accent_color = '#000066'
@@ -330,74 +329,6 @@ define gui.vslider_borders = Borders(6, 6, 6, 6)
 define gui.unscrollable = "hide"
 
 
-## History #####################################################################
-##
-## The history screen displays dialogue that the player has already dismissed.
-
-## The number of blocks of dialogue history Ren'Py will keep.
-define config.history_length = 250
-
-## The height of a history screen entry, or None to make the height variable at
-## the cost of performance.
-define gui.history_height = 210
-
-## The position, width, and alignment of the label giving the name of the
-## speaking character.
-define gui.history_name_xpos = 233
-define gui.history_name_ypos = 0
-define gui.history_name_width = 233
-define gui.history_name_xalign = 1.0
-
-## The position, width, and alignment of the dialogue text.
-define gui.history_text_xpos = 255
-define gui.history_text_ypos = 3
-define gui.history_text_width = 1110
-define gui.history_text_xalign = 0.0
-
-
-## NVL-Mode ####################################################################
-##
-## The NVL-mode screen displays the dialogue spoken by NVL-mode characters.
-
-## The borders of the background of the NVL-mode background window.
-define gui.nvl_borders = Borders(0, 15, 0, 30)
-
-## The maximum number of NVL-mode entries Ren'Py will display. When more entries
-## than this are to be show, the oldest entry will be removed.
-define gui.nvl_list_length = 6
-
-## The height of an NVL-mode entry. Set this to None to have the entries
-## dynamically adjust height.
-define gui.nvl_height = 173
-
-## The spacing between NVL-mode entries when gui.nvl_height is None, and between
-## NVL-mode entries and an NVL-mode menu.
-define gui.nvl_spacing = 15
-
-## The position, width, and alignment of the label giving the name of the
-## speaking character.
-define gui.nvl_name_xpos = 645
-define gui.nvl_name_ypos = 0
-define gui.nvl_name_width = 225
-define gui.nvl_name_xalign = 1.0
-
-## The position, width, and alignment of the dialogue text.
-define gui.nvl_text_xpos = 675
-define gui.nvl_text_ypos = 12
-define gui.nvl_text_width = 885
-define gui.nvl_text_xalign = 0.0
-
-## The position, width, and alignment of nvl_thought text (the text said by the
-## nvl_narrator character.)
-define gui.nvl_thought_xpos = 360
-define gui.nvl_thought_ypos = 0
-define gui.nvl_thought_width = 1170
-define gui.nvl_thought_xalign = 0.0
-
-## The position of nvl menu_buttons.
-define gui.nvl_button_xpos = 675
-define gui.nvl_button_xalign = 0.0
-
 ## Localization ################################################################
 
 ## This controls where a line break is permitted. The default is suitable
@@ -405,70 +336,3 @@ define gui.nvl_button_xalign = 0.0
 ## www.renpy.org/doc/html/style_properties.html#style-property-language
 
 define gui.language = "unicode"
-
-
-################################################################################
-## Mobile devices
-################################################################################
-
-init python:
-
-    ## This increases the size of the quick buttons to make them easier to touch
-    ## on tablets and phones.
-    if renpy.variant("touch"):
-
-        gui.quick_button_borders = Borders(60, 21, 60, 0)
-
-    ## This changes the size and spacing of various GUI elements to ensure they
-    ## are easily visible on phones.
-    if renpy.variant("small"):
-
-        ## Font sizes.
-        gui.text_size = 45
-        gui.name_text_size = 54
-        gui.notify_text_size = 38
-        gui.interface_text_size = 45
-        gui.button_text_size = 45
-        gui.label_text_size = 51
-
-        ## Adjust the location of the textbox.
-        gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.text_xpos = 135
-        gui.text_width = 1650
-
-        ## Change the size and spacing of various things.
-        gui.slider_size = 54
-
-        gui.choice_button_width = 1860
-
-        gui.navigation_spacing = 30
-        gui.pref_button_spacing = 15
-
-        gui.history_height = 285
-        gui.history_text_width = 1035
-
-        gui.quick_button_text_size = 30
-
-        ## File button layout.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
-
-        ## NVL-mode.
-        gui.nvl_height = 255
-
-        gui.nvl_name_width = 458
-        gui.nvl_name_xpos = 488
-
-        gui.nvl_text_width = 1373
-        gui.nvl_text_xpos = 518
-        gui.nvl_text_ypos = 8
-
-        gui.nvl_thought_width = 1860
-        gui.nvl_thought_xpos = 30
-
-        gui.nvl_button_width = 1860
-        gui.nvl_button_xpos = 30
-
-
-
