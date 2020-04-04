@@ -3,11 +3,13 @@
 ## Once upon a time ...
 
 
-# Beginning background
-image beginning = "images/beginning.png"
-
-
 label beginning:
-    scene beginning
+
+    $ title = Text(_("Once upon a time ..."), size=100, color="#ffffff")
+
+    scene black
+    show text title at truecenter
     with fade
     pause 3
+    hide text
+    with dissolve
