@@ -2,7 +2,7 @@
 ## Dictionary in Catalan for all items of glossary.
 
 
-init -1 python:
+init -10 python:
     glossary_dict_ca = {
         0: {
             "name": "Catherina Ahlgren",

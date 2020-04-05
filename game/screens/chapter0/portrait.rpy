@@ -30,7 +30,7 @@ label portrait:
                 "D'acord. Continues amb la mateixa història com si l'haguessis fet."
 
     if portrait_done:
-        $ GiveGlossaryItemToPlayer("{i}La Liberté guidant le peuple{/i}")
+        $ GiveGlossaryItemToPlayer(3)
 
     if astell_is_nice:
         mary_astell "Diràs 'ho hem aconseguit' ..."
@@ -68,8 +68,7 @@ label portrait:
         mary_astell "I recordem que la Il·lustració promovia els principis igualitaris i l'individualisme."
         user "Sí, crec que n'havia escoltat a parlar d'aquesta obra, però no sabia ben bé el seu origen ni res la seva autora ..."
 
-        $ items_player.append("Olympe de Gouges")
-        $ glossary_unread_items.append("Olympe de Gouges")
+        $ GiveGlossaryItemToPlayer(8)
 
         "I, amb aquesta conversa tan interessant, es van acomiadar al sortir del saló amb una gran abraçada."
         "[player] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
@@ -81,6 +80,6 @@ label portrait:
         "No parava de preguntar-se [player] ..."
 
     if astell_is_nice:
-        $ GiveGlossaryItemToPlayer("Olympe de Gouges")
+        $ GiveGlossaryItemToPlayer(8)
 
     return

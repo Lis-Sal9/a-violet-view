@@ -195,8 +195,7 @@ label puzzle_done:
 
     user "Ho he aconseguit!!!"
 
-    $ items_player.append("{i}La Liberté guidant le peuple{/i}")
-    $ glossary_unread_items.append("{i}La Liberté guidant le peuple{/i}")
+    $ GiveGlossaryItemToPlayer(3)
 
     hide bg_puzzle
     hide puzzle_img

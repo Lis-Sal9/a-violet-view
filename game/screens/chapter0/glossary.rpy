@@ -3,42 +3,37 @@
 ## The player can achieve some items according to his selected path.
 
 define current_glossary_index = -1
-define all_glossary_elements = []
+
+
+init -10 python:
+    def GetGlossaryElementsByLanguage():
+        if _preferences.language == "catalan":
+            return glossary_dict_ca.copy()
+        elif _preferences.language == "english":
+            return glossary_dict_en.copy()
+        elif _preferences.language == "spanish":
+            return glossary_dict_es.copy()
+
 
 init python:
-    ## TODO: Add items from other chapters
-    if config.language == "catalan":
-        all_glossary_elements = glossary_dict_ca.copy()
-    elif config.language == "english":
-        all_glossary_elements = glossary_dict_en.copy()
-    elif config.language == "spanish":
-        all_glossary_elements = glossary_dict_es.copy()
-
-    # Array for save all item names sorted by alphabetical order
-    all_items_names = []
-    for i in range(0, len(all_glossary_elements)):
-        all_items_names.append(all_glossary_elements[i]["name"])
-
     # Function for show the content of item
-    item_content = ""
     def ShowItemContent(i):
-        tmp_name = all_items_names[i]
-        for i in all_glossary_elements:
-            if all_glossary_elements.get(i)["name"] == tmp_name:
-                item_content = all_glossary_elements.get(i)["content"]
-                break
+        item_content = GetGlossaryElementsByLanguage().get(i)["content"]
         renpy.show_screen("glossary_content", item_content)
-
     glossary_unread_items = []
+
     def HasUnreadGlossayItems():
         return len(glossary_unread_items) > 0
 
     def MarkGlossaryItemAsRead(item):
+        global glossary_unread_items
         if item in glossary_unread_items:
             glossary_unread_items.remove(item)
 
     def GiveGlossaryItemToPlayer(item):
-        if item in all_items_names and item not in items_player:
+        global items_player
+        global glossary_unread_items
+        if item not in items_player:
             items_player.append(item)
             glossary_unread_items.append(item)
 
@@ -51,7 +46,6 @@ screen glossary_content(content):
         offset 490, -30
         at transform:
             rotate -3
-
         text content:
             xsize 400
             ymaximum 600
@@ -67,6 +61,7 @@ screen glossary_content(content):
 screen glossary():
     tag menu
     default adj = ui.adjustment()
+    $ all_glossary_elements = GetGlossaryElementsByLanguage()
 
     frame:
         xalign .5 yalign .5
@@ -108,11 +103,10 @@ screen glossary():
                 yadjustment adj
                 side_yfill True
 
-                for i in range(0, len(all_items_names)):
+                for i in range(0, len(all_glossary_elements)):
                     fixed:
                         xysize 450, 40
-
-                        if all_items_names[i] not in items_player:
+                        if i not in items_player:
                             image "images/glossary/trunk.png":
                                 align 0.5, 0.5
                         else:
@@ -120,10 +114,11 @@ screen glossary():
                                 align 0.5, 0.5
                                 spacing 0
 
-                                text all_items_names[i]:
+                                text all_glossary_elements.get(i)["name"]:
                                     size 17
                                     yalign 0.5
-                                if all_items_names[i] in glossary_unread_items:
+
+                                if i in glossary_unread_items:
                                     image "images/glossary/glossary_item_new.png":
                                         yalign 0.5
 
@@ -134,7 +129,7 @@ screen glossary():
                                 selected_hover "images/glossary/list_item_hover.png"
                                 align 0.5, 0.5
                                 xysize 450, 40
-                                action [SetVariable("current_glossary_index", i), SelectedIf(current_glossary_index == i), Function(ShowItemContent, i), Function(MarkGlossaryItemAsRead, all_items_names[i])]
+                                action [SetVariable("current_glossary_index", i), SelectedIf(current_glossary_index == i), Function(ShowItemContent, i), Function(MarkGlossaryItemAsRead, i)]
 
             imagebutton:
                 idle "images/glossary/arrow_bottom.png"

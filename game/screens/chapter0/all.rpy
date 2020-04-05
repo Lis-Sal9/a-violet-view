@@ -87,8 +87,7 @@ label chapter_0:
         user "No m'ho puc creure! Jo també hi vaig! Quina casualitat!"
         "Però aquella trobada no era tan fortuïta com aparentment semblava ..."
 
-        $ items_player.append("Mary Astell")
-        $ glossary_unread_items.append("Mary Astell")
+        $ GiveGlossaryItemToPlayer(5)
 
         "De camí al saló, varen estar parlant de les seves inquietuds, de les seves vivències en aquest temps separades ... "
         call discussion
@@ -112,8 +111,7 @@ label chapter_0:
         scene salon_discussion
         elizabeth_montagu "Benvolgudes a un nou capítol dels {i}Bluestockings{/i}."
 
-        $ items_player.append("Elizabeth Montagu i les {i}Bluestockings{/i}")
-        $ glossary_unread_items.append("Elizabeth Montagu i les {i}Bluestockings{/i}")
+        $ GiveGlossaryItemToPlayer(1)
 
         elizabeth_montagu "Aquesta vegada, reflexionarem plegats sobre les poetes escandinaves més rellevants i sobre les seves idees."
         elizabeth_montagu "En plena {i}Era de la Llibertat{/i}, quan el govern va tenir el poder, es proliferà el debat polític i filosòfic, en el qual s'incloïa la demanda de llibertats per a les dones."
@@ -121,8 +119,7 @@ label chapter_0:
         unknown_girl "I no només això, recordem que creia fermament que la dona era intel·lectualment equivalent a l'home."
         unknown_girl "Equivalent en això i en tot, menys en l'aparença física!"
 
-        $ items_player.append("Sophia Elisabet Brenner")
-        $ glossary_unread_items.append("Sophia Elisabet Brenner")
+        $ GiveGlossaryItemToPlayer(9)
 
         unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
         unknown_girl "La Charlotta Nordenflycht?"
@@ -131,8 +128,7 @@ label chapter_0:
         unknown_girl "Doncs no la coneixia, fins ara ... "
         "Va contestar la mateixa noia de la sala ..."
 
-        $ items_player.append("Hedvig Charlotta Nordenflycht")
-        $ glossary_unread_items.append("Hedvig Charlotta Nordenflycht")
+        $ GiveGlossaryItemToPlayer(2)
 
         if astell_is_nice:
             mary_astell "Doncs jo estava especialment captivada per la seva amiga, Catherina Ahlgren, sobretot per aquelles cartes d'{i}Adelaide{/i} dirigides a homes i dones."
@@ -155,8 +151,7 @@ label chapter_0:
             unknown_girl "Ben fet, home! Hem de començar a ser fortes, valentes i lliures des de ben petites!!!"
             "Va cridar una noia a ple pulmó ..."
 
-        $ items_player.append("Catherina Ahlgren")
-        $ glossary_unread_items.append("Catherina Ahlgren")
+        $ GiveGlossaryItemToPlayer(0)
 
         elizabeth_montagu "Calmem-nos tots una mica. Teniu raó en tot allò que s'està debatint en aquesta sala."
         elizabeth_montagu "A més a més del què heu mencionat, jo també afegiria que tractava temes col·lectius com l'activisme social, la democràcia, la igualtat de gènere i la solidaritat entre dones respecte de la dominació masculina."
@@ -170,12 +165,12 @@ label chapter_0:
             "[player] passejava pel saló, quan va trobar una sala d'arts i ..."
 
         if astell_is_nice:
-            $ GiveGlossaryItemToPlayer("Mary Astell")
+            $ GiveGlossaryItemToPlayer(5)
 
-        $ GiveGlossaryItemToPlayer("Elizabeth Montagu i les {i}Bluestockings{/i}")
-        $ GiveGlossaryItemToPlayer("Sophia Elisabet Brenner")
-        $ GiveGlossaryItemToPlayer("Hedvig Charlotta Nordenflycht")
-        $ GiveGlossaryItemToPlayer("Catherina Ahlgren")
+        $ GiveGlossaryItemToPlayer(1)
+        $ GiveGlossaryItemToPlayer(9)
+        $ GiveGlossaryItemToPlayer(2)
+        $ GiveGlossaryItemToPlayer(0)
 
 
         menu:
@@ -236,8 +231,7 @@ label chapter_0:
         "I amb un somriure i una salutació d'adéu, [player] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
 
         $ wollstonecraft_is_seen = True
-        $ items_player.append("Mary Wollstonecraft")
-        $ glossary_unread_items.append("Mary Wollstonecraft")
+        $ GiveGlossaryItemToPlayer(6)
 
         call editorial
 
@@ -252,15 +246,13 @@ label chapter_0:
         "I, mentre [player] es fon en els seus pensaments, gairebé es passa la seva propera parada."
         "{i}La Tribune des femmes{/i}."
 
-        $ items_player.append("{i}La Tribune des femmes{/i}")
-        $ glossary_unread_items.append("{i}La Tribune des femmes{/i}")
+        $ GiveGlossaryItemToPlayer(4)
 
         scene editorial
         "[player] acabava d'arribar a l'editorial."
         "La senyora Voilquin, com de costum, estava posant ordre. Era meticulosa amb la feina i volia que tot sortís a la perfecció."
 
-        $ items_player.append("Suzanne Voilquin")
-        $ glossary_unread_items.append("Suzanne Voilquin")
+        $ GiveGlossaryItemToPlayer(10)
 
         suzanne_voilquin "Bon dia, [player]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
         user "D'acord, Suzanne. Vaig a fer-me un cafè i ara torno."
@@ -269,10 +261,10 @@ label chapter_0:
         suzanne_voilquin "Es tracta d'una investigació sobre l'educació de les dones, concretament de les {i}jajis{/i}."
 
         if wollstonecraft_is_seen:
-            $ GiveGlossaryItemToPlayer("Mary Wollstonecraft")
+            $ GiveGlossaryItemToPlayer(6)
 
-        $ GiveGlossaryItemToPlayer("{i}La Tribune des femmes{/i}")
-        $ GiveGlossaryItemToPlayer("Suzanne Voilquin")
+        $ GiveGlossaryItemToPlayer(4)
+        $ GiveGlossaryItemToPlayer(10)
 
         menu:
             "Segueixes escoltant perquè et resulta molt interessant":
@@ -287,7 +279,7 @@ label chapter_0:
         call train
 
         if asmau_is_seen:
-            $ GiveGlossaryItemToPlayer("Nana Asma'u")
+            $ GiveGlossaryItemToPlayer(7)
 
         return
 
@@ -313,8 +305,7 @@ label chapter_0:
         suzanne_voilquin "Avui dia, el llegat d'aquesta magnífica dona perviu a Nigèria i, a més a més, és un recordatori de l'anterior mandat de l'islam."
 
         $ asmau_is_seen = True
-        $ items_player.append("Nana Asma'u")
-        $ glossary_unread_items.append("Nana Asma'u")
+        $ GiveGlossaryItemToPlayer(7)
 
         scene editorial
         "Totes les noies es varen quedar bocabadades."
