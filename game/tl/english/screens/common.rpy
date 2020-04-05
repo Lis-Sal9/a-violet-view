@@ -3,192 +3,192 @@ translate english strings:
 
     # game/screens/common.rpy:273
     old "Continue"
-    new ""
+    new "Continue"
 
     # game/screens/common.rpy:275
     old "Load"
-    new ""
+    new "Load game"
 
     # game/screens/common.rpy:277
     old "Preferences"
-    new ""
+    new "Preferences"
 
     # game/screens/common.rpy:279
     old "Exit"
-    new ""
+    new "Exit"
 
     # game/screens/common.rpy:306
     old "Yes"
-    new ""
+    new "Yes"
 
     # game/screens/common.rpy:512
     old "Start"
-    new ""
+    new "Start game"
 
     # game/screens/common.rpy:512
     old "Please, enter your name."
-    new "Per favor, introdueixi un nom."
+    new "Please, enter your name."
 
     # game/screens/common.rpy:522
     old "Help"
-    new ""
+    new "Help"
 
     # game/screens/common.rpy:524
     old "About"
-    new ""
+    new "About"
 
     # game/screens/common.rpy:529
     old "Quit"
-    new ""
+    new "Quit"
 
     # game/screens/common.rpy:569
     old "OK"
-    new ""
+    new "OK"
 
     # game/screens/common.rpy:587
     old "Display"
-    new ""
+    new "Display"
 
     # game/screens/common.rpy:588
     old "Window"
-    new ""
+    new "Window"
 
     # game/screens/common.rpy:589
     old "Fullscreen"
-    new ""
+    new "Fullscreen"
 
     # game/screens/common.rpy:593
     old "Language"
-    new ""
+    new "Language"
 
     # game/screens/common.rpy:594
     old "English"
-    new ""
+    new "English"
 
     # game/screens/common.rpy:595
     old "Spanish"
-    new ""
+    new "Spanish"
 
     # game/screens/common.rpy:596
     old "Catalan"
-    new ""
+    new "Catalan"
 
     # game/screens/common.rpy:605
     old "Text Speed"
-    new ""
+    new "Text Speed"
 
     # game/screens/common.rpy:610
     old "Music Volume"
-    new ""
+    new "Music Volume"
 
     # game/screens/common.rpy:616
     old "Mute All"
-    new ""
+    new "Mute All"
 
     # game/screens/common.rpy:702
     old "Keyboard"
-    new ""
+    new "Keyboard"
 
     # game/screens/common.rpy:703
     old "Mouse"
-    new ""
+    new "Mouse"
 
     # game/screens/common.rpy:739
     old "Enter"
-    new ""
+    new "Enter"
 
     # game/screens/common.rpy:740
     old "Advances dialogue and activates the interface."
-    new ""
+    new "Advances dialogue and activates the interface."
 
     # game/screens/common.rpy:743
     old "Space"
-    new ""
+    new "Space"
 
     # game/screens/common.rpy:744
     old "Advances dialogue without selecting choices."
-    new ""
+    new "Advances dialogue without selecting choices."
 
     # game/screens/common.rpy:747
     old "Arrow Keys"
-    new ""
+    new "Arrow Keys"
 
     # game/screens/common.rpy:748
     old "Navigate the interface."
-    new ""
+    new "Navigate the interface."
 
     # game/screens/common.rpy:751
     old "Escape"
-    new ""
+    new "Escape"
 
     # game/screens/common.rpy:752
     old "Accesses the game menu."
-    new ""
+    new "Accesses the game menu."
 
     # game/screens/common.rpy:755
     old "Ctrl"
-    new ""
+    new "Ctrl"
 
     # game/screens/common.rpy:756
     old "Skips dialogue while held down."
-    new ""
+    new "Skips dialogue while held down."
 
     # game/screens/common.rpy:759
     old "Tab"
-    new ""
+    new "Tab"
 
     # game/screens/common.rpy:760
     old "Toggles dialogue skipping."
-    new ""
+    new "Toggles dialogue skipping."
 
     # game/screens/common.rpy:763
     old "Page Up"
-    new ""
+    new "Page Up"
 
     # game/screens/common.rpy:764
     old "Rolls back to earlier dialogue."
-    new ""
+    new "Rolls back to earlier dialogue."
 
     # game/screens/common.rpy:767
     old "Page Down"
-    new ""
+    new "Page Down"
 
     # game/screens/common.rpy:768
     old "Rolls forward to later dialogue."
-    new ""
+    new "Rolls forward to later dialogue."
 
     # game/screens/common.rpy:772
     old "Hides the user interface."
-    new ""
+    new "Hides the user interface."
 
     # game/screens/common.rpy:776
     old "Takes a screenshot."
-    new ""
+    new "Takes a screenshot."
 
     # game/screens/common.rpy:785
     old "Left Click"
-    new ""
+    new "Left Click"
 
     # game/screens/common.rpy:789
     old "Middle Click"
-    new ""
+    new "Middle Click"
 
     # game/screens/common.rpy:793
     old "Right Click"
-    new ""
+    new "Right Click"
 
     # game/screens/common.rpy:797
     old "Mouse Wheel Up"
-    new ""
+    new "Mouse Wheel Up"
 
     # game/screens/common.rpy:801
     old "Mouse Wheel Down"
-    new ""
+    new "Mouse Wheel Down"
 
     # game/screens/common.rpy:816
     old "Version [config.version!t]\n"
-    new ""
+    new "Version [config.version!t]\n"
 
     # game/screens/common.rpy:822
     old "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
-    new ""
+    new "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"

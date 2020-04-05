@@ -3,16 +3,16 @@ translate english strings:
 
     # game/variants/mobile.rpy:25
     old "Back"
-    new ""
+    new "Back"
 
     # game/variants/mobile.rpy:26
     old "Skip"
-    new ""
+    new "Skip"
 
     # game/variants/mobile.rpy:27
     old "Auto"
-    new ""
+    new "Auto"
 
     # game/variants/mobile.rpy:28
     old "Menu"
-    new ""
+    new "Menu"

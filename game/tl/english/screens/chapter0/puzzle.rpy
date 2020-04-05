@@ -4,4 +4,4 @@
 translate english puzzle_done_1dc0f53d:
 
     # user "Ho he aconseguit!!!"
-    user ""
+    user "I did it! I DID IT!!!"
