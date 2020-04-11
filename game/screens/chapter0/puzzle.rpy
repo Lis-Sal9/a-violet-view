@@ -18,6 +18,12 @@ define puzzle_field_offset = 42
 define puzzle_piece_size = 623
 define active_area_size = puzzle_piece_size - (grip_size * 2)
 
+init -10 python:
+    is_in_puzzle = False
+    def isInPuzzleSection(result):
+        global is_in_puzzle
+        is_in_puzzle = result
+
 
 init python:
     ## Manage dragged pieces
@@ -84,6 +90,7 @@ screen jigsaw_puzzle:
 label puzzle:
 
     python:
+        isInPuzzleSection(True)
         img_width, img_height = renpy.image_size(chosen_img)
         number_of_pieces = (grid_width*grid_height)
 
@@ -188,7 +195,10 @@ label puzzle:
 
 ## Call it when the puzzle is done. ############################################
 label puzzle_done:
-    $ portrait_done = True
+    python:
+        isInPuzzleSection(False)
+        portrait_done = True
+
     show black as bg_puzzle
     show expression img_to_play as puzzle_img at truecenter
     with dissolve
@@ -196,6 +206,7 @@ label puzzle_done:
     user "Ho he aconseguit!!!"
 
     $ GiveGlossaryItemToPlayer(3)
+    $ ShowItems()
 
     hide bg_puzzle
     hide puzzle_img

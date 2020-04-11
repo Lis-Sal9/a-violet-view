@@ -26,6 +26,7 @@ init -1 python:
         }
         json_obj = json.dumps(config_save_params)
         renpy.save(saveName, json_obj)
+        renpy.notify(_("Saved successfully."))
         return
 
     def OnSaveNameUpdate(value = ""):

@@ -37,6 +37,9 @@ init python:
             items_player.append(item)
             glossary_unread_items.append(item)
 
+    def ShowItems():
+        renpy.notify(_("You receive new glossary items."))
+
 
 # Screen to add the content of item on text element ############################
 screen glossary_content(content):
@@ -73,7 +76,7 @@ screen glossary():
             yoffset -45
             action Return()
 
-        $ title = At(Text(_("Glossary"), color='#ffffff', size=65), Transform(rotate=-10, xpos=gui.navigation_xpos + 70, ypos=570))
+        $ title = At(Text(_("Glossary"), color='#ffffff', size=65, xoffset=150, yoffset=650), Transform(rotate=-10))
         text (title)
 
         vbox:

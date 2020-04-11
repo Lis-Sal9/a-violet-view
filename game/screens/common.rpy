@@ -212,32 +212,42 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            button:
+            imagebutton:
                 action Show('pause')
-                add "gui/icons/pause.png"
+                idle "gui/icons/pause.png"
+                hover "gui/icons/pause_border.png"
 
-            button:
+            imagebutton:
                 action Rollback()
-                add "gui/icons/return.png"
+                idle "gui/icons/return.png"
+                hover "gui/icons/return_border.png"
 
-            button:
+            imagebutton:
                 action Skip() alternate Skip(fast=True, confirm=True)
-                add "gui/icons/skip_action.png"
+                idle "gui/icons/skip_action.png"
+                hover "gui/icons/skip_action_border.png"
 
-            button:
+            imagebutton:
                 action ShowMenu('glossary')
+                hover "gui/icons/glossary_new_icon.png"
                 if len(glossary_unread_items) > 0:
-                    add "gui/icons/glossary_new_icon.png"
+                    idle "gui/icons/glossary_new_icon.png"
                 else:
-                    add "gui/icons/glossary_icon.png"
+                    idle "gui/icons/glossary_icon.png"
 
-            button:
-                action [Show(screen="save_menu"), FileTakeScreenshot()]
-                add "gui/icons/save.png"
+            imagebutton:
+                if is_in_puzzle:
+                    action NullAction()
+                    hover "gui/icons/save.png"
+                else:
+                    action [Show(screen="save_menu"), FileTakeScreenshot()]
+                    hover "gui/icons/save_border.png"
+                idle "gui/icons/save.png"
 
-            button:
+            imagebutton:
                 action ShowMenu('help')
-                add "gui/icons/help.png"
+                idle "gui/icons/help.png"
+                hover "gui/icons/help_border.png"
 
 init python:
     config.overlay_screens.append("quick_menu")

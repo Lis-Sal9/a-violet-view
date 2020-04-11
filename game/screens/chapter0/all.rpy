@@ -88,6 +88,7 @@ label chapter_0:
         "Però aquella trobada no era tan fortuïta com aparentment semblava ..."
 
         $ GiveGlossaryItemToPlayer(5)
+        $ ShowItems()
 
         "De camí al saló, varen estar parlant de les seves inquietuds, de les seves vivències en aquest temps separades ... "
         call discussion
@@ -112,6 +113,7 @@ label chapter_0:
         elizabeth_montagu "Benvolgudes a un nou capítol dels {i}Bluestockings{/i}."
 
         $ GiveGlossaryItemToPlayer(1)
+        $ ShowItems()
 
         elizabeth_montagu "Aquesta vegada, reflexionarem plegats sobre les poetes escandinaves més rellevants i sobre les seves idees."
         elizabeth_montagu "En plena {i}Era de la Llibertat{/i}, quan el govern va tenir el poder, es proliferà el debat polític i filosòfic, en el qual s'incloïa la demanda de llibertats per a les dones."
@@ -120,6 +122,7 @@ label chapter_0:
         unknown_girl "Equivalent en això i en tot, menys en l'aparença física!"
 
         $ GiveGlossaryItemToPlayer(9)
+        $ ShowItems()
 
         unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
         unknown_girl "La Charlotta Nordenflycht?"
@@ -129,6 +132,7 @@ label chapter_0:
         "Va contestar la mateixa noia de la sala ..."
 
         $ GiveGlossaryItemToPlayer(2)
+        $ ShowItems()
 
         if astell_is_nice:
             mary_astell "Doncs jo estava especialment captivada per la seva amiga, Catherina Ahlgren, sobretot per aquelles cartes d'{i}Adelaide{/i} dirigides a homes i dones."
@@ -152,6 +156,7 @@ label chapter_0:
             "Va cridar una noia a ple pulmó ..."
 
         $ GiveGlossaryItemToPlayer(0)
+        $ ShowItems()
 
         elizabeth_montagu "Calmem-nos tots una mica. Teniu raó en tot allò que s'està debatint en aquesta sala."
         elizabeth_montagu "A més a més del què heu mencionat, jo també afegiria que tractava temes col·lectius com l'activisme social, la democràcia, la igualtat de gènere i la solidaritat entre dones respecte de la dominació masculina."
@@ -171,6 +176,7 @@ label chapter_0:
         $ GiveGlossaryItemToPlayer(9)
         $ GiveGlossaryItemToPlayer(2)
         $ GiveGlossaryItemToPlayer(0)
+        $ ShowItems()
 
 
         menu:
@@ -232,6 +238,7 @@ label chapter_0:
 
         $ wollstonecraft_is_seen = True
         $ GiveGlossaryItemToPlayer(6)
+        $ ShowItems()
 
         call editorial
 
@@ -247,12 +254,14 @@ label chapter_0:
         "{i}La Tribune des femmes{/i}."
 
         $ GiveGlossaryItemToPlayer(4)
+        $ ShowItems()
 
         scene editorial
         "[player] acabava d'arribar a l'editorial."
         "La senyora Voilquin, com de costum, estava posant ordre. Era meticulosa amb la feina i volia que tot sortís a la perfecció."
 
         $ GiveGlossaryItemToPlayer(10)
+        $ ShowItems()
 
         suzanne_voilquin "Bon dia, [player]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
         user "D'acord, Suzanne. Vaig a fer-me un cafè i ara torno."
@@ -265,6 +274,7 @@ label chapter_0:
 
         $ GiveGlossaryItemToPlayer(4)
         $ GiveGlossaryItemToPlayer(10)
+        $ ShowItems()
 
         menu:
             "Segueixes escoltant perquè et resulta molt interessant":
@@ -280,6 +290,7 @@ label chapter_0:
 
         if asmau_is_seen:
             $ GiveGlossaryItemToPlayer(7)
+            $ ShowItems()
 
         return
 
@@ -306,6 +317,7 @@ label chapter_0:
 
         $ asmau_is_seen = True
         $ GiveGlossaryItemToPlayer(7)
+        $ ShowItems()
 
         scene editorial
         "Totes les noies es varen quedar bocabadades."

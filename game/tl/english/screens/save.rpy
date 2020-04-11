@@ -15,3 +15,7 @@ translate english strings:
     # game/screens/save.rpy:15
     old "This game already exists. Do you want overwrite it?"
     new "This game already exists. Do you want overwrite it?"
+
+    # game/screens/save.rpy:29
+    old "Saved successfully."
+    new "Saved successfully."

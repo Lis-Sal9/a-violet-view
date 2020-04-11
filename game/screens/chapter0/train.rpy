@@ -14,6 +14,9 @@ label train:
         yalign 0.60 xpos 2500
         linear 15.0 xpos -3000 yalign 0.72
 
+    stop music fadeout 0.5
     scene bg_train
+    play music "audio/sound/train.mp3" fadein 0.5
     show img_train at moving
     pause 15
+    stop music fadeout 0.5

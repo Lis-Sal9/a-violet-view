@@ -16,3 +16,7 @@ translate spanish strings:
     # game/screens/save.rpy:15
     old "This game already exists. Do you want overwrite it?"
     new "Esta partida ya existe. ¿Desea sobreescribirla?"
+
+    # game/screens/save.rpy:29
+    old "Saved successfully."
+    new "Guardado correctamente."
