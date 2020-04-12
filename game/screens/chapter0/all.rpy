@@ -124,7 +124,7 @@ label chapter_0:
         $ GiveGlossaryItemToPlayer(9)
         $ ShowItems()
 
-        unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
+        unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom!!"
         unknown_girl "La Charlotta Nordenflycht?"
         "Va preguntar estranyada una noia de la sala ..."
         unknown_girl "Sí, dona, que defensava el dret a ser intel·lectualment activa i refutava la misoginia ..."

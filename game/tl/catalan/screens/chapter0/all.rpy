@@ -219,8 +219,8 @@ translate catalan discussion_f124b864:
 # game/screens/chapter0/all.rpy:127
 translate catalan discussion_94590003:
 
-    # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
-    unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom vertader!!"
+    # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom!!"
+    unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom vertader!!"
 
 # game/screens/chapter0/all.rpy:128
 translate catalan discussion_9a1695e0:

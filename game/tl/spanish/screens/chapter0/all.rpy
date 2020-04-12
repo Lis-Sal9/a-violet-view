@@ -218,8 +218,8 @@ translate spanish discussion_f124b864:
 # game/screens/chapter0/all.rpy:127
 translate spanish discussion_94590003:
 
-    # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
-    unknown_boy "Tenéis razón, pero y ¿qué me decís de Charlotta Nordenflycht? Fuerte, valiente y libre, ¡¡hasta firmaba sus obras con su verdadero nombre!!"
+    # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom!!"
+    unknown_boy "Tenéis razón, pero y ¿qué me decís de Charlotta Nordenflycht? Fuerte, rebelde y libre, ¡¡hasta firmaba sus obras con su verdadero nombre!!"
 
 # game/screens/chapter0/all.rpy:128
 translate spanish discussion_9a1695e0:
