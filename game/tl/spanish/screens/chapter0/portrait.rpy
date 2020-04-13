@@ -50,8 +50,8 @@ translate spanish portrait_eea4b899:
 # game/screens/chapter0/portrait.rpy:39
 translate spanish portrait_29918dfb:
 
-    # "[player] la mira malament ..."
-    "[player] la mira mal ..."
+    # "[tmpSavePlayer] la mira malament ..."
+    "[tmpSavePlayer] la mira mal ..."
 
 # game/screens/chapter0/portrait.rpy:40
 translate spanish portrait_59031160:
@@ -194,8 +194,8 @@ translate spanish portrait_7e54f3c7:
 # game/screens/chapter0/portrait.rpy:75
 translate spanish portrait_e2a30719:
 
-    # "[player] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
-    "[player] volvió a su casa paseando y pensando en los momentos anteriores que había vivido."
+    # "[tmpSavePlayer] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
+    "[tmpSavePlayer] volvió a su casa paseando y pensando en los momentos anteriores que había vivido."
 
 # game/screens/chapter0/portrait.rpy:78
 translate spanish portrait_d0d934b2:
@@ -206,8 +206,8 @@ translate spanish portrait_d0d934b2:
 # game/screens/chapter0/portrait.rpy:79
 translate spanish portrait_a7539c14:
 
-    # "[player] va sortir del saló. Tornava cap a casa tot rumiant ..."
-    "[player] salió del salón. Volvía a casa reflexionando ..."
+    # "[tmpSavePlayer] va sortir del saló. Tornava cap a casa tot rumiant ..."
+    "[tmpSavePlayer] salió del salón. Volvía a casa reflexionando ..."
 
 # game/screens/chapter0/portrait.rpy:80
 translate spanish portrait_4ce47693:
@@ -218,8 +218,8 @@ translate spanish portrait_4ce47693:
 # game/screens/chapter0/portrait.rpy:81
 translate spanish portrait_8f4f3eb1:
 
-    # "No parava de preguntar-se [player] ..."
-    "No paraba de preguntarse [player] ..."
+    # "No parava de preguntar-se [tmpSavePlayer] ..."
+    "No paraba de preguntarse [tmpSavePlayer] ..."
 
 translate spanish strings:
 

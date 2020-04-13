@@ -91,7 +91,7 @@ label puzzle:
 label puzzle_done:
     python:
         isInPuzzleSection(False)
-        portrait_done = True
+        game_state.portrait_done = True
 
     show black as bg_puzzle
     show chosen_img as puzzle_img at truecenter

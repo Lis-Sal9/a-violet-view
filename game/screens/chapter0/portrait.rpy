@@ -9,7 +9,7 @@ label portrait:
     "Alguna cosa, aparentment estranya, li havia succeït, ja que estava esmicolat completament."
     "[user] tenia curiositat, ja que no comprenia el per què, així que va decidir esbrinar-ho."
 
-    if not portrait_done:
+    if not game_state.portrait_done:
         #puzzle is not done
         scene black
         call puzzle
@@ -24,17 +24,17 @@ label portrait:
             "No":
                 "D'acord. Continues amb la mateixa història com si l'haguessis fet."
 
-    if portrait_done:
+    if game_state.portrait_done:
         $ GiveGlossaryItemToPlayer(3)
         $ ShowItems()
 
     scene salon_portrait
 
-    if astell_is_nice:
+    if game_state.astell_is_nice:
         mary_astell "Diràs 'ho hem aconseguit' ..."
         user "Però si ho he fet tot jo!"
         mary_astell "Nye, nye, nye ..."
-        "[player] la mira malament ..."
+        "[tmpSavePlayer] la mira malament ..."
         mary_astell "D'acooooord, tens raó ... però, de totes maneres, em sorprèn que tinguin el quadre de Delacroix aquí ..."
         mary_astell "El coneixes?"
 
@@ -72,16 +72,16 @@ label portrait:
         scene salon_entrance
         "I, amb aquesta conversa tan interessant, es van acomiadar al sortir del saló amb una gran abraçada."
         scene street_all
-        "[player] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
+        "[tmpSavePlayer] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
 
     else:
         user "Què deu voler dir? ..."
         scene street_all
-        "[player] va sortir del saló. Tornava cap a casa tot rumiant ..."
+        "[tmpSavePlayer] va sortir del saló. Tornava cap a casa tot rumiant ..."
         user "Què hi devia fer aquell quadre allà? Segur que em volia transmetre alguna cosa que no he sabut interpretar ..."
-        "No parava de preguntar-se [player] ..."
+        "No parava de preguntar-se [tmpSavePlayer] ..."
 
-    if astell_is_nice:
+    if game_state.astell_is_nice:
         $ GiveGlossaryItemToPlayer(8)
         $ ShowItems()
 

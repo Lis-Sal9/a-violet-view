@@ -9,8 +9,8 @@ translate catalan chapter_0_bd477029:
 # game/screens/chapter0/all.rpy:26
 translate catalan chapter_0_9710e308:
 
-    # "Bon dia, [player]! És hora de despertar-se!"
-    "Bon dia, [player]! És hora de despertar-se!"
+    # "Bon dia, [tmpSavePlayer]! És hora de despertar-se!"
+    "Bon dia, [tmpSavePlayer]! És hora de despertar-se!"
 
 # game/screens/chapter0/all.rpy:27
 translate catalan chapter_0_e6b8b084:
@@ -33,8 +33,8 @@ translate catalan chapter_0_042e450d:
 # game/screens/chapter0/all.rpy:33
 translate catalan chapter_0_9bd426e9:
 
-    # "[player] es vesteix i surt de casa."
-    "[player] es vesteix i surt de casa."
+    # "[tmpSavePlayer] es vesteix i surt de casa."
+    "[tmpSavePlayer] es vesteix i surt de casa."
 
 # game/screens/chapter0/all.rpy:36
 translate catalan chapter_0_7db5e535:
@@ -45,8 +45,8 @@ translate catalan chapter_0_7db5e535:
 # game/screens/chapter0/all.rpy:37
 translate catalan chapter_0_9bd426e9_1:
 
-    # "[player] es vesteix i surt de casa."
-    "[player] es vesteix i surt de casa."
+    # "[tmpSavePlayer] es vesteix i surt de casa."
+    "[tmpSavePlayer] es vesteix i surt de casa."
 
 # game/screens/chapter0/all.rpy:45
 translate catalan home_d053a48d:
@@ -57,8 +57,8 @@ translate catalan home_d053a48d:
 # game/screens/chapter0/all.rpy:46
 translate catalan home_512337c4:
 
-    # unknown "[player]!!!!!!"
-    unknown "[player]!!!!!!"
+    # unknown "[tmpSavePlayer]!!!!!!"
+    unknown "[tmpSavePlayer]!!!!!!"
 
 # game/screens/chapter0/all.rpy:61
 translate catalan salon_7f056f3a:
@@ -69,8 +69,8 @@ translate catalan salon_7f056f3a:
 # game/screens/chapter0/all.rpy:62
 translate catalan salon_d1645802:
 
-    # unknown "[player]!!! [player]!!! Atura't!!"
-    unknown "[player]!!! [player]!!! Atura't!!"
+    # unknown "[tmpSavePlayer]!!! [tmpSavePlayer]!!! Atura't!!"
+    unknown "[tmpSavePlayer]!!! [tmpSavePlayer]!!! Atura't!!"
 
 # game/screens/chapter0/all.rpy:63
 translate catalan salon_a3b7bf0e:
@@ -93,8 +93,8 @@ translate catalan salon_0dd80a10:
 # game/screens/chapter0/all.rpy:74
 translate catalan salon_e0e4653b:
 
-    # "[player] fuig corrent."
-    "[player] fuig corrent."
+    # "[tmpSavePlayer] fuig corrent."
+    "[tmpSavePlayer] fuig corrent."
 
 # game/screens/chapter0/all.rpy:75
 translate catalan salon_ff73427e:
@@ -387,8 +387,8 @@ translate catalan discussion_594031ba:
 # game/screens/chapter0/all.rpy:170
 translate catalan discussion_262519dd:
 
-    # "[player] passejava pel saló, quan va trobar una sala d'arts i ..."
-    "[player] passejava pel saló, quan va trobar una sala d'arts i ..."
+    # "[tmpSavePlayer] passejava pel saló, quan va trobar una sala d'arts i ..."
+    "[tmpSavePlayer] passejava pel saló, quan va trobar una sala d'arts i ..."
 
 # game/screens/chapter0/all.rpy:186
 translate catalan discussion_640dd00a:
@@ -417,8 +417,8 @@ translate catalan discussion_16164c5f:
 # game/screens/chapter0/all.rpy:192
 translate catalan discussion_5b8e66d5:
 
-    # "[player] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
-    "[player] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
+    # "[tmpSavePlayer] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
+    "[tmpSavePlayer] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
 
 # game/screens/chapter0/all.rpy:198
 translate catalan discussion_3b161497:
@@ -441,8 +441,8 @@ translate catalan discussion_47a2afa2:
 # game/screens/chapter0/all.rpy:201
 translate catalan discussion_d8910d8f:
 
-    # "I, amb un somriure i una forta abraçada, [player] s'acomiada i emprèn camí cap a casa seva."
-    "I, amb un somriure i una forta abraçada, [player] s'acomiada i emprèn camí cap a casa seva."
+    # "I, amb un somriure i una forta abraçada, [tmpSavePlayer] s'acomiada i emprèn camí cap a casa seva."
+    "I, amb un somriure i una forta abraçada, [tmpSavePlayer] s'acomiada i emprèn camí cap a casa seva."
 
 # game/screens/chapter0/all.rpy:204
 translate catalan discussion_269a04b8:
@@ -459,8 +459,8 @@ translate catalan discussion_5226f67a:
 # game/screens/chapter0/all.rpy:206
 translate catalan discussion_4d46266b:
 
-    # "I, amb decisió, [player] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
-    "I, amb decisió, [player] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
+    # "I, amb decisió, [tmpSavePlayer] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
+    "I, amb decisió, [tmpSavePlayer] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
 
 # game/screens/chapter0/all.rpy:208
 translate catalan discussion_009c7cb1:
@@ -471,8 +471,8 @@ translate catalan discussion_009c7cb1:
 # game/screens/chapter0/all.rpy:217
 translate catalan mary_wollstonecraft_afe83b73:
 
-    # "[player] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
-    "[player] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
+    # "[tmpSavePlayer] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
+    "[tmpSavePlayer] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
 
 # game/screens/chapter0/all.rpy:218
 translate catalan mary_wollstonecraft_ff1785df:
@@ -495,8 +495,8 @@ translate catalan mary_wollstonecraft_ee6653de:
 # game/screens/chapter0/all.rpy:221
 translate catalan mary_wollstonecraft_f5e7d93a:
 
-    # mary_wollstonecraft "Hola, [player]. Com es presenta avui el dia?"
-    mary_wollstonecraft "Hola, [player]. Com es presenta avui el dia?"
+    # mary_wollstonecraft "Hola, [tmpSavePlayer]. Com es presenta avui el dia?"
+    mary_wollstonecraft "Hola, [tmpSavePlayer]. Com es presenta avui el dia?"
 
 # game/screens/chapter0/all.rpy:222
 translate catalan mary_wollstonecraft_f2708e65:
@@ -585,14 +585,14 @@ translate catalan mary_wollstonecraft_1397ee34:
 # game/screens/chapter0/all.rpy:236
 translate catalan mary_wollstonecraft_30f19ec7:
 
-    # "I amb un somriure i una salutació d'adéu, [player] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
-    "I amb un somriure i una salutació d'adéu, [player] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
+    # "I amb un somriure i una salutació d'adéu, [tmpSavePlayer] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
+    "I amb un somriure i una salutació d'adéu, [tmpSavePlayer] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
 
 # game/screens/chapter0/all.rpy:250
 translate catalan editorial_c258df13:
 
-    # "Durant el camí cap a la feina, a [player] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
-    "Durant el camí cap a la feina, a [player] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
+    # "Durant el camí cap a la feina, a [tmpSavePlayer] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
+    "Durant el camí cap a la feina, a [tmpSavePlayer] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
 
 # game/screens/chapter0/all.rpy:251
 translate catalan editorial_3fefd9a8:
@@ -603,8 +603,8 @@ translate catalan editorial_3fefd9a8:
 # game/screens/chapter0/all.rpy:252
 translate catalan editorial_0113b354:
 
-    # "I, mentre [player] es fon en els seus pensaments, gairebé es passa la seva propera parada."
-    "I, mentre [player] es fon en els seus pensaments, gairebé es passa la seva propera parada."
+    # "I, mentre [tmpSavePlayer] es fon en els seus pensaments, gairebé es passa la seva propera parada."
+    "I, mentre [tmpSavePlayer] es fon en els seus pensaments, gairebé es passa la seva propera parada."
 
 # game/screens/chapter0/all.rpy:253
 translate catalan editorial_d2faee30:
@@ -615,8 +615,8 @@ translate catalan editorial_d2faee30:
 # game/screens/chapter0/all.rpy:259
 translate catalan editorial_613c50d7:
 
-    # "[player] acabava d'arribar a l'editorial."
-    "[player] acabava d'arribar a l'editorial."
+    # "[tmpSavePlayer] acabava d'arribar a l'editorial."
+    "[tmpSavePlayer] acabava d'arribar a l'editorial."
 
 # game/screens/chapter0/all.rpy:260
 translate catalan editorial_3f1653c9:
@@ -627,8 +627,8 @@ translate catalan editorial_3f1653c9:
 # game/screens/chapter0/all.rpy:265
 translate catalan editorial_ad6af774:
 
-    # suzanne_voilquin "Bon dia, [player]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
-    suzanne_voilquin "Bon dia, [player]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
+    # suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
+    suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
 
 # game/screens/chapter0/all.rpy:266
 translate catalan editorial_faa3c47f:
@@ -657,8 +657,8 @@ translate catalan editorial_8910166e:
 # game/screens/chapter0/all.rpy:280
 translate catalan editorial_868d8363:
 
-    # "Cap al tard, [player] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
-    "Cap al tard, [player] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
+    # "Cap al tard, [tmpSavePlayer] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
+    "Cap al tard, [tmpSavePlayer] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
 
 # game/screens/chapter0/all.rpy:281
 translate catalan editorial_4b34f331:

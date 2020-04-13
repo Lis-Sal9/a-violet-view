@@ -23,18 +23,18 @@ label chapter_0:
     ## Room scene ######################
     scene room
     "Riiiiiinnnngggg ..."
-    "Bon dia, [player]! És hora de despertar-se!"
+    "Bon dia, [tmpSavePlayer]! És hora de despertar-se!"
     user "Aiiiixxx ... quin dia més maco que fa avui."
     user "Què em posaré?"
 
     menu:
         "Roba casual":
             user "Ja ho tinc! Roba casual. Em ve de gust sortir a passejar una estona abans d'anar a treballar a l'editorial."
-            "[player] es vesteix i surt de casa."
+            "[tmpSavePlayer] es vesteix i surt de casa."
             call home
         "Roba elegant":
             user "Ja ho tinc! Roba elegant, que al saló solament van persones ben mudades!"
-            "[player] es vesteix i surt de casa."
+            "[tmpSavePlayer] es vesteix i surt de casa."
             call salon
 
     return
@@ -43,7 +43,7 @@ label chapter_0:
     label home:
         scene street_home
         "De sobte, sent una veu que crida ... "
-        unknown "[player]!!!!!!"
+        unknown "[tmpSavePlayer]!!!!!!"
 
         menu:
             "Et gires i saludes":
@@ -59,19 +59,19 @@ label chapter_0:
     label salon:
         scene street_all
         "De camí al saló ... "
-        unknown "[player]!!! [player]!!! Atura't!!"
+        unknown "[tmpSavePlayer]!!! [tmpSavePlayer]!!! Atura't!!"
         unknown "Que em recordes?"
 
         menu:
             "I tant!":
-                $ astell_is_nice = True
+                $ game_state.astell_is_nice = True
                 user "Com podria oblidar una cara tan bonica, Mary!"
                 "Aquella dona tan maca era Mary Astell, una amiga de la infància."
                 call mary_astell
 
             "No se m'acosti, persona estranya!":
-                $ astell_is_nice = False
-                "[player] fuig corrent."
+                $ game_state.astell_is_nice = False
+                "[tmpSavePlayer] fuig corrent."
                 "No obstant això, una intuïció dins seu li deia que aquella fisonomia li resultava estranyament familiar ..."
                 call discussion
 
@@ -103,7 +103,7 @@ label chapter_0:
         "'{i}Bluestockings{/i}, reunió de ments: debat literari amb poetes escandinaves'"
         user "Ostres, quin munt de persones han vingut! Fins i tot, homes!!"
 
-        if astell_is_nice:
+        if game_state.astell_is_nice:
             mary_astell "I tant! Tinc moltes ganes de començar el debat!"
 
         "Homes i dones havien estat congregades en aquell esdeveniment literari amb la finalitat de poder debatre com a iguals sobre literatura."
@@ -134,7 +134,7 @@ label chapter_0:
         $ GiveGlossaryItemToPlayer(2)
         $ ShowItems()
 
-        if astell_is_nice:
+        if game_state.astell_is_nice:
             mary_astell "Doncs jo estava especialment captivada per la seva amiga, Catherina Ahlgren, sobretot per aquelles cartes d'{i}Adelaide{/i} dirigides a homes i dones."
             user "És aquella dona de la qual em parlaves sovint quan tornàvem cap a casa després de l'escola?"
             mary_astell "Efectivament, ho és. Si la recordes, segur que també recordes com l'admirava per això."
@@ -164,12 +164,12 @@ label chapter_0:
         "I així transcorregué el debat, cada cop més interessant i efusiu ..."
         "Unes hores més tard, amb el debat ja finalitzat ..."
 
-        if astell_is_nice:
+        if game_state.astell_is_nice:
             mary_astell "Has vist la sala d'arts que hi ha al costat? És impressionant! Vols venir a veure-ho amb mi?"
         else:
-            "[player] passejava pel saló, quan va trobar una sala d'arts i ..."
+            "[tmpSavePlayer] passejava pel saló, quan va trobar una sala d'arts i ..."
 
-        if astell_is_nice:
+        if game_state.astell_is_nice:
             $ GiveGlossaryItemToPlayer(5)
 
         $ GiveGlossaryItemToPlayer(1)
@@ -183,28 +183,28 @@ label chapter_0:
             "Et quedes al saló investigant":
                 scene salon_portrait
 
-                if astell_is_nice:
+                if game_state.astell_is_nice:
                     user "I tant! Em quedo amb tu. Anem a donar una volta per la sala."
                     "I, de sobte ..."
                     user "Ostres! Has vist quin quadre més impactant?"
                     mary_astell "Sí, a mi també em sembla un pèl estrany ..."
 
                 else:
-                    "[player] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
+                    "[tmpSavePlayer] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
 
                 call portrait
 
             "Decideixes tornar cap a casa. Necessites descansar":
-                if astell_is_nice:
+                if game_state.astell_is_nice:
                     user "Ostres, Mary. M'hauràs de disculpar però el dia se m'ha fet massa llarg i voldria tornar a casa a descansar si no et sap greu."
                     mary_astell "Vaja ... d'acord doncs, no seré jo qui t'obligui a quedar-te! M'ha agradat molt compartir avui part del dia amb tu."
                     user "Igualment, Mary. A mi també!"
-                    "I, amb un somriure i una forta abraçada, [player] s'acomiada i emprèn camí cap a casa seva."
+                    "I, amb un somriure i una forta abraçada, [tmpSavePlayer] s'acomiada i emprèn camí cap a casa seva."
 
                 else:
                     user "Per un moment, havia pensat que aquest quadre tenia alguna cosa especial ... o curiosament estranya. Qui sap."
                     user "Millor que me'n torni a casa, que ja començo a delirar i el cansament em pesa."
-                    "I, amb decisió, [player] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
+                    "I, amb decisió, [tmpSavePlayer] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
 
         "Quan era a punt d'arribar a casa seva..."
 
@@ -215,11 +215,11 @@ label chapter_0:
 
     ## Mary Wollstonecraft and Mary Shelley scene ######################
     label mary_wollstonecraft:
-        "[player] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
+        "[tmpSavePlayer] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
         "Curiosament, la nena petita sempre anava amb una espècie de nino de drap una mica peculiar."
         user "Hola, Mary's! Com està aquesta nena tan bonica?"
         "La petita Mary fa cara de vergonya i se la tapa amb el seu {i}amic{/i}."
-        mary_wollstonecraft "Hola, [player]. Com es presenta avui el dia?"
+        mary_wollstonecraft "Hola, [tmpSavePlayer]. Com es presenta avui el dia?"
         user "La veritat és que una mica llarg. Tantes coses a fer i em queda tant poc temps per fer-les."
         mary_wollstonecraft "Ostres, és veritat, aquell viatge ..."
         user "Sí ... és demà ..."
@@ -234,9 +234,9 @@ label chapter_0:
         mary_wollstonecraft "Les dones han de poder prendre el control de les seves vides."
         user "Ostres, Mary, em deixes sense paraules. Auguro una xerrada i posterior debat força interessants."
         user "Ara me'n he d'anar, però et faig arribar els meus millors desitjos. M'agradaria de tot cor que pogués servir ni que sigui per a què una sola dona trenqui amb els lligams que l'ofeguen."
-        "I amb un somriure i una salutació d'adéu, [player] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
+        "I amb un somriure i una salutació d'adéu, [tmpSavePlayer] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
 
-        $ wollstonecraft_is_seen = True
+        $ game_state.wollstonecraft_is_seen = True
         $ GiveGlossaryItemToPlayer(6)
         $ ShowItems()
 
@@ -248,28 +248,28 @@ label chapter_0:
     ## Editorial scene ######################
     label editorial:
         scene street_all
-        "Durant el camí cap a la feina, a [player] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
+        "Durant el camí cap a la feina, a [tmpSavePlayer] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
         user "Avui és l'últim dia abans del meu viatge, s'aventura llarg."
-        "I, mentre [player] es fon en els seus pensaments, gairebé es passa la seva propera parada."
+        "I, mentre [tmpSavePlayer] es fon en els seus pensaments, gairebé es passa la seva propera parada."
         "{i}La Tribune des femmes{/i}."
 
         $ GiveGlossaryItemToPlayer(4)
         $ ShowItems()
 
         scene editorial
-        "[player] acabava d'arribar a l'editorial."
+        "[tmpSavePlayer] acabava d'arribar a l'editorial."
         "La senyora Voilquin, com de costum, estava posant ordre. Era meticulosa amb la feina i volia que tot sortís a la perfecció."
 
         $ GiveGlossaryItemToPlayer(10)
         $ ShowItems()
 
-        suzanne_voilquin "Bon dia, [player]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
+        suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
         user "D'acord, Suzanne. Vaig a fer-me un cafè i ara torno."
         "Una estona més tard ..."
         suzanne_voilquin "Benvolgudes. Us he reunit a totes per parlar-vos del proper projecte que durem a terme a l'editorial."
         suzanne_voilquin "Es tracta d'una investigació sobre l'educació de les dones, concretament de les {i}jajis{/i}."
 
-        if wollstonecraft_is_seen:
+        if game_state.wollstonecraft_is_seen:
             $ GiveGlossaryItemToPlayer(6)
 
         $ GiveGlossaryItemToPlayer(4)
@@ -279,7 +279,7 @@ label chapter_0:
         menu:
             "Segueixes escoltant perquè et resulta molt interessant":
                 call nana_asmau
-                "Cap al tard, [player] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
+                "Cap al tard, [tmpSavePlayer] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
                 "El que ningú sabia és que fos tan rellevant per a la seva vida futura allò que estava a punt de viure ... "
 
             "Desconnectes de la reunió perquè has dormit poc aquesta nit":
@@ -288,7 +288,7 @@ label chapter_0:
 
         call train
 
-        if asmau_is_seen:
+        if game_state.asmau_is_seen:
             $ GiveGlossaryItemToPlayer(7)
             $ ShowItems()
 
@@ -315,7 +315,7 @@ label chapter_0:
         suzanne_voilquin "Per aquest motiu, va decidir crear una xarxa de mestres itinerants conegudes com a {i}jajis{/i}, la missió de les quals era instruir a les dones en les seves pròpies cases."
         suzanne_voilquin "Avui dia, el llegat d'aquesta magnífica dona perviu a Nigèria i, a més a més, és un recordatori de l'anterior mandat de l'islam."
 
-        $ asmau_is_seen = True
+        $ game_state.asmau_is_seen = True
         $ GiveGlossaryItemToPlayer(7)
         $ ShowItems()
 

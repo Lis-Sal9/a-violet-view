@@ -20,22 +20,20 @@ init python:
     def ShowItemContent(i):
         item_content = GetGlossaryElementsByLanguage().get(i)["content"]
         renpy.show_screen("glossary_content", item_content)
-    glossary_unread_items = []
 
     def HasUnreadGlossayItems():
-        return len(glossary_unread_items) > 0
+        return len(game_state.glossary_items_unread) > 0
 
     def MarkGlossaryItemAsRead(item):
-        global glossary_unread_items
-        if item in glossary_unread_items:
-            glossary_unread_items.remove(item)
+        global game_state
+        if item in game_state.glossary_items_unread:
+            game_state.glossary_items_unread.remove(item)
 
     def GiveGlossaryItemToPlayer(item):
-        global items_player
-        global glossary_unread_items
-        if item not in items_player:
-            items_player.append(item)
-            glossary_unread_items.append(item)
+        global game_state
+        if item not in game_state.glossary_items:
+            game_state.glossary_items.append(item)
+            game_state.glossary_items_unread.append(item)
 
     def ShowItems():
         renpy.notify(_("You receive new glossary items."))
@@ -109,7 +107,7 @@ screen glossary():
                 for i in range(0, len(all_glossary_elements)):
                     fixed:
                         xysize 450, 40
-                        if i not in items_player:
+                        if i not in game_state.glossary_items:
                             image "images/glossary/trunk.png":
                                 align 0.5, 0.5
                         else:
@@ -121,7 +119,7 @@ screen glossary():
                                     size 17
                                     yalign 0.5
 
-                                if i in glossary_unread_items:
+                                if i in game_state.glossary_items_unread:
                                     image "images/glossary/glossary_item_new.png":
                                         yalign 0.5
 

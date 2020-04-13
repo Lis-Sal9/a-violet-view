@@ -230,7 +230,7 @@ screen quick_menu():
             imagebutton:
                 action ShowMenu('glossary')
                 hover "gui/icons/glossary_new_icon.png"
-                if len(glossary_unread_items) > 0:
+                if len(game_state.glossary_items_unread) > 0:
                     idle "gui/icons/glossary_new_icon.png"
                 else:
                     idle "gui/icons/glossary_icon.png"
@@ -507,7 +507,7 @@ style return_button:
 ################################################################################
 init -1 python:
     def FinishEnterName():
-        if not player: return
+        if not tmpSavePlayer: return
         renpy.hide_screen("name_input")
         renpy.jump_out_of_context("start")
 
@@ -570,7 +570,7 @@ screen name_input(message, ok_action):
             style "confirm_prompt"
             xalign 0.5
 
-        input default "" value VariableInputValue("player") length 20 allow "ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyz"
+        input default "" length 20 allow "ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyz" changed OnSavePlayerUpdate
 
         hbox:
             xalign 0.5

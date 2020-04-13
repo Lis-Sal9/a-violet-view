@@ -50,8 +50,8 @@ translate english portrait_eea4b899:
 # game/screens/chapter0/portrait.rpy:39
 translate english portrait_29918dfb:
 
-    # "[player] la mira malament ..."
-    "[player] puts a funny look on her ..."
+    # "[tmpSavePlayer] la mira malament ..."
+    "[tmpSavePlayer] puts a funny look on her ..."
 
 # game/screens/chapter0/portrait.rpy:40
 translate english portrait_59031160:
@@ -194,8 +194,8 @@ translate english portrait_7e54f3c7:
 # game/screens/chapter0/portrait.rpy:75
 translate english portrait_e2a30719:
 
-    # "[player] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
-    "[player] went back home by walking and thinking about the previous moments."
+    # "[tmpSavePlayer] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
+    "[tmpSavePlayer] went back home by walking and thinking about the previous moments."
 
 # game/screens/chapter0/portrait.rpy:78
 translate english portrait_d0d934b2:
@@ -206,8 +206,8 @@ translate english portrait_d0d934b2:
 # game/screens/chapter0/portrait.rpy:79
 translate english portrait_a7539c14:
 
-    # "[player] va sortir del saló. Tornava cap a casa tot rumiant ..."
-    "[player] exited from the salon and went back to home mumbling ..."
+    # "[tmpSavePlayer] va sortir del saló. Tornava cap a casa tot rumiant ..."
+    "[tmpSavePlayer] exited from the salon and went back to home mumbling ..."
 
 # game/screens/chapter0/portrait.rpy:80
 translate english portrait_4ce47693:
@@ -218,8 +218,8 @@ translate english portrait_4ce47693:
 # game/screens/chapter0/portrait.rpy:81
 translate english portrait_8f4f3eb1:
 
-    # "No parava de preguntar-se [player] ..."
-    "[player] couldn't stop wondering ..."
+    # "No parava de preguntar-se [tmpSavePlayer] ..."
+    "[tmpSavePlayer] couldn't stop wondering ..."
 
 translate english strings:
 
