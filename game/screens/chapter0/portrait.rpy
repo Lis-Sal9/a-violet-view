@@ -9,11 +9,6 @@ label portrait:
     "Alguna cosa, aparentment estranya, li havia succeït, ja que estava esmicolat completament."
     "[user] tenia curiositat, ja que no comprenia el per què, així que va decidir esbrinar-ho."
 
-    ## Set the puzzle and call its screen
-    $ chosen_img = "images/chapter0/portrait_puzzle/portrait.png"
-    $ grid_width = 10
-    $ grid_height = 10
-
     if not portrait_done:
         #puzzle is not done
         scene black
