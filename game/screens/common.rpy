@@ -355,6 +355,10 @@ screen main_menu():
     style_prefix "main_menu"
     add gui.main_menu_background
 
+    python:
+        if not _preferences.language:
+            _preferences.language = "english"
+
     frame:
         pass
 

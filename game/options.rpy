@@ -211,9 +211,6 @@ init python:
 ## Config the cursor
 define config.mouse = {"default":[ ("gui/cursor.png", 10, 10) ] }
 
-## Config the default language
-define config.language = "catalan"
-
 ## Config the quicksave
 define config.quicksave_slots = 0
 define config.has_quicksave = False
