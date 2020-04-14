@@ -10,7 +10,6 @@ label beginning:
     scene black
     show text title at truecenter
     with fade
-    play music "audio/music/chapter0.mp3" fadein 0.5
     pause 3
     hide text
     with dissolve

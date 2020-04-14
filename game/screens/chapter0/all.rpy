@@ -20,6 +20,8 @@ define elizabeth_montagu = Character("Elizabeth Montagu", color="#8CBA51")
 
 
 label chapter_0:
+    play music "audio/music/chapter0.mp3" fadein 0.5
+
     ## Room scene ######################
     scene room
     "Riiiiiinnnngggg ..."
@@ -286,12 +288,11 @@ label chapter_0:
                 user "Què llarg serà el viatge que m'espera ..."
                 "El que ningú sabia és que fos tan rellevant per a la seva vida futura allò que estava a punt de viure ... "
 
-        call train
-
         if game_state.asmau_is_seen:
             $ GiveGlossaryItemToPlayer(7)
             $ ShowItems()
 
+        call train
         return
 
 

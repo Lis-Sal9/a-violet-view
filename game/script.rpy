@@ -12,6 +12,7 @@ define user = Character("[tmpSavePlayer]", color="#6E36CA")
 define unknown = Character("...", color="#FFFFFF")
 define unknown_girl = Character("Dona", color="#FFFFFF")
 define unknown_boy = Character("Home", color="#231F20")
+define unknown_little_boy = Character("Nen", color="#231F20")
 
 ################################################################################
 
