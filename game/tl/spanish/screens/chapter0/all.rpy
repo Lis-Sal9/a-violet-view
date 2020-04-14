@@ -51,7 +51,7 @@ translate spanish chapter_0_8ab896df_1:
 translate spanish home_d053a48d:
 
     # "De sobte, sent una veu que crida ... "
-    "De pronto, escucha una vez que chilla ... "
+    "De pronto, escucha una voz que chilla ... "
 
 # game/screens/chapter0/all.rpy:46
 translate spanish home_5dfa0836:

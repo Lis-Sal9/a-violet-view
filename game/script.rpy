@@ -33,3 +33,8 @@ label start:
 
     # This ends the game.
     return
+
+
+
+screen hold_screen(seconds=0):
+    timer seconds action Return("")

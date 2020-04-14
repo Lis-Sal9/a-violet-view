@@ -18,7 +18,7 @@ label train:
     scene bg_train
     play music "audio/sound/train.mp3" fadein 0.5
     show img_train at moving
-    pause 15
+    call screen hold_screen(15)
     stop music fadeout 0.5
     call chapter_1
     return
