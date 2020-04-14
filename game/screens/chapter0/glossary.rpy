@@ -74,8 +74,13 @@ screen glossary():
             yoffset -45
             action Return()
 
-        $ title = At(Text(_("Glossary"), color='#ffffff', size=65, xoffset=150, yoffset=650), Transform(rotate=-10))
-        text (title)
+        text _("Glossary"):
+            color '#ffffff'
+            size 65
+            xalign 0.09
+            yalign 0.8
+            at transform:
+                rotate -10
 
         vbox:
             xsize 450
