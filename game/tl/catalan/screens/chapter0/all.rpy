@@ -7,7 +7,7 @@ translate catalan chapter_0_bd477029:
     "Riiiiiinnnngggg ..."
 
 # game/screens/chapter0/all.rpy:26
-translate catalan chapter_0_9710e308:
+translate catalan chapter_0_f1a38c2e:
 
     # "Bon dia, [tmpSavePlayer]! És hora de despertar-se!"
     "Bon dia, [tmpSavePlayer]! És hora de despertar-se!"
@@ -31,7 +31,7 @@ translate catalan chapter_0_042e450d:
     user "Ja ho tinc! Roba casual. Em ve de gust sortir a passejar una estona abans d'anar a treballar a l'editorial."
 
 # game/screens/chapter0/all.rpy:33
-translate catalan chapter_0_9bd426e9:
+translate catalan chapter_0_8ab896df:
 
     # "[tmpSavePlayer] es vesteix i surt de casa."
     "[tmpSavePlayer] es vesteix i surt de casa."
@@ -43,7 +43,7 @@ translate catalan chapter_0_7db5e535:
     user "Ja ho tinc! Roba elegant, que al saló solament van persones ben mudades!"
 
 # game/screens/chapter0/all.rpy:37
-translate catalan chapter_0_9bd426e9_1:
+translate catalan chapter_0_8ab896df_1:
 
     # "[tmpSavePlayer] es vesteix i surt de casa."
     "[tmpSavePlayer] es vesteix i surt de casa."
@@ -55,7 +55,7 @@ translate catalan home_d053a48d:
     "De sobte, sent una veu que crida ... "
 
 # game/screens/chapter0/all.rpy:46
-translate catalan home_512337c4:
+translate catalan home_5dfa0836:
 
     # unknown "[tmpSavePlayer]!!!!!!"
     unknown "[tmpSavePlayer]!!!!!!"
@@ -67,7 +67,7 @@ translate catalan salon_7f056f3a:
     "De camí al saló ... "
 
 # game/screens/chapter0/all.rpy:62
-translate catalan salon_d1645802:
+translate catalan salon_251ae494:
 
     # unknown "[tmpSavePlayer]!!! [tmpSavePlayer]!!! Atura't!!"
     unknown "[tmpSavePlayer]!!! [tmpSavePlayer]!!! Atura't!!"
@@ -91,7 +91,7 @@ translate catalan salon_0dd80a10:
     "Aquella dona tan maca era Mary Astell, una amiga de la infància."
 
 # game/screens/chapter0/all.rpy:74
-translate catalan salon_e0e4653b:
+translate catalan salon_9567e470:
 
     # "[tmpSavePlayer] fuig corrent."
     "[tmpSavePlayer] fuig corrent."
@@ -217,7 +217,7 @@ translate catalan discussion_f124b864:
     unknown_girl "Equivalent en això i en tot, menys en l'aparença física!"
 
 # game/screens/chapter0/all.rpy:127
-translate catalan discussion_94590003:
+translate catalan discussion_a5d78e9d:
 
     # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom!!"
     unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom vertader!!"
@@ -385,7 +385,7 @@ translate catalan discussion_594031ba:
     mary_astell "Has vist la sala d'arts que hi ha al costat? És impressionant! Vols venir a veure-ho amb mi?"
 
 # game/screens/chapter0/all.rpy:170
-translate catalan discussion_262519dd:
+translate catalan discussion_75b3dea5:
 
     # "[tmpSavePlayer] passejava pel saló, quan va trobar una sala d'arts i ..."
     "[tmpSavePlayer] passejava pel saló, quan va trobar una sala d'arts i ..."
@@ -415,7 +415,7 @@ translate catalan discussion_16164c5f:
     mary_astell "Sí, a mi també em sembla un pèl estrany ..."
 
 # game/screens/chapter0/all.rpy:192
-translate catalan discussion_5b8e66d5:
+translate catalan discussion_eb412824:
 
     # "[tmpSavePlayer] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
     "[tmpSavePlayer] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
@@ -439,7 +439,7 @@ translate catalan discussion_47a2afa2:
     user "Igualment, Mary. A mi també!"
 
 # game/screens/chapter0/all.rpy:201
-translate catalan discussion_d8910d8f:
+translate catalan discussion_6455bcb2:
 
     # "I, amb un somriure i una forta abraçada, [tmpSavePlayer] s'acomiada i emprèn camí cap a casa seva."
     "I, amb un somriure i una forta abraçada, [tmpSavePlayer] s'acomiada i emprèn camí cap a casa seva."
@@ -457,7 +457,7 @@ translate catalan discussion_5226f67a:
     user "Millor que me'n torni a casa, que ja començo a delirar i el cansament em pesa."
 
 # game/screens/chapter0/all.rpy:206
-translate catalan discussion_4d46266b:
+translate catalan discussion_2ffbaa90:
 
     # "I, amb decisió, [tmpSavePlayer] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
     "I, amb decisió, [tmpSavePlayer] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
@@ -469,7 +469,7 @@ translate catalan discussion_009c7cb1:
     "Quan era a punt d'arribar a casa seva..."
 
 # game/screens/chapter0/all.rpy:217
-translate catalan mary_wollstonecraft_afe83b73:
+translate catalan mary_wollstonecraft_2aa01f86:
 
     # "[tmpSavePlayer] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
     "[tmpSavePlayer] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
@@ -493,7 +493,7 @@ translate catalan mary_wollstonecraft_ee6653de:
     "La petita Mary fa cara de vergonya i se la tapa amb el seu {i}amic{/i}."
 
 # game/screens/chapter0/all.rpy:221
-translate catalan mary_wollstonecraft_f5e7d93a:
+translate catalan mary_wollstonecraft_2a250a8d:
 
     # mary_wollstonecraft "Hola, [tmpSavePlayer]. Com es presenta avui el dia?"
     mary_wollstonecraft "Hola, [tmpSavePlayer]. Com es presenta avui el dia?"
@@ -583,13 +583,13 @@ translate catalan mary_wollstonecraft_1397ee34:
     user "Ara me'n he d'anar, però et faig arribar els meus millors desitjos. M'agradaria de tot cor que pogués servir ni que sigui per a què una sola dona trenqui amb els lligams que l'ofeguen."
 
 # game/screens/chapter0/all.rpy:236
-translate catalan mary_wollstonecraft_30f19ec7:
+translate catalan mary_wollstonecraft_63708d11:
 
     # "I amb un somriure i una salutació d'adéu, [tmpSavePlayer] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
     "I amb un somriure i una salutació d'adéu, [tmpSavePlayer] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
 
 # game/screens/chapter0/all.rpy:250
-translate catalan editorial_c258df13:
+translate catalan editorial_68a0e2d3:
 
     # "Durant el camí cap a la feina, a [tmpSavePlayer] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
     "Durant el camí cap a la feina, a [tmpSavePlayer] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
@@ -601,7 +601,7 @@ translate catalan editorial_3fefd9a8:
     user "Avui és l'últim dia abans del meu viatge, s'aventura llarg."
 
 # game/screens/chapter0/all.rpy:252
-translate catalan editorial_0113b354:
+translate catalan editorial_957635ac:
 
     # "I, mentre [tmpSavePlayer] es fon en els seus pensaments, gairebé es passa la seva propera parada."
     "I, mentre [tmpSavePlayer] es fon en els seus pensaments, gairebé es passa la seva propera parada."
@@ -613,7 +613,7 @@ translate catalan editorial_d2faee30:
     "{i}La Tribune des femmes{/i}."
 
 # game/screens/chapter0/all.rpy:259
-translate catalan editorial_613c50d7:
+translate catalan editorial_76078424:
 
     # "[tmpSavePlayer] acabava d'arribar a l'editorial."
     "[tmpSavePlayer] acabava d'arribar a l'editorial."
@@ -625,7 +625,7 @@ translate catalan editorial_3f1653c9:
     "La senyora Voilquin, com de costum, estava posant ordre. Era meticulosa amb la feina i volia que tot sortís a la perfecció."
 
 # game/screens/chapter0/all.rpy:265
-translate catalan editorial_ad6af774:
+translate catalan editorial_28e0fede:
 
     # suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
     suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
@@ -655,7 +655,7 @@ translate catalan editorial_8910166e:
     suzanne_voilquin "Es tracta d'una investigació sobre l'educació de les dones, concretament de les {i}jajis{/i}."
 
 # game/screens/chapter0/all.rpy:280
-translate catalan editorial_868d8363:
+translate catalan editorial_cd060a97:
 
     # "Cap al tard, [tmpSavePlayer] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
     "Cap al tard, [tmpSavePlayer] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."

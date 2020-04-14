@@ -48,7 +48,7 @@ translate english portrait_eea4b899:
     mary_astell "Nye, nye, nye ..."
 
 # game/screens/chapter0/portrait.rpy:39
-translate english portrait_29918dfb:
+translate english portrait_553ef5ac:
 
     # "[tmpSavePlayer] la mira malament ..."
     "[tmpSavePlayer] puts a funny look on her ..."
@@ -192,7 +192,7 @@ translate english portrait_7e54f3c7:
     "And, with such an interesting talk, they said goodbye each other with a hug when they went out of the salon."
 
 # game/screens/chapter0/portrait.rpy:75
-translate english portrait_e2a30719:
+translate english portrait_355993b9:
 
     # "[tmpSavePlayer] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
     "[tmpSavePlayer] went back home by walking and thinking about the previous moments."
@@ -204,7 +204,7 @@ translate english portrait_d0d934b2:
     user "What does it mean? ..."
 
 # game/screens/chapter0/portrait.rpy:79
-translate english portrait_a7539c14:
+translate english portrait_008bad5b:
 
     # "[tmpSavePlayer] va sortir del saló. Tornava cap a casa tot rumiant ..."
     "[tmpSavePlayer] exited from the salon and went back to home mumbling ..."
@@ -216,7 +216,7 @@ translate english portrait_4ce47693:
     user "What was that painting doing there? For sure it was telling me something I couldn't understand ..."
 
 # game/screens/chapter0/portrait.rpy:81
-translate english portrait_8f4f3eb1:
+translate english portrait_ef092bd6:
 
     # "No parava de preguntar-se [tmpSavePlayer] ..."
     "[tmpSavePlayer] couldn't stop wondering ..."

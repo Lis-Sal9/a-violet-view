@@ -6,7 +6,7 @@ translate spanish chapter_0_bd477029:
     "Riiiiiinnnngggg ..."
 
 # game/screens/chapter0/all.rpy:26
-translate spanish chapter_0_9710e308:
+translate spanish chapter_0_f1a38c2e:
 
     # "Bon dia, [tmpSavePlayer]! És hora de despertar-se!"
     "¡Buenos días, [tmpSavePlayer]! ¡Es hora de levantarse!"
@@ -30,7 +30,7 @@ translate spanish chapter_0_042e450d:
     user "¡Ya lo tengo! Ropa casual. Tengo ganas de salir a pasear un rato antes de ir a trabajar a la editorial."
 
 # game/screens/chapter0/all.rpy:33
-translate spanish chapter_0_9bd426e9:
+translate spanish chapter_0_8ab896df:
 
     # "[tmpSavePlayer] es vesteix i surt de casa."
     "[tmpSavePlayer] se viste y sale de casa."
@@ -42,7 +42,7 @@ translate spanish chapter_0_7db5e535:
     user "¡Ya lo tengo! Ropa elegante, ¡que al salón sólo van personas muy mudadas!"
 
 # game/screens/chapter0/all.rpy:37
-translate spanish chapter_0_9bd426e9_1:
+translate spanish chapter_0_8ab896df_1:
 
     # "[tmpSavePlayer] es vesteix i surt de casa."
     "[tmpSavePlayer] se viste y sale de casa."
@@ -54,7 +54,7 @@ translate spanish home_d053a48d:
     "De pronto, escucha una vez que chilla ... "
 
 # game/screens/chapter0/all.rpy:46
-translate spanish home_512337c4:
+translate spanish home_5dfa0836:
 
     # unknown "[tmpSavePlayer]!!!!!!"
     unknown "¡¡¡¡¡¡[tmpSavePlayer]!!!!!!"
@@ -66,7 +66,7 @@ translate spanish salon_7f056f3a:
     "De camino al salón ... "
 
 # game/screens/chapter0/all.rpy:62
-translate spanish salon_d1645802:
+translate spanish salon_251ae494:
 
     # unknown "[tmpSavePlayer]!!! [tmpSavePlayer]!!! Atura't!!"
     unknown "¡¡¡[tmpSavePlayer]!!! ¡¡¡[tmpSavePlayer]!!! ¡¡Detente!!"
@@ -90,7 +90,7 @@ translate spanish salon_0dd80a10:
     "Esa mujer tan guapa era Mary Astell, una amiga de la infancia."
 
 # game/screens/chapter0/all.rpy:74
-translate spanish salon_e0e4653b:
+translate spanish salon_9567e470:
 
     # "[tmpSavePlayer] fuig corrent."
     "[tmpSavePlayer] huye corriendo."
@@ -216,7 +216,7 @@ translate spanish discussion_f124b864:
     unknown_girl "Equivalente en esto y en todo, ¡menos en la apariencia física!"
 
 # game/screens/chapter0/all.rpy:127
-translate spanish discussion_94590003:
+translate spanish discussion_a5d78e9d:
 
     # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom!!"
     unknown_boy "Tenéis razón, pero y ¿qué me decís de Charlotta Nordenflycht? Fuerte, rebelde y libre, ¡¡hasta firmaba sus obras con su verdadero nombre!!"
@@ -384,7 +384,7 @@ translate spanish discussion_594031ba:
     mary_astell "¿Has visto la sala de artes que hay al lado? ¡Es impresionante! ¿Quieres venir conmigo a verla?"
 
 # game/screens/chapter0/all.rpy:170
-translate spanish discussion_262519dd:
+translate spanish discussion_75b3dea5:
 
     # "[tmpSavePlayer] passejava pel saló, quan va trobar una sala d'arts i ..."
     "[tmpSavePlayer] paseaba por el salón, cuando encontró una sala de artes y ..."
@@ -414,7 +414,7 @@ translate spanish discussion_16164c5f:
     mary_astell "Sí, a mí también me parece un poco extraño ..."
 
 # game/screens/chapter0/all.rpy:192
-translate spanish discussion_5b8e66d5:
+translate spanish discussion_eb412824:
 
     # "[tmpSavePlayer] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
     "[tmpSavePlayer] pasea por la sala de artes cuando, de pronto, se detiene delante de un cuadro que impacta."
@@ -438,7 +438,7 @@ translate spanish discussion_47a2afa2:
     user "Igualmente, Mary. ¡A mí también!"
 
 # game/screens/chapter0/all.rpy:201
-translate spanish discussion_d8910d8f:
+translate spanish discussion_6455bcb2:
 
     # "I, amb un somriure i una forta abraçada, [tmpSavePlayer] s'acomiada i emprèn camí cap a casa seva."
     "Y, con una sonrisa y un fuerte abrazo, [tmpSavePlayer] se despide y emprende camino hacia su casa."
@@ -456,7 +456,7 @@ translate spanish discussion_5226f67a:
     user "Mejor que vuelva para casa, que ya empiezo a delirar y el cansancio me pesa."
 
 # game/screens/chapter0/all.rpy:206
-translate spanish discussion_4d46266b:
+translate spanish discussion_2ffbaa90:
 
     # "I, amb decisió, [tmpSavePlayer] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
     "Y, con decisión, [tmpSavePlayer] se despide de algunas companyeras de debate y emprende camino hacia su casa."
@@ -468,7 +468,7 @@ translate spanish discussion_009c7cb1:
     "Cuando era a punto de llegar a su casa..."
 
 # game/screens/chapter0/all.rpy:217
-translate spanish mary_wollstonecraft_afe83b73:
+translate spanish mary_wollstonecraft_2aa01f86:
 
     # "[tmpSavePlayer] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
     "[tmpSavePlayer] se gira y se encuentra a Mary Wollstonecraft y a su hija, Mary Shelley."
@@ -492,7 +492,7 @@ translate spanish mary_wollstonecraft_ee6653de:
     "La pequeña Mary pone cara de vergüenza y se la tapa con su {i}amigo{/i}."
 
 # game/screens/chapter0/all.rpy:221
-translate spanish mary_wollstonecraft_f5e7d93a:
+translate spanish mary_wollstonecraft_2a250a8d:
 
     # mary_wollstonecraft "Hola, [tmpSavePlayer]. Com es presenta avui el dia?"
     mary_wollstonecraft "Hola, [tmpSavePlayer]. ¿Cómo se presenta hoy el día?"
@@ -582,13 +582,13 @@ translate spanish mary_wollstonecraft_1397ee34:
     user "Ahora me tengo que ir, pero te transmito mis mejores deseos. Me gustaría de todo corazón que pudiera servir ni que sea para que una sola mujer rompa con los vínculos que la ahogan."
 
 # game/screens/chapter0/all.rpy:236
-translate spanish mary_wollstonecraft_30f19ec7:
+translate spanish mary_wollstonecraft_63708d11:
 
     # "I amb un somriure i una salutació d'adéu, [tmpSavePlayer] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
     "Y con una sonrisa y una salutación de adiós, [tmpSavePlayer] va dejando detrás de sus pasos a las dos Mary. Eran una pareja peculiar."
 
 # game/screens/chapter0/all.rpy:250
-translate spanish editorial_c258df13:
+translate spanish editorial_68a0e2d3:
 
     # "Durant el camí cap a la feina, a [tmpSavePlayer] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
     "De camino al trabajo, a [tmpSavePlayer] le gusta sentir el sol en la cara y la brisa soplarle el cabello."
@@ -600,7 +600,7 @@ translate spanish editorial_3fefd9a8:
     user "Hoy es el último día antes de mi viaje, se aventura largo."
 
 # game/screens/chapter0/all.rpy:252
-translate spanish editorial_0113b354:
+translate spanish editorial_957635ac:
 
     # "I, mentre [tmpSavePlayer] es fon en els seus pensaments, gairebé es passa la seva propera parada."
     "Y, mientras [tmpSavePlayer] se hunde en sus pensamientos, casi se pasa su próxima parada."
@@ -612,7 +612,7 @@ translate spanish editorial_d2faee30:
     "{i}La Tribune des femmes{/i}."
 
 # game/screens/chapter0/all.rpy:259
-translate spanish editorial_613c50d7:
+translate spanish editorial_76078424:
 
     # "[tmpSavePlayer] acabava d'arribar a l'editorial."
     "[tmpSavePlayer] acababa de llegar a la editorial."
@@ -624,7 +624,7 @@ translate spanish editorial_3f1653c9:
     "La señora Voilquin, como de costumbre, estaba poniendo orden. Era meticulosa con el trabajo y quería que todo saliese a la perfección."
 
 # game/screens/chapter0/all.rpy:265
-translate spanish editorial_ad6af774:
+translate spanish editorial_28e0fede:
 
     # suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
     suzanne_voilquin "Buenos días, [tmpSavePlayer]. Ahora mismo estaba diciendo a tus compañeras que en breve tendremos una reunión en conjunto sobre nuestro próximo proyecto."
@@ -654,7 +654,7 @@ translate spanish editorial_8910166e:
     suzanne_voilquin "Se trata de una investigación sobre la educación de las mujeres, concretamente de las {i}jajis{/i}."
 
 # game/screens/chapter0/all.rpy:280
-translate spanish editorial_868d8363:
+translate spanish editorial_cd060a97:
 
     # "Cap al tard, [tmpSavePlayer] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
     "Más tarde, [tmpSavePlayer] vuelve para casa. El día ha sido bastante cansado y tiene que cargar pilas. Al día siguiente emprenderá un largo viaje."

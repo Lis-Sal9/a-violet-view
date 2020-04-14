@@ -48,7 +48,7 @@ translate spanish portrait_eea4b899:
     mary_astell "Ñe, ñe, ñe ..."
 
 # game/screens/chapter0/portrait.rpy:39
-translate spanish portrait_29918dfb:
+translate spanish portrait_553ef5ac:
 
     # "[tmpSavePlayer] la mira malament ..."
     "[tmpSavePlayer] la mira mal ..."
@@ -192,7 +192,7 @@ translate spanish portrait_7e54f3c7:
     "Y, con esta conversación tan interesante, se despidieron al salir del salón con un gran abrazo."
 
 # game/screens/chapter0/portrait.rpy:75
-translate spanish portrait_e2a30719:
+translate spanish portrait_355993b9:
 
     # "[tmpSavePlayer] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
     "[tmpSavePlayer] volvió a su casa paseando y pensando en los momentos anteriores que había vivido."
@@ -204,7 +204,7 @@ translate spanish portrait_d0d934b2:
     user "¿Qué debe querer decir? ..."
 
 # game/screens/chapter0/portrait.rpy:79
-translate spanish portrait_a7539c14:
+translate spanish portrait_008bad5b:
 
     # "[tmpSavePlayer] va sortir del saló. Tornava cap a casa tot rumiant ..."
     "[tmpSavePlayer] salió del salón. Volvía a casa reflexionando ..."
@@ -216,7 +216,7 @@ translate spanish portrait_4ce47693:
     user "¿Qué debía hacer ese cuadro ahí? Seguro que me quería transmitir alguna cosa que no he sabido interpretar ..."
 
 # game/screens/chapter0/portrait.rpy:81
-translate spanish portrait_8f4f3eb1:
+translate spanish portrait_ef092bd6:
 
     # "No parava de preguntar-se [tmpSavePlayer] ..."
     "No paraba de preguntarse [tmpSavePlayer] ..."
