@@ -12,3 +12,4 @@ init -10 python:
         astell_is_nice = False
         wollstonecraft_is_seen = False
         asmau_is_seen = False
+        newspaper_is_read = False

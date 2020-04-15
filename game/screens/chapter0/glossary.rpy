@@ -93,8 +93,8 @@ screen glossary():
                 rotate 2
 
             imagebutton:
-                idle "images/glossary/arrow_top.png"
-                hover "images/glossary/arrow_top_hover.png"
+                idle "gui/arrows/arrow_top.png"
+                hover "gui/arrows/arrow_top_hover.png"
                 action Function(adj.change, 0)
                 xalign 0.5
 
@@ -138,8 +138,8 @@ screen glossary():
                                 action [SetVariable("current_glossary_index", i), SelectedIf(current_glossary_index == i), Function(ShowItemContent, i), Function(MarkGlossaryItemAsRead, i)]
 
             imagebutton:
-                idle "images/glossary/arrow_bottom.png"
-                hover "images/glossary/arrow_bottom_hover.png"
+                idle "gui/arrows/arrow_bottom.png"
+                hover "gui/arrows/arrow_bottom_hover.png"
                 xalign 0.5
                 action Function(adj.change, adj.get_range())
 ################################################################################

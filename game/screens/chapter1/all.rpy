@@ -4,6 +4,7 @@
 # Backgrounds
 image train_station = "images/chapter1/train_station.png"
 image near_train_station = "images/chapter1/near_train_station.png"
+image langham = "images/chapter1/langham.png"
 
 # Characters
 define liam = Character("Liam", color="#FED876")
@@ -23,6 +24,7 @@ label chapter_1:
 
     menu:
         "Vas a recollir el diari":
+            $ game_state.newspaper_is_read = True
             "[tmpSavePlayer] decideix apropar-se al nen."
             call train_station_discussion
         "No t'interessen les notícies":
@@ -53,4 +55,29 @@ label near_station:
     scene near_train_station
     play music "audio/music/chapter1.mp3" fadein 0.5
 
-    pause 60
+    "[tmpSavePlayer] atura un carruatge i s'hi munta. Es dirigeix cap al 19 de Langham Place."
+    "De camí, [tmpSavePlayer] observa els carrers, plens de gom a gom de persones agitades."
+
+    if game_state.newspaper_is_read:
+        user "Ostres, ara ho entenc tot ..."
+        "Es diu per dins, mentre observa detingudament el diari ..."
+        call screen reading_newspaper
+
+    else:
+        user "Què deu estar passant? Què boig el món ..."
+        "Es diu per dins, mentre segueix observant els carrers que transita ..."
+
+    call langham_place
+    return
+
+
+## Langham Place scene ###############################
+label langham_place:
+    scene langham
+    unknown_boy "És aquí."
+    user "Gràcies, senyor."
+    "[tmpSavePlayer] paga i baixa del carruatge. És davant del 19 de Langham Place."
+
+
+
+    return
