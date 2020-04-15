@@ -2,9 +2,10 @@
 ## This chapter explains the sufragism, mostly.
 
 # Backgrounds
-image train_station = "images/chapter1/train_station.png"
-image near_train_station = "images/chapter1/near_train_station.png"
-image langham = "images/chapter1/langham.png"
+image train_station = "images/chapter1/train_station/train_station.png"
+image near_train_station = "images/chapter1/train_station/near_train_station.png"
+image langham = "images/chapter1/langham_place/langham.png"
+image langham_inside = "images/chapter1/langham_place/langham_inside.png"
 
 # Characters
 define liam = Character("Liam", color="#FED876")
@@ -77,7 +78,8 @@ label langham_place:
     unknown_boy "És aquí."
     user "Gràcies, senyor."
     "[tmpSavePlayer] paga i baixa del carruatge. És davant del 19 de Langham Place."
-
-
+    "[tmpSavePlayer] entra a dins."
+    scene langham_inside
+    user "Ostres, què gran que és aquest lloc! És preciós!"
 
     return
