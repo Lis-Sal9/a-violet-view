@@ -2,8 +2,8 @@
 ## This chapter explains the sufragism, mostly.
 
 # Backgrounds
-image train_station = "images/chapter1/train_station/train_station.png"
-image near_train_station = "images/chapter1/train_station/near_train_station.png"
+image train_station = "images/train/train_station.png"
+image near_train_station = "images/train/near_train_station.png"
 image langham = "images/chapter1/langham_place/langham.png"
 image langham_inside = "images/chapter1/langham_place/langham_inside.png"
 
@@ -81,5 +81,8 @@ label langham_place:
     "[tmpSavePlayer] entra a dins."
     scene langham_inside
     user "Ostres, què gran que és aquest lloc! És preciós!"
+    "Mentrestant, [tmpSavePlayer] va fent una ullada a la sala d'estar. És plena de llibres que encurioseixen."
+    "Està passejant quan, de sobte ..."
 
+    call screen maze
     return

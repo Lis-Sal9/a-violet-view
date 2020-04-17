@@ -6,8 +6,8 @@
 # Train background
 label train:
 
-    image bg_train = "images/chapter0/train/train_bg.png"
-    image img_train = "images/chapter0/train/train_img.png"
+    image bg_train = "images/train/train_bg.png"
+    image img_train = "images/train/train_img.png"
 
     transform moving:
         rotate 2
