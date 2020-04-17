@@ -2,14 +2,13 @@
 ## This script defines the paper (objects panel) on maze.
 
 
-
 screen maze_paper():
-    add Solid("000")
+    $ paper = Image("images/chapter1/maze/paper.png")
+    $ all_countries = GetMazeObjectsByLanguage()
 
-    frame:
-        xalign .5 yalign .5
-        $ objects_panel = Image("images/chapter1/maze/maze_objects/objects_panel.png")
-
+    fixed:
+        add paper
+        align .5, .5
 
         imagebutton:
             idle "gui/arrows/arrow_right.png"
@@ -17,4 +16,25 @@ screen maze_paper():
             xpos 1800
             yalign .1
             yoffset -45
-            action Return()
+            action Hide("maze_paper")
+
+        vbox:
+            align .56, .55
+
+            text _("Sufragisme femení"):
+                size 30
+                align 1, 1
+                xpos 350
+                yoffset -30
+                bold True
+
+            grid 3 29:
+                transpose True
+                xspacing 30
+                yspacing 7
+                for i in range(0, len(all_countries)):
+                    $ name = all_countries.get(i)["name"] + ", " + all_countries.get(i)["year"]
+                    text name:
+                        size 13
+                add Null()
+                add Null()

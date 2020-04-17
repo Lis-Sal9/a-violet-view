@@ -6,7 +6,7 @@
 ## 1x -> object to collect. This teleports the player to one situation.
 ##############
 
-init -1 python:
+init -10 python:
     maze_matrix = [
         [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
         [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -130,3 +130,12 @@ init -1 python:
                     return
 
         coordinates = target
+
+
+    def GetMazeObjectsByLanguage():
+        if _preferences.language == "catalan":
+            return women_suffrage_countries_ca.copy()
+        elif _preferences.language == "english":
+            return women_suffrage_countries_en.copy()
+        elif _preferences.language == "spanish":
+            return women_suffrage_countries_es.copy()

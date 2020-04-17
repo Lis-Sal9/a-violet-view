@@ -6,7 +6,7 @@
 
 init -10 python:
 
-    women_suffrage_countries = {
+    women_suffrage_countries_es = {
         0: {
             "name": "Nova Zelanda",
             "year": "1893"

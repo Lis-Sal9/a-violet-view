@@ -64,7 +64,7 @@ screen glossary():
     default adj = ui.adjustment()
     $ all_glossary_elements = GetGlossaryElementsByLanguage()
 
-    frame:
+    fixed:
         xalign .5 yalign .5
         add "images/glossary/glossary.png"
 
