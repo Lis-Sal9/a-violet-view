@@ -13,3 +13,4 @@ init -10 python:
         wollstonecraft_is_seen = False
         asmau_is_seen = False
         newspaper_is_read = False
+        maze_objects = []
