@@ -8,27 +8,30 @@ init python:
     viewport_x = 19
     viewport_y = 11
 
+label maze_label:
+    call screen maze
 
 screen maze():
 
+    $ game_state.maze_objects = ["paper"]
     $ badge = Image("images/chapter1/maze/badge.png")
     $ map = Image("images/chapter1/maze/map.png")
 
     add Solid("000")
 
     fixed:
-        xpos (coordinates[0] * -48) + 936
-        ypos (coordinates[1] * -48) + 516
+        xpos (game_state.maze_coords[0] * -48) + 936
+        ypos (game_state.maze_coords[1] * -48) + 516
         add map
 
         python:
-            min_x = max(0, coordinates[0] - viewport_x)
-            min_y = max(0, coordinates[1] - viewport_y)
-            max_x = min(len(maze_matrix[min_y]), coordinates[0] + viewport_x + 1)
-            max_y = min(len(maze_matrix), coordinates[1] + viewport_y)
+            min_x = max(0, game_state.maze_coords[0] - viewport_x)
+            min_y = max(0, game_state.maze_coords[1] - viewport_y)
+            max_x = min(len(maze_matrix[min_y]), game_state.maze_coords[0] + viewport_x + 1)
+            max_y = min(len(maze_matrix), game_state.maze_coords[1] + viewport_y)
 
         for y in range(min_y, max_y):
-            if y is coordinates[1]:
+            if y is game_state.maze_coords[1]:
                 for x in range(min_x, max_x):
                     if maze_matrix[y][x]:
                         button:
@@ -37,12 +40,12 @@ screen maze():
                             ysize 48
                             xpos x * 48
                             ypos y * 48
-            elif maze_matrix[y][coordinates[0]]:
+            elif maze_matrix[y][game_state.maze_coords[0]]:
                 button:
-                    action Function(moveBadge, [coordinates[0], y])
+                    action Function(moveBadge, [game_state.maze_coords[0], y])
                     xsize 48
                     ysize 48
-                    xpos coordinates[0] * 48
+                    xpos game_state.maze_coords[0] * 48
                     ypos y * 48
 
     add badge:
@@ -87,7 +90,7 @@ screen maze():
         else:
             imagebutton:
                 idle "images/chapter1/maze/maze_objects/paper_enabled.png"
-                action Show("maze_paper")
+                action Jump("maze_paper_label")
                 pos 280, 45
 
         if "nightstick" not in game_state.maze_objects:

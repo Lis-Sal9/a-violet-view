@@ -100,82 +100,79 @@ init -10 python:
         "paper"
     ]
 
-    coordinates = [36, 0]
-
     def moveBadge(target):
         global maze_matrix
         global badge
-        global coordinates
         global game_state
 
-        if coordinates[0] is not target[0] and coordinates[1] is not target[1]:
+        game_state.maze_coords = game_state.maze_coords
+        if game_state.maze_coords[0] is not target[0] and game_state.maze_coords[1] is not target[1]:
             return
 
-        if coordinates[0] is target[0] and coordinates[1] is target[1]:
+        if game_state.maze_coords[0] is target[0] and game_state.maze_coords[1] is target[1]:
             return
 
-        if coordinates[0] is target[0]:
-            x = coordinates[0]
+        if game_state.maze_coords[0] is target[0]:
+            x = game_state.maze_coords[0]
             y_min = target[1]
             y_max = target[1]
 
-            if coordinates[1] > target[1]:
-                y_max = coordinates[1]
+            if game_state.maze_coords[1] > target[1]:
+                y_max = game_state.maze_coords[1]
             else:
-                y_min = coordinates[1]
+                y_min = game_state.maze_coords[1]
 
             for y in range(y_min, y_max):
                 if not maze_matrix[y][x]:
                     return
 
-        elif coordinates[1] is target[1]:
-            y = coordinates[1]
+        elif game_state.maze_coords[1] is target[1]:
+            y = game_state.maze_coords[1]
             x_min = target[0]
             x_max = target[0]
 
-            if coordinates[0] > target[0]:
-                x_max = coordinates[0]
+            if game_state.maze_coords[0] > target[0]:
+                x_max = game_state.maze_coords[0]
             else:
-                x_min = coordinates[0]
+                x_min = game_state.maze_coords[0]
 
             for x in range(x_min, x_max):
                 if not maze_matrix[y][x]:
                     return
 
-        if coordinates[0] is target[0]:
-            x = coordinates[0]
+        if game_state.maze_coords[0] is target[0]:
+            x = game_state.maze_coords[0]
             y_min = target[1]
             y_max = target[1]
 
-            if coordinates[1] > target[1]:
-                y_max = coordinates[1]
+            if game_state.maze_coords[1] > target[1]:
+                y_max = game_state.maze_coords[1]
             else:
-                y_min = coordinates[1]
+                y_min = game_state.maze_coords[1]
 
             for y in range(y_min, y_max + 1):
                 if maze_matrix[y][x] >= 10:
                     maze_object = MAZE_OBJECTS[maze_matrix[y][x] - 10]
                     if maze_object not in game_state.maze_objects:
                         game_state.maze_objects.append(maze_object)
-                    maze_matrix[y][x] = 1
 
-        elif coordinates[1] is target[1]:
-            y = coordinates[1]
+        elif game_state.maze_coords[1] is target[1]:
+            y = game_state.maze_coords[1]
             x_min = target[0]
             x_max = target[0]
-            if coordinates[0] > target[0]:
-                x_max = coordinates[0]
-            else:
-                x_min = coordinates[0]
 
+            if game_state.maze_coords[0] > target[0]:
+                x_max = game_state.maze_coords[0]
+            else:
+                x_min = game_state.maze_coords[0]
+                
             for x in range(x_min, x_max + 1):
                 if maze_matrix[y][x] >= 10:
                     maze_object = MAZE_OBJECTS[maze_matrix[y][x] - 10]
                     if maze_object not in game_state.maze_objects:
                         game_state.maze_objects.append(maze_object)
-                    maze_matrix[y][x] = 1
 
-        coordinates = target
+        game_state.maze_coords = target
 
 
     def GetMazeObjectsByLanguage():

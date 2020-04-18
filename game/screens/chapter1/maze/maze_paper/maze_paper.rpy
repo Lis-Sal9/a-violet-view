@@ -2,6 +2,9 @@
 ## This script defines the paper (objects panel) on maze.
 
 
+label maze_paper_label:
+    call screen maze_paper
+
 screen maze_paper():
     $ paper = Image("images/chapter1/maze/paper.png")
     $ all_countries = GetMazeObjectsByLanguage()
@@ -16,7 +19,7 @@ screen maze_paper():
             xpos 1800
             yalign .1
             yoffset -45
-            action Hide("maze_paper")
+            action Rollback()
 
         vbox:
             align .56, .55
