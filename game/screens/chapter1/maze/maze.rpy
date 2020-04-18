@@ -13,7 +13,6 @@ label maze_label:
 
 screen maze():
 
-    $ game_state.maze_objects = ["paper"]
     $ badge = Image("images/chapter1/maze/badge.png")
     $ map = Image("images/chapter1/maze/map.png")
 
