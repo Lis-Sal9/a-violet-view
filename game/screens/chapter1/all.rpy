@@ -9,6 +9,8 @@ image langham_inside = "images/chapter1/langham_place/langham_inside.png"
 
 # Characters
 define liam = Character("Liam", color="#FED876")
+define emily_davison = Character("Emily Davison", color="#F5B2AC")
+define mary_richardson = Character("Mary Richardson", color="#8CBA51")
 
 
 label chapter_1:
