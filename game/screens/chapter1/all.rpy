@@ -12,6 +12,8 @@ define liam = Character("Liam", color="#FED876")
 define emily_davison = Character("Emily Davison", color="#F5B2AC")
 define mary_richardson = Character("Mary Richardson", color="#8CBA51")
 define edith_garrud = Character("Edith Garrud", color="#231F20")
+define emmeline_pankhurst = Character("Emmeline Pankhurst", color="#FFFFFF")
+define rosa_mary_billinghurst = Character("Rosa Mary Billinghurst", color="#FF4F6F")
 
 
 label chapter_1:
