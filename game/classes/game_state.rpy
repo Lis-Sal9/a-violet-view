@@ -15,6 +15,8 @@ init -10 python:
         newspaper_is_read = False
         maze_coords = [36, 0]
         maze_objects = []
+        mill_are_nice = False
+        coverture_is_found = False
 
 
         def clear(self):
