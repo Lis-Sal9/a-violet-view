@@ -15,3 +15,18 @@ init -10 python:
         newspaper_is_read = False
         maze_coords = [36, 0]
         maze_objects = []
+
+
+        def clear(self):
+            self.player = ""
+            self.save_name = ""
+            self.chapter = 0
+            self.glossary_items = []
+            self.glossary_items_unread = []
+            self.portrait_done = False
+            self.astell_is_nice = False
+            self.wollstonecraft_is_seen = False
+            self.asmau_is_seen = False
+            self.newspaper_is_read = False
+            self.maze_coords = [36, 0]
+            self.maze_objects = []

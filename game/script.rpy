@@ -23,7 +23,7 @@ define unknown_little_boy = Character("Nen", color="#231F20")
 label start:
 
     python:
-        game_state = GameState()
+        game_state.clear()
 
     ## Beginning: once upon a time
     call beginning
