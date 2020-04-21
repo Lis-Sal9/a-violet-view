@@ -11,6 +11,10 @@ image langham_library = "images/chapter1/langham_place/langham_library.png"
 image patio = "images/chapter1/langham_place/patio.png"
 image lna_place = "images/chapter1/lna/lna_place.jpg"
 image free_women_place = "images/chapter1/free_women_place.png"
+image seneca_falls_act = "images/chapter1/seneca_falls_convention/act.png"
+image seneca_falls_full_act = "images/chapter1/seneca_falls_convention/full_act.png"
+image seneca_falls_document = "images/chapter1/seneca_falls_convention/woman_rights_convention.jpg"
+image seneca_falls_street = "images/chapter1/seneca_falls_convention/sfc_street.png"
 
 # Characters
 define liam = Character("Liam", color="#FED876")
@@ -25,6 +29,13 @@ define john_stuart_mill = Character("John Stuart Mill", color="#231F20")
 define harriet_taylor_mill = Character("Harriet Taylor Mill", color="#FFFFFF")
 define clara_campoamor = Character("Clara Campoamor", color="#FF4F6F")
 define emma_goldman = Character("Emma Goldman", color="#FED876")
+define sojourner_truth = Character("Sojourner Truth", color="#231F20")
+define charlotta_woodward = Character("Charlotte Woodward", color="#FF4F6F")
+define elizabeth_cady_stanton = Character("Elizabeth Cady Stanton", color="#F5B2AC")
+define lucrecia_mott = Character("Lucrecia Mott", color="#8CBA51")
+define susan_b_anthony = Character("Susan B. Anthony", color="#231F20")
+define lucy_stone = Character("Lucy Stone", color="#FF4F6F")
+
 
 
 label chapter_1:

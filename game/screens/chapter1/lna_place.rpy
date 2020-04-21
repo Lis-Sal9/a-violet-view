@@ -34,7 +34,11 @@ label contraception:
     user "{i}La prostitució és rebutjada per ser el mal social de la societat de tota dona respectable.{/i}"
     user "{i}No obstant això, és considerada una conseqüència inevitable de l'incontrolable desig sexual de l'home.{/i}"
     user "Quines excuses més barates, mare meva ... això és inacceptable."
+    user "Ostres, en aquest altre tríptic hi ha un anunci ..."
+    user "{i}Convenció a la capella metodista per parlar sobre els drets de les dones. Avui, a les 15:30h. {/i}"
+    user "Hi vull anar!"
     "[tmpSavePlayer] decideix agafar el número d'una revista que hi havia sobre la taula i endur-se'l."
-    "I, amb mal cos i cara de desconcert, [tmpSavePlayer] marxa d'aquella sala ... i de Langham."
-    call screen ladies_national_association
+    "I, amb mal cos i cara de desconcert, marxa d'aquella sala ... i de Langham."
+    #call screen ladies_national_association
+    call seneca_falls_convention
     return
