@@ -17,6 +17,8 @@ init -10 python:
         maze_objects = []
         mill_are_nice = False
         coverture_is_found = False
+        maze_is_seen = False
+        contraception_is_found = False
 
 
         def clear(self):
@@ -32,3 +34,7 @@ init -10 python:
             self.newspaper_is_read = False
             self.maze_coords = [36, 0]
             self.maze_objects = []
+            self.mill_are_nice = False
+            self.coverture_is_found = False
+            self.maze_is_seen = False
+            self.contraception_is_found = False

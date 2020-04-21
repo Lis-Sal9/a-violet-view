@@ -100,6 +100,8 @@ init -10 python:
         "paper"
     ]
 
+    final_coords = [79, 4]
+
     def moveBadge(target):
         global maze_matrix
         global badge
@@ -165,7 +167,7 @@ init -10 python:
                 x_max = game_state.maze_coords[0]
             else:
                 x_min = game_state.maze_coords[0]
-                
+
             for x in range(x_min, x_max + 1):
                 if maze_matrix[y][x] >= 10:
                     maze_object = MAZE_OBJECTS[maze_matrix[y][x] - 10]
@@ -173,6 +175,11 @@ init -10 python:
                         game_state.maze_objects.append(maze_object)
 
         game_state.maze_coords = target
+
+        if target == final_coords:
+            game_state.maze_is_seen = True
+            renpy.jump("patio")
+
 
 
     def GetMazeObjectsByLanguage():

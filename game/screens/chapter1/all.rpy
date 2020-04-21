@@ -8,6 +8,9 @@ image langham = "images/chapter1/langham_place/langham.png"
 image langham_inside = "images/chapter1/langham_place/langham_inside.png"
 image langham_stairs = "images/chapter1/langham_place/langham_stairs.png"
 image langham_library = "images/chapter1/langham_place/langham_library.png"
+image patio = "images/chapter1/langham_place/patio.png"
+image lna_place = "images/chapter1/lna/lna_place.jpg"
+image free_women_place = "images/chapter1/free_women_place.png"
 
 # Characters
 define liam = Character("Liam", color="#FED876")
@@ -21,6 +24,7 @@ define clara_zetkin = Character("Clara Zetkin", color="#F5B2AC")
 define john_stuart_mill = Character("John Stuart Mill", color="#231F20")
 define harriet_taylor_mill = Character("Harriet Taylor Mill", color="#FFFFFF")
 define clara_campoamor = Character("Clara Campoamor", color="#FF4F6F")
+define emma_goldman = Character("Emma Goldman", color="#FED876")
 
 
 label chapter_1:
@@ -43,7 +47,7 @@ label chapter_1:
         "No t'interessen les notícies":
             "[tmpSavePlayer] passa de llarg."
 
-    "[tmpSavePlayer] segueix caminant per l'estació fins a trobar la porta de sortida."
+    "Segueix caminant per l'estació fins a trobar la porta de sortida."
     stop music fadeout 0.5
     "[tmpSavePlayer] surt de l'estació."
     call near_station
@@ -68,8 +72,8 @@ label near_station:
     scene near_train_station
     play music "audio/music/chapter1.mp3" fadein 0.5
 
-    "[tmpSavePlayer] atura un carruatge i s'hi munta. Es dirigeix cap al 19 de Langham Place."
-    "De camí, [tmpSavePlayer] observa els carrers, plens de gom a gom de persones agitades."
+    "Un carruatge s'atura i [tmpSavePlayer] s'hi munta. Es dirigeix cap al 19 de Langham Place."
+    "De camí, va observant els carrers, plens de gom a gom de persones agitades."
 
     if game_state.newspaper_is_read:
         user "Ostres, ara ho entenc tot ..."
@@ -121,8 +125,10 @@ label langham_place:
     menu:
         "Explores la biblioteca":
             call langham_library
+            call patio
         "Interactues amb alguns personatges de la sala":
             call langham_inside_interaction
+            call patio
         "Marxes del saló":
             "[tmpSavePlayer] decideix marxar de la sala perquè considera que ja ho té tot vist."
             scene langham_stairs
@@ -131,11 +137,36 @@ label langham_place:
             "No obstant això, seguí caminant fins que va arribar a una porta, aparentment tancada."
             "[tmpSavePlayer] va girar el pom per obrir-la i ..."
             ############ CALL OPEN DOOR
-            call screen maze
 
+            if not game_state.maze_is_seen:
+                call screen maze
+            else:
+                #maze is done
+                "Ja has fet el laberint anteriorment. Vols tornar-lo a fer?"
+
+                menu:
+                    "Sí":
+                        $ game_state.maze_coords = [36, 0]
+                        call screen maze
+                    "No":
+                        "D'acord. Continues amb la mateixa història com si l'haguessis fet."
+                        call patio
+
+    return
+
+
+## Langham patio scene ###################################
+label patio:
+    scene patio
     "[tmpSavePlayer] segueix curiosejant per Langham."
-    "..."
 
+    if game_state.maze_is_seen:
+        call free_women
+    else:
+        call contraception
+        #call screen ladies_national_association
+
+    call return_to_train_station
     return
 
 
@@ -174,5 +205,51 @@ label langham_inside_interaction:
     user "I tant, no ho dubti ! Moltes gràcies per aquesta conversa tan interessant."
     clara_campoamor "A vostè ! A reveure !"
     "[tmpSavePlayer] s'acomiadà de la senyora Campoamor i es retirà de la sala."
+
+    return
+
+
+## Free Women scene ###############################
+label free_women:
+    scene free_women_place
+    "Caminant, arribà a una sala on hi havia persones que treballaven. Semblava una redacció."
+    user "Perdoni, aquest lloc és una redacció?"
+    "La dona mirà a [tmpSavePlayer] i, amb amabilitat i aprofitant l'ocasió, li va fer una mica de publicitat."
+    unknown_girl "Bon dia. El meu nom és Emma Goldman. Aquí ens reunim les persones associades a l'organització de Dones Lliures."
+    emma_goldman "La coneix?"
+    user "La veritat és que no. Me'n podria fer cinc cèntims?"
+    emma_goldman "I tant que sí! Nosaltres recolzem a mort el moviment anarcosindicalista, però els nostres companys homes segueixen mantenint aquest sexisme persistent."
+    emma_goldman "Per molt que el moviment busqui abolir la dominació i la jerarquia, ells segueixen contribuïnt a marginar-nos-hi."
+    emma_goldman "I ja no parlem de les condicions de les dones a la feina, en la cultura i en la vida en general. Però pitjor ho tenen les dones de classe treballadora."
+    emma_goldman "D'aquesta manera, hem decidit formar una organització específica per a dones per a poder desenvolupar plenament les nostres condicions i lluita política."
+    user "Ostres, per sobre de tot hauria d'estar la persona, les seves capacitats i aptituds, no si té pits i vulva o una salsitxa penjant entre les cames."
+    user "M'enfada molt aquesta situació."
+    emma_goldman "Si vol, li deixo un tríptic d'informació sobre l'organització, per si decideix afiliar-s'hi en algun moment."
+    emma_goldman "I, cortesia de la casa, li faig entrega del nou número que hem publicat recentment les altres dones de la revista i jo. Tingui."
+    user "Moltes gràcies, Emma! Molt amable!"
+    "Abans de marxar, [tmpSavePlayer] va observar detingudament de nou aquell espai. Semblava amagar alguna cosa, però alhora semblava tenir les idees molt clares."
+
+    scene langham
+    "Era hora de tornar, així que va esperar-se al carrer a què passés un carruatge."
+    "Al cap d'una estona, va aparèixer un carruatge i [tmpSavePlayer] s'hi muntà. Es dirigia a l'estació de tren."
+
+    return
+
+
+## Return to train station scene ###############################
+label return_to_train_station:
+    scene near_train_station
+    "El carruatge acaba d'arribar a l'estació. [tmpSavePlayer] baixa i paga."
+    user "Gràcies, senyor!"
+    "El senyor del carruatge mou el cap assentint i [tmpSavePlayer] entra a l'estació."
+
+    stop music fadeout 0.5
+    play music "audio/sound/train_station.mp3" fadein 0.5
+
+    scene train_station
+    "Mentre espera l'arribada del tren, recorda que té un llibre una mica peculiar. L'obre i veu que hi ha un test. Decideix fer-lo."
+    call screen women_suffrage_map
+    "Acabat el test, el tren ja era a l'andana. Marxaria en breu."
+    call train
 
     return
