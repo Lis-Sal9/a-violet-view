@@ -17,7 +17,7 @@ label seneca_falls_convention:
     user "I tant que sí ! El meu nom és [tmpSavePlayer]. Com es diu aquesta nena tan maca?"
     unknown_girl "Em dic Charlotte Woodward."
     sojourner_truth "Hola, maca. Jo em dic Sojourner Truth."
-    charlotta_woodward "Encantada de conèixer-vos. Estic molt emocionada pel dia d'avui."
+    charlotte_woodward "Encantada de conèixer-vos. Estic molt emocionada pel dia d'avui."
     sojourner_truth "Sí, jo també ho estic."
     "I així, mentre la Convenció no començava, varen estar parlant sobre les seves vides i experiències."
     "Quinze minuts després ..."
