@@ -39,8 +39,6 @@ define lucy_stone = Character("Lucy Stone", color="#FF4F6F")
 
 
 label chapter_1:
-    $ game_state.chapter = 1
-
     ## Train station scene ######################
     scene train_station
     play music "audio/sound/train_station.mp3" fadein 0.5

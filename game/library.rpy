@@ -22,6 +22,12 @@ screen library():
                 hovered ShowTransient("hover_library", img="images/library/library_chapter1.png")
                 unhovered Hide("hover_library")
 
+        #if game_state.chapter > 1:
+        #    hotspot (1180, 168, 29, 72):
+        #        clicked Jump("chapter_2")
+        #        hovered ShowTransient("hover_library", img="images/library/library_chapter2.png")
+        #        unhovered Hide("hover_library")
+
 
 screen hover_library(img):
     add img at truecenter

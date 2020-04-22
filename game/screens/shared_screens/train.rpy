@@ -3,8 +3,15 @@
 ## To change the chapter ...
 
 
+init python:
+    def setChapter():
+        global game_state
+        game_state.chapter = game_state.chapter + 1
+
+
 # Train background
 label train:
+    $ setChapter()
 
     image bg_train = "images/train/train_bg.png"
     image img_train = "images/train/train_img.png"
@@ -21,7 +28,6 @@ label train:
     call screen hold_screen(15)
     stop music fadeout 0.5
 
-    if game_state.chapter == 0:
-        call chapter_1
+    call screen library
 
     return
