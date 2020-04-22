@@ -244,8 +244,6 @@ label free_women:
     "Era hora de tornar, així que va esperar-se al carrer a què passés un carruatge."
     "Al cap d'una estona, va aparèixer un carruatge i [tmpSavePlayer] s'hi muntà. Es dirigia a l'estació de tren."
 
-    return
-
 
 ## Return to train station scene ###############################
 label return_to_train_station:
@@ -259,8 +257,8 @@ label return_to_train_station:
 
     scene train_station
     "Mentre espera l'arribada del tren, recorda que té un llibre una mica peculiar. L'obre i veu que hi ha un test. Decideix fer-lo."
-    call screen women_suffrage_map
+    call suffrage_map
+    scene train_station
     "Acabat el test, el tren ja era a l'andana. Marxaria en breu."
     call train
-
     return

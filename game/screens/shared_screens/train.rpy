@@ -20,5 +20,8 @@ label train:
     show img_train at moving
     call screen hold_screen(15)
     stop music fadeout 0.5
-    call chapter_1
+
+    if game_state.chapter == 0:
+        call chapter_1
+
     return
