@@ -137,7 +137,7 @@ label langham_place:
         "Explores la biblioteca":
             call langham_library
             call patio
-        "Interactues amb alguns personatges de la sala":
+        "Interactues amb un personatge de la sala":
             call langham_inside_interaction
             call patio
         "Marxes del saló":

@@ -43,7 +43,7 @@ translate english strings:
 
     # game/screens/common.rpy:569
     old "OK"
-    new "OK"
+    new "Agree"
 
     # game/screens/common.rpy:587
     old "Display"
