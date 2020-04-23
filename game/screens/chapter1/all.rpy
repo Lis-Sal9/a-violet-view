@@ -255,7 +255,20 @@ label return_to_train_station:
 
     scene train_station
     "Mentre espera l'arribada del tren, recorda que té un llibre una mica peculiar. L'obre i veu que hi ha un test. Decideix fer-lo."
-    call suffrage_map
+
+    if not game_state.suffrage_map_done:
+        #suffrage map is not done
+        call suffrage_map
+    else:
+        #suffrage map is done
+        "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar-lo a fer?"
+
+        menu:
+            "Sí":
+                call suffrage_map
+            "No":
+                "D'acord. Continues amb la mateixa història com si l'haguessis fet."
+
     scene train_station
     "Acabat el test, el tren ja era a l'andana. Marxaria en breu."
     call train

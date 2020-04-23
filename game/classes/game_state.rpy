@@ -19,6 +19,7 @@ init -10 python:
         coverture_is_found = False
         maze_is_seen = False
         contraception_is_found = False
+        suffrage_map_done = False
 
 
         def clear(self):
@@ -38,3 +39,4 @@ init -10 python:
             self.coverture_is_found = False
             self.maze_is_seen = False
             self.contraception_is_found = False
+            self.suffrage_map_done = False

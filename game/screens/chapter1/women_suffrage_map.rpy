@@ -36,7 +36,9 @@ init python:
         stage = stage + 1
 
     def showCorrectStars():
+        global game_state
         global num_items_gallery
+        game_state.suffrage_map_done = True
         if num_selected_correct_options < 2:
             num_items_gallery = 0
         elif num_selected_correct_options > 1 and num_selected_correct_options < 6:
