@@ -117,11 +117,12 @@ screen gallery_item_details(item):
 
         add "images/gallery/women/" + item_name + ".png":
             yalign .35
-            xoffset 20
+            xoffset 10
             yoffset 20
 
         text item["content"]:
-            size 20
+            size 17
             xysize 550, 600
             align .99, .35
-            line_spacing 10
+            xoffset 20
+            line_spacing 15

@@ -3,10 +3,10 @@
 
 
 init -10 python:
-    gallery_dict_ca = {
+    gallery_dict_en = {
         0: {
             "name": "Ada Lovelace",
-            "content": "Ada Lovelace fou la primera programadora de la història."
+            "content": "Primera programadora informàtica. Ada Lovelace estava fascinada per les màquines. Als 17 anys, va conèixer a Charles Babbage, el dissenyador de la {i}màquina diferencial{/i}, el primer ordinador de la història que podia fer càlculs amb nombres.\nImpressionada pels invents, s'interessà per la {i}màquina analítica{/i}, un dispositiu que podria assolir càlculs matemàtics més complexos. Ella va tenir la idea revolucionària de què la {i}màquina analítica{/i} tractés nombres, lletres i símbols mitjançant una sèrie d’instruccions, conegudes com a algoritmes. A més a més, va idear un sistema per repetir una seqüència d’operacions, conegut com a bucle ({i}looping{/i}).\nMalauradament, no va viure suficient per veure fer-se realitat les seves idees. Va morir als 36 anys, pobra i malalta. No va ser fins quasi un segle després que Alan Mathison Turing li reconegué la seva genialitat quan treballava amb els primers ordinadors moderns. És considerada {i}profeta de l’era informàtica{/i} per la seva perspectiva visionària sobre moltes de les funcionalitats dels ordinadors."
         },
         1: {
             "name": "gdfgd",
@@ -14,7 +14,7 @@ init -10 python:
         },
         2: {
             "name": "Frida Kahlo",
-            "content": "Hedvig Charlotta Nordenflycht, escriptora i pensadora sueca, va debutar literàriament l’any 1742 amb {i}El lament de la dona sueca{/i} ({i}Den sörjande Turturduvan{/i}), en el qual reclamava majors drets pel seu sexe. Transcorreguts uns quants anys, en 1753 va ser la primera dona admesa en la {i}Tankebyggararorden{/i} ({i}Ordre dels constructors del pensament{/i}), una agrupació literària en la ciutat d’Estocolm que aspirava a la reforma de la literatura sueca. Amb obres com {i}El deure de les dones d’utilitzar l’enginy{/i} ({i}Fruentimbers Plikt att upöfwa deras Wett{/i}, 1744) per defensar l’intel·lecte femení o {i}La Defensa de les dones{/i} ({i}Fruntimrens försvar{/i}, 1761) per refutar la misogínia, va reivindicar el dret a ser intel·lectualment activa. Ella firmava les seves obres amb el seu nom vertader."
+            "content": "Pionera de la pintura mexicana i heroïna feminista. Als 18 anys, Frida Kahlo va patir un accident de trànsit, en el qual gairebé perd la vida. Els mesos de recuperació foren durs, els passà al llit, plena d’avorriment i tristesa. Va ser en aquell moment que decidí iniciar-se en la pintura.\nQuan es trobà millor, va emparellar-se amb en Diego Rivera, amb qui no va poder tenir fills a causa de les lesions de l’accident. Aquesta gran tristesa va ser inspiració per molts dels seus quadres, igual que algunes de les seves mascotes.\nLes seves obres eren molt personals, 55 de les seves 143 pintures són autoretrats. Per costum, es dibuixava amb duresa i poc atractiva, celles espesses i bigoti.\nMentre ella es feia famosa, la seva salut empitjorà. Va morir als 47 anys. Avui dia, és un exemple a seguir perquè va demostrar que les dones, malgrat els obstacles, poden fer tot el que es proposin. És admirada per la seva creativitat, la seva audàcia i per seguir el seu cor."
         },
         3: {
             "name": "Marie Curie",
