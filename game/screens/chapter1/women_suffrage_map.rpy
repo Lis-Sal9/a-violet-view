@@ -13,7 +13,6 @@ init python:
     COLORS = ["#e5ffde", "#bbcbcb", "#9590a8", "#634b66", "#3e2739", "#18020c", "#ffffff"]
     stage = 0
     num_selected_correct_options = 0
-    num_items_gallery = 0
 
 
     def getRandomNumbers():
@@ -37,14 +36,14 @@ init python:
 
     def showCorrectStars():
         global game_state
-        global num_items_gallery
         game_state.suffrage_map_done = True
-        if num_selected_correct_options < 2:
-            num_items_gallery = 0
-        elif num_selected_correct_options > 1 and num_selected_correct_options < 6:
-            num_items_gallery = 1
-        elif num_selected_correct_options > 5 and num_selected_correct_options < 7:
-            num_items_gallery = 2
+        if num_selected_correct_options > 2 and num_selected_correct_options < 6:
+            # achieve one item
+            GiveGalleryItemToPlayer(0)
+        elif num_selected_correct_options == 6 or num_selected_correct_options == 7:
+            # achieve two items
+            GiveGalleryItemToPlayer(0)
+            GiveGalleryItemToPlayer(2)
 
 
 
@@ -175,7 +174,7 @@ screen show_map_result():
                         yalign .1
                         action NullAction()
 
-        text _("En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS'han desbloquejat [num_items_gallery] ítems a la {b}Galeria{/b}."):
+        text _("En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS'han desbloquejat " + str(len(game_state.gallery_items)) + " ítems a la {b}Galeria{/b}."):
             size 20
             yoffset 10
             xoffset 20

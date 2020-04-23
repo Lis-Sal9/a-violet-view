@@ -20,6 +20,8 @@ init -10 python:
         maze_is_seen = False
         contraception_is_found = False
         suffrage_map_done = False
+        gallery_items = []
+        gallery_items_unread = []
 
 
         def clear(self):
@@ -40,3 +42,5 @@ init -10 python:
             self.maze_is_seen = False
             self.contraception_is_found = False
             self.suffrage_map_done = False
+            self.gallery_items = []
+            self.gallery_items_unread = []

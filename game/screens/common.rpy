@@ -236,6 +236,14 @@ screen quick_menu():
                     idle "gui/icons/glossary_icon.png"
 
             imagebutton:
+                action ShowMenu('gallery')
+                hover "gui/icons/gallery_new_icon.png"
+                if len(game_state.gallery_items_unread) > 0:
+                    idle "gui/icons/gallery_new_icon.png"
+                else:
+                    idle "gui/icons/gallery_icon.png"
+
+            imagebutton:
                 if is_in_puzzle:
                     action NullAction()
                     hover "gui/icons/save.png"
@@ -526,8 +534,6 @@ screen navigation():
             textbutton _("Start") action Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))
 
         textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Gallery") action ShowMenu("gallery")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
