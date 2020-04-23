@@ -13,7 +13,7 @@ screen ladies_national_association():
         idle "images/chapter1/lna/lna_place.jpg"
         ground "images/chapter1/lna/lna_place.jpg"
         hotspot (903, 93, 277, 148):
-            clicked [Function(addContraception), Hide("ladies_national_association")]
+            clicked [Function(addContraception), Hide("ladies_national_association"), Hide("hover_lna")]
             hovered ShowTransient("hover_lna", img="images/chapter1/lna/lna_place_hover.jpg")
             unhovered Hide("hover_lna")
 
@@ -25,6 +25,10 @@ label contraception:
     scene lna_place
     "Caminant, arribà a una sala una mica peculiar. Es tractava d'una sala homenatge a l'Associació Nacional de Dames."
     "Sobre de la taula hi havia un paper ple de pols que explicava la història de l'associació."
+
+    if not game_state.contraception_is_found:
+        $ renpy.show_screen("ladies_national_association")
+
     user "{i}Aquesta associació fou creada per derogar la Llei de Malalties Infeccioses.{/i}"
     user "{i}Aquesta llei legalitza la prostitució i sotmet les dones involucrades a control policial i mèdic.{/i}"
     user "{i}Això suposa no només oficialitzar la situació, sinó un maltractament a les dones pobres.{/i}"
@@ -39,6 +43,6 @@ label contraception:
     user "Hi vull anar!"
     "[tmpSavePlayer] decideix agafar el número d'una revista que hi havia sobre la taula i endur-se'l."
     "I, amb mal cos i cara de desconcert, marxa d'aquella sala ... i de Langham."
-    #call screen ladies_national_association
+    
     call seneca_falls_convention
     return

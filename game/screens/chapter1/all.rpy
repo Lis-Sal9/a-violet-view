@@ -54,6 +54,7 @@ label chapter_1:
             "[tmpSavePlayer] decideix apropar-se al nen."
             call train_station_discussion
         "No t'interessen les notícies":
+            $ game_state.newspaper_is_read = False
             "[tmpSavePlayer] passa de llarg."
 
     "Segueix caminant per l'estació fins a trobar la porta de sortida."
@@ -117,17 +118,16 @@ label langham_place:
             user "Disculpi, senyora, em sap molt de greu. No l'he vista."
             unknown_girl "No pateixi, no passa res. Gràcies per ajudar-me a recollir els llibres."
             $ game_state.mill_are_nice = True
-            $ is_secret_revealed = False ############ review
         "Et disculpes":
             user "Disculpi, senyora, no l'he vista."
             unknown_girl "Podria almenys ajudar-me a recollir els llibres, no? O és massa demanar?"
             user "Podria, però no ho faré perquè m'ha escridassat. Que l'ajudi la seva parella."
             "I, deixant-la amb la paraula a la boca, [tmpSavePlayer] toca el dos."
-            $ is_secret_revealed = False  ############ review
+            $ game_state.mill_are_nice = False
         "Però miri per on va, senyora !!!":
             "La senyora escridassa a [tmpSavePlayer] mentre l'home que l'acompanya l'ajuda a recollir els llibres."
             user "Què histèrica !!!"
-            $ is_secret_revealed = False   ############ review
+            $ game_state.mill_are_nice = False
 
     "[tmpSavePlayer] s'aturdeix una mica, però decideix no pensar-hi més i seguir curiosejant Langham."
 
@@ -183,7 +183,7 @@ label patio:
 label langham_inside_out:
     "[tmpSavePlayer] es disposa a baixar les escales."
 
-    if is_secret_revealed: ############ review
+    if game_state.mill_are_nice and game_state.coverture_is_found:
         "Quan és al pis de baix, sent una veu coneguda que crida ..."
         unknown_girl "Vingui, vingui !!!"
         user "[tmpSavePlayer] es gira i pregunta si ha de ser la persona interessada."

@@ -38,7 +38,7 @@ screen langham_library_secret():
         idle "images/chapter1/langham_place/langham_library.png"
         ground "images/chapter1/langham_place/langham_library.png"
         hotspot (719, 587, 6, 72):
-            clicked Jump("langham_library_book")
+            clicked [Hide("langham_library_secret"), Hide("hover_langham_library"), Jump("langham_library_book")]
             hovered ShowTransient("hover_langham_library", img="images/chapter1/langham_place/langham_library_hover.png")
             unhovered Hide("hover_langham_library")
 
@@ -52,6 +52,5 @@ label langham_library_book:
     user "Al final, una dona soltera acaba tenint més drets que una dona casada. Això és el món al revés."
 
     $ game_state.coverture_is_found = True
-    $ is_secret_revealed = True  ############ review
     call langham_inside_out
     return
