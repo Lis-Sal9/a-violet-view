@@ -97,6 +97,11 @@ screen gallery_item_details(item):
     $ item_name = item["name"].replace(" ", "_")
     $ item_name = item_name.lower()
 
+    imagebutton:
+        xysize 1920, 1080
+        idle Solid("0004")
+        action NullAction()
+
     add "images/gallery/biography.png"
 
     fixed:
