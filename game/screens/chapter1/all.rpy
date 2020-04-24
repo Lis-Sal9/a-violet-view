@@ -13,7 +13,6 @@ image lna_place = "images/chapter1/lna/lna_place.jpg"
 image free_women_place = "images/chapter1/free_women_place.png"
 image seneca_falls_act = "images/chapter1/seneca_falls_convention/act.png"
 image seneca_falls_full_act = "images/chapter1/seneca_falls_convention/full_act.png"
-image seneca_falls_document = "images/chapter1/seneca_falls_convention/woman_rights_convention.jpg"
 image seneca_falls_street = "images/chapter1/seneca_falls_convention/sfc_street.png"
 
 # Characters
@@ -145,7 +144,11 @@ label langham_place:
             "Així, [tmpSavePlayer] anava pujant les escales i cada vegada més veia un passadís, fosc i molt llarg. Feia una mica de respecte."
             "No obstant això, seguí caminant fins que va arribar a una porta, aparentment tancada."
             "[tmpSavePlayer] va girar el pom per obrir-la i ..."
-            ############ CALL OPEN DOOR
+
+            scene black
+
+            play sound "audio/sound/door_creak.mp3"
+            $ renpy.movie_cutscene("video/open_door.ogg")
 
             if not game_state.maze_is_seen:
                 call screen maze

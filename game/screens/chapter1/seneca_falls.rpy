@@ -52,8 +52,9 @@ label seneca_falls_convention:
     elizabeth_cady_stanton "D'aquesta manera, donem per finalitzada la Convenció. Passeu a signar aquelles persones que ho desitgeu."
     "En aquell moment, moltes de les persones assistents varen apropar-se a les moderadores del debat per signar el document. Amb [tmpSavePlayer] es podien comptar unes cent persones."
 
-    show seneca_falls_document at truecenter
+    $ renpy.show_screen("sf_document")
     "Així, quedava signat el document que passà a conèixer-se més tard com a {i}Declaració de Sentiments i Resolucions{/i}."
+    $ renpy.hide_screen("sf_document")
 
     scene seneca_falls_street
     "[tmpSavePlayer] s'acomiadà de Sojourner i de Charlotte."
@@ -72,3 +73,18 @@ label yes_or_not_question:
             "[tmpSavePlayer] no està d'acord amb la resolució anterior."
 
     return
+
+
+screen sf_document():
+    fixed:
+        align .5,.5
+
+        image "images/chapter1/seneca_falls_convention/woman_rights_convention.png":
+            align .5, 0
+
+        text _("Amb {b}[tmpSavePlayer]{/b}\ncom a persona\nconvidada"):
+            font "fonts/my_font.ttf"
+            size 20
+            align .4, .22
+            at transform:
+                rotate -3

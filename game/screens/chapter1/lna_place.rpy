@@ -43,6 +43,7 @@ label contraception:
     user "Hi vull anar!"
     "[tmpSavePlayer] decideix agafar el número d'una revista que hi havia sobre la taula i endur-se'l."
     "I, amb mal cos i cara de desconcert, marxa d'aquella sala ... i de Langham."
-    
+
+    $ renpy.hide_screen("ladies_national_association")
     call seneca_falls_convention
     return
