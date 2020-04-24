@@ -26,7 +26,7 @@ label langham_library:
     "Aquelles dones van marxar enfurismades amb [tmpSavePlayer], com si fos una aberració no conèixer aquelles obres."
     user "Ostres, quin caràcter que té el personal ..."
 
-    if game_state.mill_are_nice:
+    if game_state.mill_are_nice and not game_state.coverture_is_found:
         $ renpy.show_screen("langham_library_secret")
 
     call langham_inside_out

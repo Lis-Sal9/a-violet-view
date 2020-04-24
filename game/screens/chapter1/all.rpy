@@ -203,6 +203,9 @@ label langham_inside_out:
 
     "[tmpSavePlayer] decidí sortir d'aquella sala."
 
+    $ renpy.hide_screen("langham_library_secret")
+    $ renpy.hide_screen("hover_langham_library")
+
     return
 
 
