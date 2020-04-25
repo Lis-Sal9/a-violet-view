@@ -30,7 +30,7 @@ label seneca_falls_convention:
     elizabeth_cady_stanton "Bona tarda a tothom. Som aquí reunides per debatre sobre els drets de les dones. L'home ha tingut tirania absoluta sobre la dona."
     lucrecia_mott "Som aquí per evidenciar que homes i dones són creats de la mateixa manera i que el Creador els atorga els mateixos drets."
     susan_b_anthony "Som aquí per combatre la manca de drets socials, civils i religiosos de les dones."
-    lucy_stone "NWSA i AWSA han unit forces per formar NAWSA. Aquesta organització que ha estat creada per advocar a favor del sufragi femení."
+    lucy_stone "NWSA i AWSA han unit forces per formar NAWSA. Aquesta organització ha estat creada per advocar a favor del sufragi femení."
     elizabeth_cady_stanton "Feta aquesta petita introducció, procedim a la votació de les resolucions."
 
     elizabeth_cady_stanton "Primera qüestió. S'ha adjudicat un codi moral diferent per homes i dones."

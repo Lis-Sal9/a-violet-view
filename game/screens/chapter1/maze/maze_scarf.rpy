@@ -21,7 +21,7 @@ label maze_scarf:
     show tragedy at truecenter
     "Mary va córrer cap allà i va presenciar l'escena."
     "Emily va ser copejada pel cavall Anmer, el cavall del Rei George V, patint lesions fatals. A la mà, duïa una espècie de mocador amb la bandera sufragista."
-    "Aquest fet va causar una forta conmoció."
+    "Aquest fet va causar una forta commoció."
     hide tragedy with fade
     show funeral at truecenter
     "Dies més tard, es va produïr un dels moments més emblemàtics del moviment sufragista."

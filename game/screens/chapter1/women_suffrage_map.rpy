@@ -75,7 +75,7 @@ screen women_suffrage_map(num):
         add Solid("0004")
 
         vbox:
-            text _("Escull l'interval :"):
+            text _("Esculli l'interval :"):
                 bold True
                 color "#ffffff"
                 size 20
