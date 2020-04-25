@@ -45,7 +45,7 @@ screen glossary_content(content):
     fixed:
         xysize 400, 600
         align 0.5, 0.5
-        offset 490, -50
+        offset 490, -70
         at transform:
             rotate -3
         text content:

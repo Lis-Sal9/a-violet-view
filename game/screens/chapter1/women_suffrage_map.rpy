@@ -183,7 +183,8 @@ screen show_map_result():
                         yalign .1
                         action NullAction()
 
-        text _("En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS'han desbloquejat " + str(len(game_state.gallery_items)) + " ítems a la {b}Galeria{/b}."):
+        $ items_length = str(len(game_state.gallery_items))
+        text _("En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS'han desbloquejat [items_length] ítems a la {b}Galeria{/b}."):
             size 20
             yoffset 10
             xoffset 20

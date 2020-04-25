@@ -154,7 +154,7 @@ translate spanish langham_place_9fc420ce:
 translate spanish langham_place_b05aa42d:
 
     # "Mentrestant, [tmpSavePlayer] va fent una ullada a la sala d'estar. És plena de llibres que encurioseixen."
-    "Mientrastanto, [tmpSavePlayer] va echando un vistazo al salón de estar. Está llena de libros que despiertan la curiosidad."
+    "Mientras tanto, [tmpSavePlayer] va echando un vistazo al salón de estar. Está llena de libros que despiertan la curiosidad."
 
 # game/screens/chapter1/all.rpy:114
 translate spanish langham_place_b409edcc:
