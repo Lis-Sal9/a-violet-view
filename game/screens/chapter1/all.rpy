@@ -156,8 +156,6 @@ label langham_place:
             scene black
 
             $ renpy.choice_for_skipping()
-
-            play sound "audio/sound/door_creak.mp3"
             $ renpy.movie_cutscene("video/open_door.ogg")
 
             if not game_state.maze_is_seen:
