@@ -2,6 +2,13 @@
 ## This is script for the quiz of women's suffrage.
 
 
+init -10 python:
+    is_in_suffrage_map = False
+    def isInSuffrageMapSection(result):
+        global is_in_suffrage_map
+        is_in_suffrage_map = result
+
+
 label suffrage_map:
     $ renpy.choice_for_skipping()
 
@@ -13,6 +20,7 @@ label suffrage_map:
         $ ShowItems()
 
     call screen women_suffrage_map(num = 0)
+    $ isInSuffrageMapSection(False)
     return
 
 init python:
@@ -57,6 +65,9 @@ init python:
 
 
 screen women_suffrage_map(num):
+    python:
+        isInSuffrageMapSection(True)
+
     add "images/chapter1/suffrage_map/suffrage_map_bg.png"
     add "images/chapter1/suffrage_map/suffrage_map_[num].png"
 

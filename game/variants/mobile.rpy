@@ -54,7 +54,7 @@ screen quick_menu():
                     idle "gui/icons/gallery_icon.png"
 
             imagebutton:
-                if is_in_puzzle:
+                if is_in_puzzle or is_in_suffrage_map or is_in_maze:
                     action NullAction()
                     hover "gui/icons/save.png"
                 else:
