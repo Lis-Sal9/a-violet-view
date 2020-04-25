@@ -6,6 +6,7 @@
 
 
 screen library():
+    $ renpy.choice_for_skipping()
     key "K_ESCAPE" action MainMenu()
 
     imagemap:

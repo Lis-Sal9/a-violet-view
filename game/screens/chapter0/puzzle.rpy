@@ -67,6 +67,7 @@ screen jigsaw_puzzle:
 
 ## Make a puzzle object. #######################################################
 label puzzle:
+    $ renpy.choice_for_skipping()
     scene puzzle_background
 
     python:
@@ -99,7 +100,7 @@ label puzzle_done:
 
     user "Ho he aconseguit!!!"
 
-    $ GiveGlossaryItemToPlayer(3)
+    $ GiveGlossaryItemToPlayer(9)
     $ ShowItems()
 
     hide bg_puzzle

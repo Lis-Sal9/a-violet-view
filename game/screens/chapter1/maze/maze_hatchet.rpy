@@ -25,5 +25,5 @@ label maze_hatchet:
     user "Jajaja, quines idees que tenen aquestes dones ..."
     "Rient i fent que no amb el cap, [tmpSavePlayer] va continuar el seu trajecte ..."
 
-    call screen maze
+    call maze_label
     return

@@ -22,6 +22,8 @@ init -10 python:
         suffrage_map_done = False
         gallery_items = []
         gallery_items_unread = []
+        campoamor_is_seen = False
+        langham_library_is_seen = False
 
 
         def clear(self):
@@ -44,3 +46,5 @@ init -10 python:
             self.suffrage_map_done = False
             self.gallery_items = []
             self.gallery_items_unread = []
+            self.campoamor_is_seen = False
+            self.langham_library_is_seen = False

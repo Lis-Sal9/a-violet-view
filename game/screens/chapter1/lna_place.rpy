@@ -5,6 +5,7 @@
 init python:
     def addContraception():
         game_state.contraception_is_found = True
+        GiveGlossaryItemToPlayer(13)
         ShowItems()
 
 
@@ -37,6 +38,10 @@ label contraception:
     user "{i}La doble moral sexual: homes amb activitat sexual i promiscuïtat ben vistes, però dones verges i pures fins el matrimoni.{/i}"
     user "{i}La prostitució és rebutjada per ser el mal social de la societat de tota dona respectable.{/i}"
     user "{i}No obstant això, és considerada una conseqüència inevitable de l'incontrolable desig sexual de l'home.{/i}"
+
+    $ GiveGlossaryItemToPlayer(11)
+    $ ShowItems()
+
     user "Quines excuses més barates, mare meva ... això és inacceptable."
     user "Ostres, en aquest altre tríptic hi ha un anunci ..."
     user "{i}Convenció a la capella metodista per parlar sobre els drets de les dones. Avui, a les 15:30h. {/i}"

@@ -36,7 +36,8 @@ init python:
             game_state.glossary_items_unread.append(item)
 
     def ShowItems():
-        renpy.notify(_("You receive new glossary items."))
+        if HasUnreadGlossayItems():
+            renpy.notify(_("You receive new glossary items."))
 
 
 # Screen to add the content of item on text element ############################
@@ -44,7 +45,7 @@ screen glossary_content(content):
     fixed:
         xysize 400, 600
         align 0.5, 0.5
-        offset 490, -30
+        offset 490, -50
         at transform:
             rotate -3
         text content:

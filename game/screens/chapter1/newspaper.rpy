@@ -4,6 +4,7 @@
 
 
 screen reading_newspaper():
+    $ renpy.choice_for_skipping()
 
     frame:
         xalign .5 yalign .5

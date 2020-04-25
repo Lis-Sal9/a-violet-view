@@ -46,5 +46,5 @@ label maze_diary:
 
     "Amb aquest mal cos i rumiant, [tmpSavePlayer] va seguir caminant ..."
 
-    call screen maze
+    call maze_label
     return

@@ -19,6 +19,10 @@ label seneca_falls_convention:
     sojourner_truth "Hola, maca. Jo em dic Sojourner Truth."
     charlotte_woodward "Encantada de conèixer-vos. Estic molt emocionada pel dia d'avui."
     sojourner_truth "Sí, jo també ho estic."
+
+    $ GiveGlossaryItemToPlayer(21)
+    $ ShowItems()
+
     "I així, mentre la Convenció no començava, varen estar parlant sobre les seves vides i experiències."
     "Quinze minuts després ..."
 
@@ -32,6 +36,25 @@ label seneca_falls_convention:
     elizabeth_cady_stanton "Primera qüestió. S'ha adjudicat un codi moral diferent per homes i dones."
     elizabeth_cady_stanton "Mitjançant aquest, les delinqüents morals (dones de la societat excloses) no són tolerades i són considerades de poca importància per l'home."
     elizabeth_cady_stanton "Estan d'acord amb què totes les lleis que impedeixen a la dona ocupar el lloc que desitgi en societat o que la posicionin per sota l'home, no tenen autoritat suficient perquè són contràries a la pròpia naturalesa?"
+
+    $ renpy.choice_for_skipping()
+    $ GiveGlossaryItemToPlayer(21)
+    $ GiveGlossaryItemToPlayer(11)
+    if game_state.contraception_is_found:
+        $ GiveGlossaryItemToPlayer(13)
+    if game_state.campoamor_is_seen:
+        $ GiveGlossaryItemToPlayer(2)
+    if game_state.langham_library_is_seen:
+        $ GiveGlossaryItemToPlayer(0)
+        $ GiveGlossaryItemToPlayer(25)
+        $ GiveGlossaryItemToPlayer(16)
+        $ GiveGlossaryItemToPlayer(19)
+        if game_state.coverture_is_found:
+            $ GiveGlossaryItemToPlayer(4)
+            if game_state.mill_are_nice:
+                $ GiveGlossaryItemToPlayer(7)
+    $ ShowItems()
+
     call yes_or_not_question
 
     lucrecia_mott "Segona qüestió. Els homes han monopolitzat quasi totes les feines rendibles i, les dones que treballen reben una remuneració escassa."
@@ -52,6 +75,9 @@ label seneca_falls_convention:
     elizabeth_cady_stanton "D'aquesta manera, donem per finalitzada la Convenció. Passeu a signar aquelles persones que ho desitgeu."
     "En aquell moment, moltes de les persones assistents varen apropar-se a les moderadores del debat per signar el document. Amb [tmpSavePlayer] es podien comptar unes cent persones."
 
+    $ renpy.choice_for_skipping()
+    $ GiveGlossaryItemToPlayer(3)
+    $ ShowItems()
     $ renpy.show_screen("sf_document")
     "Així, quedava signat el document que passà a conèixer-se més tard com a {i}Declaració de Sentiments i Resolucions{/i}."
     $ renpy.hide_screen("sf_document")

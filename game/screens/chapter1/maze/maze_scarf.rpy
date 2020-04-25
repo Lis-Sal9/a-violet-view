@@ -36,5 +36,5 @@ label maze_scarf:
     user "En aquest moviment, hi ha molt de patiment ..."
     "Amb el cos trist, [tmpSavePlayer] va seguir caminant, però amb el cap en aquella noia i el cavall ..."
 
-    call screen maze
+    call maze_label
     return

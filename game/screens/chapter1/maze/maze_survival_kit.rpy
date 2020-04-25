@@ -35,5 +35,5 @@ label maze_survival_kit:
     user "La germanor en lluites per una causa comuna és un atribut que no pot mancar."
     "D'aquesta manera, [tmpSavePlayer] ja no té cara de raresa per la caixa que ha trobat i, novament, emprèn camí."
 
-    call screen maze
+    call maze_label
     return

@@ -103,6 +103,10 @@ label langham_place:
     unknown_boy "És aquí."
     user "Gràcies, senyor."
     "[tmpSavePlayer] paga i baixa del carruatge. És davant del 19 de Langham Place."
+
+    $ GiveGlossaryItemToPlayer(12)
+    $ ShowItems()
+
     "[tmpSavePlayer] entra a dins."
     scene langham_inside
     user "Ostres, què gran que és aquest lloc! És preciós!"
@@ -111,6 +115,9 @@ label langham_place:
 
     unknown_girl "Aiiiiiaaaaaaaaaaahhhh ..."
     "[tmpSavePlayer] i aquella dona havien xocat i se li havia caigut la pila de llibres que duïa a terra."
+
+    $ GiveGlossaryItemToPlayer(12)
+    $ ShowItems()
 
     menu:
         "Ajudes a la dona a recollir els llibres":
@@ -133,6 +140,7 @@ label langham_place:
     menu:
         "Explores la biblioteca":
             call langham_library
+            $ game_state.langham_library_is_seen = True
             call patio
         "Interactues amb un personatge de la sala":
             call langham_inside_interaction
@@ -147,11 +155,13 @@ label langham_place:
 
             scene black
 
+            $ renpy.choice_for_skipping()
+
             play sound "audio/sound/door_creak.mp3"
             $ renpy.movie_cutscene("video/open_door.ogg")
 
             if not game_state.maze_is_seen:
-                call screen maze
+                call maze_label
             else:
                 #maze is done
                 "Ja has fet el laberint anteriorment. Vols tornar-lo a fer?"
@@ -159,7 +169,7 @@ label langham_place:
                 menu:
                     "Sí":
                         $ game_state.maze_coords = [36, 0]
-                        call screen maze
+                        call maze_label
                     "No":
                         "D'acord. Continues amb la mateixa història com si l'haguessis fet."
                         call patio
@@ -176,7 +186,6 @@ label patio:
         call free_women
     else:
         call contraception
-        #call screen ladies_national_association
 
     call return_to_train_station
     return
@@ -199,6 +208,10 @@ label langham_inside_out:
         harriet_taylor_mill "El meu marit i jo hem escrit plegats un assaig que tracta sobre el matrimoni i el divorci."
         user "Sembla interessant, però ara mateix he de complir una altra missió. Hauran de disculpar-me."
         john_stuart_mill "D'acord, no es preocupi pas. Era un simple oferiment. Sempre pot llegir l'assaig quan ho desitgi."
+
+        $ GiveGlossaryItemToPlayer(7)
+        $ ShowItems()
+
         "I així, [tmpSavePlayer] s'acomiadà d'aquella parella tan peculiar."
 
     "[tmpSavePlayer] decidí sortir d'aquella sala."
@@ -219,6 +232,11 @@ label langham_inside_interaction:
     clara_campoamor "No pateixi, [tmpSavePlayer]. Podrà tenir al seu abast, si així ho desitja, la meva obra titulada {i}El vot femení i jo: el meu pecat mortal{/i}."
     user "I tant, no ho dubti ! Moltes gràcies per aquesta conversa tan interessant."
     clara_campoamor "A vostè ! A reveure !"
+
+    $ GiveGlossaryItemToPlayer(2)
+    $ ShowItems()
+    $ game_state.campoamor_is_seen = True
+
     "[tmpSavePlayer] s'acomiadà de la senyora Campoamor i es retirà de la sala."
 
     return
@@ -231,6 +249,10 @@ label free_women:
     user "Perdoni, aquest lloc és una redacció?"
     "La dona mirà a [tmpSavePlayer] i, amb amabilitat i aprofitant l'ocasió, li va fer una mica de publicitat."
     unknown_girl "Bon dia. El meu nom és Emma Goldman. Aquí ens reunim les persones associades a l'organització de Dones Lliures."
+
+    $ GiveGlossaryItemToPlayer(17)
+    $ ShowItems()
+
     emma_goldman "La coneix?"
     user "La veritat és que no. Me'n podria fer cinc cèntims?"
     emma_goldman "I tant que sí! Nosaltres recolzem a mort el moviment anarcosindicalista, però els nostres companys homes segueixen mantenint aquest sexisme persistent."
@@ -242,6 +264,10 @@ label free_women:
     emma_goldman "Si vol, li deixo un tríptic d'informació sobre l'organització, per si decideix afiliar-s'hi en algun moment."
     emma_goldman "I, cortesia de la casa, li faig entrega del nou número que hem publicat recentment les altres dones de la revista i jo. Tingui."
     user "Moltes gràcies, Emma! Molt amable!"
+
+    $ GiveGlossaryItemToPlayer(6)
+    $ ShowItems()
+
     "Abans de marxar, [tmpSavePlayer] va observar detingudament de nou aquell espai. Semblava amagar alguna cosa, però alhora semblava tenir les idees molt clares."
 
     scene langham

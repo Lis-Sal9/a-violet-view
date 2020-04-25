@@ -3,6 +3,15 @@
 
 
 label suffrage_map:
+    $ renpy.choice_for_skipping()
+
+    if game_state.maze_is_seen:
+        $ GiveGlossaryItemToPlayer(17)
+        $ GiveGlossaryItemToPlayer(6)
+        if len(game_state.maze_objects) == 7:
+            $ GiveGlossaryItemToPlayer(23)
+        $ ShowItems()
+
     call screen women_suffrage_map(num = 0)
     return
 

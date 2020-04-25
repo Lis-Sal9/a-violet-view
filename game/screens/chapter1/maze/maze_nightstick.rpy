@@ -48,5 +48,5 @@ label maze_nightstick:
     user "És indignant ..."
     "[tmpSavePlayer] estava en plena ebullició, però va tractar de calmar-se. Inspira, expira, inspira, expira ... i va seguir caminant."
 
-    call screen maze
+    call maze_label
     return

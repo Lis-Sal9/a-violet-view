@@ -178,6 +178,11 @@ init -10 python:
 
         if target == final_coords:
             game_state.maze_is_seen = True
+
+            if len(game_state.maze_objects) == 7:
+                GiveGlossaryItemToPlayer(23)
+                ShowItems()
+
             renpy.jump("patio")
 
 

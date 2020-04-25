@@ -9,6 +9,7 @@ init python:
     viewport_y = 11
 
 label maze_label:
+    $ renpy.choice_for_skipping()
     call screen maze
 
 screen maze():

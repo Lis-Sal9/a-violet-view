@@ -37,5 +37,5 @@ label maze_key:
     user "Bé, també està genial fer-ho per plaer ..."
     "[tmpSavePlayer] es va quedar pensant. I, mentrestant, va seguir el seu camí ..."
 
-    call screen maze
+    call maze_label
     return

@@ -11,6 +11,7 @@ init python:
 
 # Train background
 label train:
+    $ renpy.choice_for_skipping()
     $ setChapter()
 
     image bg_train = "images/train/train_bg.png"
