@@ -103,7 +103,7 @@ screen glossary():
                 cols 1
                 xysize 450, 500
                 spacing 15
-                draggable False
+                draggable True
                 pagekeys True
                 mousewheel True
                 yinitial 0
