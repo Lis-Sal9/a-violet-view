@@ -9,12 +9,7 @@ label portrait:
     "Alguna cosa, aparentment estranya, li havia succeït, ja que estava esmicolat completament."
     "[user] tenia curiositat, ja que no comprenia el per què, així que va decidir esbrinar-ho."
 
-    ## Set the puzzle and call its screen
-    $ chosen_img = "images/chapter0/portrait_puzzle/portrait.png"
-    $ grid_width = 10
-    $ grid_height = 10
-
-    if not portrait_done:
+    if not game_state.portrait_done:
         #puzzle is not done
         scene black
         call puzzle
@@ -29,14 +24,17 @@ label portrait:
             "No":
                 "D'acord. Continues amb la mateixa història com si l'haguessis fet."
 
-    if portrait_done:
-        $ GiveGlossaryItemToPlayer(3)
+    if game_state.portrait_done:
+        $ GiveGlossaryItemToPlayer(9)
+        $ ShowItems()
 
-    if astell_is_nice:
+    scene salon_portrait
+
+    if game_state.astell_is_nice:
         mary_astell "Diràs 'ho hem aconseguit' ..."
         user "Però si ho he fet tot jo!"
         mary_astell "Nye, nye, nye ..."
-        "[player] la mira malament ..."
+        "[tmpSavePlayer] la mira malament ..."
         mary_astell "D'acooooord, tens raó ... però, de totes maneres, em sorprèn que tinguin el quadre de Delacroix aquí ..."
         mary_astell "El coneixes?"
 
@@ -68,18 +66,23 @@ label portrait:
         mary_astell "I recordem que la Il·lustració promovia els principis igualitaris i l'individualisme."
         user "Sí, crec que n'havia escoltat a parlar d'aquesta obra, però no sabia ben bé el seu origen ni res la seva autora ..."
 
-        $ GiveGlossaryItemToPlayer(8)
+        $ GiveGlossaryItemToPlayer(20)
+        $ ShowItems()
 
+        scene salon_entrance
         "I, amb aquesta conversa tan interessant, es van acomiadar al sortir del saló amb una gran abraçada."
-        "[player] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
+        scene street_all
+        "[tmpSavePlayer] va tornar a casa seva passejant i pensant en els moments anteriors que havia viscut."
 
     else:
         user "Què deu voler dir? ..."
-        "[player] va sortir del saló. Tornava cap a casa tot rumiant ..."
+        scene street_all
+        "[tmpSavePlayer] va sortir del saló. Tornava cap a casa tot rumiant ..."
         user "Què hi devia fer aquell quadre allà? Segur que em volia transmetre alguna cosa que no he sabut interpretar ..."
-        "No parava de preguntar-se [player] ..."
+        "No parava de preguntar-se [tmpSavePlayer] ..."
 
-    if astell_is_nice:
-        $ GiveGlossaryItemToPlayer(8)
+    if game_state.astell_is_nice:
+        $ GiveGlossaryItemToPlayer(20)
+        $ ShowItems()
 
     return

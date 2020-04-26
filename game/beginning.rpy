@@ -10,6 +10,6 @@ label beginning:
     scene black
     show text title at truecenter
     with fade
-    pause 3
+    call screen hold_screen(3)
     hide text
     with dissolve

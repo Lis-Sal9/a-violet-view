@@ -88,7 +88,7 @@ translate english strings:
 
     # renpy/common/00library.rpy:195 (no translate this one)
     old "Skip Mode"
-    new "Skip Mode"
+    new " "
 
     # renpy/common/00library.rpy:281
     old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."

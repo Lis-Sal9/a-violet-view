@@ -7,10 +7,10 @@ translate english chapter_0_bd477029:
     "Riiiiiinnnngggg ..."
 
 # game/screens/chapter0/all.rpy:26
-translate english chapter_0_9710e308:
+translate english chapter_0_f1a38c2e:
 
-    # "Bon dia, [player]! És hora de despertar-se!"
-    "Good morning [player]! Time to wake up!"
+    # "Bon dia, [tmpSavePlayer]! És hora de despertar-se!"
+    "Good morning [tmpSavePlayer]! Time to wake up!"
 
 # game/screens/chapter0/all.rpy:27
 translate english chapter_0_e6b8b084:
@@ -31,10 +31,10 @@ translate english chapter_0_042e450d:
     user "Got it! Casual clothes. I fancy to take a walk for a while before going to work at the publishing house."
 
 # game/screens/chapter0/all.rpy:33
-translate english chapter_0_9bd426e9:
+translate english chapter_0_8ab896df:
 
-    # "[player] es vesteix i surt de casa."
-    "[player] dresses up and heads out of home."
+    # "[tmpSavePlayer] es vesteix i surt de casa."
+    "[tmpSavePlayer] dresses up and heads out of home."
 
 # game/screens/chapter0/all.rpy:36
 translate english chapter_0_7db5e535:
@@ -43,10 +43,10 @@ translate english chapter_0_7db5e535:
     user "Got it! Fancy clothes, because there can only go stylish people to the salon!"
 
 # game/screens/chapter0/all.rpy:37
-translate english chapter_0_9bd426e9_1:
+translate english chapter_0_8ab896df_1:
 
-    # "[player] es vesteix i surt de casa."
-    "[player] dresses up and heads out of home."
+    # "[tmpSavePlayer] es vesteix i surt de casa."
+    "[tmpSavePlayer] dresses up and heads out of home."
 
 # game/screens/chapter0/all.rpy:45
 translate english home_d053a48d:
@@ -55,10 +55,10 @@ translate english home_d053a48d:
     "Suddenly, you hear a voice that screams ..."
 
 # game/screens/chapter0/all.rpy:46
-translate english home_512337c4:
+translate english home_5dfa0836:
 
-    # unknown "[player]!!!!!!"
-    unknown "[player]!!!!!!"
+    # unknown "[tmpSavePlayer]!!!!!!"
+    unknown "[tmpSavePlayer]!!!!!!"
 
 # game/screens/chapter0/all.rpy:61
 translate english salon_7f056f3a:
@@ -67,10 +67,10 @@ translate english salon_7f056f3a:
     "On the way to the salon ..."
 
 # game/screens/chapter0/all.rpy:62
-translate english salon_d1645802:
+translate english salon_251ae494:
 
-    # unknown "[player]!!! [player]!!! Atura't!!"
-    unknown "[player]!!! [player]!!! Stop!!"
+    # unknown "[tmpSavePlayer]!!! [tmpSavePlayer]!!! Atura't!!"
+    unknown "[tmpSavePlayer]!!! [tmpSavePlayer]!!! Stop!!"
 
 # game/screens/chapter0/all.rpy:63
 translate english salon_a3b7bf0e:
@@ -91,10 +91,10 @@ translate english salon_0dd80a10:
     "That cute woman was Mary Astell, a friend from childhood."
 
 # game/screens/chapter0/all.rpy:74
-translate english salon_e0e4653b:
+translate english salon_9567e470:
 
-    # "[player] fuig corrent."
-    "[player] runs away."
+    # "[tmpSavePlayer] fuig corrent."
+    "[tmpSavePlayer] runs away."
 
 # game/screens/chapter0/all.rpy:75
 translate english salon_ff73427e:
@@ -217,10 +217,10 @@ translate english discussion_f124b864:
     unknown_girl "Equal in that and in everything, but in physical appearance!"
 
 # game/screens/chapter0/all.rpy:127
-translate english discussion_94590003:
+translate english discussion_a5d78e9d:
 
-    # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, valenta i lliure, fins i tot signava els seus escrits amb el seu nom!!"
-    unknown_boy "You are right, but what can you tell me about Charlotta Nordenflycht? Strong, brave and free, she even signed all her writing with her own birthname!!"
+    # unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom!!"
+    unknown_boy "You are right, but what can you tell me about Charlotta Nordenflycht? Strong, rebel and free, she even signed all her writing with her own birthname!!"
 
 # game/screens/chapter0/all.rpy:128
 translate english discussion_9a1695e0:
@@ -385,10 +385,10 @@ translate english discussion_594031ba:
     mary_astell "Have you seen the arts room next to here? It's impressive! Would you come and see it with me?"
 
 # game/screens/chapter0/all.rpy:170
-translate english discussion_262519dd:
+translate english discussion_75b3dea5:
 
-    # "[player] passejava pel saló, quan va trobar una sala d'arts i ..."
-    "[player] walked by the salon, when an arts room went across the sight ..."
+    # "[tmpSavePlayer] passejava pel saló, quan va trobar una sala d'arts i ..."
+    "[tmpSavePlayer] walked by the salon, when an arts room went across the sight ..."
 
 # game/screens/chapter0/all.rpy:186
 translate english discussion_640dd00a:
@@ -415,10 +415,10 @@ translate english discussion_16164c5f:
     mary_astell "Yes, it looks something strange to me too ..."
 
 # game/screens/chapter0/all.rpy:192
-translate english discussion_5b8e66d5:
+translate english discussion_eb412824:
 
-    # "[player] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
-    "[player] walks by the arts room when suddenly stopped in front of a shocking painting."
+    # "[tmpSavePlayer] passeja per la sala d'arts quan, de sobte, s'atura davant d'un quadre que l'impacta."
+    "[tmpSavePlayer] walks by the arts room when suddenly stopped in front of a shocking painting."
 
 # game/screens/chapter0/all.rpy:198
 translate english discussion_3b161497:
@@ -439,10 +439,10 @@ translate english discussion_47a2afa2:
     user "Me too, Mary. Me too!"
 
 # game/screens/chapter0/all.rpy:201
-translate english discussion_d8910d8f:
+translate english discussion_6455bcb2:
 
-    # "I, amb un somriure i una forta abraçada, [player] s'acomiada i emprèn camí cap a casa seva."
-    "And, with a smile and a strong hug, [player] says goodbye and take the way back to home."
+    # "I, amb un somriure i una forta abraçada, [tmpSavePlayer] s'acomiada i emprèn camí cap a casa seva."
+    "And, with a smile and a strong hug, [tmpSavePlayer] says goodbye and take the way back to home."
 
 # game/screens/chapter0/all.rpy:204
 translate english discussion_269a04b8:
@@ -457,22 +457,22 @@ translate english discussion_5226f67a:
     user "It will be nice if I go back home, I'm so tired and about to fade out."
 
 # game/screens/chapter0/all.rpy:206
-translate english discussion_4d46266b:
+translate english discussion_2ffbaa90:
 
-    # "I, amb decisió, [player] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
-    "And, with decission, [player] says goodbye to some fellows from the debate and takes route to home."
+    # "I, amb decisió, [tmpSavePlayer] s'acomiada d'algunes companyes de debat i emprèn camí cap a casa seva."
+    "And, with decission, [tmpSavePlayer] says goodbye to some fellows from the debate and takes route to home."
 
 # game/screens/chapter0/all.rpy:208
 translate english discussion_009c7cb1:
 
     # "Quan era a punt d'arribar a casa seva..."
-    "When [player] was about to get home..."
+    "When [tmpSavePlayer] was about to get home..."
 
 # game/screens/chapter0/all.rpy:217
-translate english mary_wollstonecraft_afe83b73:
+translate english mary_wollstonecraft_2aa01f86:
 
-    # "[player] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
-    "[player] turns around and suddenly encounters Mary Wollstonecraft and her daughter, Mary Shelley."
+    # "[tmpSavePlayer] es gira i es troba a Mary Wollstonecraft i a la seva filla, la Mary Shelley."
+    "[tmpSavePlayer] turns around and suddenly encounters Mary Wollstonecraft and her daughter, Mary Shelley."
 
 # game/screens/chapter0/all.rpy:218
 translate english mary_wollstonecraft_ff1785df:
@@ -493,10 +493,10 @@ translate english mary_wollstonecraft_ee6653de:
     "The little Mary blushes and covers her face with her {i}friend{/i}."
 
 # game/screens/chapter0/all.rpy:221
-translate english mary_wollstonecraft_f5e7d93a:
+translate english mary_wollstonecraft_2a250a8d:
 
-    # mary_wollstonecraft "Hola, [player]. Com es presenta avui el dia?"
-    mary_wollstonecraft "Hello, [player]. How is your day?"
+    # mary_wollstonecraft "Hola, [tmpSavePlayer]. Com es presenta avui el dia?"
+    mary_wollstonecraft "Hello, [tmpSavePlayer]. How is your day?"
 
 # game/screens/chapter0/all.rpy:222
 translate english mary_wollstonecraft_f2708e65:
@@ -583,16 +583,16 @@ translate english mary_wollstonecraft_1397ee34:
     user "Now I must leave, but my best wishes are with you. I'd really wish that you could inspire women to cut the ties that oppresses them."
 
 # game/screens/chapter0/all.rpy:236
-translate english mary_wollstonecraft_30f19ec7:
+translate english mary_wollstonecraft_63708d11:
 
-    # "I amb un somriure i una salutació d'adéu, [player] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
-    "And with a smile and a goodbye, [player] left behind both Marys. They are such a particular duo."
+    # "I amb un somriure i una salutació d'adéu, [tmpSavePlayer] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
+    "And with a smile and a goodbye, [tmpSavePlayer] left behind both Marys. They are such a particular duo."
 
 # game/screens/chapter0/all.rpy:250
-translate english editorial_c258df13:
+translate english editorial_68a0e2d3:
 
-    # "Durant el camí cap a la feina, a [player] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
-    "Along the way to work, [player] likes to feel the sun in the face and the breeze blowing on the hair."
+    # "Durant el camí cap a la feina, a [tmpSavePlayer] li agrada notar el sol a la cara i la brisa com li bufa els cabells."
+    "Along the way to work, [tmpSavePlayer] likes to feel the sun in the face and the breeze blowing on the hair."
 
 # game/screens/chapter0/all.rpy:251
 translate english editorial_3fefd9a8:
@@ -601,10 +601,10 @@ translate english editorial_3fefd9a8:
     user "Today is the last day before my journey, it's going to be a long day."
 
 # game/screens/chapter0/all.rpy:252
-translate english editorial_0113b354:
+translate english editorial_957635ac:
 
-    # "I, mentre [player] es fon en els seus pensaments, gairebé es passa la seva propera parada."
-    "And, meanwhile [player] fades into these thoughts, nearly misses the office's entrance."
+    # "I, mentre [tmpSavePlayer] es fon en els seus pensaments, gairebé es passa la seva propera parada."
+    "And, meanwhile [tmpSavePlayer] fades into these thoughts, nearly misses the office's entrance."
 
 # game/screens/chapter0/all.rpy:253
 translate english editorial_d2faee30:
@@ -613,10 +613,10 @@ translate english editorial_d2faee30:
     "{i}La Tribune des femmes{/i}."
 
 # game/screens/chapter0/all.rpy:259
-translate english editorial_613c50d7:
+translate english editorial_76078424:
 
-    # "[player] acabava d'arribar a l'editorial."
-    "[player] just arrived to the publishing house."
+    # "[tmpSavePlayer] acabava d'arribar a l'editorial."
+    "[tmpSavePlayer] just arrived to the publishing house."
 
 # game/screens/chapter0/all.rpy:260
 translate english editorial_3f1653c9:
@@ -625,10 +625,10 @@ translate english editorial_3f1653c9:
     "Ms. Voilquin was putting everyone in order, as always. She was meticulous with the job and wanted that everything was perfect."
 
 # game/screens/chapter0/all.rpy:265
-translate english editorial_ad6af774:
+translate english editorial_28e0fede:
 
-    # suzanne_voilquin "Bon dia, [player]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
-    suzanne_voilquin "Good morning, [player]. Right now I was telling your colleagues that in a brief time we have a meeting about our new project."
+    # suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
+    suzanne_voilquin "Good morning, [tmpSavePlayer]. Right now I was telling your colleagues that in a brief time we have a meeting about our new project."
 
 # game/screens/chapter0/all.rpy:266
 translate english editorial_faa3c47f:
@@ -655,10 +655,10 @@ translate english editorial_8910166e:
     suzanne_voilquin "It is a research about education for women, precisely about the {i}jajis{/i}."
 
 # game/screens/chapter0/all.rpy:280
-translate english editorial_868d8363:
+translate english editorial_cd060a97:
 
-    # "Cap al tard, [player] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
-    "About at the afternoon, [player] heads back to home. The day was so long and tiring and tomorrow there is an even longer journey."
+    # "Cap al tard, [tmpSavePlayer] torna cap a casa. El dia ha estat força cansat i ha de carregar piles. L'endemà emprendrà un llarg viatge."
+    "About at the afternoon, [tmpSavePlayer] heads back to home. The day was so long and tiring and tomorrow there is an even longer journey."
 
 # game/screens/chapter0/all.rpy:281
 translate english editorial_4b34f331:

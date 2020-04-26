@@ -22,10 +22,46 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action ShowMenu()
+            imagebutton:
+                action Show('pause')
+                idle "gui/icons/pause.png"
+                hover "gui/icons/pause_border.png"
+
+            imagebutton:
+                action Rollback()
+                idle "gui/icons/return.png"
+                hover "gui/icons/return_border.png"
+
+            imagebutton:
+                action Skip() alternate Skip(fast=True, confirm=True)
+                idle "gui/icons/skip_action.png"
+                hover "gui/icons/skip_action_border.png"
+
+            imagebutton:
+                action ShowMenu('glossary')
+                hover "gui/icons/glossary_new_icon.png"
+                if len(game_state.glossary_items_unread) > 0:
+                    idle "gui/icons/glossary_new_icon.png"
+                else:
+                    idle "gui/icons/glossary_icon.png"
+
+            imagebutton:
+                action ShowMenu('gallery')
+                hover "gui/icons/gallery_new_icon.png"
+                if len(game_state.gallery_items_unread) > 0:
+                    idle "gui/icons/gallery_new_icon.png"
+                else:
+                    idle "gui/icons/gallery_icon.png"
+
+            imagebutton:
+                if is_in_puzzle or is_in_suffrage_map or is_in_maze:
+                    action NullAction()
+                    hover "gui/icons/save.png"
+                else:
+                    action [Show(screen="save_menu"), FileTakeScreenshot()]
+                    hover "gui/icons/save_border.png"
+                idle "gui/icons/save.png"
+
 
 style window:
     variant "small"

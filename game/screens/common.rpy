@@ -212,32 +212,50 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            button:
+            imagebutton:
                 action Show('pause')
-                add "gui/icons/pause.png"
+                idle "gui/icons/pause.png"
+                hover "gui/icons/pause_border.png"
 
-            button:
+            imagebutton:
                 action Rollback()
-                add "gui/icons/return.png"
+                idle "gui/icons/return.png"
+                hover "gui/icons/return_border.png"
 
-            button:
+            imagebutton:
                 action Skip() alternate Skip(fast=True, confirm=True)
-                add "gui/icons/skip_action.png"
+                idle "gui/icons/skip_action.png"
+                hover "gui/icons/skip_action_border.png"
 
-            button:
+            imagebutton:
                 action ShowMenu('glossary')
-                if len(glossary_unread_items) > 0:
-                    add "gui/icons/glossary_new_icon.png"
+                hover "gui/icons/glossary_new_icon.png"
+                if len(game_state.glossary_items_unread) > 0:
+                    idle "gui/icons/glossary_new_icon.png"
                 else:
-                    add "gui/icons/glossary_icon.png"
+                    idle "gui/icons/glossary_icon.png"
 
-            button:
-                action [Show(screen="save_menu"), FileTakeScreenshot()]
-                add "gui/icons/save.png"
+            imagebutton:
+                action ShowMenu('gallery')
+                hover "gui/icons/gallery_new_icon.png"
+                if len(game_state.gallery_items_unread) > 0:
+                    idle "gui/icons/gallery_new_icon.png"
+                else:
+                    idle "gui/icons/gallery_icon.png"
 
-            button:
+            imagebutton:
+                if is_in_puzzle or is_in_suffrage_map or is_in_maze:
+                    action NullAction()
+                    hover "gui/icons/save.png"
+                else:
+                    action [Show(screen="save_menu"), FileTakeScreenshot()]
+                    hover "gui/icons/save_border.png"
+                idle "gui/icons/save.png"
+
+            imagebutton:
                 action ShowMenu('help')
-                add "gui/icons/help.png"
+                idle "gui/icons/help.png"
+                hover "gui/icons/help_border.png"
 
 init python:
     config.overlay_screens.append("quick_menu")
@@ -344,6 +362,10 @@ screen main_menu():
     tag menu
     style_prefix "main_menu"
     add gui.main_menu_background
+
+    python:
+        if not _preferences.language:
+            _preferences.language = "english"
 
     frame:
         pass
@@ -497,7 +519,7 @@ style return_button:
 ################################################################################
 init -1 python:
     def FinishEnterName():
-        if not player: return
+        if not tmpSavePlayer: return
         renpy.hide_screen("name_input")
         renpy.jump_out_of_context("start")
 
@@ -512,8 +534,6 @@ screen navigation():
             textbutton _("Start") action Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))
 
         textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Gallery") action ShowMenu("gallery")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
@@ -560,7 +580,7 @@ screen name_input(message, ok_action):
             style "confirm_prompt"
             xalign 0.5
 
-        input default "" value VariableInputValue("player") length 20 allow "ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyz"
+        input default "" length 20 allow "ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyz" changed OnSavePlayerUpdate
 
         hbox:
             xalign 0.5
