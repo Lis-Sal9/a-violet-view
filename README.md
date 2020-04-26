@@ -28,11 +28,22 @@ Once you have a compatible text editor, you can open the project code base by cl
 - **game/screens**: Screens and widgets used in the game.
 - **game/gui**: Images used in GUI elements.
 - **game/images**: In-game graphic assets (backgrounds, characters...).
+- **game/audio**: In-game audios (music, sound).
+- **game/video**: In-game videos.
 - **game/tl**: Translations.
 - **game/variants**: Custom files for build variants.
+- **game/classes**: Custom classes (game_state).
+- **game/fonts**: Custom fonts.
 
 ### Core files
 - **script.rpy**: Common start-up of the game and basic gameplay data definition.
 - **options.rpy**: Ren'Py engine behaviour and some default settings.
 - **gui.rpy**: Style definitions.
 - **screens/commom.rpy**: Common screens used in the game.
+
+## Download the latest build
+
+- [Windows] (https://drive.google.com/open?id=1zw5xePnzWxxPkxjAK5iOlEvF6clY86-J)
+- [Android] (https://drive.google.com/open?id=1C0U0sT4tbg7l0JzFc8l36qr0FnPw27y9)
+- [Linux] (https://drive.google.com/open?id=1yXiUS4qJvOw01SkwpXZ9jff0uFLkSBOB)
+- [MacOS] (https://drive.google.com/open?id=1n9EXs8_4ev6nsSYtwvg2pTDIFWObiZ9t)
