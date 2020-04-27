@@ -17,13 +17,12 @@ init python:
 label maze_label:
     $ renpy.choice_for_skipping()
     call screen maze
-    $ isInMazeSection(False)
 
 screen maze():
-
-    $ badge = Image("images/chapter1/maze/badge.png")
-    $ map = Image("images/chapter1/maze/map.png")
-    $ isInMazeSection(True)
+    python:
+        badge = Image("images/chapter1/maze/badge.png")
+        map = Image("images/chapter1/maze/map.png")
+        isInMazeSection(True)
 
     add Solid("000")
 

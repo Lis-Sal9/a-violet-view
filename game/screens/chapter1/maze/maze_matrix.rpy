@@ -183,6 +183,7 @@ init -10 python:
                 GiveGlossaryItemToPlayer(23)
                 ShowItems()
 
+            isInMazeSection(False)
             renpy.jump("patio")
 
 

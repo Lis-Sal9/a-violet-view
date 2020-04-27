@@ -20,7 +20,6 @@ label suffrage_map:
         $ ShowItems()
 
     call screen women_suffrage_map(num = 0)
-    $ isInSuffrageMapSection(False)
     return
 
 init python:
@@ -158,6 +157,9 @@ screen correct_suffrage_map():
 
 
 screen show_map_result():
+    python:
+        isInSuffrageMapSection(False)
+
     modal True
     zorder 200
     style_prefix "confirm"
