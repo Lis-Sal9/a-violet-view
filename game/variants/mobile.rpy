@@ -143,6 +143,53 @@ style slider_pref_slider:
     variant "small"
     xsize 900
 
+################################################################################
+
+
+## Main Menu screen ############################################################
+## Used to display the main menu when Ren'Py starts.
+################################################################################
+screen main_menu():
+    variant "touch"
+
+    python:
+        if not _preferences.language:
+            _preferences.language = "english"
+
+        lang = GetCover()
+
+    tag menu
+
+    imagemap:
+        idle "images/cover/mobile/mobile_" + str(lang) + ".png"
+        ground "images/cover/mobile/mobile_" + str(lang) + ".png"
+
+        # Start
+        hotspot (1544, 142, 261, 265):
+            clicked [Hide("main_menu"), Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))]
+            hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_start_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
+
+        # Load
+        hotspot (1031, 726, 271, 281):
+            clicked [Hide("main_menu"), ShowMenu("load")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_load_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
+
+        # Preferences
+        hotspot (1112, 354, 241, 240):
+            clicked [Hide("main_menu"), ShowMenu("preferences")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_preferences_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
+
+        # About
+        hotspot (1505, 606, 247, 242):
+            clicked [Hide("main_menu"), ShowMenu("about")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_about_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
+
+
+################################################################################
 
 
 ################################################################################

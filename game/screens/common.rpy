@@ -358,54 +358,68 @@ style confirm_button_text:
 ## Main Menu screen ############################################################
 ## Used to display the main menu when Ren'Py starts.
 ################################################################################
-screen main_menu():
-    tag menu
-    style_prefix "main_menu"
-    add gui.main_menu_background
+init -2 python:
+    def GetCover():
+        if _preferences.language == "english":
+            return "en"
+        elif _preferences.language == "spanish":
+            return "es"
+        elif _preferences.language == "catalan":
+            return "ca"
 
+screen hover_main_menu(img):
+    add img at truecenter
+
+screen main_menu():
     python:
         if not _preferences.language:
             _preferences.language = "english"
 
-    frame:
-        pass
+        lang = GetCover()
 
-    use navigation
+    tag menu
 
-    if gui.show_name:
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
+    imagemap:
+        idle "images/cover/desktop/full_" + str(lang) + ".png"
+        ground "images/cover/desktop/full_" + str(lang) + ".png"
 
-            text "Vanessa Mañas":
-                style "main_menu_version"
+        # Start
+        hotspot (1594, 90, 225, 225):
+            clicked [Hide("main_menu"), Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_start_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
+        # Load
+        hotspot (1310, 375, 232, 246):
+            clicked [Hide("main_menu"), ShowMenu("load")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_load_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_frame:
-    xsize 420
-    yfill True
-    background "gui/overlay/main_menu.png"
+        # Preferences
+        hotspot (1004, 288, 211, 234):
+            clicked [Hide("main_menu"), ShowMenu("preferences")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_preferences_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
+        # About
+        hotspot (1624, 645, 219, 223):
+            clicked [Hide("main_menu"), ShowMenu("about")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_about_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
+        # Help
+        hotspot (1184, 732, 226, 241):
+            clicked [Hide("main_menu"), ShowMenu("help")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_help_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_title:
-    properties gui.text_properties("title")
+        # Exit
+        hotspot (819, 786, 200, 196):
+            clicked Quit(confirm=not main_menu)
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_exit_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_version:
-    properties gui.text_properties("version")
+
 ################################################################################
 
 
