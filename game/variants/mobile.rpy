@@ -2,6 +2,8 @@
 ## Mobile Variants
 ################################################################################
 
+default mobile_icon_size = 80
+
 
 ################################################################################
 ## Screens
@@ -24,43 +26,49 @@ screen quick_menu():
 
             imagebutton:
                 action Show('pause')
-                idle "gui/icons/pause.png"
-                hover "gui/icons/pause_border.png"
+                xysize mobile_icon_size, mobile_icon_size
+                idle Frame("gui/icons/pause.png")
+                hover Frame("gui/icons/pause_border.png")
 
             imagebutton:
                 action Rollback()
-                idle "gui/icons/return.png"
-                hover "gui/icons/return_border.png"
+                xysize mobile_icon_size, mobile_icon_size
+                idle Frame("gui/icons/return.png")
+                hover Frame("gui/icons/return_border.png")
 
             imagebutton:
                 action Skip() alternate Skip(fast=True, confirm=True)
-                idle "gui/icons/skip_action.png"
-                hover "gui/icons/skip_action_border.png"
+                xysize mobile_icon_size, mobile_icon_size
+                idle Frame("gui/icons/skip_action.png")
+                hover Frame("gui/icons/skip_action_border.png")
 
             imagebutton:
                 action ShowMenu('glossary')
-                hover "gui/icons/glossary_new_icon.png"
+                xysize mobile_icon_size, mobile_icon_size
+                hover Frame("gui/icons/glossary_new_icon.png")
                 if len(game_state.glossary_items_unread) > 0:
-                    idle "gui/icons/glossary_new_icon.png"
+                    idle Frame("gui/icons/glossary_new_icon.png")
                 else:
-                    idle "gui/icons/glossary_icon.png"
+                    idle Frame("gui/icons/glossary_icon.png")
 
             imagebutton:
                 action ShowMenu('gallery')
-                hover "gui/icons/gallery_new_icon.png"
+                xysize mobile_icon_size, mobile_icon_size
+                hover Frame("gui/icons/gallery_new_icon.png")
                 if len(game_state.gallery_items_unread) > 0:
-                    idle "gui/icons/gallery_new_icon.png"
+                    idle Frame("gui/icons/gallery_new_icon.png")
                 else:
-                    idle "gui/icons/gallery_icon.png"
+                    idle Frame("gui/icons/gallery_icon.png")
 
             imagebutton:
+                xysize mobile_icon_size, mobile_icon_size
                 if is_in_puzzle or is_in_suffrage_map or is_in_maze:
                     action NullAction()
-                    hover "gui/icons/save.png"
+                    hover Frame("gui/icons/save.png")
                 else:
                     action [Show(screen="save_menu"), FileTakeScreenshot()]
-                    hover "gui/icons/save_border.png"
-                idle "gui/icons/save.png"
+                    hover Frame("gui/icons/save_border.png")
+                idle Frame("gui/icons/save.png")
 
 
 style window:
