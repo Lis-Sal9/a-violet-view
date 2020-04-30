@@ -209,7 +209,11 @@ init python:
 
 
 ## Config the cursor
-define config.mouse = {"default":[ ("gui/cursor.png", 10, 10) ] }
+init -100 python:
+    if renpy.variant("mobile"):
+        config.mouse = None
+    elif renpy.variant("pc"):
+        config.mouse = {"default":[ ("gui/cursor.png", 10, 10) ] }
 
 ## Config the quicksave
 define config.quicksave_slots = 0
