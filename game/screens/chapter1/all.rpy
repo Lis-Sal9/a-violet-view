@@ -156,7 +156,7 @@ label langham_place:
             scene black
 
             $ renpy.choice_for_skipping()
-            $ renpy.movie_cutscene("video/open_door.ogg")
+            $ renpy.movie_cutscene("video/open_door.mkv")
 
             if not game_state.maze_is_seen:
                 call maze_label
