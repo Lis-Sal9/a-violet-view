@@ -174,25 +174,25 @@ screen main_menu():
 
         # Start
         hotspot (1544, 142, 261, 265):
-            clicked [Hide("main_menu"), Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))]
+            clicked [Hide("hover_main_menu"), Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))]
             hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_start_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 
         # Load
         hotspot (1031, 726, 271, 281):
-            clicked [Hide("main_menu"), ShowMenu("load")]
+            clicked [Hide("hover_main_menu"), ShowMenu("load")]
             hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_load_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 
         # Preferences
         hotspot (1112, 354, 241, 240):
-            clicked [Hide("main_menu"), ShowMenu("preferences")]
+            clicked [Hide("hover_main_menu"), ShowMenu("preferences")]
             hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_preferences_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 
         # About
         hotspot (1505, 606, 247, 242):
-            clicked [Hide("main_menu"), ShowMenu("about")]
+            clicked [Hide("hover_main_menu"), ShowMenu("about")]
             hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_about_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 

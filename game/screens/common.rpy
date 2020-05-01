@@ -385,34 +385,33 @@ screen main_menu():
 
         # Start
         hotspot (1594, 90, 225, 225):
-            clicked [Hide("main_menu"), Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))]
+            clicked [Hide("hover_main_menu"), Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))]
             hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_start_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 
         # Load
         hotspot (1310, 375, 232, 246):
-            clicked [Hide("main_menu"), ShowMenu("load")]
+            clicked [Hide("hover_main_menu"), ShowMenu("load")]
             hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_load_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 
         # Preferences
         hotspot (1004, 288, 211, 234):
-            clicked [Hide("main_menu"), ShowMenu("preferences")]
+            clicked [Hide("hover_main_menu"), ShowMenu("preferences")]
             hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_preferences_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 
         # About
         hotspot (1624, 645, 219, 223):
-            clicked [Hide("main_menu"), ShowMenu("about")]
+            clicked [Hide("hover_main_menu"), ShowMenu("about")]
             hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_about_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
-
         # Help
         hotspot (1184, 732, 226, 241):
-            clicked [Hide("main_menu"), ShowMenu("help")]
+            clicked [Hide("hover_main_menu"), ShowMenu("help")]
             hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_help_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
-
+            
         # Exit
         hotspot (819, 786, 200, 196):
             clicked Quit(confirm=not main_menu)
