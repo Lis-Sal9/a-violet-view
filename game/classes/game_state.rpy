@@ -24,6 +24,7 @@ init -10 python:
         gallery_items_unread = []
         campoamor_is_seen = False
         langham_library_is_seen = False
+        crosswords_done = False
 
 
         def clear(self):
@@ -48,3 +49,4 @@ init -10 python:
             self.gallery_items_unread = []
             self.campoamor_is_seen = False
             self.langham_library_is_seen = False
+            self.crosswords_done = False

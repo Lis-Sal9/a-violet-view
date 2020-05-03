@@ -2,6 +2,12 @@
 ## Script for the crosswords.
 ## The player has to fill the crosswords with the list of women names. These names are in The Dinner Party.
 
+init -10 python:
+    is_in_crosswords = False
+    def isInCrosswordsSection(result):
+        global is_in_crosswords
+        is_in_crosswords = result
+
 init -1 python:
     sidebar_is_open = False
     all_crosswords = []
@@ -31,14 +37,17 @@ init -1 python:
         tmpWord = value
 
     def checkAllWords():
+        global game_state
         if len(all_crosswords) == len(FULL_WORDS):
             GiveGalleryItemToPlayer(5)
+            game_state.crosswords_done = True
             renpy.jump("see_dinner_party")
 
 
 
 label crosswords_label:
     $ renpy.choice_for_skipping()
+    $ isInCrosswordsSection(True)
     call screen crosswords
 
 
@@ -108,6 +117,8 @@ screen set_word(ok_action):
 
 
 label see_dinner_party:
+    python:
+        isInCrosswordsSection(False)
     image portrait_dinner = "images/chapter2/crosswords/the_dinner_party.png"
     scene black
     show portrait_dinner at truecenter

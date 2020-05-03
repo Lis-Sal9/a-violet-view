@@ -19,7 +19,9 @@ label suffrage_map:
             $ GiveGlossaryItemToPlayer(23)
         $ ShowItems()
 
+    $ isInSuffrageMapSection(True)
     call screen women_suffrage_map(num = 0)
+    $ isInSuffrageMapSection(False)
     return
 
 init python:
