@@ -29,7 +29,7 @@ label train:
     call screen hold_screen(15)
     stop music fadeout 0.5
 
-    if game_state.chapter < 2:
+    if game_state.chapter < 3:
         call screen library
 
     return
