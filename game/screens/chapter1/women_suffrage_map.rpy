@@ -21,8 +21,8 @@ label suffrage_map:
 
     $ isInSuffrageMapSection(True)
     call screen women_suffrage_map(num = 0)
-    $ isInSuffrageMapSection(False)
     return
+
 
 init python:
     import random
@@ -62,13 +62,10 @@ init python:
             # achieve two items
             GiveGalleryItemToPlayer(0)
             GiveGalleryItemToPlayer(2)
-
+        isInSuffrageMapSection(False)
 
 
 screen women_suffrage_map(num):
-    python:
-        isInSuffrageMapSection(True)
-
     add "images/chapter1/suffrage_map/suffrage_map_bg.png"
     add "images/chapter1/suffrage_map/suffrage_map_[num].png"
 

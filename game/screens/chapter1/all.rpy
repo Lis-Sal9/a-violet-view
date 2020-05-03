@@ -185,6 +185,7 @@ label patio:
     else:
         call contraception
 
+    scene near_train_station
     call return_to_train_station
     return
 
@@ -275,7 +276,6 @@ label free_women:
 
 ## Return to train station scene ###############################
 label return_to_train_station:
-    scene near_train_station
     "El carruatge acaba d'arribar a l'estació. [tmpSavePlayer] baixa i paga."
     user "Gràcies, senyor!"
     "El senyor del carruatge mou el cap assentint i [tmpSavePlayer] entra a l'estació."
@@ -291,7 +291,7 @@ label return_to_train_station:
         call suffrage_map
     else:
         #suffrage map is done
-        "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar-lo a fer?"
+        "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar a fer-lo?"
 
         menu:
             "Sí":
