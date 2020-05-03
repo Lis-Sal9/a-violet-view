@@ -49,8 +49,8 @@ screen correct_suffrage_map():
 
 
 screen show_map_result():
-    # python:
-    #     isInSuffrageMapSection(False)
+    python:
+        isInSuffrageMapSection(False)
 
     modal True
     zorder 200
