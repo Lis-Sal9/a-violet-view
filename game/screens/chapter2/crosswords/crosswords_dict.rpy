@@ -127,3 +127,45 @@ init -10 python:
         [720, 660, "right"],
         [210, 600, "right"]
     ]
+
+    RENDERED_CROSSINGS = [
+        [[22, 2]], # "Gaia"
+        [[10, 2]], # "Kali"
+        [[31, 1]], # "Venus"
+        [[14, 5]], # "Inanna"
+        [[18, 4]], # "Judith",
+        [[35, 1]], # "Sappho",
+        [[28, 3]], # "Sophia",
+        [[31, 2]], # "Aspasia",
+        [[16, 4]], # "Hypatia",
+        [[21, 5]], # "Amazones",
+        [[25, 4]], # "Marcella",
+        [[14, 7]], # "Theodora",
+        [[16, 0]], # "Boadaceia",
+        [[18, 1], [24, 8]], # "NaomhBrid",
+        [[26, 1], [36, 3]], # "Sacajawea",
+        [[34, 4]], # "Serpentes",
+        [[21, 2]], # "ElizabethI",
+        [[31, 9]], # "EthelSmyth",
+        [], # "Hatshepsut",
+        [[38, 10]], # "IsabelladEste",
+        [[28, 2]], # "NatalieBarney",
+        [[37, 2]], # "SusanBAnthony",
+        [[28, 11]], # "VirginiaWoolf",
+        [[38, 8]], # "AnneHutchinson",
+        [[29, 11]], # "EmilyDickinson",
+        [[29, 3]], # "GeorgiaOKeeffe",
+        [[38, 13]], # "MargaretSanger",
+        [[29, 6]], # "SojournerTruth",
+        [[38, 5], [37, 7], [33, 9]], # "CarolineHerschel",
+        [[37, 12]], # "ChristinedePizan",
+        [[38, 11]], # "AlienordAquitaine",
+        [[37, 6], [33, 8]], # "PetronilladeMeath",
+        [[38, 11]], # "TrotuladeRuggiero",
+        [[36, 4]], # "ElizabethBlackwell",
+        [[38, 9]], # "HildegardvonBingen",
+        [[38, 5]], # "MaryWollstonecraft",
+        [[38, 14], [37, 16]], # "AnnaMariavanSchurman",
+        [], # "ArtemisiaGentileschi",
+        [] # "HrotsvitvonGandersheim"
+    ]

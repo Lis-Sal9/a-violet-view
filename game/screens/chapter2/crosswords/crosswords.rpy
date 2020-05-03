@@ -31,6 +31,14 @@ init -1 python:
             renpy.notify(_("S'ha equivocat."))
         checkAllWords()
 
+    def getRenderedWord(position):
+        word = RENDERED_WORDS[position].upper()
+        if position < len(RENDERED_CROSSINGS):
+            for i in range(0, len(RENDERED_CROSSINGS[position])):
+                tuple = RENDERED_CROSSINGS[position][i]
+                if tuple[0] in all_crosswords:
+                    word = word[:tuple[1]] + " " + word[tuple[1] + 1:]
+        return word
 
     def OnChangeWordUpdate(value = ""):
         global tmpWord
@@ -65,27 +73,29 @@ screen crosswords():
         for i in range(len(COORD_WORDS)):
             if i in all_crosswords:
                 if COORD_WORDS[i][2] == "down":
-                    text RENDERED_WORDS[i].upper():
+                    text getRenderedWord(i):
+                        anchor 0.5, 0
                         font "fonts/courier_new.ttf"
-                        kerning 3
+                        kerning 3.4
                         bold True
                         size 21
-                        xpos COORD_WORDS[i][0] + 2
-                        ypos COORD_WORDS[i][1] - 12
+                        xpos COORD_WORDS[i][0] + 15
+                        ypos COORD_WORDS[i][1] - 17
                         vertical True
                 else:
-                    text RENDERED_WORDS[i].upper():
+                    text getRenderedWord(i):
+                        anchor 0, 0.5
                         font "fonts/courier_new.ttf"
-                        kerning 15
+                        kerning 15.1
                         bold True
                         size 21
-                        xpos COORD_WORDS[i][0] + 7
-                        ypos COORD_WORDS[i][1] + 2
+                        xpos COORD_WORDS[i][0] + 8
+                        ypos COORD_WORDS[i][1] + 15
                         vertical False
 
             else:
                 imagebutton:
-                    idle "images/chapter2/crosswords/arrow_" + COORD_WORDS[i][2] + ".png"
+                    idle "images/chapter2/crosswords/arrow.png"
                     xpos COORD_WORDS[i][0]
                     ypos COORD_WORDS[i][1]
                     action Show(screen="set_word", ok_action=Function(showWord, i))
