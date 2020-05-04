@@ -159,7 +159,7 @@ label langham_place:
             $ renpy.movie_cutscene("video/open_door.mkv")
 
             if not game_state.maze_is_seen:
-                call maze_label
+                $ renpy.call_in_new_context("maze_label")
             else:
                 #maze is done
                 "Ja has fet el laberint anteriorment. Vols tornar-lo a fer?"
@@ -167,7 +167,7 @@ label langham_place:
                 menu:
                     "Sí":
                         $ game_state.maze_coords = [36, 0]
-                        call maze_label
+                        $ renpy.call_in_new_context("maze_label")
                     "No":
                         "D'acord. Continues amb la mateixa història com si l'haguessis fet."
                         call patio
@@ -295,7 +295,7 @@ label return_to_train_station:
 
         menu:
             "Sí":
-                call suffrage_map
+                $ renpy.call_in_new_context("suffrage_map")
             "No":
                 "D'acord. Continues amb la mateixa història com si l'haguessis fet."
 
