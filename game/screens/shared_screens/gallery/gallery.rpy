@@ -125,4 +125,5 @@ screen gallery_item_details(item):
             xysize 550, 600
             align .99, .35
             xoffset 20
+            yoffset 10
             line_spacing 15
