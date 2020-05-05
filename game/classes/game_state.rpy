@@ -25,6 +25,9 @@ init -10 python:
         campoamor_is_seen = False
         langham_library_is_seen = False
         crosswords_done = False
+        pizzey_is_seen = False
+        eunuch_is_found = False
+        vaginal_orgasm_is_found = False
 
 
         def clear(self):
@@ -50,3 +53,6 @@ init -10 python:
             self.campoamor_is_seen = False
             self.langham_library_is_seen = False
             self.crosswords_done = False
+            self.pizzey_is_seen = False
+            self.eunuch_is_found = False
+            self.vaginal_orgasm_is_found = False
