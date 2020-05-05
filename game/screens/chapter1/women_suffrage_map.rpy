@@ -20,6 +20,7 @@ label suffrage_map:
         $ ShowItems()
 
     $ isInSuffrageMapSection(True)
+    $ stage = 0
     call screen women_suffrage_map(num = 0)
     return
 
@@ -32,16 +33,13 @@ init python:
     stage = 0
     num_selected_correct_options = 0
 
-
     def getRandomNumbers():
         random_options = []
         random_options.append(stage)
-        i = 0
-        while i < 3:
-            num = random.randrange(7)
+        while len(random_options) < 4:
+            num = random.randrange(len(OPTIONS))
             if num not in random_options:
                 random_options.append(num)
-                i = i + 1
         random.shuffle(random_options)
         return random_options
 
@@ -93,6 +91,8 @@ screen women_suffrage_map(num):
 
             $ random_options = getRandomNumbers()
             for i in range(0, 4):
+                $ option = random_options[i]
+                $ option_text = OPTIONS[option]
                 fixed:
                     yoffset 40
                     ysize 40
