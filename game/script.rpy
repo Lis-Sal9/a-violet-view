@@ -24,7 +24,8 @@ label start:
 
     python:
         game_state.clear()
-        is_secret_revealed = False   ############ review
+        is_secret_revealed = False
+        seneca_agrees = 0
 
     ## Beginning: once upon a time
     call beginning

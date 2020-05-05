@@ -54,6 +54,7 @@ label seneca_falls_convention:
             if game_state.mill_are_nice:
                 $ GiveGlossaryItemToPlayer(7)
     $ ShowItems()
+    $ seneca_agrees = 0
 
     call yes_or_not_question
 
@@ -94,6 +95,7 @@ label seneca_falls_convention:
 label yes_or_not_question:
     menu:
         "Sí":
+            $ seneca_agrees = seneca_agrees + 1
             "[tmpSavePlayer] està d'acord amb la resolució anterior."
         "No":
             "[tmpSavePlayer] no està d'acord amb la resolució anterior."
@@ -108,9 +110,10 @@ screen sf_document():
         image "images/chapter1/seneca_falls_convention/woman_rights_convention.png":
             align .5, 0
 
-        text _("Amb {b}[tmpSavePlayer]{/b}\ncom a persona\nconvidada"):
-            font "fonts/my_font.ttf"
-            size 20
-            align .4, .22
-            at transform:
-                rotate -3
+        if seneca_agrees >= 3:
+            text _("Amb {b}[tmpSavePlayer]{/b}\ncom a persona\nconvidada"):
+                font "fonts/my_font.ttf"
+                size 20
+                align .4, .22
+                at transform:
+                    rotate -3
