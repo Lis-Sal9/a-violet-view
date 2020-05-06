@@ -4,7 +4,7 @@ screen maze():
     $ mobile_maze_panel_icon_size = [78, 78]
     $ badge = Image("images/chapter1/maze/badge.png")
     $ map = Image("images/chapter1/maze/map.png")
-    $ isInMazeSection(True)
+    $ setIsInSpecialScreen(True)
 
     add Solid("000")
 
