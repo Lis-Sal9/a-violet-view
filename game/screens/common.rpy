@@ -4,6 +4,12 @@
 
 init offset = -1
 
+init -10 python:
+    is_in_special_screen = False
+
+    def setIsInSpecialScreen(value):
+        global is_in_special_screen
+        is_in_special_screen = value
 
 
 ################################################################################
@@ -244,7 +250,7 @@ screen quick_menu():
                     idle "gui/icons/gallery_icon.png"
 
             imagebutton:
-                if is_in_puzzle or is_in_suffrage_map or is_in_maze or is_in_crosswords:
+                if is_in_special_screen:
                     action NullAction()
                     hover "gui/icons/save.png"
                 else:

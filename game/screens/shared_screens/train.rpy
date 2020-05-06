@@ -15,6 +15,7 @@ init python:
 # Train background
 label train(chapter_completed):
     $ renpy.choice_for_skipping()
+    $ setIsInSpecialScreen(True)
     $ setChapter(chapter_completed)
 
     image bg_train = "images/train/train_bg.png"
@@ -31,6 +32,8 @@ label train(chapter_completed):
     show img_train at moving
     call screen hold_screen(15)
     stop music fadeout 0.5
+
+    $ setIsInSpecialScreen(False)
 
     if len(game_state.chapters_completed) < 3:
         call screen library

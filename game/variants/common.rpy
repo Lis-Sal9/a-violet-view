@@ -62,7 +62,7 @@ screen quick_menu():
 
             imagebutton:
                 xysize mobile_icon_size, mobile_icon_size
-                if is_in_puzzle or is_in_suffrage_map or is_in_maze:
+                if is_in_special_screen:
                     action NullAction()
                     hover Frame("gui/icons/save.png")
                 else:

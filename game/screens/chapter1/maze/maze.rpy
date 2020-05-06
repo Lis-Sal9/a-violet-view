@@ -4,12 +4,6 @@
 ## In this scene, the player has to collect some objects.
 
 
-init -10 python:
-    is_in_maze = False
-    def isInMazeSection(result):
-        global is_in_maze
-        is_in_maze = result
-
 init python:
     viewport_x = 19
     viewport_y = 11
@@ -22,7 +16,7 @@ screen maze():
     python:
         badge = Image("images/chapter1/maze/badge.png")
         map = Image("images/chapter1/maze/map.png")
-        isInMazeSection(True)
+        setIsInSpecialScreen(True)
 
     add Solid("000")
 
