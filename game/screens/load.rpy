@@ -99,12 +99,13 @@ screen load():
                         $ position = int(j + current_offset)
                         $ saved_slot = saved_games[position]
                         $ saved_slot_name = saved_slot[0]
+                        $ saved_slot_name_display = saved_slot_name.encode("utf-8")
                         $ saved_slot_extra_info = saved_slot[1]
                         $ saved_slot_displayable = saved_slot[2]
                         $ slot_screenshot = renpy.slot_screenshot(saved_slot_name)
 
                         button:
-                            action Show("load_pause", slot=saved_slot_name, extra_info=saved_slot_extra_info)
+                            action Show("load_pause", slot=saved_slot_name_display, extra_info=saved_slot_extra_info)
                             has vbox
                             add slot_screenshot xalign 0.5
                             text saved_slot_name:
