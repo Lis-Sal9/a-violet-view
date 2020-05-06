@@ -5,7 +5,7 @@ init -10 python:
     class GameState(NoRollback):
         player = ""
         save_name = ""
-        chapter = 0
+        chapters_completed = []
         glossary_items = []
         glossary_items_unread = []
         portrait_done = False
@@ -33,7 +33,7 @@ init -10 python:
         def clear(self):
             self.player = ""
             self.save_name = ""
-            self.chapter = 0
+            self.chapters_completed = []
             self.glossary_items = []
             self.glossary_items_unread = []
             self.portrait_done = False

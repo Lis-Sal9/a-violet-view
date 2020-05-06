@@ -4,15 +4,18 @@
 
 
 init python:
-    def setChapter():
+    CHAPTERS = ["P", "1", "2", "3", "E"]
+
+    def setChapter(chapter_completed):
         global game_state
-        game_state.chapter = game_state.chapter + 1
+        if chapter_completed not in game_state.chapters_completed:
+            game_state.chapters_completed.append(chapter_completed)
 
 
 # Train background
-label train:
+label train(chapter_completed):
     $ renpy.choice_for_skipping()
-    $ setChapter()
+    $ setChapter(chapter_completed)
 
     image bg_train = "images/train/train_bg.png"
     image img_train = "images/train/train_img.png"
@@ -29,7 +32,7 @@ label train:
     call screen hold_screen(15)
     stop music fadeout 0.5
 
-    if game_state.chapter < 3:
+    if len(game_state.chapters_completed) < 3:
         call screen library
 
     return

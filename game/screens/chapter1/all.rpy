@@ -301,5 +301,5 @@ label return_to_train_station:
 
     scene train_station
     "Acabat el test, el tren ja era a l'andana. Marxaria en breu."
-    call train
+    call train(CHAPTERS[1])
     return
