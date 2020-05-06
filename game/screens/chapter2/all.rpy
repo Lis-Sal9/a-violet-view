@@ -10,9 +10,24 @@ image pizzey_hostel = "images/chapter2/hostel/pizzey_hostel.png"
 image pizzey_hostel_room = "images/chapter2/hostel/pizzey_hostel_room.png"
 image amazonas_hostel = "images/chapter2/hostel/amazonas_hostel.png"
 image amazonas_hostel_room = "images/chapter2/hostel/amazonas_hostel_room.png"
+image miss_figure = "images/chapter2/protests/misses/miss_figure.jpg"
+image miss_inside = "images/chapter2/protests/misses/miss_inside.png"
+image miss_trash = "images/chapter2/protests/misses/miss_trash.jpg"
+image miss_welcome = "images/chapter2/protests/misses/miss_welcome.jpg"
+image now_building = "images/chapter2/now/now_building.png"
+image now_conference = "images/chapter2/now/now_conference.png"
+image nyrw_dont_cry = "images/chapter2/protests/nyrw/nyrw_dont_cry.jpeg"
+image nyrw_protest = "images/chapter2/protests/nyrw/nyrw_protest.jpg"
+image nyrw_rally = "images/chapter2/protests/nyrw/nyrw_rally.png"
+image gerri_santoro = "images/chapter2/protests/redstockings_witch/gerri_santoro.png"
+image witch_dancing = "images/chapter2/protests/redstockings_witch/witch_dancing.jpeg"
+image witch_rally = "images/chapter2/protests/redstockings_witch/witch_rally.jpg"
 
 # Characters
 define erin_pizzey = Character("Erin Pizzey", color="#FED876")
+define betty_friedan = Character("Betty Friedan", color="#F5B2AC")
+define simone_de_beauvoir = Character("Simone de Beauvoir", color="#231F20")
+define kate_millet = Character("Kate Millet", color="#FF4F6F")
 
 
 
@@ -122,12 +137,41 @@ label hostel:
 
 
 
-
-
 ## Next morning scene ######################
 label morning:
     "..."
     "[tmpSavePlayer] es despertà. Ja era de dia."
+
+    if game_state.pizzey_is_seen:
+        scene pizzey_hostel
+    else:
+        scene amazonas_hostel
+
+    "Es vestí i deixà la pensió. Estava esperant un taxi."
+    "..."
+    "Al cap d'una estona ..."
+
+    scene taxi
+    user "Bon dia, senyor. A NOW, l'Organització Nacional per les Dones."
+    unknown_boy "D'acord. Pel camí curt o llarg?"
+
+    menu:
+        "Camí curt":
+            user "Millor arribar abans."
+            unknown_boy "Com vulgui."
+            call misses_protest
+
+        "Camí llarg":
+            user "Millor si mentrestant puc gaudir del paisatge."
+            unknown_boy "Com vulgui."
+            call nyrw_protest
+
+        "M'és indiferent":
+            user "Com vostè prefereixi."
+            unknown_boy "D'acord."
+            call redstockings_witch_protest
+
+    call now_scene
     return
 
 

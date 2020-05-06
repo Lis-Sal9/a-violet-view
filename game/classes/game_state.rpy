@@ -28,6 +28,7 @@ init -10 python:
         pizzey_is_seen = False
         eunuch_is_found = False
         vaginal_orgasm_is_found = False
+        witch_is_seen = False
 
 
         def clear(self):
@@ -56,3 +57,4 @@ init -10 python:
             self.pizzey_is_seen = False
             self.eunuch_is_found = False
             self.vaginal_orgasm_is_found = False
+            self.witch_is_seen = False
