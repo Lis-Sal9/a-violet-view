@@ -17,6 +17,7 @@ image cr_session = "images/chapter2/part2/nyrw/cr_session.png"
 # Characters
 define miriam_schapiro = Character("Miriam Schapiro", color="#FED876")
 define adrienne_rich = Character("Adrienne Rich", color="#F5B2AC")
+define participant = Character("Participant", color="#231F20")
 
 
 

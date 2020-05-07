@@ -12,14 +12,14 @@ label moving_car:
 
     transform moving_delorean:
         rotate -2
-        yalign 0.85 xpos 2200
-        linear 10.0 xpos -2500 yalign 0.85
+        yalign 0.85 xpos 2500
+        linear 10.0 xpos -1800 yalign 0.85
 
     stop music fadeout 0.5
     scene bg_car
     play music "audio/sound/car.mp3" fadein 0.5
     show img_car at moving_delorean
-    call screen hold_screen(7)
+    call screen hold_screen(8)
     stop music fadeout 0.5
 
     $ setIsInSpecialScreen(False)
