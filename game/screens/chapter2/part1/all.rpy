@@ -1,27 +1,27 @@
 
-## Script for the chapter 2.
+## Script for the chapter 2 Part 1.
 ## This chapter explains the feminism between 1945-1990.
 
 # Backgrounds
-image train_station_chpt2 = "images/train/train_station_chpt2.png"
-image near_train_station_chpt2 = "images/train/near_train_station_chpt2.png"
-image taxi = "images/chapter2/taxi.png"
-image pizzey_hostel = "images/chapter2/hostel/pizzey_hostel.png"
-image pizzey_hostel_room = "images/chapter2/hostel/pizzey_hostel_room.png"
-image amazonas_hostel = "images/chapter2/hostel/amazonas_hostel.png"
-image amazonas_hostel_room = "images/chapter2/hostel/amazonas_hostel_room.png"
-image miss_figure = "images/chapter2/protests/misses/miss_figure.png"
-image miss_inside = "images/chapter2/protests/misses/miss_inside.png"
-image miss_trash = "images/chapter2/protests/misses/miss_trash.jpg"
-image miss_welcome = "images/chapter2/protests/misses/miss_welcome.png"
-image now_building = "images/chapter2/now/now_building.png"
-image now_conference = "images/chapter2/now/now_conference.png"
-image nyrw_dont_cry = "images/chapter2/protests/nyrw/nyrw_dont_cry.png"
-image nyrw_protest = "images/chapter2/protests/nyrw/nyrw_protest.jpg"
-image nyrw_rally = "images/chapter2/protests/nyrw/nyrw_rally.png"
-image gerri_santoro = "images/chapter2/protests/redstockings_witch/gerri_santoro.png"
-image witch_dancing = "images/chapter2/protests/redstockings_witch/witch_dancing.jpeg"
-image witch_rally = "images/chapter2/protests/redstockings_witch/witch_rally.jpg"
+image train_station_chpt2a = "images/train/train_station_chpt2a.png"
+image near_train_station_chpt2a = "images/train/near_train_station_chpt2a.png"
+image taxi = "images/chapter2/part1/taxi.png"
+image pizzey_hostel = "images/chapter2/part1/hostel/pizzey_hostel.png"
+image pizzey_hostel_room = "images/chapter2/part1/hostel/pizzey_hostel_room.png"
+image amazonas_hostel = "images/chapter2/part1/hostel/amazonas_hostel.png"
+image amazonas_hostel_room = "images/chapter2/part1/hostel/amazonas_hostel_room.png"
+image miss_figure = "images/chapter2/part1/protests/misses/miss_figure.png"
+image miss_inside = "images/chapter2/part1/protests/misses/miss_inside.png"
+image miss_trash = "images/chapter2/part1/protests/misses/miss_trash.jpg"
+image miss_welcome = "images/chapter2/part1/protests/misses/miss_welcome.png"
+image now_building = "images/chapter2/part1/now/now_building.png"
+image now_conference = "images/chapter2/part1/now/now_conference.png"
+image nyrw_dont_cry = "images/chapter2/part1/protests/nyrw/nyrw_dont_cry.png"
+image nyrw_protest = "images/chapter2/part1/protests/nyrw/nyrw_protest.jpg"
+image nyrw_rally = "images/chapter2/part1/protests/nyrw/nyrw_rally.png"
+image gerri_santoro = "images/chapter2/part1/protests/redstockings_witch/gerri_santoro.png"
+image witch_dancing = "images/chapter2/part1/protests/redstockings_witch/witch_dancing.jpeg"
+image witch_rally = "images/chapter2/part1/protests/redstockings_witch/witch_rally.jpg"
 
 # Characters
 define erin_pizzey = Character("Erin Pizzey", color="#FED876")
@@ -31,9 +31,9 @@ define kate_millet = Character("Kate Millet", color="#FF4F6F")
 
 
 
-label chapter_2:
+label chapter_2a:
     ## Train station scene ######################
-    scene train_station_chpt2
+    scene train_station_chpt2a
     play music "audio/sound/train_station.mp3" fadein 0.5
 
     "El tren acaba d'arribar a l'estació."
@@ -41,8 +41,8 @@ label chapter_2:
     "El viatge ha estat llarg i decideix anar a descansar a la pensió més propera."
 
     stop music fadeout 0.5
-    scene near_train_station_chpt2
-    play music "audio/music/chapter2.mp3" fadein 0.5
+    scene near_train_station_chpt2a
+    play music "audio/music/chapter2a.mp3" fadein 0.5
 
     "Mentre espera un taxi prop de l'estació, s'atura en el quiosc i s'encurioseix pel titular d'un llibre."
     "{i}Le Rire de la Méduse{/i}, d'Hélène Cixous."
@@ -172,24 +172,4 @@ label morning:
             call redstockings_witch_protest
 
     call now_scene
-    return
-
-
-
-## Final enigma scene ######################
-label chapter_2_final:
-    scene black
-
-    if not game_state.crosswords_done:
-        #crossword is not done
-        $ renpy.call_in_new_context("crosswords_label")
-    else:
-        #crossword is done
-        "Ja has fet les encreuades de {i}The Dinner Party{/i}. Vols tornar-les a fer?"
-        menu:
-            "Sí":
-                $ renpy.call_in_new_context("crosswords_label")
-            "No":
-                "D'acord. Continues amb la mateixa història com si l'haguessis fet."
-
     return

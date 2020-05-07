@@ -4,7 +4,7 @@
 
 
 init python:
-    CHAPTERS = ["P", "1", "2", "3", "E"]
+    CHAPTERS = ["P", "1", "2a", "2b", "2c", "3", "E"]
 
     def setChapter(chapter_completed):
         global game_state

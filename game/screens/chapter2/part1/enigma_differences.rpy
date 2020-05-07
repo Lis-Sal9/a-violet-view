@@ -26,4 +26,6 @@ label enigma_differences:
     ## If player finds all differences
     # GiveGalleryItemToPlayer(1)
 
+    call train(CHAPTERS[2])
+
     return
