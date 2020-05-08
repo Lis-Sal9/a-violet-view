@@ -38,6 +38,8 @@ label chapter_2b:
     "Així que engega el cotxe i es dirigeix a la seva destinació."
 
     call moving_car
+    stop music fadeout 0.5
+    play music "audio/music/chapter2a.mp3" fadein 0.5
     call nyrw_building
 
     return

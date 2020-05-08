@@ -71,6 +71,6 @@ label now_scene:
 
     "Quan escoltà això, [tmpSavePlayer] no s'ho pensà més i començà a buscar-les."
 
-    call enigma_differences
+    call screen find_differences
 
     return

@@ -31,9 +31,6 @@ label redstockings_witch_protest:
     hide gerri_santoro
     show witch_dancing at truecenter
     unknown_boy "Perquè la meva germana petita és una militant que, probablement, ara estigui circulant amb la moto vestida amb un barret de bruixa i una capa negres per la ciutat."
-
-    $ game_state.witch_is_seen = True
-
     hide witch_dancing
     scene now_building
     "La conversa s'estava posant d'allò més interessant, però el taxi s'acabava d'aturar. Havien arribat a la destinació."

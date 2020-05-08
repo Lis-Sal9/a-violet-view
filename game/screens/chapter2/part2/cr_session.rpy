@@ -159,6 +159,7 @@ label sex_need(result):
         participant "{i}Tu i els que són com tu esteu mentalment malalts!! No ens envaireu els espais de les dones!! No ho permetrem!!!{/i} - manifestà encara més efusivament."
         participant "{i}Coses com vosaltres que us feu dir dones sí que mereixeu ser violades!!! I molt més!!!{/i} - s'aixecà de la cadira."
         adrienne_rich "Per favor, surt de la sala. Aquí estem per aprendre de la diferència, per respectar-la i acceptar-la. No perquè hi hagin atacs com aquests a les companyes. No tornis més."
+        "I aquella noia marxà de la sala amb un fort cop de porta."
         "Adrienne, pensativa, va preguntar-se en veu alta ..."
         adrienne_rich "Ho ha dit perquè sabia que probablement saltaria en contra, oi?"
         "Es dirigia a [tmpSavePlayer]."
@@ -238,7 +239,6 @@ label no_is_yes:
             user "Pot ser que l'home et digui que aquest serà l'única vegada, que no tornarà a ocórrer."
             participant "{i}Sí, però la violència no és un incident aïllat, sinó que forma part d'un patró de violència en augment.{/i} - va dir Houda."
             participant "{i}Ho dic per pròpia experiència.{/i} - va concloure Houda."
-
 
         "És clar, perquè sinó l'home es pot posar violent":
             # No ha encertat

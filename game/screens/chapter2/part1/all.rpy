@@ -165,16 +165,19 @@ label morning:
         "Camí curt":
             user "Millor arribar abans."
             unknown_boy "Com vulgui."
+            $ game_state.witch_is_seen = False
             call misses_protest
 
         "Camí llarg":
             user "Millor si mentrestant puc gaudir del paisatge."
             unknown_boy "Com vulgui."
+            $ game_state.witch_is_seen = False
             call nyrw_protest
 
         "M'és indiferent":
             user "Com vostè prefereixi."
             unknown_boy "D'acord."
+            $ game_state.witch_is_seen = True
             call redstockings_witch_protest
 
     call now_scene
