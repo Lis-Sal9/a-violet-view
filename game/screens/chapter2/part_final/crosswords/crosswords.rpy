@@ -44,6 +44,7 @@ init -1 python:
         if len(all_crosswords) == len(FULL_WORDS):
             GiveGalleryItemToPlayer(5)
             game_state.crosswords_done = True
+            renpy.hide_screen("sidebar")
             renpy.jump("see_dinner_party")
 
 
@@ -56,12 +57,12 @@ label crosswords_label:
 
 
 screen crosswords():
-    add "images/chapter2/crosswords/crosswords.png"
+    add "images/chapter2/part_final/crosswords/crosswords.png"
 
     fixed:
         imagebutton:
-            idle "images/chapter2/crosswords/bulb_off.png"
-            hover "images/chapter2/crosswords/bulb_on.png"
+            idle "images/chapter2/part_final/crosswords/bulb_off.png"
+            hover "images/chapter2/part_final/crosswords/bulb_on.png"
             align .90, .05
             action [Function(checkSidebarIsOpen), If(sidebar_is_open, true=Hide("sidebar"), false=Show("sidebar"))]
 
@@ -90,7 +91,7 @@ screen crosswords():
 
             else:
                 imagebutton:
-                    idle "images/chapter2/crosswords/arrow.png"
+                    idle "images/chapter2/part_final/crosswords/arrow.png"
                     xpos COORD_WORDS[i][0]
                     ypos COORD_WORDS[i][1]
                     action Show(screen="set_word", ok_action=Function(showWord, i))
@@ -118,23 +119,6 @@ screen set_word(ok_action):
 
             textbutton _("OK") action [Hide("set_word"), ok_action]
             textbutton _("Cancel") action Hide("set_word")
-
-
-
-label see_dinner_party:
-    python:
-        setIsInSpecialScreen(False)
-        
-    image portrait_dinner = "images/chapter2/crosswords/the_dinner_party.png"
-    scene black
-    show portrait_dinner at truecenter
-    "[tmpSavePlayer] ha desxifrat l'encreuada i ja pot veure tota la pintura correctament."
-
-    call train
-    call end_chapter(CHAPTERS[4])
-
-    return
-
 
 
 screen sidebar():
