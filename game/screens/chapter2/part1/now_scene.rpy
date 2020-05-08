@@ -71,6 +71,35 @@ label now_scene:
 
     "Quan escoltà això, [tmpSavePlayer] no s'ho pensà més i començà a buscar-les."
 
-    call screen find_differences
+    if not game_state.find_differences_done:
+        $ renpy.call_in_new_context("find_differences_label")
+    else:
+        "Ja has trobat almenys set diferències. Vols tornar-ho a intentar?"
+        menu:
+            "Sí":
+                $ renpy.call_in_new_context("find_differences_label")
+            "No":
+                "D'acord. Continues amb la mateixa història com si l'haguessis fet."
+
+    scene now_conference
+    "[tmpSavePlayer] ha resolt correctament l'enigma de les diferències, així que s'apropa al mostrador."
+    unknown_girl "Molt bé! Ho ha aconseguit!"
+    unknown_girl "Tingui, aquí té el nostre petit obsequi."
+
+    if game_state.witch_is_seen:
+        unknown_girl "És el nou número de la revista {i}Our Bodies, Our Selves{/i}."
+        unknown_girl "No sé si la coneix, però és una revista que pretén exhibir el tracte sexista i condescendent per part dels metges cap a les dones."
+        user "No, no la coneixia. Moltes gràcies per la informació."
+    else:
+        unknown_girl "És el nou número de la revista sobre feminisme indi, {i}Manushi{/i}."
+        user "Moltes gràcies. Molt amable."
+
+    "Així, [tmpSavePlayer] decidí marxar de la sala amb la revista en mà. Ja tenia un entreteniment més pel viatge."
+
+    if CHAPTERS[3] in game_state.chapters_completed:
+        $ addChapterCompleted(CHAPTERS[2])
+        call chapter_2c
+    else:
+        call end_chapter(CHAPTERS[2])
 
     return

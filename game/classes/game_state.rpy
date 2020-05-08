@@ -29,6 +29,7 @@ init -10 python:
         eunuch_is_found = False
         vaginal_orgasm_is_found = False
         witch_is_seen = False
+        find_differences_done = False
 
 
         def clear(self):
@@ -58,3 +59,4 @@ init -10 python:
             self.eunuch_is_found = False
             self.vaginal_orgasm_is_found = False
             self.witch_is_seen = False
+            self.find_differences_done = False
