@@ -292,7 +292,8 @@ label chapter_0:
             $ GiveGlossaryItemToPlayer(18)
             $ ShowItems()
 
-        call train(CHAPTERS[0])
+        call train
+        call end_chapter(CHAPTERS[0])
         return
 
 

@@ -106,7 +106,7 @@ label cr_session:
     adrienne_rich "Gràcies per compartir-ho amb nosaltres, Houda. És que, fins i tot, es pot dir que els matrimonis forçats estan vinculats al tràfic d'éssers humans. I això és més que sèrio."
     adrienne_rich "Per això, com a dones, hem de cedir a allò que l'home ens digui, faci o ens faci fer, independentment de la nostra voluntat i/o consentiment?"
 
-    jump no_is_yes
+    call no_is_yes
 
     adrienne_rich "D'acord, aturem motors un moment. Respirem fons i continuem. Ja hem passat l'equador i ara comencem l'última part de la sessió."
     adrienne_rich "Ara, emprenem el tema de la sexualitat."
@@ -129,6 +129,8 @@ label cr_session:
     adrienne_rich "I tant que sí!"
 
     "I, amb abraçades, agraïments i salutacions, les dones del grup, la moderadora i [tmpSavePlayer] s'acomiadaren."
+
+    call end_chapter(CHAPTERS[3])
 
     return
 

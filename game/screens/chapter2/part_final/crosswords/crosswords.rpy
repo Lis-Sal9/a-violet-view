@@ -124,10 +124,15 @@ screen set_word(ok_action):
 label see_dinner_party:
     python:
         setIsInSpecialScreen(False)
+        
     image portrait_dinner = "images/chapter2/crosswords/the_dinner_party.png"
     scene black
     show portrait_dinner at truecenter
     "[tmpSavePlayer] ha desxifrat l'encreuada i ja pot veure tota la pintura correctament."
+
+    call train
+    call end_chapter(CHAPTERS[4])
+
     return
 
 

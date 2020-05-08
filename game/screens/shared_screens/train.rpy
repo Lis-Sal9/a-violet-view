@@ -1,22 +1,12 @@
 
 ## Script for the train scene.
-## To change the chapter ...
 
-
-init python:
-    CHAPTERS = ["P", "1", "2a", "2b", "2c", "3", "E"]
-
-    def setChapter(chapter_completed):
-        global game_state
-        if chapter_completed not in game_state.chapters_completed:
-            game_state.chapters_completed.append(chapter_completed)
 
 
 # Train background
-label train(chapter_completed):
+label train:
     $ renpy.choice_for_skipping()
     $ setIsInSpecialScreen(True)
-    $ setChapter(chapter_completed)
 
     image bg_train = "images/train/train_bg.png"
     image img_train = "images/train/train_img.png"
@@ -34,8 +24,5 @@ label train(chapter_completed):
     stop music fadeout 0.5
 
     $ setIsInSpecialScreen(False)
-
-    if len(game_state.chapters_completed) < 3:
-        call screen library
 
     return
