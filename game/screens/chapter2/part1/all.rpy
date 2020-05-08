@@ -100,6 +100,9 @@ label hostel:
 
     "[tmpSavePlayer] baixà del taxi i s'aproximà a la pensió. Tenia un aspecte aparentment estàndard."
 
+    $ renpy.hide_screen("the_myth_of_the_vaginal_orgasm")
+    $ renpy.hide_screen("hover_vaginal_orgasm")
+
     if game_state.pizzey_is_seen:
         "Va entrar i una dona va saludar."
         unknown_girl "Bon dia tingui. En què podria ajudar?"
@@ -130,6 +133,9 @@ label hostel:
     "{i}I, a més a més, fa èmfasi en què les dones tenen el dret a forjar una subjectivitat feminina ocupant la posició del 'jo'.{/i}"
     "{i}Per tant, s'hauria de reconèixer la diferència sexual i proposa que la societat abandoni la idea de jerarquia sexual on els homes són subjectes i les dones 'allò altre' ...{/i}"
     "[tmpSavePlayer] s'havia adormit amb el llibre obert sobre el pit."
+
+    $ renpy.hide_screen("the_female_eunuch")
+    $ renpy.hide_screen("hover_eunuch")
 
     call morning
 
