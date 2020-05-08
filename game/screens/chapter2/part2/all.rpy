@@ -15,7 +15,7 @@ image cr_session = "images/chapter2/part2/nyrw/cr_session.png"
 
 
 # Characters
-define miriam_schapiro = Character("Miriam Schapiro", color="#FED876")
+define judy_chicago = Character("Judy Chicago", color="#FED876")
 define adrienne_rich = Character("Adrienne Rich", color="#F5B2AC")
 define participant = Character("Participant", color="#231F20")
 
@@ -58,24 +58,24 @@ label nyrw_building:
     "[tmpSavePlayer] començà a notar com els nervis envaïen el seu cos. I ara què faria?"
     unknown_girl "Kathie, deixi passar a aquesta persona. Ve al grup que porta l'Adrienne."
     "[tmpSavePlayer] mirà a aquella dona que s'apropà. Tenia una cara familiar, però no aconseguia esbrinar d'on la coneixia."
-    unknown_girl "Perdoni, [tmpSavePlayer]. Disculpi les molèsties. Acompanyi a la senyora Schapiro."
-    "Així, Miriam Schapiro i [tmpSavePlayer] marxaren cap a la sala."
-    miriam_schapiro "Em dic Miriam. Vostè és [tmpSavePlayer]. M'equivoco?"
+    unknown_girl "Perdoni, [tmpSavePlayer]. Disculpi les molèsties. Acompanyi a la senyora Chicago."
+    "Així, Judy Chicago i [tmpSavePlayer] marxaren cap a la sala."
+    judy_chicago "Em dic Judy. Vostè és [tmpSavePlayer]. M'equivoco?"
     user "No. Un plaer. Gràcies pel cop de mà."
     user "Sap què? Em resulta familiar la seva cara però ara no sé d'on ..."
-    miriam_schapiro "Doncs no tinc ni idea. La veritat és que ara que ho menciona, a mi també em passa el mateix."
+    judy_chicago "Doncs no tinc ni idea. La veritat és que ara que ho menciona, a mi també em passa el mateix."
     user "Ostres ..."
-    miriam_schapiro "Sigui com sigui, ara ja ens coneixem. Miri, tinc una proposta per fer-li, si li ve de gust."
+    judy_chicago "Sigui com sigui, ara ja ens coneixem. Miri, tinc una proposta per fer-li, si li ve de gust."
     user "I tant. Endavant."
-    miriam_schapiro "Farà un temps, vaig estar en la conferència de NOW, repartint obsequis. En breu, faré una exposició d'art allà mateix."
-    miriam_schapiro "A part de donar-li una invitació per si hi vol assistir, voldria oferir-li que m'ajudés amb la meva obra estrella: {i}The Dinner Party{/i}."
-    miriam_schapiro "La veritat és que la porto bastant endarrerida i no em vindria pas malament un parell de mans més."
+    judy_chicago "Farà un temps, vaig estar en la conferència de NOW, repartint obsequis. En breu, faré una exposició d'art allà mateix."
+    judy_chicago "A part de donar-li una invitació per si hi vol assistir, voldria oferir-li que m'ajudés amb la meva obra estrella: {i}The Dinner Party{/i}."
+    judy_chicago "La veritat és que la porto bastant endarrerida i no em vindria pas malament un parell de mans més."
     "[tmpSavePlayer] es quedà rumiant ... "
-    miriam_schapiro "[tmpSavePlayer], s'ha quedat pensant en les musaranyes ..."
-    user "Perdoni, Miriam, sí, serà un plaer ajudar-la. Serà la meva manera de tornar-li el petit favor que m'ha fet."
+    judy_chicago "[tmpSavePlayer], s'ha quedat pensant en les musaranyes ..."
+    user "Perdoni, Judy, sí, serà un plaer ajudar-la. Serà la meva manera de tornar-li el petit favor que m'ha fet."
     "[tmpSavePlayer] posà cara de vergonya, però assentí amb el cap."
-    miriam_schapiro "Moltes gràcies. Ai, miri, és aquí el grup."
-    "Acabaven d'arribar a la sala. S'acomiadà de la senyora Schapiro amb complicitat i, mentre ella s'allunyava, [tmpSavePlayer] trucà a la porta i entrà."
+    judy_chicago "Moltes gràcies. Ai, miri, és aquí el grup."
+    "Acabaven d'arribar a la sala. S'acomiadà de la senyora Chicago amb complicitat i, mentre ella s'allunyava, [tmpSavePlayer] trucà a la porta i entrà."
 
     call cr_session
 

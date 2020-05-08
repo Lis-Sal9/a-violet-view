@@ -33,14 +33,14 @@ label chapter_2c:
 label art_studio:
     scene art_studio
 
-    "[tmpSavePlayer] havia arribat a l'estudi d'art de Miriam Schapiro."
+    "[tmpSavePlayer] havia arribat a l'estudi d'art de Judy Chicago."
     "Tal com havien quedat, ella tenia una proposta en la qual [tmpSavePlayer] podia donar-li un cop de mà."
 
-    user "Bon dia, Miriam! Com va?"
-    miriam_schapiro "Bon dia, [tmpSavePlayer]! Ha vingut!"
+    user "Bon dia, Judy! Com va?"
+    judy_chicago "Bon dia, [tmpSavePlayer]! Ha vingut!"
     user "I tant! Li vaig donar la meva paraula que l'ajudaria després del favor que em va fer."
-    miriam_schapiro "No és per tant. Deixem-nos de punyetes i comencem a treballar."
-    "Miriam va ensenyar l'estudi a [tmpSavePlayer] i li va presentar l'obra que volia crear que, segons ella, seria un símbol emblemàtic de l'art feminista."
+    judy_chicago "No és per tant. Deixem-nos de punyetes i comencem a treballar."
+    "Judy va ensenyar l'estudi a [tmpSavePlayer] i li va presentar l'obra que volia crear que, segons ella, seria un símbol emblemàtic de l'art feminista."
     "Ja amb tot el material necessari a punt, començaren la creació ..."
 
     return
@@ -55,13 +55,13 @@ label see_dinner_party:
     scene black
     show portrait_dinner at truecenter
     user "Què bonic ens ha quedat !!!"
-    miriam_schapiro "I tant que sí !!! Sense dubte, jo tenia raó. Serà un símbol emblemàtic !!"
-    miriam_schapiro "És una obra que explica la història simbòlica de la dona en la civilització occidental."
-    miriam_schapiro "I que el seu objectiu és finalitzar el cicle d'invisibilitat al qual han estat sotmeses les dones al llarg de la història."
+    judy_chicago "I tant que sí !!! Sense dubte, jo tenia raó. Serà un símbol emblemàtic !!"
+    judy_chicago "És una obra que explica la història simbòlica de la dona en la civilització occidental."
+    judy_chicago "I que el seu objectiu és finalitzar el cicle d'invisibilitat al qual han estat sotmeses les dones al llarg de la història."
     user "Sí, i sobretot és molt maco que tota l'obra estigui feta al detall, i que cada detall tingui un per què."
-    miriam_schapiro "Sí. La forma de triangle és tradicionalment vinculada a la feminitat, i les tretze dones que hi ha a cada costat del triangle equilàter fa referència a les persones que assistiren a l'últim sopar."
+    judy_chicago "Sí. La forma de triangle és tradicionalment vinculada a la feminitat, i les tretze dones que hi ha a cada costat del triangle equilàter fa referència a les persones que assistiren a l'últim sopar."
     user "Una comparació molt interessant, ja que aquí tot són dones, però en aquell sopar varen ser tot homes."
-    miriam_schapiro "Efectivament ... ja tinc el nom de l'obra! Es dirà {i}The Dinner Party{/i}!!"
+    judy_chicago "Efectivament ... ja tinc el nom de l'obra! Es dirà {i}The Dinner Party{/i}!!"
     "I, amb alegria, recolliren el material usat i s'acomiadaren."
 
     scene street_studio
