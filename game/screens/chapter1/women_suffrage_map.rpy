@@ -13,7 +13,9 @@ label suffrage_map:
         $ ShowItems()
 
     $ setIsInSpecialScreen(True)
-    $ stage = 0
+    $ shuffleStages()
+    $ stages_completed = []
+    $ num_selected_correct_options = 0
     call screen women_suffrage_map(num = 0)
     return
 
@@ -23,42 +25,48 @@ init python:
 
     OPTIONS = ["Abans de 1914", "1914 - 1920", "1921 - 1940", "1941 - 1955", "1956 - 1970", "Després de 1970", "Sense sufragi"]
     COLORS = ["#e5ffde", "#bbcbcb", "#9590a8", "#634b66", "#3e2739", "#18020c", "#ffffff"]
-    stage = 0
+    STAGES = list(range(0, len(OPTIONS)))
+    stages_completed = []
     num_selected_correct_options = 0
 
-    def getRandomNumbers():
-        random_options = []
-        random_options.append(stage)
+    def shuffleStages():
+        global STAGES
+        STAGES = list(range(0, len(OPTIONS)))
+        random.shuffle(STAGES)
+
+    def getRandomNumbers(stage):
+        random_options = [STAGES[stage]]
+
         while len(random_options) < 4:
             num = random.randrange(len(OPTIONS))
             if num not in random_options:
                 random_options.append(num)
+
         random.shuffle(random_options)
         return random_options
 
-    def checkCorrectOption(option):
+    def checkCorrectOption(option, stage):
         global num_selected_correct_options
-        global stage
-        if option == OPTIONS[stage]:
+        stages_completed.append(stage)
+        if option == stage:
             num_selected_correct_options = num_selected_correct_options + 1
-        stage = stage + 1
 
     def showCorrectStars():
         global game_state
         game_state.suffrage_map_done = True
-        if num_selected_correct_options > 2 and num_selected_correct_options < 6:
+        if num_selected_correct_options > 2:
             # achieve one item
             GiveGalleryItemToPlayer(0)
-        elif num_selected_correct_options == 6 or num_selected_correct_options == 7:
+        if num_selected_correct_options > 5:
             # achieve two items
-            GiveGalleryItemToPlayer(0)
             GiveGalleryItemToPlayer(2)
         setIsInSpecialScreen(False)
 
 
 screen women_suffrage_map(num):
+    $ current_stage = STAGES[num]
     add "images/chapter1/suffrage_map/suffrage_map_bg.png"
-    add "images/chapter1/suffrage_map/suffrage_map_[num].png"
+    add "images/chapter1/suffrage_map/suffrage_map_[current_stage].png"
 
     text _("Sufragi femení"):
         size 50
@@ -82,7 +90,7 @@ screen women_suffrage_map(num):
                 align 0.5, 0.5
                 yoffset 20
 
-            $ random_options = getRandomNumbers()
+            $ random_options = getRandomNumbers(num)
             for i in range(0, 4):
                 $ option = random_options[i]
                 $ option_text = OPTIONS[option]
@@ -90,7 +98,7 @@ screen women_suffrage_map(num):
                     yoffset 40
                     ysize 40
 
-                    text _(OPTIONS[random_options[i]]):
+                    text _(option_text):
                         color "#ffffff"
                         size 17
                         align 0.5, 0.5
@@ -100,7 +108,9 @@ screen women_suffrage_map(num):
                         hover "images/chapter1/suffrage_map/map_item_hover.png"
                         align 0.5, 0.5
                         xysize 230, 40
-                        action [Hide("women_suffrage_map"), Function(checkCorrectOption, OPTIONS[random_options[i]]), If(num == 6, true=Show("correct_suffrage_map"), false=Show("women_suffrage_map", num=num + 1))]
+                        action [Hide("women_suffrage_map"),
+                                Function(checkCorrectOption, option, current_stage),
+                                If(num == 6, true = Show("correct_suffrage_map"), false = Show("women_suffrage_map", num = num + 1))]
 
 
 
