@@ -134,11 +134,7 @@ label cr_session:
     $ GiveGalleryItemToPlayer(3)
     ###################################################
 
-    if CHAPTERS[2] in game_state.chapters_completed:
-        $ addChapterCompleted(CHAPTERS[3])
-        call chapter_2c
-    else:
-        call end_chapter(CHAPTERS[3])
+    call end_chapter(CHAPTERS[3])
 
     return
 

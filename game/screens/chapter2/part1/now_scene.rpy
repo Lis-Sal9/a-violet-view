@@ -96,10 +96,6 @@ label now_scene:
 
     "Així, [tmpSavePlayer] decidí marxar de la sala amb la revista en mà. Ja tenia un entreteniment més pel viatge."
 
-    if CHAPTERS[3] in game_state.chapters_completed:
-        $ addChapterCompleted(CHAPTERS[2])
-        call chapter_2c
-    else:
-        call end_chapter(CHAPTERS[2])
+    call end_chapter(CHAPTERS[2])
 
     return
