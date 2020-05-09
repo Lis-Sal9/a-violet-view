@@ -553,7 +553,7 @@ translate english return_to_train_station_9d710fef:
     "While [tmpSavePlayer] waits for the train, remembers that odd book in the pocket. There was a test and [tmpSavePlayer] decided to undertake it."
 
 # game/screens/chapter1/all.rpy:270
-translate english return_to_train_station_ca734e29:
+translate english return_to_train_station_93eaf012:
 
     # "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar-lo a fer?"
     "You already completed the women's suffrage map. Want to repeat?"

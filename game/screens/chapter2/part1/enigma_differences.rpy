@@ -16,7 +16,7 @@ init -10 python:
     def checkSevenDifferences():
         if len(found_differences) == 7:
             game_state.find_differences_done = True
-            renpy.notify(_("Has aconseguit l'obsequi!"))
+            renpy.notify(_("Ha aconseguit l'obsequi!"))
 
     def checkTenDifferences():
         if len(found_differences) == 10:

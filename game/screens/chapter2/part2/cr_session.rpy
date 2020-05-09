@@ -240,13 +240,13 @@ label rape_fear(result):
         participant "{i}No em puc creure el què està dient ... {/i} - Serena es va quedar petrificada."
         participant "{i}Però quin percentatge es pensa que hi ha d'acusacions falses?{/i} - cada vegada, Serena s'estava enfurismant més."
         menu:
-            "Entre 10-20%":
-                user "Entre un 10 i un 20% del total, m'atreviria a dir."
-                participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior al 10%.{/i} - contestà Serena."
+            "Entre 10-20":
+                user "Entre un 10 i un 20 del total, m'atreviria a dir."
+                participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior a 10.{/i} - contestà Serena."
                 participant "{i}No se'n vagi per les branques.{/i} - digué Serena bastant molesta."
-            "Menys d'un 10%":
+            "Menys d'un 10":
                 $ addRateScore(1)
-                user "Crec que inferior al 10% del total."
+                user "Crec que inferior al 10 del total."
                 participant "{i}Efectivament, no més que en altres delictes.{/i} - afirmà Serena."
                 participant "{i}Llavors, tingui una mica més de respecte.{/i} - digué Serena bastant molesta."
                 user "D'acord. Disculpi si l'he molestada."

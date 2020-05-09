@@ -124,26 +124,30 @@ screen set_word(ok_action):
 
 
 screen sidebar():
-    frame:
-        background "#000000"
+    fixed:
+        align 0, 0
+        xsize 400
+        add Solid("#000000")
 
-        has vbox:
-            align 0, 0
-            xysize 200, 1920
-
-        grid 1 39:
+        vpgrid:
+            cols 1
+            xsize 400
             transpose True
-            yspacing 12
             xoffset 10
             yoffset 10
+            draggable True
+            mousewheel True
+            side_yfill True
 
             for i in range(0, len(FULL_WORDS)):
                 $ is_in_list = False
                 if i in all_crosswords:
                     $ is_in_list = True
 
-                text FULL_WORDS[i]:
-                    color "#ffffff"
-                    xysize 200, 1920
-                    size 13
-                    strikethrough is_in_list
+                fixed:
+                    xysize 400, 50
+                    text FULL_WORDS[i]:
+                        color "#ffffff"
+                        size 30
+                        strikethrough is_in_list
+                        kerning 3.4

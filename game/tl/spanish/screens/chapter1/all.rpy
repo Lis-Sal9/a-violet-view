@@ -553,7 +553,7 @@ translate spanish return_to_train_station_9d710fef:
     "Mientras espera la llegada del tren, se acuerda de que tiene un libro un poco peculiar. Lo abre y ve que hay un test. Decide hacerlo."
 
 # game/screens/chapter1/all.rpy:296
-translate spanish return_to_train_station_ca734e29:
+translate spanish return_to_train_station_93eaf012:
 
     # "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar-lo a fer?"
     "Ya has hecho el mapa del sufragio femenino anteriormente. ¿Quieres volverlo a hacer?"
