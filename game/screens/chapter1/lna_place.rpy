@@ -5,7 +5,7 @@
 init python:
     def addContraception():
         game_state.contraception_is_found = True
-        GiveGlossaryItemToPlayer(13)
+        GiveGlossaryItemToPlayer(21)
         ShowItems()
 
 
@@ -39,7 +39,7 @@ label contraception:
     user "{i}La prostitució és rebutjada per ser el mal social de la societat de tota dona respectable.{/i}"
     user "{i}No obstant això, és considerada una conseqüència inevitable de l'incontrolable desig sexual de l'home.{/i}"
 
-    $ GiveGlossaryItemToPlayer(11)
+    $ GiveGlossaryItemToPlayer(19)
     $ ShowItems()
 
     user "Quines excuses més barates, mare meva ... això és inacceptable."

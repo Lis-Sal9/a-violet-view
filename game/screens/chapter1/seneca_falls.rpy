@@ -20,7 +20,7 @@ label seneca_falls_convention:
     charlotte_woodward "Encantada de conèixer-vos. Estic molt emocionada pel dia d'avui."
     sojourner_truth "Sí, jo també ho estic."
 
-    $ GiveGlossaryItemToPlayer(21)
+    $ GiveGlossaryItemToPlayer(32)
     $ ShowItems()
 
     "I així, mentre la Convenció no començava, varen estar parlant sobre les seves vides i experiències."
@@ -38,21 +38,21 @@ label seneca_falls_convention:
     elizabeth_cady_stanton "Estan d'acord amb què totes les lleis que impedeixen a la dona ocupar el lloc que desitgi en societat o que la posicionin per sota l'home, no tenen autoritat suficient perquè són contràries a la pròpia naturalesa?"
 
     $ renpy.choice_for_skipping()
-    $ GiveGlossaryItemToPlayer(21)
-    $ GiveGlossaryItemToPlayer(11)
+    $ GiveGlossaryItemToPlayer(32)
+    $ GiveGlossaryItemToPlayer(19)
     if game_state.contraception_is_found:
-        $ GiveGlossaryItemToPlayer(13)
+        $ GiveGlossaryItemToPlayer(21)
     if game_state.campoamor_is_seen:
-        $ GiveGlossaryItemToPlayer(2)
+        $ GiveGlossaryItemToPlayer(7)
     if game_state.langham_library_is_seen:
-        $ GiveGlossaryItemToPlayer(0)
-        $ GiveGlossaryItemToPlayer(25)
-        $ GiveGlossaryItemToPlayer(16)
-        $ GiveGlossaryItemToPlayer(19)
+        $ GiveGlossaryItemToPlayer(1)
+        $ GiveGlossaryItemToPlayer(36)
+        $ GiveGlossaryItemToPlayer(24)
+        $ GiveGlossaryItemToPlayer(27)
         if game_state.coverture_is_found:
-            $ GiveGlossaryItemToPlayer(4)
+            $ GiveGlossaryItemToPlayer(10)
             if game_state.mill_are_nice:
-                $ GiveGlossaryItemToPlayer(7)
+                $ GiveGlossaryItemToPlayer(14)
     $ ShowItems()
     $ seneca_agrees = 0
 
@@ -77,7 +77,7 @@ label seneca_falls_convention:
     "En aquell moment, moltes de les persones assistents varen apropar-se a les moderadores del debat per signar el document. Amb [tmpSavePlayer] es podien comptar unes cent persones."
 
     $ renpy.choice_for_skipping()
-    $ GiveGlossaryItemToPlayer(3)
+    $ GiveGlossaryItemToPlayer(9)
     $ ShowItems()
     $ renpy.show_screen("sf_document")
     "Així, quedava signat el document que passà a conèixer-se més tard com a {i}Declaració de Sentiments i Resolucions{/i}."

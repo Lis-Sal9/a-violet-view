@@ -161,6 +161,12 @@ label morning:
     user "Bon dia, senyor. A NOW, l'Organització Nacional per les Dones."
     unknown_boy "D'acord. Pel camí curt o llarg?"
 
+    if game_state.eunuch_is_found:
+        $ GiveGlossaryItemToPlayer(13)
+    if game_state.vaginal_orgasm_is_found:
+        $ GiveGlossaryItemToPlayer(4)
+    $ ShowItems()
+
     menu:
         "Camí curt":
             user "Millor arribar abans."

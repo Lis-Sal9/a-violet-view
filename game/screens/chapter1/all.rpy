@@ -104,7 +104,7 @@ label langham_place:
     user "Gràcies, senyor."
     "[tmpSavePlayer] paga i baixa del carruatge. És davant del 19 de Langham Place."
 
-    $ GiveGlossaryItemToPlayer(12)
+    $ GiveGlossaryItemToPlayer(20)
     $ ShowItems()
 
     "[tmpSavePlayer] entra a dins."
@@ -116,7 +116,7 @@ label langham_place:
     unknown_girl "Aiiiiiaaaaaaaaaaahhhh ..."
     "[tmpSavePlayer] i aquella dona havien xocat i se li havia caigut la pila de llibres que duïa a terra."
 
-    $ GiveGlossaryItemToPlayer(12)
+    $ GiveGlossaryItemToPlayer(20)
     $ ShowItems()
 
     menu:
@@ -208,7 +208,7 @@ label langham_inside_out:
         user "Sembla interessant, però ara mateix he de complir una altra missió. Hauran de disculpar-me."
         john_stuart_mill "D'acord, no es preocupi pas. Era un simple oferiment. Sempre pot llegir l'assaig quan ho desitgi."
 
-        $ GiveGlossaryItemToPlayer(7)
+        $ GiveGlossaryItemToPlayer(14)
         $ ShowItems()
 
         "I així, [tmpSavePlayer] s'acomiadà d'aquella parella tan peculiar."
@@ -232,7 +232,7 @@ label langham_inside_interaction:
     user "I tant, no ho dubti ! Moltes gràcies per aquesta conversa tan interessant."
     clara_campoamor "A vostè ! A reveure !"
 
-    $ GiveGlossaryItemToPlayer(2)
+    $ GiveGlossaryItemToPlayer(7)
     $ ShowItems()
     $ game_state.campoamor_is_seen = True
 
@@ -249,7 +249,7 @@ label free_women:
     "La dona mirà a [tmpSavePlayer] i, amb amabilitat i aprofitant l'ocasió, li va fer una mica de publicitat."
     unknown_girl "Bon dia. El meu nom és Emma Goldman. Aquí ens reunim les persones associades a l'organització de Dones Lliures."
 
-    $ GiveGlossaryItemToPlayer(17)
+    $ GiveGlossaryItemToPlayer(25)
     $ ShowItems()
 
     emma_goldman "La coneix?"
@@ -264,7 +264,7 @@ label free_women:
     emma_goldman "I, cortesia de la casa, li faig entrega del nou número que hem publicat recentment les altres dones de la revista i jo. Tingui."
     user "Moltes gràcies, Emma! Molt amable!"
 
-    $ GiveGlossaryItemToPlayer(6)
+    $ GiveGlossaryItemToPlayer(12)
     $ ShowItems()
 
     "Abans de marxar, [tmpSavePlayer] va observar detingudament de nou aquell espai. Semblava amagar alguna cosa, però alhora semblava tenir les idees molt clares."

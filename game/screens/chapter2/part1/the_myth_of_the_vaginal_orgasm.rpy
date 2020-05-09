@@ -5,8 +5,8 @@
 init python:
     def addVaginalOrgasm():
         game_state.vaginal_orgasm_is_found = True
-        #GiveGlossaryItemToPlayer(13)
-        #ShowItems()
+        GiveGlossaryItemToPlayer(4)
+        ShowItems()
 
 
 screen the_myth_of_the_vaginal_orgasm():

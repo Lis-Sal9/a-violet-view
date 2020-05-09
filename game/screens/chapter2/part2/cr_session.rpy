@@ -11,16 +11,14 @@ label cr_session:
     "La moderadora va assenyalar on podia seure i immediatament després, va començar la sessió."
     unknown_girl "Benvingudes a totes les persones assistents. Novament, avui sumem una sessió més del grup d'autoconsciència."
 
-    ## ITEM NYRW and CR
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ GiveGlossaryItemToPlayer(8)
+    $ ShowItems()
 
     unknown_girl "Per les noves incorporacions, jo em dic Adrienne Rich i seré la moderadora del grup durant el transcurs del mateix."
     "Bon dia, Adrienne !! - varen contestar en veu alta totes les noies del grup alhora."
 
-    ## ITEM Adrienne Rich - Compulsory Heterosexuality and Lesbian Existence
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ GiveGlossaryItemToPlayer(0)
+    $ ShowItems()
 
     scene cr_einstein
     adrienne_rich "I aquest reiet d'aquí es diu Einstein. Veureu que ens farà molta companyia. És una peça fonamental en la germanor i la lleialtat."
@@ -39,9 +37,8 @@ label cr_session:
     participant "{i}Qualsevol dels sistemes d'opressió, discriminació i/o dominació actuen interrelacionats i suposen identitats socials solapades.{/i} - seguí."
     participant "{i}És a dir, la interseccionalitat és un risc múltiple, ja que el sexisme s'agreuja en combinació amb el racisme i altres opressions, com la classe.{/i} - conclogué."
 
-    ## ITEM Kimberlé Crenshaw
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ GiveGlossaryItemToPlayer(16)
+    $ ShowItems()
 
     user "Sí. De fet, les feministes negres i de classe treballadora denuncien el racisme i els prejudicis subjacents a la germanor del feminisme."
     user "Malgrat les dones negres poguessin votar, l'activisme pels drets laborals, la llibertat sexual o el control de la natalitat segueix dominat per dones blanques de classe mitjana."
@@ -51,9 +48,8 @@ label cr_session:
     adrienne_rich "Les dones negres no solament pateixen la desigualtat racial, sinó també la de gènere. Estan més oprimides que les dones blanques."
     participant "{i}Necessitem un feminisme propi, que consideri els problemes de les dones negres també. L'opressió racial i la de classe.{/i} - reclamà Alicia."
 
-    ## ITEM Alice Walker - Mujerismo y mujeres negras
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ GiveGlossaryItemToPlayer(2)
+    $ ShowItems()
 
     user "Considero que això es remunta més enllà ..."
     user "Ja en les societats esclavistes la dona negra era considerada sexualment {i}fàcil{/i}, a qui es culpava quan s'abusava d'ella física i sexualment. Ja era present aquest estereotip llavors."
@@ -62,12 +58,18 @@ label cr_session:
     adrienne_rich "Ostres, Lynn. Quin mal tràngul ... per sort, l'esclavisme ja va acabar fa anys."
     participant "{i}Sí, però encara segueixo sense trobar explicació a què a una amiga de la meva mare l'esterilitzessin sense consentiment, igual que a altres companyes seves de classe treballadora, mentre que a les dones blanques se les animava a tenir descendència.{/i} - aclarí Lynn."
 
-    ## ITEM Angela Davis - Mujeres, raza y clase
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ GiveGlossaryItemToPlayer(3)
+    $ ShowItems()
 
     user "La violació en l'esclavitud era la manera rutinària dels propietaris de les esclaves per atemorir-les i recordar als esclaus negres que no podien protegir-les."
     participant "{i}Però la violació no està motivada per la luxúria?{/i} - preguntà Lynn."
+
+    $ GiveGlossaryItemToPlayer(8)
+    $ GiveGlossaryItemToPlayer(0)
+    $ GiveGlossaryItemToPlayer(16)
+    $ GiveGlossaryItemToPlayer(2)
+    $ GiveGlossaryItemToPlayer(3)
+    $ ShowItems()
 
     call true_or_false_question("rape_luxury")
 
@@ -93,9 +95,8 @@ label cr_session:
     participant "{i}I, per combatre-la, les dones indígenes s'impliquen més en la lluita ètnica i criden l'atenció en qüestions respectives de les dones, vinculant així l'autonomia femenina i l'ètnia.{/i} - va dir Gloria."
     participant "{i}Però la realitat és molt més crua. Moltes varen ser esterilitzades forçosament, desaparegudes i, fins i tot, assassinades.{/i} - va finalitzar Gloria."
 
-    ## ITEM Paula Gunn Allen - The Sacred Hoop: Recovering the Femenine in American Indian Traditions
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ GiveGlossaryItemToPlayer(29)
+    $ ShowItems()
 
     user "Cada vegada resulta més necessari el recolzament pràctic i emocional als grups de dones de comunitats amb major risc per erradicar la violació dels drets humans."
     user "De la mateixa manera que la clau per prevenir aquest tipus de violacions roman en l'educació, ja que acostuma a donar-se en sectors menys instruïts."
@@ -105,6 +106,9 @@ label cr_session:
     participant "{i}Afortunadament, sembla que els miracles existeixen. Vaig poder fugir a un altre país i mai més en vaig tornar a saber res. Vaig perdre tot el contacte amb la meva família però, sincerament, és un sacrifici que faig sense penedir-me.{/i} - va dir Houda, ja més calmada."
     adrienne_rich "Gràcies per compartir-ho amb nosaltres, Houda. És que, fins i tot, es pot dir que els matrimonis forçats estan vinculats al tràfic d'éssers humans. I això és més que sèrio."
     adrienne_rich "Per això, com a dones, hem de cedir a allò que l'home ens digui, faci o ens faci fer, independentment de la nostra voluntat i/o consentiment?"
+
+    $ GiveGlossaryItemToPlayer(29)
+    $ ShowItems()
 
     call no_is_yes
 
@@ -232,6 +236,7 @@ label rape_fear(result):
 
 
 label no_is_yes:
+    $ renpy.choice_for_skipping()
     menu:
         "Quan una dona diu que no, en realitat vol dir que sí":
             # No ha encertat
@@ -258,6 +263,7 @@ label no_is_yes:
 
 
 label true_or_false_question(label_name):
+    $ renpy.choice_for_skipping()
     menu:
         "Vertader":
             $ renpy.call_in_new_context(label_name, True)

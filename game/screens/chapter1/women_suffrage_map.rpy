@@ -6,10 +6,10 @@ label suffrage_map:
     $ renpy.choice_for_skipping()
 
     if game_state.maze_is_seen:
-        $ GiveGlossaryItemToPlayer(17)
-        $ GiveGlossaryItemToPlayer(6)
+        $ GiveGlossaryItemToPlayer(25)
+        $ GiveGlossaryItemToPlayer(12)
         if len(game_state.maze_objects) == 7:
-            $ GiveGlossaryItemToPlayer(23)
+            $ GiveGlossaryItemToPlayer(34)
         $ ShowItems()
 
     $ setIsInSpecialScreen(True)

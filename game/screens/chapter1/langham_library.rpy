@@ -8,7 +8,7 @@ label langham_library:
     user "A veure què hi ha per aquí ..."
     user "{i}Una habitació pròpia{/i}, de Virginia Woolf ... vaig a llegir la sinopsi ... "
 
-    $ GiveGlossaryItemToPlayer(25)
+    $ GiveGlossaryItemToPlayer(36)
     $ ShowItems()
 
     "Mentre [tmpSavePlayer] llegia la sinopsi d'aquella obra, dues dones prop seu estaven alçant la veu en un debat d'opinió."
@@ -22,12 +22,12 @@ label langham_library:
     clara_zetkin "Un plaer, [tmpSavePlayer]."
     rosa_luxemburg "Per favor, diga-li a la meva amiga que l'obra {i}Dones i sexe{/i} exposa d'una manera més clarificadora el feminisme des d'un punt de vista marxista."
 
-    $ GiveGlossaryItemToPlayer(19)
+    $ GiveGlossaryItemToPlayer(27)
     $ ShowItems()
 
     clara_zetkin "Ja saps que no estic d'acord, Rosa. Per a mi, ho fa millor l'obra {i}Els fonaments socials de la qüestió femenina{/i}. T'ho he dit moltes vegades !"
 
-    $ GiveGlossaryItemToPlayer(0)
+    $ GiveGlossaryItemToPlayer(1)
     $ ShowItems()
 
     "[tmpSavePlayer] feia cara d'estranyesa."
@@ -36,7 +36,7 @@ label langham_library:
     rosa_luxemburg "Ja t'ho deia jo que aquesta persona no valia la pena. Anem ..."
     clara_zetkin "Sí, en això tenies raó ..."
 
-    $ GiveGlossaryItemToPlayer(16)
+    $ GiveGlossaryItemToPlayer(24)
     $ ShowItems()
 
     "Aquelles dones van marxar enfurismades amb [tmpSavePlayer], com si fos una aberració no conèixer aquelles obres."
@@ -66,7 +66,7 @@ label langham_library_book:
     user "Sembla una espècie de llibre legal o de llei ..."
     user "{i}Llei coverture: absorció dels drets de les dones casades{/i}"
 
-    $ GiveGlossaryItemToPlayer(4)
+    $ GiveGlossaryItemToPlayer(10)
     $ ShowItems()
 
     user "Al final, una dona soltera acaba tenint més drets que una dona casada. Això és el món al revés."

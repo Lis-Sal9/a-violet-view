@@ -5,8 +5,8 @@
 init python:
     def addEunuch():
         game_state.eunuch_is_found = True
-        #GiveGlossaryItemToPlayer(13)
-        #ShowItems()
+        GiveGlossaryItemToPlayer(13)
+        ShowItems()
 
 
 screen the_female_eunuch():

@@ -22,9 +22,8 @@ label now_scene:
     betty_friedan "Hem de gaudir de llibertat sexual i autonomia en les nostres relacions de parella."
     betty_friedan "Dit això, dóno per iniciada la conferència."
 
-    ## ITEM Betty Friedan
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ GiveGlossaryItemToPlayer(5)
+    $ ShowItems()
 
     "Totes les persones assitents aplaudiren."
     betty_friedan "NOW es basa en el principi de què les dones som, per sobre de tot, éssers humans que han de tenir l'ocasió de desenvolupar en la seva plenitud el seu potencial humà."
@@ -33,9 +32,8 @@ label now_scene:
     betty_friedan "El problema principal és l'exclusió de les dones en l'esfera pública."
     betty_friedan "És per aquest motiu que es promou la inclusió de les dones en el mercat laboral i en càrrecs polítics."
 
-    ## ITEM Declaration of NOW
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ GiveGlossaryItemToPlayer(28)
+    $ ShowItems()
 
     kate_millet "El patriarcat, com a sistema bàsic de dominació en el qual es recolzen tota la resta, és política sexual, com anomeno el meu llibre, és a dir, es refereix a l'establiment de les relacions."
     kate_millet "El factor econòmic és un instrument de dominació, i el mite i la religió són instruments ideològics relegats a 'altres'."
@@ -70,6 +68,13 @@ label now_scene:
     betty_friedan "Les persones que aconsegueixin trobar-les, hauran d'adreçar-se al mostrador que hi ha al final de la sala perquè tenim un petit obsequi de regal."
 
     "Quan escoltà això, [tmpSavePlayer] no s'ho pensà més i començà a buscar-les."
+
+    if game_state.nyrw_is_seen:
+        $ GiveGlossaryItemToPlayer(31)
+
+    $ GiveGlossaryItemToPlayer(5)
+    $ GiveGlossaryItemToPlayer(28)
+    $ ShowItems()
 
     if not game_state.find_differences_done:
         $ renpy.call_in_new_context("find_differences_label")

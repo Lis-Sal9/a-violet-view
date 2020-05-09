@@ -30,6 +30,7 @@ init -10 python:
         vaginal_orgasm_is_found = False
         witch_is_seen = False
         find_differences_done = False
+        nyrw_is_seen = False
 
 
         def clear(self):
@@ -60,3 +61,4 @@ init -10 python:
             self.vaginal_orgasm_is_found = False
             self.witch_is_seen = False
             self.find_differences_done = False
+            self.nyrw_is_seen = False

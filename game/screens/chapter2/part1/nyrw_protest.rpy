@@ -22,9 +22,9 @@ label nyrw_protest:
     show nyrw_dont_cry at truecenter
     "Enterrem la feminitat tradicional !! La germanor és poderosa !!!"
 
-    ## ITEM Shulamith Firestone
-    #GiveGlossaryItemToPlayer(13)
-    #ShowItems()
+    $ game_state.nyrw_is_seen = True
+    $ GiveGlossaryItemToPlayer(31)
+    $ ShowItems()
 
     "..."
     unknown_boy "Sembla que estan emprenent camí cap al carrer paral·lel i podrem moure'ns en breu."
