@@ -45,14 +45,16 @@ init -1 python:
             GiveGalleryItemToPlayer(5)
             game_state.crosswords_done = True
             renpy.hide_screen("sidebar")
-            renpy.jump("see_dinner_party")
+            renpy.end_interaction("")
 
 
 
 label crosswords_label:
     $ renpy.choice_for_skipping()
     $ setIsInSpecialScreen(True)
+    $ all_crosswords = []
     call screen crosswords
+    return
 
 
 
