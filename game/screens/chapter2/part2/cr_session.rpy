@@ -114,7 +114,8 @@ label cr_session:
 
     adrienne_rich "D'acord, aturem motors un moment. Respirem fons i continuem. Ja hem passat l'equador i ara comencem l'última part de la sessió."
     adrienne_rich "Ara, emprenem el tema de la sexualitat."
-    adrienne_rich "Hi ha un corrent, el lesbianisme polític, que estableix que una dona solament pot ser realment lliure de la violència i el control de l'home si l'exclou de la seva vida sentimental i sexual. D'aquesta manera, deixar enrere la sexualitat voluntàriament seria una manera de comprometre's amb el moviment d'alliberació."
+    adrienne_rich "Hi ha un corrent, el lesbianisme polític que estableix que una dona solament pot ser realment lliure de la violència i el control de l'home si l'exclou de la seva vida sentimental i sexual."
+    adrienne_rich "D'aquesta manera, deixar enrere la sexualitat voluntàriament seria una manera de comprometre's amb el moviment d'alliberació."
     user "Però si es posen tots els homes en el mateix sac, al final s'està discriminant també. No tothom és igual."
     adrienne_rich "És cert això que diu. No obstant això, és veritat que la sexualitat de la dona està condicionada per l'home."
     adrienne_rich "Per exemple, la pornografia. Per un sector de la comunitat, la pornografia és la sexualitat essencial del poder masculí."

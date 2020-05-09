@@ -45,7 +45,8 @@ label now_scene:
     kate_millet "El patriarcat està tan incrustat en la psicologia de la família i l'educació que l'estructura de caràcter que crea en ambdós sexes és més un hàbit mental i un mode de vida, que un sistema polític."
 
     simone_de_beauvoir "Exactament. Ser dona, o el concepte de feminitat, és un constructe sociocultural format al llarg de les generacions i és allà on radiquen les causes d'opressió."
-    simone_de_beauvoir "Les dones, considerades 'allò altre' o com esmento en el meu llibre 'el segon sexe', són obligades a acceptar la pèrdua d'autonomia i llibertat, i a viure vides insatisfactòries i farragoses, ja que se les condiciona per ser éssers dependents dels homes, no subjectes actius com ells."
+    simone_de_beauvoir "Les dones, considerades {i}allò altre{/i} o com esmento en el meu llibre {i}el segon sexe{/i}, són obligades a acceptar la pèrdua d'autonomia i llibertat."
+    simone_de_beauvoir "I també a viure vides insatisfactòries i farragoses, ja que se les condiciona per ser éssers dependents dels homes, no subjectes actius com ells."
     simone_de_beauvoir "Concretament, són responsables de les feines més tedioses, de ser mares, i de ser esclaves sexuals."
     simone_de_beauvoir "Al final, la dona es veu a sí mateixa i pren les seves decisions no conforme a la seva naturalesa vertadera, sinó a com la defineix l'home. I aquí radica l'arrel de l'opressió."
     simone_de_beauvoir "Per tant, si bé es consideren els processos biològics de la dona, això no determina que ella tingui un destí fix i inevitable."
