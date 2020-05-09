@@ -2,6 +2,11 @@
 ## Script for the Consciousness Raising session on Chapter 2 Part 2.
 
 
+init -1 python:
+    cr_rate = 0
+    def addRateScore(score):
+        global cr_rate
+        cr_rate = cr_rate + score
 
 
 label cr_session:
@@ -25,6 +30,7 @@ label cr_session:
     "Les noies i [tmpSavePlayer] miraren la cara d'aquell gos tan adorable. Movia la cua. Estava content."
 
     scene cr_session
+    $ cr_rate = 0
     adrienne_rich "Avui, tenim una persona convidada a la sessió. Es diu [tmpSavePlayer]. Com a cronista, ha vingut per compartir-nos la seva experiència i coneixement sobre el feminisme de la diferència."
     user "En efecte, Adrienne. Un plaer ser aquí amb vosaltres avui."
     "Bon dia, [tmpSavePlayer] !! - digueren les noies."
@@ -130,31 +136,44 @@ label cr_session:
     adrienne_rich "Ostres, Ibonne, jo no podria haver exposat millor què és el positivisme sexual."
     "Ibonne va mirar amb cara de vergonya a la resta de les dones del grup."
     adrienne_rich "I, amb la consigna 'Accepta i respecta' ens acomiadem de la sessió d'avui."
-    user "Moltes gràcies per convidar-me. La sessió ha estat molt participativa, dinàmica i interessant. M'encantaria tornar un altre dia."
-    adrienne_rich "I tant que sí!"
 
-    "I, amb abraçades, agraïments i salutacions, les dones del grup, la moderadora i [tmpSavePlayer] s'acomiadaren."
-
-    # TODO: change it ##################################
-    $ GiveGalleryItemToPlayer(3)
-    ###################################################
-
+    call rate_options
     call end_chapter(CHAPTERS[3])
 
     return
 
 
 
+label rate_options:
+    if cr_rate >= 3:
+        $ GiveGalleryItemToPlayer(3)
+        user "Moltes gràcies per convidar-me. La sessió ha estat molt participativa, dinàmica i interessant. M'encantaria tornar un altre dia."
+        adrienne_rich "I tant que sí!"
+        "I, amb abraçades, agraïments i salutacions amigables, les dones del grup, la moderadora i [tmpSavePlayer] s'acomiadaren."
+    elif cr_rate >= 0:
+        user "Moltes gràcies per convidar-me. La sessió ha estat correcta."
+        adrienne_rich "Sí, tot i haver diferències entre nosaltres, la sessió s'ha desenvolupat amb respecte i consideració."
+        "I, amb salutacions cordials, totes les dones participants s'acomiadaren unes d'altres."
+    elif cr_rate < 0:
+        adrienne_rich "No obstant això, aquesta és la primera i última vegada que convido a un ésser tan intolerant com vostè, amb tots els respectes."
+        user "Disculpi'm. En cap moment he tingut la intenció de faltar el respecte a ningú. Sóc una persona ignorant i, com a tal, vull aprendre dels meus errors."
+        adrienne_rich "No passa res. Aquí totes estem per aprendre. Per respectar. Per construir una consciència real del problema."
+        user "Gràcies a totes per escoltar-me i ensenyar-me que la germanor en aquests casos és fonamental."
+        "I, amb agraïments i salutacions, les dones del grup s'acomiadaren."
+
+    return
+
+
 label rape_luxury(result):
     if result:
-        # No ha encertat
+        $ addRateScore(-2)
         user "És clar. La luxúria de l'home. Ja se sap que quan un home està excitat, no pot fer res per controlar la seva necessitat sexual."
         "Totes les dones de la sala es varen quedar petrificades."
         participant "{i}De veritat pensa això que està dient?{/i} - preguntà Alicia."
         call true_or_false_question("sex_need")
 
     else:
-        # Ha encertat
+        $ addRateScore(3)
         user "No. La violació està motivada pel poder i la violència."
         user "La violació és política. Es dóna permís als homes perquè, per una banda, existeix la creença de que el cos de la dona és perquè sigui posseït per l'home i, d'altra banda, perquè així es manté la situació de subordinació de les dones."
 
@@ -162,7 +181,7 @@ label rape_luxury(result):
 
 label sex_need(result):
     if result:
-        # No ha encertat
+        $ addRateScore(-3)
         user "És clar. La sexualitat femenina incita a violar."
         "Totes es posaren les mans al cap, menys una noia una mica peculiar."
         adrienne_rich "[tmpSavePlayer] no és la persona convidada per ensenyar aquest tipus de barbaritats."
@@ -176,7 +195,6 @@ label sex_need(result):
         "Es dirigia a [tmpSavePlayer]."
 
         menu:
-            # Ha encertat
             "Sí":
                 user "Sí. La meva intuïció em deia que la noia formava part del TERF, sobretot per les cares que anava fent."
             "No":
@@ -187,7 +205,7 @@ label sex_need(result):
         adrienne_rich "Però jo us convido a qüestionar-vos si és o no una falta de respecte cap a la identitat d'aquestes persones. Què respecta més a l'altre, l'exclusió o l'inclusió? Rumieu-ho vosaltres mateixes."
 
     else:
-        # Ha encertat
+        $ addRateScore(3)
         user "És clar que no !!! No hi ha cap justificació possible per la violació."
         "Amb cara de tranquil·litat, les dones suspiren. Per un moment, havien anat amb l'ai al cor."
 
@@ -196,12 +214,12 @@ label sex_need(result):
 
 label rape_author(result):
     if result:
-        # No ha encertat
+        $ addRateScore(-1)
         user "Efectivament. Si fos un assumpte ordinari se'n parlaria més, i ara no se'n parla gairebé."
         participant "{i}Però vostè d'on ha sortit?! Si no se'n parla és per por a represàlies!!!{/i} - cridà Serena."
         call true_or_false_question("rape_fear")
     else:
-        # Ha encertat
+        $ addRateScore(2)
         user "No, això és un mite!!"
         user "El violador acostuma a ser algú conegut o proper a la víctima, aparentment una persona respectable."
 
@@ -210,25 +228,24 @@ label rape_author(result):
 
 label rape_fear(result):
     if result:
-        # Ha encertat
+        $ addRateScore(3)
         user "Té raó, Serena. Existeix el que es coneix com la cultura del silenci, que envolta aquests tipus de temes per por a parlar-ne."
         participant "{i}En el primer centre d'ajuda on vaig ser, ja m'ho van comentar això. De fet, a mi mateixa em passava. Parlar-ne m'implicava conscienciar-me d'haver-ho viscut, i només volia oblidar-me'n.{/i} - constestà Serena."
         adrienne_rich "Afortunadament, a hores d'ara ja has après a viure amb aquesta experiència i a què no t'afecti en el teu dia a dia."
         participant "{i}Sí, tot i que encara hi ha dies no tan bons ...{/i} - digué Serena, amb el cap cot."
 
     else:
-        # No ha encertat
+        $ addRateScore(-2)
         user "No. Si no se'n parla és perquè, en el cas de violació a les dones, aquestes fan acusacions falses per venjança. Resulta innecessari escampar-ho o fer-ho públic sense perdre reputació."
         participant "{i}No em puc creure el què està dient ... {/i} - Serena es va quedar petrificada."
         participant "{i}Però quin percentatge es pensa que hi ha d'acusacions falses?{/i} - cada vegada, Serena s'estava enfurismant més."
         menu:
             "Entre 10-20%":
-                # No ha encertat
                 user "Entre un 10 i un 20% del total, m'atreviria a dir."
                 participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior al 10%.{/i} - contestà Serena."
                 participant "{i}No se'n vagi per les branques.{/i} - digué Serena bastant molesta."
             "Menys d'un 10%":
-                # Ha encertat
+                $ addRateScore(1)
                 user "Crec que inferior al 10% del total."
                 participant "{i}Efectivament, no més que en altres delictes.{/i} - afirmà Serena."
                 participant "{i}Llavors, tingui una mica més de respecte.{/i} - digué Serena bastant molesta."
@@ -240,20 +257,20 @@ label no_is_yes:
     $ renpy.choice_for_skipping()
     menu:
         "Quan una dona diu que no, en realitat vol dir que sí":
-            # No ha encertat
+            $ addRateScore(-3)
             user "Però si una dona no diu explícitament que no, això vol dir que en el fons vol dir que sí perquè no ha mostrat la seva negació."
             participant "{i}Rotundament NO. Si la dona no explicita el seu consentiment, no es poden suposar altres desitjos d'ella. Ningú té dret a anar en contra dels desitjos d'algú altre.{/i} - va dir Houda, bastant molesta."
             participant "{i}Llavors, les vegades que aquell home em va violar sexualment sense el meu consentiment? Ho considera desig meu?{/i} - va dir Houda, enfurismada."
             participant "{i}Ni que anés a resar a Déu aquest podria fer realitat el miracle de donar-li una neurona ...{/i} - va finalitzar Houda, amb sàtira i molt enfadada."
 
         "Ha ocorregut una vegada, no passarà més":
-            # Ha encertat
+            $ addRateScore(1)
             user "Pot ser que l'home et digui que aquest serà l'única vegada, que no tornarà a ocórrer."
             participant "{i}Sí, però la violència no és un incident aïllat, sinó que forma part d'un patró de violència en augment.{/i} - va dir Houda."
             participant "{i}Ho dic per pròpia experiència.{/i} - va concloure Houda."
 
         "És clar, perquè sinó l'home es pot posar violent":
-            # No ha encertat
+            $ addRateScore(-2)
             user "Si no es compleix allò que l'home violent diu, acabarà exercint la violència sobre la dona. I llavors serà com si ella s'ho hagués buscat."
             participant "{i}Per començar, no tots els homes són violents per naturalesa i, de fet, aquests no es mostren així fora de casa.{/i} - va exposar Houda."
             participant "{i}I encara menys que sigui culpa de la dona per 'haver fet alguna cosa malament'. No hi ha excusa que justifiqui la violència.{/i} - va matisar Houda."
