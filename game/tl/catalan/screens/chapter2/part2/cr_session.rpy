@@ -733,16 +733,16 @@ translate catalan rape_fear_3d545b0a:
     participant "{i}Però quin percentatge es pensa que hi ha d'acusacions falses?{/i} - cada vegada, Serena s'estava enfurismant més."
 
 # game/screens/chapter2/part2/cr_session.rpy:244
-translate catalan rape_fear_0ef84e68:
+translate catalan rape_fear_6d49a500:
 
-    # user "Entre un 10 i un 20% del total, m'atreviria a dir."
-    user "Entre un 10 i un 20% del total, m'atreviria a dir."
+    # user "Entre un 10 i un 20 del total, m'atreviria a dir."
+    user "Entre un 10 i un 20 del total, m'atreviria a dir."
 
 # game/screens/chapter2/part2/cr_session.rpy:245
-translate catalan rape_fear_35ede109:
+translate catalan rape_fear_eb4b2fbc:
 
-    # participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior al 10%.{/i} - contestà Serena."
-    participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior al 10%.{/i} - contestà Serena."
+    # participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior a 10.{/i} - contestà Serena."
+    participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior a 10.{/i} - contestà Serena."
 
 # game/screens/chapter2/part2/cr_session.rpy:246
 translate catalan rape_fear_ca2eebad:
@@ -751,10 +751,10 @@ translate catalan rape_fear_ca2eebad:
     participant "{i}No se'n vagi per les branques.{/i} - digué Serena bastant molesta."
 
 # game/screens/chapter2/part2/cr_session.rpy:249
-translate catalan rape_fear_e8e62f39:
+translate catalan rape_fear_858e2c05:
 
-    # user "Crec que inferior al 10% del total."
-    user "Crec que inferior al 10% del total."
+    # user "Crec que inferior al 10 del total."
+    user "Crec que inferior al 10 del total."
 
 # game/screens/chapter2/part2/cr_session.rpy:250
 translate catalan rape_fear_836bd228:
@@ -843,12 +843,12 @@ translate catalan no_is_yes_ac24127d:
 translate catalan strings:
 
     # game/screens/chapter2/part2/cr_session.rpy:242
-    old "Entre 10-20%"
-    new "Entre 10-20%"
+    old "Entre 10-20"
+    new "Entre 10-20"
 
     # game/screens/chapter2/part2/cr_session.rpy:242
-    old "Menys d'un 10%"
-    new "Menys d'un 10%"
+    old "Menys d'un 10"
+    new "Menys d'un 10"
 
     # game/screens/chapter2/part2/cr_session.rpy:258
     old "Quan una dona diu que no, en realitat vol dir que sí"

@@ -193,3 +193,7 @@ translate catalan strings:
     # game/screens/common.rpy:822
     old "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
     new "Desenvolupat amb {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
+
+    # game/screens/common.rpy:856
+    old "Work in progress ..."
+    new "Pàgina en progrés ..."
