@@ -130,6 +130,10 @@ label cr_session:
 
     "I, amb abraçades, agraïments i salutacions, les dones del grup, la moderadora i [tmpSavePlayer] s'acomiadaren."
 
+    # TODO: change it ##################################
+    $ GiveGalleryItemToPlayer(3)
+    ###################################################
+
     if CHAPTERS[2] in game_state.chapters_completed:
         $ addChapterCompleted(CHAPTERS[3])
         call chapter_2c
