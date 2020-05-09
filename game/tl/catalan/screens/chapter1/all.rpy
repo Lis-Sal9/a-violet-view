@@ -553,10 +553,10 @@ translate catalan return_to_train_station_9d710fef:
     "Mentre espera l'arribada del tren, recorda que té un llibre una mica peculiar. L'obre i veu que hi ha un test. Decideix fer-lo."
 
 # game/screens/chapter1/all.rpy:296
-translate catalan return_to_train_station_ca734e29:
+translate catalan return_to_train_station_93eaf012:
 
     # "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar-lo a fer?"
-    ""
+    "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar-lo a fer?"
 
 # game/screens/chapter1/all.rpy:302
 translate catalan return_to_train_station_98f6c16d:
