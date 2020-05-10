@@ -68,7 +68,7 @@ label nyrw_building:
     judy_chicago "Sigui com sigui, ara ja ens coneixem. Miri, tinc una proposta per fer-li, si li ve de gust."
     user "I tant. Endavant."
     judy_chicago "Farà un temps, vaig estar en la conferència de NOW, repartint obsequis. En breu, faré una exposició d'art allà mateix."
-    judy_chicago "A part de donar-li una invitació per si hi vol assistir, voldria oferir-li que m'ajudés amb la meva obra estrella: {i}The Dinner Party{/i}."
+    judy_chicago "A part de donar-li una invitació per si hi vol assistir, voldria oferir-li que m'ajudés amb la meva obra estrella."
     judy_chicago "La veritat és que la porto bastant endarrerida i no em vindria pas malament un parell de mans més."
     "[tmpSavePlayer] es quedà rumiant ... "
     judy_chicago "[tmpSavePlayer], s'ha quedat pensant en les musaranyes ..."

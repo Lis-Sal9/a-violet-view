@@ -7,10 +7,10 @@ translate catalan chapter_2c_653e9255:
     "Ja has fet les encreuades de {i}The Dinner Party{/i}. Vols tornar-les a fer?"
 
 # game/screens/chapter2/part_final/all.rpy:24
-translate catalan chapter_2c_98f6c16d:
+translate catalan chapter_2c_a5b9c15d:
 
-    # "D'acord. Continues amb la mateixa història com si l'haguessis fet."
-    "D'acord. Continues amb la mateixa història com si l'haguessis fet."
+    # "D'acord. Continues amb la mateixa història com si les haguessis fet."
+    "D'acord. Continues amb la mateixa història com si les haguessis fet."
 
 # game/screens/chapter2/part_final/all.rpy:36
 translate catalan art_studio_f94413a2:
@@ -97,10 +97,10 @@ translate catalan see_dinner_party_e98e43c5:
     judy_chicago "Sí. La forma de triangle és tradicionalment vinculada a la feminitat, i les tretze dones que hi ha a cada costat del triangle equilàter fa referència a les persones que assistiren a l'últim sopar."
 
 # game/screens/chapter2/part_final/all.rpy:63
-translate catalan see_dinner_party_2f599e0f:
+translate catalan see_dinner_party_2c94f325:
 
-    # user "Una comparació molt interessant, ja que aquí tot són dones, però en aquell sopar varen ser tot homes."
-    user "Una comparació molt interessant, ja que aquí tot són dones, però en aquell sopar varen ser tot homes."
+    # user "Una comparació molt interessant, tenint en compte que en aquell sopar varen ser tot homes i aquí són tot dones."
+    user "Una comparació molt interessant, tenint en compte que en aquell sopar varen ser tot homes i aquí són tot dones."
 
 # game/screens/chapter2/part_final/all.rpy:64
 translate catalan see_dinner_party_f9900c97:

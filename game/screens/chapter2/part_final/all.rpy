@@ -21,7 +21,7 @@ label chapter_2c:
             "Sí":
                 $ renpy.call_in_new_context("crosswords_label")
             "No":
-                "D'acord. Continues amb la mateixa història com si l'haguessis fet."
+                "D'acord. Continues amb la mateixa història com si les haguessis fet."
 
     call see_dinner_party
 
@@ -60,7 +60,7 @@ label see_dinner_party:
     judy_chicago "I que el seu objectiu és finalitzar el cicle d'invisibilitat al qual han estat sotmeses les dones al llarg de la història."
     user "Sí, i sobretot és molt maco que tota l'obra estigui feta al detall, i que cada detall tingui un per què."
     judy_chicago "Sí. La forma de triangle és tradicionalment vinculada a la feminitat, i les tretze dones que hi ha a cada costat del triangle equilàter fa referència a les persones que assistiren a l'últim sopar."
-    user "Una comparació molt interessant, ja que aquí tot són dones, però en aquell sopar varen ser tot homes."
+    user "Una comparació molt interessant, tenint en compte que en aquell sopar varen ser tot homes i aquí són tot dones."
     judy_chicago "Efectivament ... ja tinc el nom de l'obra! Es dirà {i}The Dinner Party{/i}!!"
     "I, amb alegria, recolliren el material usat i s'acomiadaren."
 

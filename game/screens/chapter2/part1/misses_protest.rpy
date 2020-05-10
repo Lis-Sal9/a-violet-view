@@ -65,6 +65,6 @@ label inside_misses_protest:
     hide miss_trash
     scene now_building
     "Als pocs minuts de seguir caminant, va arribar a la seva destinació."
-    "Per fi, ja he arribat. Pensava que m'engoliria, la manifestació. - va pensar [tmpSavePlayer]."
+    "{i}Per fi, ja he arribat. Pensava que m'engoliria, la manifestació.{/i} - va pensar [tmpSavePlayer]."
 
     return

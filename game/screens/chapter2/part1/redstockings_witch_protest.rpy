@@ -11,7 +11,7 @@ label redstockings_witch_protest:
     user "Com? Qui ha dit que són?"
     scene black
     show witch_rally at truecenter
-    unknown_boy "Després de la dissolució de NYNW, es crearen dues organitzacions, W.I.T.C.H. i les {i}Redstockings{/i}."
+    unknown_boy "Després de la dissolució de NYRW, es crearen dues organitzacions, W.I.T.C.H. i les {i}Redstockings{/i}."
     unknown_boy "La primera és més radical que la segona, però el que pretenen és comú entre ambdues."
     unknown_boy "Tenen l'objectiu d'aturar l'opressió de les dones mitjançant la reclamació de la soberania sobre el propi cos i la promoció de canvis socials radicals."
     unknown_boy "Concretament, la tàctica de les {i}Redstockings{/i} consisteix en els anomenats {i}zaps{/i}, una mescla de protesta d'acció directa i teatre de carrer."

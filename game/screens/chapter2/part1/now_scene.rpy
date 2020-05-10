@@ -85,7 +85,7 @@ label now_scene:
             "Sí":
                 $ renpy.call_in_new_context("find_differences_label")
             "No":
-                "D'acord. Continues amb la mateixa història com si l'haguessis fet."
+                "D'acord. Continues amb la mateixa història com si les haguessis trobat."
 
     scene now_conference
     "[tmpSavePlayer] ha resolt correctament l'enigma de les diferències, així que s'apropa al mostrador."

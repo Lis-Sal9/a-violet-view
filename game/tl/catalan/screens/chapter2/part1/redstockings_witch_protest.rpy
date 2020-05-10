@@ -37,10 +37,10 @@ translate catalan redstockings_witch_protest_c5c3656f:
     user "Com? Qui ha dit que són?"
 
 # game/screens/chapter2/part1/redstockings_witch_protest.rpy:14
-translate catalan redstockings_witch_protest_dc530c54:
+translate catalan redstockings_witch_protest_479f8790:
 
-    # unknown_boy "Després de la dissolució de NYNW, es crearen dues organitzacions, W.I.T.C.H. i les {i}Redstockings{/i}."
-    unknown_boy "Després de la dissolució de NYNW, es crearen dues organitzacions, W.I.T.C.H. i les {i}Redstockings{/i}."
+    # unknown_boy "Després de la dissolució de NYRW, es crearen dues organitzacions, W.I.T.C.H. i les {i}Redstockings{/i}."
+    unknown_boy "Després de la dissolució de NYRW, es crearen dues organitzacions, W.I.T.C.H. i les {i}Redstockings{/i}."
 
 # game/screens/chapter2/part1/redstockings_witch_protest.rpy:15
 translate catalan redstockings_witch_protest_e6431f54:

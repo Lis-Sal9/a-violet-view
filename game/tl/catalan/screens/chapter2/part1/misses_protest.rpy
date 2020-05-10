@@ -199,10 +199,10 @@ translate catalan inside_misses_protest_9b675faa:
     "Als pocs minuts de seguir caminant, va arribar a la seva destinació."
 
 # game/screens/chapter2/part1/misses_protest.rpy:68
-translate catalan inside_misses_protest_239e35e6:
+translate catalan inside_misses_protest_b2cbc3cd:
 
-    # "Per fi, ja he arribat. Pensava que m'engoliria, la manifestació. - va pensar [tmpSavePlayer]."
-    "Per fi, ja he arribat. Pensava que m'engoliria, la manifestació. - va pensar [tmpSavePlayer]."
+    # "{i}Per fi, ja he arribat. Pensava que m'engoliria, la manifestació.{/i} - va pensar [tmpSavePlayer]."
+    "{i}Per fi, ja he arribat. Pensava que m'engoliria, la manifestació.{/i} - va pensar [tmpSavePlayer]."
 
 translate catalan strings:
 

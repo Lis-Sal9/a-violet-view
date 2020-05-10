@@ -133,10 +133,10 @@ translate catalan nyrw_building_ef9d5d0b:
     judy_chicago "Farà un temps, vaig estar en la conferència de NOW, repartint obsequis. En breu, faré una exposició d'art allà mateix."
 
 # game/screens/chapter2/part2/all.rpy:71
-translate catalan nyrw_building_23e6a840:
+translate catalan nyrw_building_53c6687e:
 
-    # judy_chicago "A part de donar-li una invitació per si hi vol assistir, voldria oferir-li que m'ajudés amb la meva obra estrella: {i}The Dinner Party{/i}."
-    judy_chicago "A part de donar-li una invitació per si hi vol assistir, voldria oferir-li que m'ajudés amb la meva obra estrella: {i}The Dinner Party{/i}."
+    # judy_chicago "A part de donar-li una invitació per si hi vol assistir, voldria oferir-li que m'ajudés amb la meva obra estrella."
+    judy_chicago "A part de donar-li una invitació per si hi vol assistir, voldria oferir-li que m'ajudés amb la meva obra estrella."
 
 # game/screens/chapter2/part2/all.rpy:72
 translate catalan nyrw_building_29d3f244:

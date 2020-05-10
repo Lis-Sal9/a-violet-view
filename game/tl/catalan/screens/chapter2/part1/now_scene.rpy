@@ -313,10 +313,10 @@ translate catalan now_scene_d61dcbd7:
     "Ja has trobat almenys set diferències. Vols tornar-ho a intentar?"
 
 # game/screens/chapter2/part1/now_scene.rpy:88
-translate catalan now_scene_98f6c16d:
+translate catalan now_scene_71b114c1:
 
-    # "D'acord. Continues amb la mateixa història com si l'haguessis fet."
-    "D'acord. Continues amb la mateixa història com si l'haguessis fet."
+    # "D'acord. Continues amb la mateixa història com si les haguessis trobat."
+    "D'acord. Continues amb la mateixa història com si les haguessis trobat."
 
 # game/screens/chapter2/part1/now_scene.rpy:91
 translate catalan now_scene_e0c1b868:
