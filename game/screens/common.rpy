@@ -136,7 +136,7 @@ style namebox:
 style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
-    yalign 0.5
+    yalign gui.name_yalign
 
 style say_dialogue:
     properties gui.text_properties("dialogue")

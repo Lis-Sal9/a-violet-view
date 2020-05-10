@@ -122,7 +122,7 @@ init -10 python:
         },
         29: {
             "name": "Paula Gunn Allen",
-            "content": "A {i}The Sacred Hoop: Recovering the Feminine in American Indian Traditions{/i} (1986), Paula Gunn Allen reivindica les riques tradicions matriarcals de les dones indígenes, que desenvolupen en les seves comunitats rols de lideratge social, polític i espiritual des de molt abans que es produís la colonització europea. Fa èmfasi en la tradició de poder de les natives americanes i assenyala que les idees contemporànies sobre el gènere estan molt influenciades per les nacions matriarcals de génere introduïdes pels colons europeus."
+            "content": "A {i}The Sacred Hoop: Recovering the Feminine in American Indian Traditions{/i} (1986), Paula Gunn Allen reivindica les riques tradicions matriarcals de les dones indígenes, que desenvolupen en les seves comunitats rols de lideratge social, polític i espiritual des de molt abans que es produís la colonització europea. Fa èmfasi en la tradició de poder de les natives americanes i assenyala que les idees contemporànies sobre el gènere estan molt influenciades per les nocions patriarcals de génere introduïdes pels colons europeus."
         },
         30: {
             "name": "Olympe de Gouges",
