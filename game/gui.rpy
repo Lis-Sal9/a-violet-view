@@ -22,7 +22,7 @@ init python:
 ################################################################################
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#000066'
+define gui.accent_color = '#f0c388'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#aaaaaa'
@@ -32,7 +32,7 @@ define gui.idle_color = '#aaaaaa'
 define gui.idle_small_color = '#888888'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#000066'
+define gui.hover_color = '#d8c2cd'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -47,8 +47,8 @@ define gui.muted_color = '#6666a3'
 define gui.hover_muted_color = '#9999c1'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#404040'
-define gui.interface_text_color = '#404040'
+define gui.text_color = '#000000'
+define gui.interface_text_color = '#000000'
 
 
 ## Fonts and Font Sizes ########################################################
@@ -209,9 +209,9 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = "#cccccc"
-define gui.choice_button_text_hover_color = "#ffffff"
-define gui.choice_button_text_insensitive_color = "#444444"
+define gui.choice_button_text_idle_color = "#3f0955"
+define gui.choice_button_text_hover_color = "#d8c2cd"
+define gui.choice_button_text_insensitive_color = "#000000"
 
 
 ## File Slot Buttons ###########################################################

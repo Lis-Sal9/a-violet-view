@@ -79,7 +79,7 @@ screen save_name_input(message, ok_action):
             style "confirm_prompt"
             xalign 0.5
 
-        input default "" length 20 allow "ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyz0123456789" changed OnSaveNameUpdate
+        input default "" length 30 allow "ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyz0123456789" changed OnSaveNameUpdate
 
         hbox:
             xalign 0.5

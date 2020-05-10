@@ -7,8 +7,7 @@ screen correct_suffrage_map():
     add "images/chapter1/suffrage_map/suffrage_map_correct.png"
 
     text _("Sufragi femení"):
-        size 50
-        bold True
+        size 70
         color "#ffffff"
         align .97, 0
         yoffset 20
@@ -43,12 +42,14 @@ screen correct_suffrage_map():
 
                     text _(OPTIONS[i]):
                         color "#ffffff"
-                        size 17
+                        size 25
                         align 0.5, 0.5
 
 
 
 screen show_map_result():
+    variant "touch"
+
     python:
         setIsInSpecialScreen(False)
 
@@ -65,7 +66,8 @@ screen show_map_result():
             spacing 10
 
         text _("Resultat"):
-            size 40
+            color "#ffffff"
+            size 50
             xalign 0.5
 
         hbox:
@@ -90,7 +92,8 @@ screen show_map_result():
 
         $ items_length = str(len(game_state.gallery_items))
         text _("En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS'han desbloquejat [items_length] ítems a la {b}Galeria{/b}."):
-            size 20
+            size 30
+            color "#f0c388"
             yoffset 10
             xoffset 20
 

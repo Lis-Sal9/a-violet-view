@@ -47,6 +47,7 @@ screen gallery():
 
         imagebutton:
             idle "images/gallery/gallery_return.png"
+            hover "images/gallery/gallery_return_hover.png"
             align .05, .9
             action Return()
 
@@ -121,9 +122,9 @@ screen gallery_item_details(item):
             yoffset 20
 
         text item["content"]:
-            size 17
+            size 25
             xysize 550, 600
             align .99, .35
             xoffset 20
             yoffset 10
-            line_spacing 15
+            line_spacing 0

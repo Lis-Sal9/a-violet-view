@@ -113,7 +113,7 @@ screen sf_document():
         if seneca_agrees >= 3:
             text _("Amb {b}[tmpSavePlayer]{/b}\ncom a persona\nconvidada"):
                 font "fonts/lemon_tuesday.otf"
-                size 15
+                size 17
                 align .4, .22
                 at transform:
                     rotate -5

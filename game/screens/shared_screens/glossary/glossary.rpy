@@ -52,8 +52,8 @@ screen glossary_content(content):
             xsize 400
             ymaximum 600
             align 0.5, 0
-            size 15
-            line_spacing 10
+            size 21
+            line_spacing 0
 ################################################################################
 
 
@@ -69,16 +69,17 @@ screen glossary():
         xalign .5 yalign .5
         add "images/glossary/glossary.png"
 
-        textbutton _("Return"):
-            xpos gui.navigation_xpos
-            yalign .1
+        imagebutton:
+            idle "images/glossary/glossary_return.png"
+            hover "images/glossary/glossary_return_hover.png"
+            align .05, .1
             yoffset -45
             action Return()
 
         text _("Glossary"):
             color '#ffffff'
-            size 65
-            xalign 0.09
+            size 100
+            xalign 0.085
             yalign 0.8
             at transform:
                 rotate -10
@@ -122,7 +123,7 @@ screen glossary():
                                 spacing 0
 
                                 text all_glossary_elements.get(i)["name"]:
-                                    size 17
+                                    size 25
                                     yalign 0.5
 
                                 if i in game_state.glossary_items_unread:

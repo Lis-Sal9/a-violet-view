@@ -30,8 +30,8 @@ screen gallery_item_details(item):
             yoffset 20
 
         text item["content"]:
-            size 17
+            size 25
             xysize 550, 600
             align .99, .35
             xoffset 20
-            line_spacing 15
+            line_spacing 0

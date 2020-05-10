@@ -346,6 +346,7 @@ style confirm_frame:
 
 style confirm_prompt_text:
     text_align 0.5
+    color "#ffffff"
     layout "subtitle"
 
 style confirm_button:
