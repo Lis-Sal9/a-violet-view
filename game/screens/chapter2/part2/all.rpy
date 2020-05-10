@@ -5,7 +5,6 @@
 # Backgrounds
 image train_station_chpt2b = "images/train/train_station_chpt2b.png"
 image near_train_station_chpt2b = "images/train/near_train_station_chpt2b.png"
-
 image car = "images/chapter2/part2/car.png"
 image nyrw_outside = "images/chapter2/part2/nyrw/nyrw_outside.png"
 image nyrw_inside = "images/chapter2/part2/nyrw/nyrw_inside.png"
@@ -15,9 +14,9 @@ image cr_session = "images/chapter2/part2/nyrw/cr_session.png"
 
 
 # Characters
-define judy_chicago = Character("Judy Chicago", color="#FED876")
-define adrienne_rich = Character("Adrienne Rich", color="#F5B2AC")
-define participant = Character("Participant", color="#231F20")
+define judy_chicago = Character("Judy Chicago", color="#e53935")
+define adrienne_rich = Character("Adrienne Rich", color="#d81b60")
+define participant = Character(_("Participant"), color="#8e24aa")
 
 
 

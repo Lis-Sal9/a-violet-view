@@ -179,3 +179,10 @@ translate spanish nyrw_building_351e903c:
 
     # "Acabaven d'arribar a la sala. S'acomiadà de la senyora Chicago amb complicitat i, mentre ella s'allunyava, [tmpSavePlayer] trucà a la porta i entrà."
     "Acababan de llegar a la sala. Se despidió de la señora Chicago con complicidad y, mientras ella se alejaba, [tmpSavePlayer] llamó a la puerta y entró."
+# TODO: Translation updated at 2020-05-11 01:02
+
+translate spanish strings:
+
+    # game/screens/chapter2/part2/all.rpy:19
+    old "Participant"
+    new "Participante"

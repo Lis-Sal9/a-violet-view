@@ -24,10 +24,10 @@ image witch_dancing = "images/chapter2/part1/protests/redstockings_witch/witch_d
 image witch_rally = "images/chapter2/part1/protests/redstockings_witch/witch_rally.jpg"
 
 # Characters
-define erin_pizzey = Character("Erin Pizzey", color="#FED876")
-define betty_friedan = Character("Betty Friedan", color="#F5B2AC")
-define simone_de_beauvoir = Character("Simone de Beauvoir", color="#231F20")
-define kate_millet = Character("Kate Millet", color="#FF4F6F")
+define erin_pizzey = Character("Erin Pizzey", color="#00bcd4")
+define betty_friedan = Character("Betty Friedan", color="#009688")
+define simone_de_beauvoir = Character("Simone de Beauvoir", color="#4caf50")
+define kate_millet = Character("Kate Millet", color="#8bc34a")
 
 
 

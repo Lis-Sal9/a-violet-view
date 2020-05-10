@@ -8,11 +8,11 @@
 default game_state = GameState()
 
 #Define characters
-define user = Character("[tmpSavePlayer]", color="#6E36CA")
-define unknown = Character("...", color="#FFFFFF")
-define unknown_girl = Character("Dona", color="#FFFFFF")
-define unknown_boy = Character("Home", color="#231F20")
-define unknown_little_boy = Character("Nen", color="#231F20")
+define user = Character("[tmpSavePlayer]", color="#9575cd")
+define unknown = Character("...", color="#e57373")
+define unknown_girl = Character(_("Dona"), color="#7986cb")
+define unknown_boy = Character(_("Home"), color="#f06292")
+define unknown_little_boy = Character(_("Nen"), color="#ba68c8")
 
 ################################################################################
 

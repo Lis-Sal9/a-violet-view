@@ -13,10 +13,10 @@ image salon_discussion = "images/chapter0/salon/salon_discussion.png"
 image salon_portrait = "images/chapter0/salon/salon_portrait.png"
 
 # Characters
-define mary_astell = Character("Mary Astell", color="#FED876")
-define mary_wollstonecraft = Character("Mary Wollstonecraft", color="#AFCFEA")
-define suzanne_voilquin = Character("Suzanne Voilquin", color="#F5B2AC")
-define elizabeth_montagu = Character("Elizabeth Montagu", color="#8CBA51")
+define mary_astell = Character("Mary Astell", color="#64b5f6")
+define mary_wollstonecraft = Character("Mary Wollstonecraft", color="#4fc3f7")
+define suzanne_voilquin = Character("Suzanne Voilquin", color="#4dd0e1")
+define elizabeth_montagu = Character("Elizabeth Montagu", color="#4db6ac")
 
 
 label chapter_0:

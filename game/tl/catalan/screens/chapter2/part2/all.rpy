@@ -179,3 +179,10 @@ translate catalan nyrw_building_351e903c:
 
     # "Acabaven d'arribar a la sala. S'acomiadà de la senyora Chicago amb complicitat i, mentre ella s'allunyava, [tmpSavePlayer] trucà a la porta i entrà."
     "Acabaven d'arribar a la sala. S'acomiadà de la senyora Chicago amb complicitat i, mentre ella s'allunyava, [tmpSavePlayer] trucà a la porta i entrà."
+# TODO: Translation updated at 2020-05-11 01:06
+
+translate catalan strings:
+
+    # game/screens/chapter2/part2/all.rpy:19
+    old "Participant"
+    new "Participant"
