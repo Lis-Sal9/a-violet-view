@@ -127,10 +127,10 @@ translate catalan cr_session_f84e34ba:
     user "Per aquest motiu, el feminisme de la diferència acull aquestes particularitats de cadascun dels diferents col·lectius, per acollir la dona com a gènere, raça, classe i/o grup social."
 
 # game/screens/chapter2/part2/cr_session.rpy:52
-translate catalan cr_session_c9664eb8:
+translate catalan cr_session_2a8be3ee:
 
-    # adrienne_rich "Crec recordar que hi havia una autora que en parlava d'aquest tema ... Com es deia? ... No ho recordo."
-    adrienne_rich "Crec recordar que hi havia una autora que en parlava d'aquest tema ... Com es deia? ... No ho recordo."
+    # adrienne_rich "Crec recordar que hi havia una autora que parlava d'aquest tema ... Com es deia? ... No ho recordo."
+    adrienne_rich "Crec recordar que hi havia una autora que parlava d'aquest tema ... Com es deia? ... No ho recordo."
 
 # game/screens/chapter2/part2/cr_session.rpy:53
 translate catalan cr_session_d826fccc:
@@ -577,10 +577,10 @@ translate catalan sex_need_c66c4fbc:
     adrienne_rich "[tmpSavePlayer] no és la persona convidada per ensenyar aquest tipus de barbaritats."
 
 # game/screens/chapter2/part2/cr_session.rpy:188
-translate catalan sex_need_252ff882:
+translate catalan sex_need_3dfdb1a8:
 
-    # participant "{i}Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!! - cridà una noia jove del grup a una persona assistent trans.{/i} - manifestà la noia una mica peculiar."
-    participant "{i}Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!! - cridà una noia jove del grup a una persona assistent trans.{/i} - manifestà la noia una mica peculiar."
+    # participant "{i}Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!!{/i} - cridà una noia jove del grup a una persona assistent trans."
+    participant "{i}Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!!{/i} - cridà una noia jove del grup a una persona assistent trans."
 
 # game/screens/chapter2/part2/cr_session.rpy:189
 translate catalan sex_need_e6933227:
@@ -799,10 +799,10 @@ translate catalan no_is_yes_fe8fcf6e:
     participant "{i}Ni que anés a resar a Déu aquest podria fer realitat el miracle de donar-li una neurona ...{/i} - va finalitzar Houda, amb sàtira i molt enfadada."
 
 # game/screens/chapter2/part2/cr_session.rpy:268
-translate catalan no_is_yes_1c584ee8:
+translate catalan no_is_yes_d4ca00b2:
 
-    # user "Pot ser que l'home et digui que aquest serà l'única vegada, que no tornarà a ocórrer."
-    user "Pot ser que l'home et digui que aquest serà l'única vegada, que no tornarà a ocórrer."
+    # user "Pot ser que l'home et digui que aquesta serà l'única vegada, que no tornarà a ocórrer."
+    user "Pot ser que l'home et digui que aquesta serà l'única vegada, que no tornarà a ocórrer."
 
 # game/screens/chapter2/part2/cr_session.rpy:269
 translate catalan no_is_yes_a29216ca:

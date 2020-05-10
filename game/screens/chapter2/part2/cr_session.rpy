@@ -49,7 +49,7 @@ label cr_session:
     user "Sí. De fet, les feministes negres i de classe treballadora denuncien el racisme i els prejudicis subjacents a la germanor del feminisme."
     user "Malgrat les dones negres poguessin votar, l'activisme pels drets laborals, la llibertat sexual o el control de la natalitat segueix dominat per dones blanques de classe mitjana."
     user "Per aquest motiu, el feminisme de la diferència acull aquestes particularitats de cadascun dels diferents col·lectius, per acollir la dona com a gènere, raça, classe i/o grup social."
-    adrienne_rich "Crec recordar que hi havia una autora que en parlava d'aquest tema ... Com es deia? ... No ho recordo."
+    adrienne_rich "Crec recordar que hi havia una autora que parlava d'aquest tema ... Com es deia? ... No ho recordo."
     adrienne_rich "Però venia a dir que el feminisme estava definit i dominat per dones blanques de classe mitjana, la qual cosa fa que ignori el racisme i alhora contribueixi a ell."
     adrienne_rich "Les dones negres no solament pateixen la desigualtat racial, sinó també la de gènere. Estan més oprimides que les dones blanques."
     participant "{i}Necessitem un feminisme propi, que consideri els problemes de les dones negres també. L'opressió racial i la de classe.{/i} - reclamà Alicia."
@@ -185,7 +185,7 @@ label sex_need(result):
         user "És clar. La sexualitat femenina incita a violar."
         "Totes es posaren les mans al cap, menys una noia una mica peculiar."
         adrienne_rich "[tmpSavePlayer] no és la persona convidada per ensenyar aquest tipus de barbaritats."
-        participant "{i}Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!! - cridà una noia jove del grup a una persona assistent trans.{/i} - manifestà la noia una mica peculiar."
+        participant "{i}Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!!{/i} - cridà una noia jove del grup a una persona assistent trans."
         participant "{i}Tu i els que són com tu esteu mentalment malalts!! No ens envaireu els espais de les dones!! No ho permetrem!!!{/i} - manifestà encara més efusivament."
         participant "{i}Coses com vosaltres que us feu dir dones sí que mereixeu ser violades!!! I molt més!!!{/i} - s'aixecà de la cadira."
         adrienne_rich "Per favor, surt de la sala. Aquí estem per aprendre de la diferència, per respectar-la i acceptar-la. No perquè hi hagin atacs com aquests a les companyes. No tornis més."
@@ -265,7 +265,7 @@ label no_is_yes:
 
         "Ha ocorregut una vegada, no passarà més":
             $ addRateScore(1)
-            user "Pot ser que l'home et digui que aquest serà l'única vegada, que no tornarà a ocórrer."
+            user "Pot ser que l'home et digui que aquesta serà l'única vegada, que no tornarà a ocórrer."
             participant "{i}Sí, però la violència no és un incident aïllat, sinó que forma part d'un patró de violència en augment.{/i} - va dir Houda."
             participant "{i}Ho dic per pròpia experiència.{/i} - va concloure Houda."
 
