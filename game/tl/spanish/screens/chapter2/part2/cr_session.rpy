@@ -421,10 +421,10 @@ translate spanish cr_session_8282a57f:
     adrienne_rich "Interesantes puntos de vista los vuestros. Entonces, ¿consideráis la pornografía violenta y misógina?"
 
 # game/screens/chapter2/part2/cr_session.rpy:132
-translate spanish cr_session_3fc486c1:
+translate spanish cr_session_1357e5fc:
 
-    # participant "{i}No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades.{/i} - va explicar Ibonne, la noia trans que havia estat insultada prèviament."
-    participant "{i}No considero que sea para nada así. La pornografía es liberadora, ya que la censura de la sexualidad casi siempre tiene un impacto represivo sobre las sexualidades marginadas.{/i} - explicó Ibonne, la chica trans que había sido insultada previamente."
+    # participant "{i}No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades.{/i} - va explicar Ibonne, una noia trans."
+    participant "{i}No considero que sea para nada así. La pornografía es liberadora, ya que la censura de la sexualidad casi siempre tiene un impacto represivo sobre las sexualidades marginadas.{/i} - explicó Ibonne, una chica trans."
 
 # game/screens/chapter2/part2/cr_session.rpy:133
 translate spanish cr_session_5553db9d:

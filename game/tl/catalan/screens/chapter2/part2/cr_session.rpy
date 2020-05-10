@@ -869,3 +869,11 @@ translate catalan strings:
     # game/screens/chapter2/part2/cr_session.rpy:285
     old "Fals"
     new "Fals"
+# TODO: Translation updated at 2020-05-11 00:47
+
+# game/screens/chapter2/part2/cr_session.rpy:132
+translate catalan cr_session_1357e5fc:
+
+    # participant "{i}No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades.{/i} - va explicar Ibonne, una noia trans."
+    participant ""
+

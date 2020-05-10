@@ -129,7 +129,7 @@ label cr_session:
     participant "{i}Jo crec que s'hauria d'il·legalitzar la pornografia. La considero moralment depravada i una amenaça per la societat i el matrimoni.{/i} - va comentar Houda."
     participant "{i}Doncs jo penso que s'hauria d'il·legalitzar també, però perquè la dona és representada com un objecte sexual i no com a ésser humà, i això fomenta la violència contra elles.{/i} - va dir Serena."
     adrienne_rich "Interessants punts de vista els vostres. Llavors, considereu la pornografia violenta i misògina?"
-    participant "{i}No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades.{/i} - va explicar Ibonne, la noia trans que havia estat insultada prèviament."
+    participant "{i}No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades.{/i} - va explicar Ibonne, una noia trans."
     participant "{i}S'ha de promoure el plaer físic, i l'experimentació i educació sexuals. És important emfatitzar la llibertat sexual de les dones, i dels grups LGTBQ en general.{/i} - va seguir Ibonne."
     participant "{i}Acceptar la bisexualitat, el lesbianisme i la fluidesa del gènere és necessari per aconseguir l'alliberació de les dones.{/i} - va continuar Ibonne."
     participant "{i}Les restriccions socials i legals del sexe consentit entre adults són mecanismes dels governs patriarcals que segueixen usant per discriminar la sexualitat de les dones.{/i} - va finalitzar Ibonne."
