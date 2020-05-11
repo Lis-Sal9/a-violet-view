@@ -17,7 +17,7 @@ screen maze_paper():
             yalign .1
             yoffset -45
             xysize 110, 60
-            action Rollback()
+            action Jump("maze_label")
 
         vbox:
             align .535, .565

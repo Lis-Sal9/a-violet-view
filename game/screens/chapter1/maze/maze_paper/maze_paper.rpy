@@ -19,7 +19,7 @@ screen maze_paper():
             xpos 1800
             yalign .1
             yoffset -45
-            action Rollback()
+            action Jump("maze_label")
 
         vbox:
             align .535, .565
