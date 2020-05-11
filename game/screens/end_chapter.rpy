@@ -16,6 +16,7 @@ init -1 python:
 label end_chapter(chapter_completed):
     $ addChapterCompleted(chapter_completed)
     $ game_completed = isGameCompleted()
+    stop music fadeout 0.5
     if game_completed:
         return
     else:

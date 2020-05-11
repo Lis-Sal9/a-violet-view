@@ -25,9 +25,13 @@ label cr_session:
     $ GiveGlossaryItemToPlayer(0)
     $ ShowItems()
 
+    stop music fadeout 0.5
     scene cr_einstein
+    play music "audio/sound/einstein.mp3" fadein 0.5
     adrienne_rich "I aquest reiet d'aquí es diu Einstein. Veureu que ens farà molta companyia. És una peça fonamental en la germanor i la lleialtat."
     "Les noies i [tmpSavePlayer] miraren la cara d'aquell gos tan adorable. Movia la cua. Estava content."
+    stop music fadeout 0.5
+    play music "audio/music/chapter2a.mp3" fadein 0.5
 
     scene cr_session
     $ cr_rate = 0

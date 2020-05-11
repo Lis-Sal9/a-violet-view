@@ -32,6 +32,7 @@ label chapter_2c:
 ## Art studio scene #######################
 label art_studio:
     scene art_studio
+    play music "audio/music/chapter2b.mp3" fadein 0.5
 
     "[tmpSavePlayer] havia arribat a l'estudi d'art de Judy Chicago."
     "Tal com havien quedat, ella tenia una proposta en la qual [tmpSavePlayer] podia donar-li un cop de mà."
