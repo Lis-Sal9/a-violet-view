@@ -108,3 +108,9 @@ screen maze():
                 action Jump("maze_survival_kit")
                 xysize mobile_maze_panel_icon_size
                 pos 368, 150
+
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover.png"
+        align .03, .9
+        action Rollback()

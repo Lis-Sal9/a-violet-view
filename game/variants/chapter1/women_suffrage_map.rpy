@@ -6,16 +6,22 @@ screen correct_suffrage_map():
 
     add "images/chapter1/suffrage_map/suffrage_map_correct.png"
 
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover_blue.png"
+        align .03, .9
+        action Rollback()
+
     text _("Sufragi femení"):
         size 70
         color "#ffffff"
         align .97, 0
-        yoffset 20
+        yoffset 5
 
     imagebutton:
         idle Frame("gui/arrows/arrow_right.png")
         hover Frame("gui/arrows/arrow_right_hover.png")
-        xpos 1800
+        xpos 1750
         yalign .9
         xysize 110, 60
         action [Function(showCorrectStars), Show("show_map_result")]
