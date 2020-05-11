@@ -63,6 +63,12 @@ screen crosswords():
 
     fixed:
         imagebutton:
+            idle "gui/arrows/return_white.png"
+            hover "gui/arrows/return_hover.png"
+            align .90, .9
+            action Rollback()
+
+        imagebutton:
             idle "images/chapter2/part_final/crosswords/bulb_off.png"
             hover "images/chapter2/part_final/crosswords/bulb_on.png"
             align .90, .05

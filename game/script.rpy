@@ -40,3 +40,11 @@ label start:
 
 screen hold_screen(seconds=0):
     timer seconds action Return("")
+
+screen show_return(x,y,img,img_hover):
+    imagebutton:
+        idle "gui/arrows/" + img
+        hover "gui/arrows/" + img_hover
+        xpos x
+        ypos y
+        action Rollback()

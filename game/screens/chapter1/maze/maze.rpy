@@ -120,3 +120,9 @@ screen maze():
                 idle "images/chapter1/maze/maze_objects/survival_kit_enabled.png"
                 action Jump("maze_survival_kit")
                 pos 245, 100
+
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover.png"
+        align .03, .9
+        action Rollback()

@@ -68,6 +68,12 @@ screen women_suffrage_map(num):
     add "images/chapter1/suffrage_map/suffrage_map_bg.png"
     add "images/chapter1/suffrage_map/suffrage_map_[current_stage].png"
 
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover_blue.png"
+        align .03, .9
+        action Rollback()
+
     text _("Sufragi femení"):
         size 70
         color "#ffffff"

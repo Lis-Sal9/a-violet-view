@@ -104,6 +104,60 @@ screen say(who, what):
 
         text what id "what"
 
+        ####### Quick menu ##################
+        hbox:
+            style_prefix "quick"
+            xalign 0.82
+            yalign 0.15
+            spacing 5
+
+            imagebutton:
+                action Show('pause')
+                idle "gui/icons/pause.png"
+                hover "gui/icons/pause_border.png"
+
+            imagebutton:
+                action Rollback()
+                idle "gui/icons/return.png"
+                hover "gui/icons/return_border.png"
+
+            imagebutton:
+                action Skip() alternate Skip(fast=True, confirm=True)
+                idle "gui/icons/skip_action.png"
+                hover "gui/icons/skip_action_border.png"
+
+            imagebutton:
+                action ShowMenu('glossary')
+                hover "gui/icons/glossary_new_icon.png"
+                if len(game_state.glossary_items_unread) > 0:
+                    idle "gui/icons/glossary_new_icon.png"
+                else:
+                    idle "gui/icons/glossary_icon.png"
+
+            imagebutton:
+                action ShowMenu('gallery')
+                hover "gui/icons/gallery_new_icon.png"
+                if len(game_state.gallery_items_unread) > 0:
+                    idle "gui/icons/gallery_new_icon.png"
+                else:
+                    idle "gui/icons/gallery_icon.png"
+
+            imagebutton:
+                if is_in_special_screen:
+                    action NullAction()
+                    hover "gui/icons/save.png"
+                else:
+                    action [Show(screen="save_menu"), FileTakeScreenshot()]
+                    hover "gui/icons/save_border.png"
+                idle "gui/icons/save.png"
+
+            if renpy.variant("pc"):
+                imagebutton:
+                    action ShowMenu('help')
+                    idle "gui/icons/help.png"
+                    hover "gui/icons/help_border.png"
+        ##############################################################
+
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
 
@@ -186,6 +240,12 @@ screen choice(items):
         for i in items:
             textbutton i.caption action i.action
 
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover_blue.png"
+        align .03, .9
+        action Rollback()
+
 define config.narrator_menu = True
 
 style choice_vbox is vbox
@@ -217,6 +277,7 @@ screen quick_menu():
             style_prefix "quick"
             xalign 0.5
             yalign 1.0
+            spacing 5
 
             imagebutton:
                 action Show('pause')
@@ -263,10 +324,6 @@ screen quick_menu():
                 idle "gui/icons/help.png"
                 hover "gui/icons/help_border.png"
 
-init python:
-    config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
 style quick_button is default
 style quick_button_text is button_text
 
@@ -418,7 +475,7 @@ screen main_menu():
             clicked [Hide("hover_main_menu"), ShowMenu("help")]
             hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_help_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
-            
+
         # Exit
         hotspot (819, 786, 200, 196):
             clicked Quit(confirm=not main_menu)

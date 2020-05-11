@@ -18,10 +18,13 @@ label train:
 
     stop music fadeout 0.5
     scene bg_train
+    $ renpy.show_screen("show_return", x=80, y=980, img="return.png", img_hover="return_hover_blue.png")
     play music "audio/sound/train.mp3" fadein 0.5
     show img_train at moving
     call screen hold_screen(15)
     stop music fadeout 0.5
+    $ renpy.hide_screen("show_return")
+
 
     $ setIsInSpecialScreen(False)
 

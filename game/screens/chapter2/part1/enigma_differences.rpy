@@ -145,6 +145,12 @@ screen find_differences_obos:
             hotspot (1645, 838, 28, 29):
                 action Function(addFoundDifference, id=10)
 
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover_blue.png"
+        align .03, .9
+        action Rollback()
+
     if len(found_differences) > 6:
         imagebutton:
             idle "gui/arrows/arrow_right.png"
@@ -259,6 +265,12 @@ screen find_differences_manushi:
         else:
             hotspot (1365, 475, 44, 30):
                 action Function(addFoundDifference, id=10)
+
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover_blue.png"
+        align .03, .9
+        action Rollback()
 
     if len(found_differences) > 6:
         imagebutton:

@@ -64,6 +64,8 @@ label puzzle:
     $ renpy.choice_for_skipping()
     scene puzzle_background
 
+    $ renpy.show_screen("show_return", x=100, y=900, img="return.png", img_hover="return_hover.png")
+
     python:
         setIsInSpecialScreen(True)
         mainimage = im.Composite((1050, 850),(25, 25), "images/chapter0/portrait_puzzle/portrait.png")
@@ -78,6 +80,7 @@ label puzzle:
                 placedlist[i,j] = False
 
     call screen jigsaw_puzzle
+    $ renpy.hide_screen("show_return")
     jump puzzle_done
 ################################################################################
 

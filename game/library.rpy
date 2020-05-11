@@ -46,6 +46,94 @@ screen library():
                 hovered ShowTransient("hover_library", img="images/library/library_chapter2c.png")
                 unhovered Hide("hover_library")
 
+    ## Quick menu ########################################
+    hbox:
+        style_prefix "quick"
+        xalign 0.5
+        yalign 1.0
+        spacing 5
+
+        imagebutton:
+            action Show('pause')
+            idle "gui/icons/pause.png"
+            hover "gui/icons/pause_border.png"
+
+        imagebutton:
+            action ShowMenu('glossary')
+            hover "gui/icons/glossary_new_icon.png"
+            if len(game_state.glossary_items_unread) > 0:
+                idle "gui/icons/glossary_new_icon.png"
+            else:
+                idle "gui/icons/glossary_icon.png"
+
+        imagebutton:
+            action ShowMenu('gallery')
+            hover "gui/icons/gallery_new_icon.png"
+            if len(game_state.gallery_items_unread) > 0:
+                idle "gui/icons/gallery_new_icon.png"
+            else:
+                idle "gui/icons/gallery_icon.png"
+
+        imagebutton:
+            if is_in_special_screen:
+                action NullAction()
+                hover "gui/icons/save.png"
+            else:
+                action [Show(screen="save_menu"), FileTakeScreenshot()]
+                hover "gui/icons/save_border.png"
+            idle "gui/icons/save.png"
+
+        if renpy.variant("pc"):
+            imagebutton:
+                action ShowMenu('help')
+                idle "gui/icons/help.png"
+                hover "gui/icons/help_border.png"
+    ######################################################
+
 
 screen hover_library(img):
     add img at truecenter
+
+    ## Quick menu ########################################
+    hbox:
+        style_prefix "quick"
+        xalign 0.5
+        yalign 1.0
+        spacing 5
+
+        imagebutton:
+            action Show('pause')
+            idle "gui/icons/pause.png"
+            hover "gui/icons/pause_border.png"
+
+        imagebutton:
+            action ShowMenu('glossary')
+            hover "gui/icons/glossary_new_icon.png"
+            if len(game_state.glossary_items_unread) > 0:
+                idle "gui/icons/glossary_new_icon.png"
+            else:
+                idle "gui/icons/glossary_icon.png"
+
+        imagebutton:
+            action ShowMenu('gallery')
+            hover "gui/icons/gallery_new_icon.png"
+            if len(game_state.gallery_items_unread) > 0:
+                idle "gui/icons/gallery_new_icon.png"
+            else:
+                idle "gui/icons/gallery_icon.png"
+
+        imagebutton:
+            if is_in_special_screen:
+                action NullAction()
+                hover "gui/icons/save.png"
+            else:
+                action [Show(screen="save_menu"), FileTakeScreenshot()]
+                hover "gui/icons/save_border.png"
+            idle "gui/icons/save.png"
+
+        if renpy.variant("pc"):
+            imagebutton:
+                action ShowMenu('help')
+                idle "gui/icons/help.png"
+                hover "gui/icons/help_border.png"
+    ######################################################
