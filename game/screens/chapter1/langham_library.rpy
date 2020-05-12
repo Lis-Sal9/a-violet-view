@@ -53,7 +53,7 @@ screen langham_library_secret():
     imagemap:
         idle "images/chapter1/langham_place/langham_library.png"
         ground "images/chapter1/langham_place/langham_library.png"
-        hotspot (719, 587, 6, 72):
+        hotspot (717, 584, 16, 71):
             clicked [Hide("langham_library_secret"), Hide("hover_langham_library"), Jump("langham_library_book")]
             hovered ShowTransient("hover_langham_library", img="images/chapter1/langham_place/langham_library_hover.png")
             unhovered Hide("hover_langham_library")

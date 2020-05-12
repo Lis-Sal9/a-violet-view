@@ -159,6 +159,7 @@ label langham_place:
             $ renpy.movie_cutscene("video/open_door.mkv")
 
             if not game_state.maze_is_seen:
+                $ game_state.maze_coords = [36, 0]
                 $ renpy.call_in_new_context("maze_label")
             else:
                 #maze is done
