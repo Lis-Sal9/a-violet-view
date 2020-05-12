@@ -43,9 +43,9 @@ label cr_session:
     adrienne_rich "Parlarem del feminisme de la diferència i de com afecta a cada col·lectiu de manera particular."
     adrienne_rich "Formin part del col·lectiu que sigui, la pobresa, la desigualtat salarial, la discriminació laboral i el repartiment desigual de tasques domèstiques són fets que afecten les dones."
     adrienne_rich "Ens trobem davant de la feminització de la pobresa. A causa de l'opressió estructural, les dones viuen en la pobresa, ja que les institucions i la societat limiten els seus recursos econòmics i les seves oportunitats."
-    participant "{i}Sí, i a les dones negres ens afecta també el racisme estructural.{/i} - digué Alicia, una dona negra de trenta anys."
-    participant "{i}Qualsevol dels sistemes d'opressió, discriminació i/o dominació actuen interrelacionats i suposen identitats socials solapades.{/i} - seguí."
-    participant "{i}És a dir, la interseccionalitat és un risc múltiple, ja que el sexisme s'agreuja en combinació amb el racisme i altres opressions, com la classe.{/i} - conclogué."
+    participant "Sí, i a les dones negres ens afecta també el racisme estructural. - digué Alicia, una dona negra de trenta anys."
+    p_alicia "Qualsevol dels sistemes d'opressió, discriminació i/o dominació actuen interrelacionats i suposen identitats socials solapades.."
+    p_alicia "És a dir, la interseccionalitat és un risc múltiple, ja que el sexisme s'agreuja en combinació amb el racisme i altres opressions, com la classe."
 
     $ GiveGlossaryItemToPlayer(16)
     $ ShowItems()
@@ -56,7 +56,7 @@ label cr_session:
     adrienne_rich "Crec recordar que hi havia una autora que parlava d'aquest tema ... Com es deia? ... No ho recordo."
     adrienne_rich "Però venia a dir que el feminisme estava definit i dominat per dones blanques de classe mitjana, la qual cosa fa que ignori el racisme i alhora contribueixi a ell."
     adrienne_rich "Les dones negres no solament pateixen la desigualtat racial, sinó també la de gènere. Estan més oprimides que les dones blanques."
-    participant "{i}Necessitem un feminisme propi, que consideri els problemes de les dones negres també. L'opressió racial i la de classe.{/i} - reclamà Alicia."
+    p_alicia "Necessitem un feminisme propi, que consideri els problemes de les dones negres també. L'opressió racial i la de classe."
 
     $ GiveGlossaryItemToPlayer(2)
     $ ShowItems()
@@ -64,15 +64,15 @@ label cr_session:
     user "Considero que això es remunta més enllà ..."
     user "Ja en les societats esclavistes la dona negra era considerada sexualment {i}fàcil{/i}, a qui es culpava quan s'abusava d'ella física i sexualment. Ja era present aquest estereotip llavors."
     user "Sí que les dones blanques no ho tenien pas millor, ja que eren considerades dèbils i delicades, però a les negres s'esperava que treballessin com homes per ser considerades poc femenines o refinades."
-    participant "{i}La meva mare, en pau descansi, va ser esclava i va haver de viure sota aquestes condicions durant molts anys. Per sort, va poder fugir i viure la vida que li restava en pau i a la muntanya, com a ella li agradava.{/i} - digué Lynn, una dona negra de quaranta anys."
+    participant "La meva mare, en pau descansi, va ser esclava i va haver de viure sota aquestes condicions durant molts anys. Per sort, va poder fugir i viure la vida que li restava en pau i a la muntanya, com a ella li agradava. - digué Lynn, una dona negra de quaranta anys."
     adrienne_rich "Ostres, Lynn. Quin mal tràngul ... per sort, l'esclavisme ja va acabar fa anys."
-    participant "{i}Sí, però encara segueixo sense trobar explicació a què a una amiga de la meva mare l'esterilitzessin sense consentiment, igual que a altres companyes seves de classe treballadora, mentre que a les dones blanques se les animava a tenir descendència.{/i} - aclarí Lynn."
+    p_lynn "Sí, però encara segueixo sense trobar explicació a què a una amiga de la meva mare l'esterilitzessin sense consentiment, igual que a altres companyes seves de classe treballadora, mentre que a les dones blanques se les animava a tenir descendència."
 
     $ GiveGlossaryItemToPlayer(3)
     $ ShowItems()
 
     user "La violació en l'esclavitud era la manera rutinària dels propietaris de les esclaves per atemorir-les i recordar als esclaus negres que no podien protegir-les."
-    participant "{i}Però la violació no està motivada per la luxúria?{/i} - preguntà Lynn."
+    p_lynn "Però la violació no està motivada per la luxúria?"
 
     $ GiveGlossaryItemToPlayer(8)
     $ GiveGlossaryItemToPlayer(0)
@@ -83,37 +83,37 @@ label cr_session:
 
     call true_or_false_question("rape_luxury")
 
-    participant "{i}El més important és no culpabilitzar-se. El meu pare abusava de mi quan era una nena petita i, si no fos pel recolzament de centres d'ajuda com aquest, jo no hauria pogut tirar endavant.{/i} - digué Serena, una noia blanca de 20 anys."
+    participant "El més important és no culpabilitzar-se. El meu pare abusava de mi quan era una nena petita i, si no fos pel recolzament de centres d'ajuda com aquest, jo no hauria pogut tirar endavant. - digué Serena, una noia blanca de 20 anys."
     adrienne_rich "Exactament, Serena. Gràcies per compartir-ho amb nosaltres."
     adrienne_rich "És important crear centres d'ajuda per oferir recolzament i refugi a les víctimes, així com mobilitzar-se per canviar les lleis al respecte."
     adrienne_rich "I no només això, sinó amb iniciatives de persecució de violacions que vagin en contra de la culpabilització de la víctima, amb èmfasi en l'educació pública sobre el consentiment i amb millors pràctiques en hospitals, tribunals i mitjans de comunicació."
-    participant "{i}Hem d'exigir que aquest tipus de delictes es prenguin més seriosament. Prou de considerar-los asumptes estranys o tabú.{/i} - va manifestar efusivament Serena."
+    p_serena "Hem d'exigir que aquest tipus de delictes es prenguin més seriosament. Prou de considerar-los asumptes estranys o tabú. - va manifestar efusivament."
     adrienne_rich "Per això, és important animar a les víctimes d'aquest tipus de delictes que denunciïn i que demanin ajuda per poder superar el mal psicològic que han patit."
-    participant "{i}Jo sempre havia cregut que la violació és perpetrada per estranys.{/i} - va confessar Alicia."
+    p_alicia "Jo sempre havia cregut que la violació és perpetrada per estranys."
 
     call true_or_false_question("rape_author")
 
     adrienne_rich "Després d'aquest tema un pèl espinós, podem continuar."
     adrienne_rich "Seguint el fil que hem començat al principi, també el feminisme chicana, moviment anticolonialista, considera que el feminisme de les dones blanques no es preocupa per les problemàtiques de les dones chicanes."
     adrienne_rich "Concretament, no es preocupa per la discriminació racial i de classe que patien elles, a més a més del sexisme."
-    participant "{i}Gloria Anzaldúa és una dona estudiant dels moviments inclusius, centrada en la jerarquia dins del colonialisme i en com s'hi entrellacen qüestions de gènere, raça, classe i salut.{/i} - explicà Gloria, una noia mexicana."
-    participant "{i}Aquesta dona subratlla l'entrellaçament de les diferents identitats i opressions, i el considera una forma de neocolonialisme.{/i} - va dir Gloria."
-    participant "{i}És que la perspectiva feminista occidental de la dona del tercer món redueix a la dona real a un estereotip invariable i uniforme, de manera similar al què succeeïx amb les dones negres.{/i} - digué Alicia."
-    participant "{i}Per això, el feminisme postcolonial segueix reclamant un moviment feminista inclusiu i útil, basat en valors compartits per dones de tot el món, que ajudi a comprendre millor els seus objectius i lluites particulars.{/i} - va reclamar Alicia."
+    participant "Gloria Anzaldúa és una dona estudiant dels moviments inclusius, centrada en la jerarquia dins del colonialisme i en com s'hi entrellacen qüestions de gènere, raça, classe i salut. - explicà Gloria, una noia mexicana."
+    p_gloria "Aquesta dona subratlla l'entrellaçament de les diferents identitats i opressions, i el considera una forma de neocolonialisme."
+    p_alicia "És que la perspectiva feminista occidental de la dona del tercer món redueix a la dona real a un estereotip invariable i uniforme, de manera similar al què succeeïx amb les dones negres."
+    p_alicia "Per això, el feminisme postcolonial segueix reclamant un moviment feminista inclusiu i útil, basat en valors compartits per dones de tot el món, que ajudi a comprendre millor els seus objectius i lluites particulars."
     user "És veritat que en els llibres s'acostuma a estudiar el feminisme des del punt de vista occidental ..."
-    participant "{i}Sí, fins i tot les dones indígenes pateixen una doble opressió. Per motius de gènere i ètnics.{/i} - va exposar Gloria."
-    participant "{i}I, per combatre-la, les dones indígenes s'impliquen més en la lluita ètnica i criden l'atenció en qüestions respectives de les dones, vinculant així l'autonomia femenina i l'ètnia.{/i} - va dir Gloria."
-    participant "{i}Però la realitat és molt més crua. Moltes varen ser esterilitzades forçosament, desaparegudes i, fins i tot, assassinades.{/i} - va finalitzar Gloria."
+    p_gloria "Sí, fins i tot les dones indígenes pateixen una doble opressió. Per motius de gènere i ètnics."
+    p_gloria "I, per combatre-la, les dones indígenes s'impliquen més en la lluita ètnica i criden l'atenció en qüestions respectives de les dones, vinculant així l'autonomia femenina i l'ètnia."
+    p_gloria "Però la realitat és molt més crua. Moltes varen ser esterilitzades forçosament, desaparegudes i, fins i tot, assassinades."
 
     $ GiveGlossaryItemToPlayer(29)
     $ ShowItems()
 
     user "Cada vegada resulta més necessari el recolzament pràctic i emocional als grups de dones de comunitats amb major risc per erradicar la violació dels drets humans."
     user "De la mateixa manera que la clau per prevenir aquest tipus de violacions roman en l'educació, ja que acostuma a donar-se en sectors menys instruïts."
-    participant "{i}Jo ... mmm ... quan tenia deu anys, la meva família estava plena de deutes, i per posar-hi fi, va decidir casar-me forçosament amb un home que em triplicava l'edat.{/i} - va dir Houda, una dona musulmana de trenta-cinc anys."
-    participant "{i}No passarà res, em deien ... tu fes el què et digui aquest home sempre i tot anirà bé.{/i} - Houda es posà a plorar."
-    participant "{i}Aquell home era fastigós. M'obligava a tenir relacions sexuals amb ell, tot i els meus crits de negació, em tocava sempre que se li passava pel cap ... Mai oblidaré la seva cara.{/i} - va dir Houda plorant."
-    participant "{i}Afortunadament, sembla que els miracles existeixen. Vaig poder fugir a un altre país i mai més en vaig tornar a saber res. Vaig perdre tot el contacte amb la meva família però, sincerament, és un sacrifici que faig sense penedir-me.{/i} - va dir Houda, ja més calmada."
+    participant "Jo ... mmm ... quan tenia deu anys, la meva família estava plena de deutes, i per posar-hi fi, va decidir casar-me forçosament amb un home que em triplicava l'edat. - va dir Houda, una dona musulmana de trenta-cinc anys."
+    p_houda "No passarà res, em deien ... tu fes el què et digui aquest home sempre i tot anirà bé. - es posà a plorar."
+    p_houda "Aquell home era fastigós. M'obligava a tenir relacions sexuals amb ell, tot i els meus crits de negació, em tocava sempre que se li passava pel cap ... Mai oblidaré la seva cara. - plorant."
+    p_houda "Afortunadament, sembla que els miracles existeixen. Vaig poder fugir a un altre país i mai més en vaig tornar a saber res. Vaig perdre tot el contacte amb la meva família però, sincerament, és un sacrifici que faig sense penedir-me. - ja més calmada."
     adrienne_rich "Gràcies per compartir-ho amb nosaltres, Houda. És que, fins i tot, es pot dir que els matrimonis forçats estan vinculats al tràfic d'éssers humans. I això és més que sèrio."
     adrienne_rich "Per això, com a dones, hem de cedir a allò que l'home ens digui, faci o ens faci fer, independentment de la nostra voluntat i/o consentiment?"
 
@@ -130,13 +130,13 @@ label cr_session:
     adrienne_rich "És cert això que diu. No obstant això, és veritat que la sexualitat de la dona està condicionada per l'home."
     adrienne_rich "Per exemple, la pornografia. Per un sector de la comunitat, la pornografia és la sexualitat essencial del poder masculí."
     adrienne_rich "En aquesta, les dones són maltractades i coaccionades, erotitzant la subordinació. Cada vegada que l'espectador repeteix la seva visualització, es va insensibilitzant, fins al punt de necessitar pornografia més violenta per excitar-se."
-    participant "{i}Jo crec que s'hauria d'il·legalitzar la pornografia. La considero moralment depravada i una amenaça per la societat i el matrimoni.{/i} - va comentar Houda."
-    participant "{i}Doncs jo penso que s'hauria d'il·legalitzar també, però perquè la dona és representada com un objecte sexual i no com a ésser humà, i això fomenta la violència contra elles.{/i} - va dir Serena."
+    p_houda "Jo crec que s'hauria d'il·legalitzar la pornografia. La considero moralment depravada i una amenaça per la societat i el matrimoni."
+    p_serena "Doncs jo penso que s'hauria d'il·legalitzar també, però perquè la dona és representada com un objecte sexual i no com a ésser humà, i això fomenta la violència contra elles."
     adrienne_rich "Interessants punts de vista els vostres. Llavors, considereu la pornografia violenta i misògina?"
-    participant "{i}No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades.{/i} - va explicar Ibonne, una noia trans."
-    participant "{i}S'ha de promoure el plaer físic, i l'experimentació i educació sexuals. És important emfatitzar la llibertat sexual de les dones, i dels grups LGTBQ en general.{/i} - va seguir Ibonne."
-    participant "{i}Acceptar la bisexualitat, el lesbianisme i la fluidesa del gènere és necessari per aconseguir l'alliberació de les dones.{/i} - va continuar Ibonne."
-    participant "{i}Les restriccions socials i legals del sexe consentit entre adults són mecanismes dels governs patriarcals que segueixen usant per discriminar la sexualitat de les dones.{/i} - va finalitzar Ibonne."
+    participant "No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades. - va explicar Ibonne, una noia trans."
+    p_ibonne "S'ha de promoure el plaer físic, i l'experimentació i educació sexuals. És important emfatitzar la llibertat sexual de les dones, i dels grups LGTBQ en general."
+    p_ibonne "Acceptar la bisexualitat, el lesbianisme i la fluidesa del gènere és necessari per aconseguir l'alliberació de les dones."
+    p_ibonne "Les restriccions socials i legals del sexe consentit entre adults són mecanismes dels governs patriarcals que segueixen usant per discriminar la sexualitat de les dones."
     adrienne_rich "Ostres, Ibonne, jo no podria haver exposat millor què és el positivisme sexual."
     "Ibonne va mirar amb cara de vergonya a la resta de les dones del grup."
     adrienne_rich "I, amb la consigna 'Accepta i respecta' ens acomiadem de la sessió d'avui."
@@ -173,7 +173,7 @@ label rape_luxury(result):
         $ addRateScore(-2)
         user "És clar. La luxúria de l'home. Ja se sap que quan un home està excitat, no pot fer res per controlar la seva necessitat sexual."
         "Totes les dones de la sala es varen quedar petrificades."
-        participant "{i}De veritat pensa això que està dient?{/i} - preguntà Alicia."
+        p_alicia "De veritat pensa això que està dient?"
         call true_or_false_question("sex_need")
 
     else:
@@ -189,9 +189,9 @@ label sex_need(result):
         user "És clar. La sexualitat femenina incita a violar."
         "Totes es posaren les mans al cap, menys una noia una mica peculiar."
         adrienne_rich "[tmpSavePlayer] no és la persona convidada per ensenyar aquest tipus de barbaritats."
-        participant "{i}Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!!{/i} - cridà una noia jove del grup a una persona assistent trans."
-        participant "{i}Tu i els que són com tu esteu mentalment malalts!! No ens envaireu els espais de les dones!! No ho permetrem!!!{/i} - manifestà encara més efusivament."
-        participant "{i}Coses com vosaltres que us feu dir dones sí que mereixeu ser violades!!! I molt més!!!{/i} - s'aixecà de la cadira."
+        participant "Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!! - cridà una noia jove del grup a una persona assistent trans."
+        participant "Tu i els que són com tu esteu mentalment malalts!! No ens envaireu els espais de les dones!! No ho permetrem!!! - manifestà encara més efusivament."
+        participant "Coses com vosaltres que us feu dir dones sí que mereixeu ser violades!!! I molt més!!! - s'aixecà de la cadira."
         adrienne_rich "Per favor, surt de la sala. Aquí estem per aprendre de la diferència, per respectar-la i acceptar-la. No perquè hi hagin atacs com aquests a les companyes. No tornis més."
         "I aquella noia marxà de la sala amb un fort cop de porta."
         "Adrienne, pensativa, va preguntar-se en veu alta ..."
@@ -220,7 +220,7 @@ label rape_author(result):
     if result:
         $ addRateScore(-1)
         user "Efectivament. Si fos un assumpte ordinari se'n parlaria més, i ara no se'n parla gairebé."
-        participant "{i}Però vostè d'on ha sortit?! Si no se'n parla és per por a represàlies!!!{/i} - cridà Serena."
+        p_serena "Però vostè d'on ha sortit?! Si no se'n parla és per por a represàlies!!!"
         call true_or_false_question("rape_fear")
     else:
         $ addRateScore(2)
@@ -234,25 +234,25 @@ label rape_fear(result):
     if result:
         $ addRateScore(3)
         user "Té raó, Serena. Existeix el que es coneix com la cultura del silenci, que envolta aquests tipus de temes per por a parlar-ne."
-        participant "{i}En el primer centre d'ajuda on vaig ser, ja m'ho van comentar això. De fet, a mi mateixa em passava. Parlar-ne m'implicava conscienciar-me d'haver-ho viscut, i només volia oblidar-me'n.{/i} - constestà Serena."
+        p_serena "En el primer centre d'ajuda on vaig ser, ja m'ho van comentar això. De fet, a mi mateixa em passava. Parlar-ne m'implicava conscienciar-me d'haver-ho viscut, i només volia oblidar-me'n."
         adrienne_rich "Afortunadament, a hores d'ara ja has après a viure amb aquesta experiència i a què no t'afecti en el teu dia a dia."
-        participant "{i}Sí, tot i que encara hi ha dies no tan bons ...{/i} - digué Serena, amb el cap cot."
+        p_serena "Sí, tot i que encara hi ha dies no tan bons ... - amb el cap cot."
 
     else:
         $ addRateScore(-2)
         user "No. Si no se'n parla és perquè, en el cas de violació a les dones, aquestes fan acusacions falses per venjança. Resulta innecessari escampar-ho o fer-ho públic sense perdre reputació."
-        participant "{i}No em puc creure el què està dient ... {/i} - Serena es va quedar petrificada."
-        participant "{i}Però quin percentatge es pensa que hi ha d'acusacions falses?{/i} - cada vegada, Serena s'estava enfurismant més."
+        p_serena "No em puc creure el què està dient ...  - es va quedar petrificada."
+        p_serena "Però quin percentatge es pensa que hi ha d'acusacions falses? - s'estava enfurismant més."
         menu:
             "Entre 10-20":
                 user "Entre un 10 i un 20 del total, m'atreviria a dir."
-                participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior a 10.{/i} - contestà Serena."
-                participant "{i}No se'n vagi per les branques.{/i} - digué Serena bastant molesta."
+                p_serena "Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior a 10."
+                p_serena "No se'n vagi per les branques. - bastant molesta."
             "Menys d'un 10":
                 $ addRateScore(1)
                 user "Crec que inferior al 10 del total."
-                participant "{i}Efectivament, no més que en altres delictes.{/i} - afirmà Serena."
-                participant "{i}Llavors, tingui una mica més de respecte.{/i} - digué Serena bastant molesta."
+                p_serena "Efectivament, no més que en altres delictes."
+                p_serena "Llavors, tingui una mica més de respecte. - bastant molesta."
                 user "D'acord. Disculpi si l'he molestada."
     return
 
@@ -263,22 +263,22 @@ label no_is_yes:
         "Quan una dona diu que no, en realitat vol dir que sí":
             $ addRateScore(-3)
             user "Però si una dona no diu explícitament que no, això vol dir que en el fons vol dir que sí perquè no ha mostrat la seva negació."
-            participant "{i}Rotundament NO. Si la dona no explicita el seu consentiment, no es poden suposar altres desitjos d'ella. Ningú té dret a anar en contra dels desitjos d'algú altre.{/i} - va dir Houda, bastant molesta."
-            participant "{i}Llavors, les vegades que aquell home em va violar sexualment sense el meu consentiment? Ho considera desig meu?{/i} - va dir Houda, enfurismada."
-            participant "{i}Ni que anés a resar a Déu aquest podria fer realitat el miracle de donar-li una neurona ...{/i} - va finalitzar Houda, amb sàtira i molt enfadada."
+            p_houda "Rotundament NO. Si la dona no explicita el seu consentiment, no es poden suposar altres desitjos d'ella. Ningú té dret a anar en contra dels desitjos d'algú altre. - bastant molesta."
+            p_houda "Llavors, les vegades que aquell home em va violar sexualment sense el meu consentiment? Ho considera desig meu? - enfurismada."
+            p_houda "Ni que anés a resar a Déu aquest podria fer realitat el miracle de donar-li una neurona ... - amb sàtira i molt enfadada."
 
         "Ha ocorregut una vegada, no passarà més":
             $ addRateScore(1)
             user "Pot ser que l'home et digui que aquesta serà l'única vegada, que no tornarà a ocórrer."
-            participant "{i}Sí, però la violència no és un incident aïllat, sinó que forma part d'un patró de violència en augment.{/i} - va dir Houda."
-            participant "{i}Ho dic per pròpia experiència.{/i} - va concloure Houda."
+            p_houda "Sí, però la violència no és un incident aïllat, sinó que forma part d'un patró de violència en augment."
+            p_houda "Ho dic per pròpia experiència."
 
         "És clar, perquè sinó l'home es pot posar violent":
             $ addRateScore(-2)
             user "Si no es compleix allò que l'home violent diu, acabarà exercint la violència sobre la dona. I llavors serà com si ella s'ho hagués buscat."
-            participant "{i}Per començar, no tots els homes són violents per naturalesa i, de fet, aquests no es mostren així fora de casa.{/i} - va exposar Houda."
-            participant "{i}I encara menys que sigui culpa de la dona per 'haver fet alguna cosa malament'. No hi ha excusa que justifiqui la violència.{/i} - va matisar Houda."
-            participant "{i}De la mateixa manera que una violació no pot ser excusada per l'home a través de la desacreditació de la dona, dient que vestia provocativa o que tenia mala reputació i que ell només es va limitar a donar-li allò que li estava demanant.{/i} - va concloure Houda."
+            p_houda "Per començar, no tots els homes són violents per naturalesa i, de fet, aquests no es mostren així fora de casa."
+            p_houda "I encara menys que sigui culpa de la dona per 'haver fet alguna cosa malament'. No hi ha excusa que justifiqui la violència."
+            p_houda "De la mateixa manera que una violació no pot ser excusada per l'home a través de la desacreditació de la dona, dient que vestia provocativa o que tenia mala reputació i que ell només es va limitar a donar-li allò que li estava demanant."
 
     return
 

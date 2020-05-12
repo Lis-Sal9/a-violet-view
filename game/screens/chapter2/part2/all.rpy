@@ -16,8 +16,13 @@ image cr_session = "images/chapter2/part2/nyrw/cr_session.png"
 # Characters
 define judy_chicago = Character("Judy Chicago", color="#e53935")
 define adrienne_rich = Character("Adrienne Rich", color="#d81b60")
-define participant = Character(_("Participant"), color="#8e24aa")
-
+define participant = Character(_("Participant"), color="#5d4037")
+define p_alicia = Character("Alicia", color="#808e95")
+define p_lynn = Character("Lynn", color="#cb9b8c")
+define p_serena = Character("Serena", color="#c97b63")
+define p_gloria = Character("Gloria", color="#ff8a65")
+define p_houda = Character("Houda", color="#c63f17")
+define p_ibonne = Character("Ibonne", color="#ff8a50")
 
 
 

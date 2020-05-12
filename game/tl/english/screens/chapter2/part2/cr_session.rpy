@@ -91,22 +91,22 @@ translate english cr_session_3b14f476:
     adrienne_rich "We are before the feminization of poverty. Due to structural oppression, women live in poverty because institutions and society limit their economical resources and their opportunities."
 
 # game/screens/chapter2/part2/cr_session.rpy:42
-translate english cr_session_4c1f6328:
+translate english cr_session_9883ca59:
 
-    # participant "{i}Sí, i a les dones negres ens afecta també el racisme estructural.{/i} - digué Alicia, una dona negra de trenta anys."
-    participant "{i}Yes, and black women suffer from structural racism as well.{/i} - said Alicia, a black woman in her thirties."
+    # participant "Sí, i a les dones negres ens afecta també el racisme estructural. - digué Alicia, una dona negra de trenta anys."
+    participant "Yes, and black women suffer from structural racism as well. - said Alicia, a black woman in her thirties."
 
 # game/screens/chapter2/part2/cr_session.rpy:43
-translate english cr_session_e7f91362:
+translate english cr_session_f97589dd:
 
-    # participant "{i}Qualsevol dels sistemes d'opressió, discriminació i/o dominació actuen interrelacionats i suposen identitats socials solapades.{/i} - seguí."
-    participant "{i}Whichever system of oppression, discrimination and/or domination act interrelated and suppose overlapping social identities.{/i} - she continued."
+    # p_alicia "Qualsevol dels sistemes d'opressió, discriminació i/o dominació actuen interrelacionats i suposen identitats socials solapades.."
+    p_alicia "Whichever system of oppression, discrimination and/or domination act interrelated and suppose overlapping social identities."
 
 # game/screens/chapter2/part2/cr_session.rpy:44
-translate english cr_session_8749a7ca:
+translate english cr_session_ac2ac6b7:
 
-    # participant "{i}És a dir, la interseccionalitat és un risc múltiple, ja que el sexisme s'agreuja en combinació amb el racisme i altres opressions, com la classe.{/i} - conclogué."
-    participant "{i}In other words, intersectionality is a multiple risk because sexism is aggravated with racism and class oppressions, among others.{/i} - concluded."
+    # p_alicia "És a dir, la interseccionalitat és un risc múltiple, ja que el sexisme s'agreuja en combinació amb el racisme i altres opressions, com la classe."
+    p_alicia "In other words, intersectionality is a multiple risk because sexism is aggravated with racism and class oppressions, among others."
 
 # game/screens/chapter2/part2/cr_session.rpy:49
 translate english cr_session_fded4279:
@@ -145,10 +145,10 @@ translate english cr_session_fb6547a2:
     adrienne_rich "Black women doesn't only suffer from racial inequality, but gender inequality as well. They are more oppressed than white women."
 
 # game/screens/chapter2/part2/cr_session.rpy:55
-translate english cr_session_7c17962b:
+translate english cr_session_84342491:
 
-    # participant "{i}Necessitem un feminisme propi, que consideri els problemes de les dones negres també. L'opressió racial i la de classe.{/i} - reclamà Alicia."
-    participant "{i}We need an own feminism which alse takes into account the problems of black women: racial and class oppression.{/i} - claimed Alicia."
+    # p_alicia "Necessitem un feminisme propi, que consideri els problemes de les dones negres també. L'opressió racial i la de classe."
+    p_alicia "We need an own feminism which alse takes into account the problems of black women: racial and class oppression."
 
 # game/screens/chapter2/part2/cr_session.rpy:60
 translate english cr_session_c0a15004:
@@ -169,10 +169,10 @@ translate english cr_session_1aace5da:
     user "It is true that white women didn't have it easier because they were considered weak and delicated, but black women had to work like men to be considered less femenine or refined."
 
 # game/screens/chapter2/part2/cr_session.rpy:63
-translate english cr_session_f06a04aa:
+translate english cr_session_23dda702:
 
-    # participant "{i}La meva mare, en pau descansi, va ser esclava i va haver de viure sota aquestes condicions durant molts anys. Per sort, va poder fugir i viure la vida que li restava en pau i a la muntanya, com a ella li agradava.{/i} - digué Lynn, una dona negra de quaranta anys."
-    participant "{i}My mother, rest in peace, was a slave and had to live under these conditions for many years. Luckily, she could escape and live the rest of her life in peace at the mountains, as she liked.{/i} - said Lynn, a black women around forty years old."
+    # participant "La meva mare, en pau descansi, va ser esclava i va haver de viure sota aquestes condicions durant molts anys. Per sort, va poder fugir i viure la vida que li restava en pau i a la muntanya, com a ella li agradava. - digué Lynn, una dona negra de quaranta anys."
+    participant "My mother, rest in peace, was a slave and had to live under these conditions for many years. Luckily, she could escape and live the rest of her life in peace at the mountains, as she liked. - said Lynn, a black women around forty years old."
 
 # game/screens/chapter2/part2/cr_session.rpy:64
 translate english cr_session_544d0c9f:
@@ -181,10 +181,10 @@ translate english cr_session_544d0c9f:
     adrienne_rich "My gosh, Lynn. So bad ... luckily, slavery ended a century ago."
 
 # game/screens/chapter2/part2/cr_session.rpy:65
-translate english cr_session_f240c3b0:
+translate english cr_session_4d2bbed2:
 
-    # participant "{i}Sí, però encara segueixo sense trobar explicació a què a una amiga de la meva mare l'esterilitzessin sense consentiment, igual que a altres companyes seves de classe treballadora, mentre que a les dones blanques se les animava a tenir descendència.{/i} - aclarí Lynn."
-    participant "{i}Yes, but I still cannot explain to myself why a friend of her was sterilized without consent, the same as many fellow workers, meanwhile the white women were encouraged to give birth.{/i} - clarified Lynn."
+    # p_lynn "Sí, però encara segueixo sense trobar explicació a què a una amiga de la meva mare l'esterilitzessin sense consentiment, igual que a altres companyes seves de classe treballadora, mentre que a les dones blanques se les animava a tenir descendència."
+    p_lynn "Yes, but I still cannot explain to myself why a friend of her was sterilized without consent, the same as many fellow workers, meanwhile the white women were encouraged to give birth."
 
 # game/screens/chapter2/part2/cr_session.rpy:70
 translate english cr_session_5e0f443a:
@@ -193,16 +193,16 @@ translate english cr_session_5e0f443a:
     user "Rape in slavery was a routine from the slaves' masters to frighten them and to remind the other slaves they can't protect them."
 
 # game/screens/chapter2/part2/cr_session.rpy:71
-translate english cr_session_a45d2946:
+translate english cr_session_b01c570b:
 
-    # participant "{i}Però la violació no està motivada per la luxúria?{/i} - preguntà Lynn."
-    participant "{i}But isn't rape motivated by lust?{/i} - asked Lynn."
+    # p_lynn "Però la violació no està motivada per la luxúria?"
+    p_lynn "But isn't rape motivated by lust?"
 
 # game/screens/chapter2/part2/cr_session.rpy:82
-translate english cr_session_2a61c27e:
+translate english cr_session_86b75005:
 
-    # participant "{i}El més important és no culpabilitzar-se. El meu pare abusava de mi quan era una nena petita i, si no fos pel recolzament de centres d'ajuda com aquest, jo no hauria pogut tirar endavant.{/i} - digué Serena, una noia blanca de 20 anys."
-    participant "{i}The most important thing is not to self-blame. My father abused me when I was a young girl and, if it wasn't thanks to the support of centers like this one, I couldn't keep on.{/i} - said Serena, a white young twuenty years old."
+    # participant "El més important és no culpabilitzar-se. El meu pare abusava de mi quan era una nena petita i, si no fos pel recolzament de centres d'ajuda com aquest, jo no hauria pogut tirar endavant. - digué Serena, una noia blanca de 20 anys."
+    participant "The most important thing is not to self-blame. My father abused me when I was a young girl and, if it wasn't thanks to the support of centers like this one, I couldn't keep on. - said Serena, a white young twuenty years old."
 
 # game/screens/chapter2/part2/cr_session.rpy:83
 translate english cr_session_ea2cb3e7:
@@ -223,10 +223,10 @@ translate english cr_session_20d9e9a7:
     adrienne_rich "And not only that, but with initiatives of persecution against blaming rape victims, with emphasis about consent in the public education sphere and with better practices in hospitals, court rooms and in media."
 
 # game/screens/chapter2/part2/cr_session.rpy:86
-translate english cr_session_66f3e267:
+translate english cr_session_9d675bfa:
 
-    # participant "{i}Hem d'exigir que aquest tipus de delictes es prenguin més seriosament. Prou de considerar-los asumptes estranys o tabú.{/i} - va manifestar efusivament Serena."
-    participant "{i}We must demand that this kind of crimeas should be taken into account more serioulsy. Enough of consider that as an strange or taboo subject.{/i} - Serena strongly stated."
+    # p_serena "Hem d'exigir que aquest tipus de delictes es prenguin més seriosament. Prou de considerar-los asumptes estranys o tabú. - va manifestar efusivament."
+    p_serena "We must demand that this kind of crimeas should be taken into account more serioulsy. Enough of consider that as an strange or taboo subject. - strongly stated."
 
 # game/screens/chapter2/part2/cr_session.rpy:87
 translate english cr_session_fa93f409:
@@ -235,10 +235,10 @@ translate english cr_session_fa93f409:
     adrienne_rich "That's why it is very important to encourage victims of this kind of crime to report that to the police, and to encourage them to ask for help to overcome the psychological trauma they suffered."
 
 # game/screens/chapter2/part2/cr_session.rpy:88
-translate english cr_session_84429236:
+translate english cr_session_8b65ad56:
 
-    # participant "{i}Jo sempre havia cregut que la violació és perpetrada per estranys.{/i} - va confessar Alicia."
-    participant "{i}I always thought that rape is commited only by strangers.{/i} - Alicia confessed."
+    # p_alicia "Jo sempre havia cregut que la violació és perpetrada per estranys."
+    p_alicia "I always thought that rape is commited only by strangers."
 
 # game/screens/chapter2/part2/cr_session.rpy:92
 translate english cr_session_10300754:
@@ -259,28 +259,28 @@ translate english cr_session_d509bb4e:
     adrienne_rich "Specifically, it doesn't care about racial and class discrimination they suffer, besides sexism."
 
 # game/screens/chapter2/part2/cr_session.rpy:95
-translate english cr_session_0a4c7287:
+translate english cr_session_a6982a58:
 
-    # participant "{i}Gloria Anzaldúa és una dona estudiant dels moviments inclusius, centrada en la jerarquia dins del colonialisme i en com s'hi entrellacen qüestions de gènere, raça, classe i salut.{/i} - explicà Gloria, una noia mexicana."
-    participant "{i}Gloria Anzaldúa is a woman scholar on inclusive movements, focused in the hierarchy within colonialism and how gender, race, class and health questions are intertwined.{/i} - explained Gloria, a mexican young woman."
+    # participant "Gloria Anzaldúa és una dona estudiant dels moviments inclusius, centrada en la jerarquia dins del colonialisme i en com s'hi entrellacen qüestions de gènere, raça, classe i salut. - explicà Gloria, una noia mexicana."
+    participant "Gloria Anzaldúa is a woman scholar on inclusive movements, focused in the hierarchy within colonialism and how gender, race, class and health questions are intertwined. - explained Gloria, a mexican young woman."
 
 # game/screens/chapter2/part2/cr_session.rpy:96
-translate english cr_session_fd4d84c6:
+translate english cr_session_56c33720:
 
-    # participant "{i}Aquesta dona subratlla l'entrellaçament de les diferents identitats i opressions, i el considera una forma de neocolonialisme.{/i} - va dir Gloria."
-    participant "{i}This woman focuses in the intertwinment between different identities and oppressions, and considers that sort of neocolonialism.{/i} - she continued."
+    # p_gloria "Aquesta dona subratlla l'entrellaçament de les diferents identitats i opressions, i el considera una forma de neocolonialisme."
+    p_gloria "This woman focuses in the intertwinment between different identities and oppressions, and considers that sort of neocolonialism."
 
 # game/screens/chapter2/part2/cr_session.rpy:97
-translate english cr_session_a0e79b49:
+translate english cr_session_b3e0c753:
 
-    # participant "{i}És que la perspectiva feminista occidental de la dona del tercer món redueix a la dona real a un estereotip invariable i uniforme, de manera similar al què succeeïx amb les dones negres.{/i} - digué Alicia."
-    participant "{i}That's because the western feminist perspective about third world women reduces the real woman to a invariant and uniform steretype, in a similar way than about the black women.{/i} - Alicia replied."
+    # p_alicia "És que la perspectiva feminista occidental de la dona del tercer món redueix a la dona real a un estereotip invariable i uniforme, de manera similar al què succeeïx amb les dones negres."
+    p_alicia "That's because the western feminist perspective about third world women reduces the real woman to a invariant and uniform steretype, in a similar way than about the black women."
 
 # game/screens/chapter2/part2/cr_session.rpy:98
-translate english cr_session_d1d63bad:
+translate english cr_session_d75f1380:
 
-    # participant "{i}Per això, el feminisme postcolonial segueix reclamant un moviment feminista inclusiu i útil, basat en valors compartits per dones de tot el món, que ajudi a comprendre millor els seus objectius i lluites particulars.{/i} - va reclamar Alicia."
-    participant "{i}Because of that, post-colonial feminism still vindicates an inclusive and useful feminism, based upon the values shared by women around the world, that helps to better understand their goals and particular battles.{/i} - claimed then."
+    # p_alicia "Per això, el feminisme postcolonial segueix reclamant un moviment feminista inclusiu i útil, basat en valors compartits per dones de tot el món, que ajudi a comprendre millor els seus objectius i lluites particulars."
+    p_alicia "Because of that, post-colonial feminism still vindicates an inclusive and useful feminism, based upon the values shared by women around the world, that helps to better understand their goals and particular battles."
 
 # game/screens/chapter2/part2/cr_session.rpy:99
 translate english cr_session_3d2da400:
@@ -289,22 +289,22 @@ translate english cr_session_3d2da400:
     user "It is true that at the books we use to study the feminism from a western point of view ..."
 
 # game/screens/chapter2/part2/cr_session.rpy:100
-translate english cr_session_b4d90ea2:
+translate english cr_session_2d22f471:
 
-    # participant "{i}Sí, fins i tot les dones indígenes pateixen una doble opressió. Per motius de gènere i ètnics.{/i} - va exposar Gloria."
-    participant "{i}Yes, even indigenous women suffer a double oppression: because of gender and ethnics.{/i} - exposed Gloria."
+    # p_gloria "Sí, fins i tot les dones indígenes pateixen una doble opressió. Per motius de gènere i ètnics."
+    p_gloria "Yes, even indigenous women suffer a double oppression: because of gender and ethnics."
 
 # game/screens/chapter2/part2/cr_session.rpy:101
-translate english cr_session_5fb875d8:
+translate english cr_session_919fd951:
 
-    # participant "{i}I, per combatre-la, les dones indígenes s'impliquen més en la lluita ètnica i criden l'atenció en qüestions respectives de les dones, vinculant així l'autonomia femenina i l'ètnia.{/i} - va dir Gloria."
-    participant "{i}And, to fight that, indigenous women are more implicated in the ethinc fight and draw attention to questions of the women, linking that the femenine autonomy and the ethnics.{/i} - Gloria said."
+    # p_gloria "I, per combatre-la, les dones indígenes s'impliquen més en la lluita ètnica i criden l'atenció en qüestions respectives de les dones, vinculant així l'autonomia femenina i l'ètnia."
+    p_gloria "And, to fight that, indigenous women are more implicated in the ethinc fight and draw attention to questions of the women, linking that the femenine autonomy and the ethnics."
 
 # game/screens/chapter2/part2/cr_session.rpy:102
-translate english cr_session_9bf3b932:
+translate english cr_session_a42721e6:
 
-    # participant "{i}Però la realitat és molt més crua. Moltes varen ser esterilitzades forçosament, desaparegudes i, fins i tot, assassinades.{/i} - va finalitzar Gloria."
-    participant "{i}But reality is even more crude. Many of them were sterilized by force, disappeared or even murdered.{/i} - Gloria concluded."
+    # p_gloria "Però la realitat és molt més crua. Moltes varen ser esterilitzades forçosament, desaparegudes i, fins i tot, assassinades."
+    p_gloria "But reality is even more crude. Many of them were sterilized by force, disappeared or even murdered."
 
 # game/screens/chapter2/part2/cr_session.rpy:107
 translate english cr_session_3d5774c6:
@@ -319,28 +319,28 @@ translate english cr_session_b6e9ed17:
     user "The same way that the key to prevent this kind of violations relies on education, because it uses to happen in under-developed areas."
 
 # game/screens/chapter2/part2/cr_session.rpy:109
-translate english cr_session_f0fb9588:
+translate english cr_session_2b4c538d:
 
-    # participant "{i}Jo ... mmm ... quan tenia deu anys, la meva família estava plena de deutes, i per posar-hi fi, va decidir casar-me forçosament amb un home que em triplicava l'edat.{/i} - va dir Houda, una dona musulmana de trenta-cinc anys."
-    participant "{i}I ... mmm ... when I was ten, my family were overwhelmed by debts and, to pay down those debts, they decide to marry me with a man who tripled my age.{/i} - said Houda, a muslim woman thirty-five years old."
+    # participant "Jo ... mmm ... quan tenia deu anys, la meva família estava plena de deutes, i per posar-hi fi, va decidir casar-me forçosament amb un home que em triplicava l'edat. - va dir Houda, una dona musulmana de trenta-cinc anys."
+    participant "I ... mmm ... when I was ten, my family were overwhelmed by debts and, to pay down those debts, they decide to marry me with a man who tripled my age. - said Houda, a muslim woman thirty-five years old."
 
 # game/screens/chapter2/part2/cr_session.rpy:110
-translate english cr_session_0317c327:
+translate english cr_session_e1ae08b2:
 
-    # participant "{i}No passarà res, em deien ... tu fes el què et digui aquest home sempre i tot anirà bé.{/i} - Houda es posà a plorar."
-    participant "{i}Nothing will happen, they told me ... you must obey this man and everything will be fine.{/i} - she was crying."
+    # p_houda "No passarà res, em deien ... tu fes el què et digui aquest home sempre i tot anirà bé. - es posà a plorar."
+    p_houda "Nothing will happen, they told me ... you must obey this man and everything will be fine. - she was crying."
 
 # game/screens/chapter2/part2/cr_session.rpy:111
-translate english cr_session_a626c78a:
+translate english cr_session_d4f22c06:
 
-    # participant "{i}Aquell home era fastigós. M'obligava a tenir relacions sexuals amb ell, tot i els meus crits de negació, em tocava sempre que se li passava pel cap ... Mai oblidaré la seva cara.{/i} - va dir Houda plorant."
-    participant "{i}He was a disgusting man. He forced me to have sex with him, even me screaming to make it stop, he always touched me whenever he wanted ... I will never forget his face.{/i} - said with tears."
+    # p_houda "Aquell home era fastigós. M'obligava a tenir relacions sexuals amb ell, tot i els meus crits de negació, em tocava sempre que se li passava pel cap ... Mai oblidaré la seva cara. - plorant."
+    p_houda "He was a disgusting man. He forced me to have sex with him, even me screaming to make it stop, he always touched me whenever he wanted ... I will never forget his face. - said with tears."
 
 # game/screens/chapter2/part2/cr_session.rpy:112
-translate english cr_session_61e1deb1:
+translate english cr_session_106a8a7e:
 
-    # participant "{i}Afortunadament, sembla que els miracles existeixen. Vaig poder fugir a un altre país i mai més en vaig tornar a saber res. Vaig perdre tot el contacte amb la meva família però, sincerament, és un sacrifici que faig sense penedir-me.{/i} - va dir Houda, ja més calmada."
-    participant "{i}Luckily, it seems that miracles does exists. I could escape to another country and never heard anything else again. I lost all contact with my family but, honestly, I will not regret doing this sacrifice.{/i} - finally said Houda, more calmed."
+    # p_houda "Afortunadament, sembla que els miracles existeixen. Vaig poder fugir a un altre país i mai més en vaig tornar a saber res. Vaig perdre tot el contacte amb la meva família però, sincerament, és un sacrifici que faig sense penedir-me. - ja més calmada."
+    p_houda "Luckily, it seems that miracles does exists. I could escape to another country and never heard anything else again. I lost all contact with my family but, honestly, I will not regret doing this sacrifice. - more calmed."
 
 # game/screens/chapter2/part2/cr_session.rpy:113
 translate english cr_session_c6e7cd46:
@@ -403,16 +403,16 @@ translate english cr_session_476ec330:
     adrienne_rich "Here, women are abused and corced, eroticizing the subordination. Every time the viewer repeats its visualization gets more and more insensitive, until there is a point to need even more violent pornography to get excited."
 
 # game/screens/chapter2/part2/cr_session.rpy:129
-translate english cr_session_f5be2e95:
+translate english cr_session_e38ad80d:
 
-    # participant "{i}Jo crec que s'hauria d'il·legalitzar la pornografia. La considero moralment depravada i una amenaça per la societat i el matrimoni.{/i} - va comentar Houda."
-    participant "{i}I believe pornography should be outlawed. I consider that as morally depraved and a menace to society and marriage.{/i} - commented Houda"
+    # p_houda "Jo crec que s'hauria d'il·legalitzar la pornografia. La considero moralment depravada i una amenaça per la societat i el matrimoni."
+    p_houda "I believe pornography should be outlawed. I consider that as morally depraved and a menace to society and marriage."
 
 # game/screens/chapter2/part2/cr_session.rpy:130
-translate english cr_session_a7cdb74e:
+translate english cr_session_1019100e:
 
-    # participant "{i}Doncs jo penso que s'hauria d'il·legalitzar també, però perquè la dona és representada com un objecte sexual i no com a ésser humà, i això fomenta la violència contra elles.{/i} - va dir Serena."
-    participant "{i}I also think it should be outlawed, but because the woman is depicted as a sexual object, not as a human being. And that encourages the violence against them.{/i} - followed Serena."
+    # p_serena "Doncs jo penso que s'hauria d'il·legalitzar també, però perquè la dona és representada com un objecte sexual i no com a ésser humà, i això fomenta la violència contra elles."
+    p_serena "I also think it should be outlawed, but because the woman is depicted as a sexual object, not as a human being. And that encourages the violence against them."
 
 # game/screens/chapter2/part2/cr_session.rpy:131
 translate english cr_session_8282a57f:
@@ -420,31 +420,29 @@ translate english cr_session_8282a57f:
     # adrienne_rich "Interessants punts de vista els vostres. Llavors, considereu la pornografia violenta i misògina?"
     adrienne_rich "Interesting points of view those of you. So do you consider that pornography is violent and misogynist?"
 
-# TODO: Translation updated at 2020-05-11 00:46
-
 # game/screens/chapter2/part2/cr_session.rpy:132
-translate english cr_session_1357e5fc:
+translate english cr_session_5c7c7876:
 
-    # participant "{i}No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades.{/i} - va explicar Ibonne, una noia trans."
-    participant "{i}I don't consider that way. Pornography is liberating, because the censorship of the sexuality always have a repressive impact upon marginalized sexualities.{/i} - explained Ibonne, a trans woman."
+    # participant "No considero que sigui pas així. La pornografia és alliberadora, ja que la censura de la sexualitat quasi sempre té un impacte repressiu sobre les sexualitats marginades. - va explicar Ibonne, una noia trans."
+    participant "I don't consider that way. Pornography is liberating, because the censorship of the sexuality always have a repressive impact upon marginalized sexualities. - explained Ibonne, a trans woman."
 
 # game/screens/chapter2/part2/cr_session.rpy:133
-translate english cr_session_5553db9d:
+translate english cr_session_c7837b29:
 
-    # participant "{i}S'ha de promoure el plaer físic, i l'experimentació i educació sexuals. És important emfatitzar la llibertat sexual de les dones, i dels grups LGTBQ en general.{/i} - va seguir Ibonne."
-    participant "{i}Physical pleasure must be promoted, as well as sexual education and experimentation. It is important to emphasize the sexual freedom of the women, and LGTBQ groups in general.{/i} - she followed."
+    # participant "S'ha de promoure el plaer físic, i l'experimentació i educació sexuals. És important emfatitzar la llibertat sexual de les dones, i dels grups LGTBQ en general."
+    participant "Physical pleasure must be promoted, as well as sexual education and experimentation. It is important to emphasize the sexual freedom of the women, and LGTBQ groups in general."
 
 # game/screens/chapter2/part2/cr_session.rpy:134
-translate english cr_session_70c5546f:
+translate english cr_session_e70b208c:
 
-    # participant "{i}Acceptar la bisexualitat, el lesbianisme i la fluidesa del gènere és necessari per aconseguir l'alliberació de les dones.{/i} - va continuar Ibonne."
-    participant "{i}Accept bisexuality, lesbianism and gender fluidity is necessary to accomplish the women's liberation.{/i} - continued."
+    # p_ibonne "Acceptar la bisexualitat, el lesbianisme i la fluidesa del gènere és necessari per aconseguir l'alliberació de les dones."
+    p_ibonne "Accept bisexuality, lesbianism and gender fluidity is necessary to accomplish the women's liberation."
 
 # game/screens/chapter2/part2/cr_session.rpy:135
-translate english cr_session_2f8cd67a:
+translate english cr_session_b9f47ad6:
 
-    # participant "{i}Les restriccions socials i legals del sexe consentit entre adults són mecanismes dels governs patriarcals que segueixen usant per discriminar la sexualitat de les dones.{/i} - va finalitzar Ibonne."
-    participant "{i}Social and legal restrictions upon consented sex between adults are mechanisms from patriarchal governments that they still use to discriminate women's sexuality.{/i} - Ibonne finished."
+    # p_ibonne "Les restriccions socials i legals del sexe consentit entre adults són mecanismes dels governs patriarcals que segueixen usant per discriminar la sexualitat de les dones."
+    p_ibonne "Social and legal restrictions upon consented sex between adults are mechanisms from patriarchal governments that they still use to discriminate women's sexuality."
 
 # game/screens/chapter2/part2/cr_session.rpy:136
 translate english cr_session_c5e6d0a8:
@@ -543,10 +541,10 @@ translate english rape_luxury_46fd06c3:
     "All the women were petrified."
 
 # game/screens/chapter2/part2/cr_session.rpy:172
-translate english rape_luxury_bd45d055:
+translate english rape_luxury_171fdc7f:
 
-    # participant "{i}De veritat pensa això que està dient?{/i} - preguntà Alicia."
-    participant "{i}Do you really think that?{/i} - inquired Alicia."
+    # p_alicia "De veritat pensa això que està dient?"
+    p_alicia "Do you really think that?"
 
 # game/screens/chapter2/part2/cr_session.rpy:177
 translate english rape_luxury_52147aaf:
@@ -579,22 +577,22 @@ translate english sex_need_c66c4fbc:
     adrienne_rich "[tmpSavePlayer] is not the right person to show this kind of nonsenses."
 
 # game/screens/chapter2/part2/cr_session.rpy:188
-translate english sex_need_3dfdb1a8:
+translate english sex_need_580621bb:
 
-    # participant "{i}Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!!{/i} - cridà una noia jove del grup a una persona assistent trans."
-    participant "{i}But [tmpSavePlayer] is right!!! Look how this liar is dressed like a woman. Tranny, you tranny !!!!{/i} - shouted a young woman to a transsexual attendant."
+    # participant "Però si té raó!!! Sinó mireu com va aquell farsant vestit de dona. Travelo, més que travelo !!!! - cridà una noia jove del grup a una persona assistent trans."
+    participant "But [tmpSavePlayer] is right!!! Look how this liar is dressed like a woman. Tranny, you tranny !!!! - shouted a young woman to a transsexual attendant."
 
 # game/screens/chapter2/part2/cr_session.rpy:189
-translate english sex_need_e6933227:
+translate english sex_need_f0c4fcfc:
 
-    # participant "{i}Tu i els que són com tu esteu mentalment malalts!! No ens envaireu els espais de les dones!! No ho permetrem!!!{/i} - manifestà encara més efusivament."
-    participant "{i}You and all of you are mentally damaged!! You will never invade the spaces of the women!! We will never allow it!!!{i} - shouted even more loudly."
+    # participant "Tu i els que són com tu esteu mentalment malalts!! No ens envaireu els espais de les dones!! No ho permetrem!!! - manifestà encara més efusivament."
+    participant "You and all of you are mentally damaged!! You will never invade the spaces of the women!! We will never allow it!!! - shouted even more loudly."
 
 # game/screens/chapter2/part2/cr_session.rpy:190
-translate english sex_need_bcee21b7:
+translate english sex_need_2c0e71e3:
 
-    # participant "{i}Coses com vosaltres que us feu dir dones sí que mereixeu ser violades!!! I molt més!!!{/i} - s'aixecà de la cadira."
-    participant "{i}Things like you, who call yourselves a woman, deserve to be raped!!! And a lot more!!!{/i} - stood up from her chair."
+    # participant "Coses com vosaltres que us feu dir dones sí que mereixeu ser violades!!! I molt més!!! - s'aixecà de la cadira."
+    participant "Things like you, who call yourselves a woman, deserve to be raped!!! And a lot more!!! - stood up from her chair."
 
 # game/screens/chapter2/part2/cr_session.rpy:191
 translate english sex_need_2f40f0b2:
@@ -675,10 +673,10 @@ translate english rape_author_9bba13ae:
     user "Indeed. If that is an usual subject, everybody would talk more about it. And nobody does."
 
 # game/screens/chapter2/part2/cr_session.rpy:219
-translate english rape_author_d73a20dc:
+translate english rape_author_8578cfb4:
 
-    # participant "{i}Però vostè d'on ha sortit?! Si no se'n parla és per por a represàlies!!!{/i} - cridà Serena."
-    participant "{i}But where did you came from?! If we don't talk about that is because of fear of retailation!!!{/i} - screamed Serena."
+    # p_serena "Però vostè d'on ha sortit?! Si no se'n parla és per por a represàlies!!!"
+    p_serena "But where did you came from?! If we don't talk about that is because of fear of retailation!!!"
 
 # game/screens/chapter2/part2/cr_session.rpy:223
 translate english rape_author_482c915e:
@@ -699,10 +697,10 @@ translate english rape_fear_0cbf1927:
     user "You are right, Serena. There exists what is known as the culture of silence, which envelops this kind of subjects by fear of talking about it."
 
 # game/screens/chapter2/part2/cr_session.rpy:233
-translate english rape_fear_8df1c5a5:
+translate english rape_fear_7262fb8d:
 
-    # participant "{i}En el primer centre d'ajuda on vaig ser, ja m'ho van comentar això. De fet, a mi mateixa em passava. Parlar-ne m'implicava conscienciar-me d'haver-ho viscut, i només volia oblidar-me'n.{/i} - constestà Serena."
-    participant "{i}They already told me that at the first help center where I went. Indeed, it happens to me as well. To talk about it implied being conscious of having lived that, and I just wanted to forget it.{/i} - responded Serena."
+    # p_serena "En el primer centre d'ajuda on vaig ser, ja m'ho van comentar això. De fet, a mi mateixa em passava. Parlar-ne m'implicava conscienciar-me d'haver-ho viscut, i només volia oblidar-me'n."
+    p_serena "They already told me that at the first help center where I went. Indeed, it happens to me as well. To talk about it implied being conscious of having lived that, and I just wanted to forget it."
 
 # game/screens/chapter2/part2/cr_session.rpy:234
 translate english rape_fear_2ec5ef97:
@@ -711,10 +709,10 @@ translate english rape_fear_2ec5ef97:
     adrienne_rich "Fortunately, right now you have already learnt to live with that experience and to not to let that affect your life."
 
 # game/screens/chapter2/part2/cr_session.rpy:235
-translate english rape_fear_19a49118:
+translate english rape_fear_f62ce505:
 
-    # participant "{i}Sí, tot i que encara hi ha dies no tan bons ...{/i} - digué Serena, amb el cap cot."
-    participant "{i}Yes, but not every day is as good as I'd wish ...{/i} - said Serena, lowering her head."
+    # p_serena "Sí, tot i que encara hi ha dies no tan bons ... - amb el cap cot."
+    p_serena "Yes, but not every day is as good as I'd wish ... - lowering her head."
 
 # game/screens/chapter2/part2/cr_session.rpy:239
 translate english rape_fear_7513998c:
@@ -723,52 +721,52 @@ translate english rape_fear_7513998c:
     user "No. If nobody talks about it, it is because, in these cases of rape of women, they use to make false reports as a revenge. It is unnecessary to spread it to the public without losing reputation."
 
 # game/screens/chapter2/part2/cr_session.rpy:240
-translate english rape_fear_faf56c62:
+translate english rape_fear_4a276614:
 
-    # participant "{i}No em puc creure el què està dient ... {/i} - Serena es va quedar petrificada."
-    participant "{i}I can't believe what are you saying ... {/i} - Serena was petrified."
+    # p_serena "No em puc creure el què està dient ... - es va quedar petrificada."
+    p_serena "I can't believe what are you saying ... - was petrified."
 
 # game/screens/chapter2/part2/cr_session.rpy:241
-translate english rape_fear_3d545b0a:
+translate english rape_fear_eb75a9bf:
 
-    # participant "{i}Però quin percentatge es pensa que hi ha d'acusacions falses?{/i} - cada vegada, Serena s'estava enfurismant més."
-    participant "{i}But what percentage of false reports do you think there is?{/i} - Serena was getting even more angry."
+    # p_serena "Però quin percentatge es pensa que hi ha d'acusacions falses? - s'estava enfurismant més."
+    p_serena "But what percentage of false reports do you think there is? - she was getting even more angry."
 
 # game/screens/chapter2/part2/cr_session.rpy:244
-translate english rape_fear_0ef84e68:
+translate english rape_fear_6d49a500:
 
-    # user "Entre un 10 i un 20% del total, m'atreviria a dir."
+    # user "Entre un 10 i un 20 del total, m'atreviria a dir."
     user "Between 10 and 20 percent overall, I would say."
 
 # game/screens/chapter2/part2/cr_session.rpy:245
-translate english rape_fear_35ede109:
+translate english rape_fear_6842d54a:
 
-    # participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior al 10%.{/i} - contestà Serena."
-    participant "{i}You are wrong. The percentage is not higher than with other crimes, which is lower than 10 percent.{/i} - replied Serena."
+    # p_serena "Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior a 10."
+    p_serena "You are wrong. The percentage is not higher than with other crimes, lower than 10 percent."
 
 # game/screens/chapter2/part2/cr_session.rpy:246
-translate english rape_fear_ca2eebad:
+translate english rape_fear_6ccf51e6:
 
-    # participant "{i}No se'n vagi per les branques.{/i} - digué Serena bastant molesta."
-    participant "{i}Don't dare to mess with it.{/i} - finally said Serena very upset."
+    # p_serena "No se'n vagi per les branques. - bastant molesta."
+    p_serena "Don't dare to mess with it. - very upset."
 
 # game/screens/chapter2/part2/cr_session.rpy:249
-translate english rape_fear_e8e62f39:
+translate english rape_fear_858e2c05:
 
-    # user "Crec que inferior al 10% del total."
+    # user "Crec que inferior al 10 del total."
     user "I think it is lower than 10 percent."
 
 # game/screens/chapter2/part2/cr_session.rpy:250
-translate english rape_fear_836bd228:
+translate english rape_fear_ca663842:
 
-    # participant "{i}Efectivament, no més que en altres delictes.{/i} - afirmà Serena."
-    participant "{i}Right, not higher than other crimes.{/i} - Serena confirmed."
+    # p_serena "Efectivament, no més que en altres delictes."
+    p_serena "Right, not higher than other crimes."
 
 # game/screens/chapter2/part2/cr_session.rpy:251
-translate english rape_fear_8e43fbc4:
+translate english rape_fear_54222451:
 
-    # participant "{i}Llavors, tingui una mica més de respecte.{/i} - digué Serena bastant molesta."
-    participant "{i}So you should better be more respectful.{/i} - finally said Serena very upset."
+    # p_serena "Llavors, tingui una mica més de respecte. - bastant molesta."
+    p_serena "So you should better be more respectful. - very upset."
 
 # game/screens/chapter2/part2/cr_session.rpy:252
 translate english rape_fear_4391c393:
@@ -783,22 +781,22 @@ translate english no_is_yes_cbeaa463:
     user "But if a woman doesn't explicitly say no, that means that deep down she is willing because she didn't show her denial."
 
 # game/screens/chapter2/part2/cr_session.rpy:262
-translate english no_is_yes_139b302c:
+translate english no_is_yes_a7c9c777:
 
-    # participant "{i}Rotundament NO. Si la dona no explicita el seu consentiment, no es poden suposar altres desitjos d'ella. Ningú té dret a anar en contra dels desitjos d'algú altre.{/i} - va dir Houda, bastant molesta."
-    participant "{i}Absolutely NO. If the woman doesn't make explicit her consent, you can't suppose any other will from her. And nobody has the right to go against the will of anybody else.{/i} - said Houda, very upset."
+    # p_houda "Rotundament NO. Si la dona no explicita el seu consentiment, no es poden suposar altres desitjos d'ella. Ningú té dret a anar en contra dels desitjos d'algú altre. - bastant molesta."
+    p_houda "Absolutely NO. If the woman doesn't make explicit her consent, you can't suppose any other will from her. And nobody has the right to go against the will of anybody else. - very upset."
 
 # game/screens/chapter2/part2/cr_session.rpy:263
-translate english no_is_yes_e10bd58a:
+translate english no_is_yes_063e7051:
 
-    # participant "{i}Llavors, les vegades que aquell home em va violar sexualment sense el meu consentiment? Ho considera desig meu?{/i} - va dir Houda, enfurismada."
-    participant "{i}So all the times that man raped me sexually without my consent? Do you consider that my desire?{/i} - she continued, visibly angry."
+    # p_houda "Llavors, les vegades que aquell home em va violar sexualment sense el meu consentiment? Ho considera desig meu? - enfurismada."
+    p_houda "So all the times that man raped me sexually without my consent? Do you consider that my desire? - visibly angry."
 
 # game/screens/chapter2/part2/cr_session.rpy:264
-translate english no_is_yes_fe8fcf6e:
+translate english no_is_yes_0bc51e19:
 
-    # participant "{i}Ni que anés a resar a Déu aquest podria fer realitat el miracle de donar-li una neurona ...{/i} - va finalitzar Houda, amb sàtira i molt enfadada."
-    participant "{i}Not even praying to God Almighty would ever happen the miracle of having a brain inside your head ... concluded Houda, very VERY angry."
+    # p_houda "Ni que anés a resar a Déu aquest podria fer realitat el miracle de donar-li una neurona ... - amb sàtira i molt enfadada."
+    p_houda "Not even praying to God Almighty would ever happen the miracle of having a brain inside your head ... - very VERY angry."
 
 # game/screens/chapter2/part2/cr_session.rpy:268
 translate english no_is_yes_d4ca00b2:
@@ -807,16 +805,16 @@ translate english no_is_yes_d4ca00b2:
     user "Maybe the man tells you that would be the only time, that it won't happen again."
 
 # game/screens/chapter2/part2/cr_session.rpy:269
-translate english no_is_yes_a29216ca:
+translate english no_is_yes_1e2ab3b8:
 
-    # participant "{i}Sí, però la violència no és un incident aïllat, sinó que forma part d'un patró de violència en augment.{/i} - va dir Houda."
-    participant "{i}Yes, but violence is not an isolated incident, but it is part of a spiral of violence.{/i} - said Houda."
+    # p_houda "Sí, però la violència no és un incident aïllat, sinó que forma part d'un patró de violència en augment."
+    p_houda "Yes, but violence is not an isolated incident, but it is part of a spiral of violence."
 
 # game/screens/chapter2/part2/cr_session.rpy:270
-translate english no_is_yes_77e494ca:
+translate english no_is_yes_93a7204c:
 
-    # participant "{i}Ho dic per pròpia experiència.{/i} - va concloure Houda."
-    participant "{i}I know that from my own experience.{/i} - Honda concluded."
+    # p_houda "Ho dic per pròpia experiència."
+    p_houda "I know that from my own experience."
 
 # game/screens/chapter2/part2/cr_session.rpy:274
 translate english no_is_yes_f6901cc1:
@@ -825,31 +823,31 @@ translate english no_is_yes_f6901cc1:
     user "If the woman do not comply with the violent man, he would end exerting that violence upon her. And then it would be like if she was looking for it."
 
 # game/screens/chapter2/part2/cr_session.rpy:275
-translate english no_is_yes_62f54113:
+translate english no_is_yes_e1f6f0bb:
 
-    # participant "{i}Per començar, no tots els homes són violents per naturalesa i, de fet, aquests no es mostren així fora de casa.{/i} - va exposar Houda."
-    participant "{i}To begin with, not every man is violent by himself and, actually, those who are violent doesn't appear to be like that.{/i} - exposed Houda."
+    # p_houda "Per començar, no tots els homes són violents per naturalesa i, de fet, aquests no es mostren així fora de casa."
+    p_houda "To begin with, not every man is violent by himself and, actually, those who are violent doesn't appear to be like that."
 
 # game/screens/chapter2/part2/cr_session.rpy:276
-translate english no_is_yes_5348ab3b:
+translate english no_is_yes_87bfbaa6:
 
-    # participant "{i}I encara menys que sigui culpa de la dona per 'haver fet alguna cosa malament'. No hi ha excusa que justifiqui la violència.{/i} - va matisar Houda."
-    participant "{i}And don't even dare to suggest it was the woman's fault by 'doing something wrong'. There is no excuse for violence.{/i} - she clarified."
+    # p_houda "I encara menys que sigui culpa de la dona per 'haver fet alguna cosa malament'. No hi ha excusa que justifiqui la violència."
+    p_houda "And don't even dare to suggest it was the woman's fault by 'doing something wrong'. There is no excuse for violence."
 
 # game/screens/chapter2/part2/cr_session.rpy:277
-translate english no_is_yes_ac24127d:
+translate english no_is_yes_e004a836:
 
-    # participant "{i}De la mateixa manera que una violació no pot ser excusada per l'home a través de la desacreditació de la dona, dient que vestia provocativa o que tenia mala reputació i que ell només es va limitar a donar-li allò que li estava demanant.{/i} - va concloure Houda."
-    participant "{i}The same way a rape can not be excused by the man through discrediting the woman, saying that she was dressed in a provocative way or that she had a bad reputation and he just limited himself to give her whatever she was looking for.{/i} - concluded Houda."
+    # p_houda "De la mateixa manera que una violació no pot ser excusada per l'home a través de la desacreditació de la dona, dient que vestia provocativa o que tenia mala reputació i que ell només es va limitar a donar-li allò que li estava demanant."
+    p_houda "The same way a rape can not be excused by the man through discrediting the woman, saying that she was dressed in a provocative way or that she had a bad reputation and he just limited himself to give her whatever she was looking for."
 
 translate english strings:
 
     # game/screens/chapter2/part2/cr_session.rpy:242
-    old "Entre 10-20%"
+    old "Entre 10-20"
     new "Between 10 and 20 percent"
 
     # game/screens/chapter2/part2/cr_session.rpy:242
-    old "Menys d'un 10%"
+    old "Menys d'un 10"
     new "Less than 10 percent"
 
     # game/screens/chapter2/part2/cr_session.rpy:258
@@ -871,33 +869,3 @@ translate english strings:
     # game/screens/chapter2/part2/cr_session.rpy:285
     old "Fals"
     new "False"
-
-# TODO: Translation updated at 2020-05-10 01:20
-
-# game/screens/chapter2/part2/cr_session.rpy:244
-translate english rape_fear_6d49a500:
-
-    # user "Entre un 10 i un 20 del total, m'atreviria a dir."
-    user "Between 10 and 20 percent overall, I would say."
-
-# game/screens/chapter2/part2/cr_session.rpy:245
-translate english rape_fear_eb4b2fbc:
-
-    # participant "{i}Doncs s'equivoca. El percentatge no és més que en altres delictes, i és inferior a 10.{/i} - contestà Serena."
-    participant "{i}You are wrong. The percentage is not higher than with other crimes, lower than 10 percent.{/i} - replied Serena."
-
-# game/screens/chapter2/part2/cr_session.rpy:249
-translate english rape_fear_858e2c05:
-
-    # user "Crec que inferior al 10 del total."
-    user "I think it is lower than 10 percent."
-
-translate english strings:
-
-    # game/screens/chapter2/part2/cr_session.rpy:242
-    old "Entre 10-20"
-    new "Between 10 and 20 percent"
-
-    # game/screens/chapter2/part2/cr_session.rpy:242
-    old "Menys d'un 10"
-    new "Less than 10 percent"
