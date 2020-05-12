@@ -201,3 +201,19 @@ translate catalan strings:
     # game/screens/common.rpy:714
     old "Sound Volume"
     new "Volum del so"
+
+    # game/screens/common.rpy:741
+    old "Mapa de controls"
+    new "Mapa de controls"
+
+    # game/screens/common.rpy:748
+    old "Avançar / Seleccionar / Arrossegar"
+    new "Avançar / Seleccionar / Arrossegar"
+
+    # game/screens/common.rpy:756
+    old "Desplaçar-se"
+    new "Desplaçar-se"
+
+    # game/screens/common.rpy:760
+    old "Sortir (des de diàlegs)"
+    new "Sortir (des de diàlegs)"

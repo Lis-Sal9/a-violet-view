@@ -200,3 +200,19 @@ translate spanish strings:
     # game/screens/common.rpy:714
     old "Sound Volume"
     new "Volumen de sonido"
+
+    # game/screens/common.rpy:741
+    old "Mapa de controls"
+    new "Mapa de controles"
+
+    # game/screens/common.rpy:748
+    old "Avançar / Seleccionar / Arrossegar"
+    new "Avanzar / Seleccionar / Arrastrar"
+
+    # game/screens/common.rpy:756
+    old "Desplaçar-se"
+    new "Desplazarse"
+
+    # game/screens/common.rpy:760
+    old "Sortir (des de diàlegs)"
+    new "Salir (desde diálogos)"

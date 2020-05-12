@@ -726,116 +726,40 @@ style slider_vbox:
 ################################################################################
 screen help():
     tag menu
-    default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
-        style_prefix "help"
-        vbox:
-            spacing 23
+    fixed:
+        xalign .5 yalign .5
+        add "images/keymap.png"
 
-            hbox:
-                textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
-                textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+        imagebutton:
+            idle "images/glossary/glossary_return.png"
+            hover "images/glossary/glossary_return_hover.png"
+            align .04, .1
+            yoffset -45
+            action Return()
 
-            if device == "keyboard":
-                use keyboard_help
-            elif device == "mouse":
-                use mouse_help
+        text _("Mapa de controls"):
+            color '#3c291c'
+            font "fonts/my_font.ttf"
+            size 160
+            xalign 0.5
+            yalign 0.03
 
-style help_button is gui_button
-style help_button_text is gui_button_text
-style help_label is gui_label
-style help_label_text is gui_label_text
-style help_text is gui_text
+        text _("Avançar / Seleccionar / Arrossegar"):
+            xalign 0.43
+            yalign 0.25
 
-style help_button:
-    properties gui.button_properties("help_button")
-    xmargin 12
+        text _("Avançar / Seleccionar / Arrossegar"):
+            xalign 0.95
+            yalign 0.78
 
-style help_button_text:
-    properties gui.button_text_properties("help_button")
+        text _("Desplaçar-se"):
+            xalign 0.4
+            yalign 0.42
 
-style help_label:
-    xsize 375
-    right_padding 30
-
-style help_label_text:
-    size gui.text_size
-    xalign 1.0
-    text_align 1.0
-################################################################################
-
-
-## Keyboard help screen ########################################################
-## A screen that gives information about keyboard help.
-################################################################################
-screen keyboard_help():
-    hbox:
-        label _("Enter")
-        text _("Advances dialogue and activates the interface.")
-
-    hbox:
-        label _("Space")
-        text _("Advances dialogue without selecting choices.")
-
-    hbox:
-        label _("Arrow Keys")
-        text _("Navigate the interface.")
-
-    hbox:
-        label _("Escape")
-        text _("Accesses the game menu.")
-
-    hbox:
-        label _("Ctrl")
-        text _("Skips dialogue while held down.")
-
-    hbox:
-        label _("Tab")
-        text _("Toggles dialogue skipping.")
-
-    hbox:
-        label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Page Down")
-        text _("Rolls forward to later dialogue.")
-
-    hbox:
-        label "H"
-        text _("Hides the user interface.")
-
-    hbox:
-        label "S"
-        text _("Takes a screenshot.")
-################################################################################
-
-
-## Mouse help screen ########################################################
-## A screen that gives information about mouse help.
-################################################################################
-screen mouse_help():
-    hbox:
-        label _("Left Click")
-        text _("Advances dialogue and activates the interface.")
-
-    hbox:
-        label _("Middle Click")
-        text _("Hides the user interface.")
-
-    hbox:
-        label _("Right Click")
-        text _("Accesses the game menu.")
-
-    hbox:
-        label _("Mouse Wheel Up")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Mouse Wheel Down")
-        text _("Rolls forward to later dialogue.")
-################################################################################
+        text _("Sortir (des de diàlegs)"):
+            xalign 0.75
+            yalign 0.64
 
 
 ## About screen ################################################################

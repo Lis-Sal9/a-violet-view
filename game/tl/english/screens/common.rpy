@@ -200,3 +200,19 @@ translate english strings:
     # game/screens/common.rpy:714
     old "Sound Volume"
     new "Sound Volume"
+
+    # game/screens/common.rpy:741
+    old "Mapa de controls"
+    new "Keymap"
+
+    # game/screens/common.rpy:748
+    old "Avançar / Seleccionar / Arrossegar"
+    new "Continue / Select / Drag and drop"
+
+    # game/screens/common.rpy:756
+    old "Desplaçar-se"
+    new "Scroll"
+
+    # game/screens/common.rpy:760
+    old "Sortir (des de diàlegs)"
+    new "Exit (from dialogues)"
