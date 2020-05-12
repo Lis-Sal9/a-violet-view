@@ -41,7 +41,7 @@ screen library():
 
         if CHAPTERS[2] in game_state.chapters_completed and CHAPTERS[3] in game_state.chapters_completed:
             # Part Final
-            hotspot (488, 217, 103, 10):
+            hotspot (488, 225, 126, 25):
                 clicked Jump("chapter_2c")
                 hovered ShowTransient("hover_library", img="images/library/library_chapter2c.png")
                 unhovered Hide("hover_library")
