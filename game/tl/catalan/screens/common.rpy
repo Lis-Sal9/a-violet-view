@@ -197,3 +197,7 @@ translate catalan strings:
     # game/screens/common.rpy:856
     old "Work in progress ..."
     new "Pàgina en progrés ..."
+
+    # game/screens/common.rpy:714
+    old "Sound Volume"
+    new "Volum del so"

@@ -6,70 +6,11 @@ default mobile_icon_size = 80
 
 
 ################################################################################
-## Screens
+## Styles
 ################################################################################
 style pref_vbox:
     variant "medium"
     xsize 675
-
-## Since a mouse may not be present, we replace the quick menu with a version
-## that uses fewer and bigger buttons that are easier to touch.
-screen quick_menu():
-    variant "touch"
-    zorder 100
-
-    if quick_menu:
-        hbox:
-            style_prefix "quick"
-            xalign 0.5
-            yalign 1.0
-
-            imagebutton:
-                action Show('pause')
-                xysize mobile_icon_size, mobile_icon_size
-                idle Frame("gui/icons/pause.png")
-                hover Frame("gui/icons/pause_border.png")
-
-            imagebutton:
-                action Rollback()
-                xysize mobile_icon_size, mobile_icon_size
-                idle Frame("gui/icons/return.png")
-                hover Frame("gui/icons/return_border.png")
-
-            imagebutton:
-                action Skip() alternate Skip(fast=True, confirm=True)
-                xysize mobile_icon_size, mobile_icon_size
-                idle Frame("gui/icons/skip_action.png")
-                hover Frame("gui/icons/skip_action_border.png")
-
-            imagebutton:
-                action ShowMenu('glossary')
-                xysize mobile_icon_size, mobile_icon_size
-                hover Frame("gui/icons/glossary_new_icon.png")
-                if len(game_state.glossary_items_unread) > 0:
-                    idle Frame("gui/icons/glossary_new_icon.png")
-                else:
-                    idle Frame("gui/icons/glossary_icon.png")
-
-            imagebutton:
-                action ShowMenu('gallery')
-                xysize mobile_icon_size, mobile_icon_size
-                hover Frame("gui/icons/gallery_new_icon.png")
-                if len(game_state.gallery_items_unread) > 0:
-                    idle Frame("gui/icons/gallery_new_icon.png")
-                else:
-                    idle Frame("gui/icons/gallery_icon.png")
-
-            imagebutton:
-                xysize mobile_icon_size, mobile_icon_size
-                if is_in_special_screen:
-                    action NullAction()
-                    hover Frame("gui/icons/save.png")
-                else:
-                    action [Show(screen="save_menu"), FileTakeScreenshot()]
-                    hover Frame("gui/icons/save_border.png")
-                idle Frame("gui/icons/save.png")
-
 
 style window:
     variant "small"
@@ -154,6 +95,9 @@ style slider_pref_slider:
 ################################################################################
 
 
+
+##### Screens ##################################################################
+
 ## Main Menu screen ############################################################
 ## Used to display the main menu when Ren'Py starts.
 ################################################################################
@@ -162,7 +106,7 @@ screen main_menu():
 
     python:
         if not _preferences.language:
-            _preferences.language = "english"
+            _preferences.language = "catalan"
 
         lang = GetCover()
 
@@ -200,6 +144,94 @@ screen main_menu():
 ################################################################################
 
 
+## Say screen ##################################################################
+## The say screen is used to display dialogue to the player. It takes two
+## parameters, who and what, which are the name of the speaking character and
+## the text to be displayed, respectively. (The who parameter can be None if no
+## name is given.)
+################################################################################
+screen say(who, what):
+    variant "touch"
+    style_prefix "say"
+    key "K_ESCAPE" action MainMenu()
+
+    window:
+        id "window"
+
+        if who is not None:
+            window:
+                id "namebox"
+                style "namebox"
+                text who id "who"
+
+        text what:
+            id "what"
+            line_spacing -10
+
+        ####### Quick menu ##################
+        hbox:
+            style_prefix "quick"
+            xalign 0.9
+            yalign 0.10
+            spacing 5
+
+            imagebutton:
+                action Show('pause')
+                xysize mobile_icon_size, mobile_icon_size
+                idle Frame("gui/icons/pause.png")
+                hover Frame("gui/icons/pause_border.png")
+
+            imagebutton:
+                action Rollback()
+                xysize mobile_icon_size, mobile_icon_size
+                idle Frame("gui/icons/return.png")
+                hover Frame("gui/icons/return_border.png")
+
+            imagebutton:
+                action Skip() alternate Skip(fast=True, confirm=True)
+                xysize mobile_icon_size, mobile_icon_size
+                idle Frame("gui/icons/skip_action.png")
+                hover Frame("gui/icons/skip_action_border.png")
+
+            imagebutton:
+                action ShowMenu('glossary')
+                xysize mobile_icon_size, mobile_icon_size
+                hover Frame("gui/icons/glossary_new_icon.png")
+                if len(game_state.glossary_items_unread) > 0:
+                    idle Frame("gui/icons/glossary_new_icon.png")
+                else:
+                    idle Frame("gui/icons/glossary_icon.png")
+
+            imagebutton:
+                action ShowMenu('gallery')
+                xysize mobile_icon_size, mobile_icon_size
+                hover Frame("gui/icons/gallery_new_icon.png")
+                if len(game_state.gallery_items_unread) > 0:
+                    idle Frame("gui/icons/gallery_new_icon.png")
+                else:
+                    idle Frame("gui/icons/gallery_icon.png")
+
+            imagebutton:
+                if is_in_special_screen:
+                    action NullAction()
+                    hover Frame("gui/icons/save.png")
+                else:
+                    action [Show(screen="save_menu"), FileTakeScreenshot()]
+                    hover Frame("gui/icons/save_border.png")
+                    xysize mobile_icon_size, mobile_icon_size
+                idle Frame("gui/icons/save.png")
+
+        ##############################################################
+
+    if not renpy.variant("small"):
+        add SideImage() xalign 0.0 yalign 1.0
+
+init python:
+    config.character_id_prefixes.append('namebox')
+################################################################################
+
+
+
 ################################################################################
 ## GUI
 ################################################################################
@@ -217,7 +249,7 @@ init python:
 
         ## Font sizes.
         gui.text_size = 45
-        gui.name_text_size = 54
+        gui.name_text_size = 47
         gui.notify_text_size = 38
         gui.interface_text_size = 45
         gui.button_text_size = 45
@@ -225,9 +257,10 @@ init python:
 
         ## Adjust the location of the textbox.
         gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.text_xpos = 135
-        gui.text_width = 1650
+        gui.text_xpos = -85
+        gui.name_ypos = -70
+        gui.name_yalign = 0.9
+        gui.dialogue_ypos = 125
 
         ## Change the size and spacing of various things.
         gui.slider_size = 54

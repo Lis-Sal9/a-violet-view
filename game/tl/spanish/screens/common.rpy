@@ -196,3 +196,7 @@ translate spanish strings:
     # game/screens/common.rpy:856
     old "Work in progress ..."
     new "Página en proceso ..."
+
+    # game/screens/common.rpy:714
+    old "Sound Volume"
+    new "Volumen de sonido"

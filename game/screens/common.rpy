@@ -102,7 +102,9 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
-        text what id "what"
+        text what:
+            id "what"
+            line_spacing -16
 
         ####### Quick menu ##################
         hbox:
@@ -708,7 +710,12 @@ screen preferences():
                         hbox:
                             bar value Preference("music volume")
 
-                    if config.has_music:
+                    if config.has_sound:
+                        label _("Sound Volume")
+                        hbox:
+                            bar value Preference("sound volume")
+
+                    if config.has_music and config.has_sound:
                         null height gui.pref_spacing
                         textbutton _("Mute All"):
                             action Preference("all mute", "toggle")
