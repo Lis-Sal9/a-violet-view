@@ -202,7 +202,13 @@ screen show_map_result():
                         yalign .1
                         action NullAction()
 
-        $ items_length = str(len(game_state.gallery_items))
+        python:
+            items_length = 0
+            if num_selected_correct_options > 5:
+                items_length = 2
+            elif num_selected_correct_options > 2:
+                items_length = 1
+
         text _("En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS'han desbloquejat [items_length] ítems a la {b}Galeria{/b}."):
             size 30
             color "#f0c388"
