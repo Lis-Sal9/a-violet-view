@@ -23,6 +23,7 @@ define unknown_little_boy = Character(_("Nen"), color="#ba68c8")
 label start:
 
     python:
+        renpy.music.stop()
         game_state.clear()
         is_secret_revealed = False
         seneca_agrees = 0
