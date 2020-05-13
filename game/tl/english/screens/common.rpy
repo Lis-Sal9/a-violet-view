@@ -216,3 +216,23 @@ translate english strings:
     # game/screens/common.rpy:760
     old "Sortir (des de diàlegs)"
     new "Exit (from dialogues)"
+
+    # game/screens/common.rpy:629
+    old "Preferències"
+    new "Preferences"
+
+    # game/screens/common.rpy:642
+    old "Visualització"
+    new "Display"
+
+    # game/screens/common.rpy:669
+    old "Idioma"
+    new "Language"
+
+    # game/screens/common.rpy:687
+    old "Música"
+    new "Music"
+
+    # game/screens/common.rpy:699
+    old "Text"
+    new "Text"

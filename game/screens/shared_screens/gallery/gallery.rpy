@@ -53,7 +53,7 @@ screen gallery():
 
         text _("Dones rellevants"):
             color '#f1dde0'
-            font "fonts/my_font.ttf"
+            font "fonts/my_font.otf"
             size 100
             align .3, .05
 

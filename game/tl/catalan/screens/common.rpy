@@ -217,3 +217,23 @@ translate catalan strings:
     # game/screens/common.rpy:760
     old "Sortir (des de diàlegs)"
     new "Sortir (des de diàlegs)"
+
+    # game/screens/common.rpy:629
+    old "Preferències"
+    new "Preferències"
+
+    # game/screens/common.rpy:642
+    old "Visualització"
+    new "Visualització"
+
+    # game/screens/common.rpy:669
+    old "Idioma"
+    new "Idioma"
+
+    # game/screens/common.rpy:687
+    old "Música"
+    new "Música"
+
+    # game/screens/common.rpy:699
+    old "Text"
+    new "Text"

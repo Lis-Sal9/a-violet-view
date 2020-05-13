@@ -604,53 +604,143 @@ screen name_input(message, ok_action):
 ## Preferences screen ######################################################################
 ## The preferences screen allows the player to configure the game to better suit themselves.
 ############################################################################################
+init -10 python:
+    current_lang = "catalan"
+    rounding = False
+
+    def changeLang():
+        global current_lang, current_lang_short
+        if current_lang == "english":
+            current_lang = "spanish"
+        elif current_lang == "spanish":
+            current_lang = "catalan"
+        elif current_lang == "catalan":
+            current_lang = "english"
+
+    def getCurrentLangShort():
+        if _preferences.language == "english":
+            return "EN"
+        elif _preferences.language == "spanish":
+            return "ES"
+        elif _preferences.language == "catalan":
+            return "CA"
+
+
 screen preferences():
     tag menu
-    use game_menu(_("Preferences"), scroll="viewport"):
-        vbox:
-            hbox:
-                box_wrap True
+    add "images/preferences/preferences_bg.png"
 
-                if renpy.variant("pc") or renpy.variant("web"):
-                    vbox:
-                        style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+    fixed:
+        align .5, .5
 
-                vbox:
-                    style_prefix "radio"
-                    label _("Language")
-                    textbutton _("English") action Language("english")
-                    textbutton _("Spanish") action Language("spanish")
-                    textbutton _("Catalan") action Language("catalan")
+        text _("Preferències"):
+            color "#ecc6ad"
+            font "fonts/my_font.otf"
+            size 115
+            align .47, .08
 
-            null height (4 * gui.pref_spacing)
+        imagebutton:
+            idle "gui/arrows/return_hover_blue.png"
+            hover "gui/arrows/return_brown.png"
+            align .03, .94
+            action Return()
 
-            hbox:
-                style_prefix "slider"
-                box_wrap True
+        if renpy.variant("pc"):
+            text _("Visualització"):
+                color "#f6f69f"
+                size 24
+                align .475, .922
 
-                vbox:
-                    label _("Text Speed")
-                    bar value Preference("text speed")
+            imagebutton:
+                if _preferences.fullscreen:
+                    idle "images/preferences/preferences_fullscreen.png"
+                    hover "images/preferences/preferences_fullscreen.png"
+                else:
+                    idle "images/preferences/preferences_fullscreen_hover.png"
+                    hover "images/preferences/preferences_fullscreen.png"
+                align .458, .94
+                action Preference("display", "fullscreen")
 
-                vbox:
-                    if config.has_music:
-                        label _("Music Volume")
-                        hbox:
-                            bar value Preference("music volume")
 
-                    if config.has_sound:
-                        label _("Sound Volume")
-                        hbox:
-                            bar value Preference("sound volume")
+            imagebutton:
+                if not _preferences.fullscreen:
+                    idle "images/preferences/preferences_window.png"
+                    hover "images/preferences/preferences_window.png"
+                else:
+                    idle "images/preferences/preferences_window_hover.png"
+                    hover "images/preferences/preferences_window.png"
+                align .504, .94
+                action Preference("display", "window")
 
-                    if config.has_music and config.has_sound:
-                        null height gui.pref_spacing
-                        textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+
+        text _("Idioma"):
+            color "#f6f69f"
+            size 24
+            align .31, .817
+
+        imagebutton:
+            idle "images/preferences/preferences_language.png"
+            hover "images/preferences/preferences_language_hover.png"
+            align .351, .817
+            action [Function(changeLang), Language(current_lang)]
+
+        $ curr_lang_short = getCurrentLangShort()
+        text curr_lang_short:
+            color "#2f2929"
+            font "fonts/digital_dreams.ttf"
+            size 35
+            align .395, .875
+
+
+        text _("Música"):
+            color "#f6f69f"
+            size 24
+            align .313, .85
+
+        imagebutton:
+            idle "images/preferences/preferences_music.png"
+            xpos 605
+            ypos 970
+            anchor .5, .5
+            action NullAction()
+            at transform:
+                linear 5 rotate 360
+
+
+
+        text _("Text"):
+            color "#f6f69f"
+            size 24
+            align .64, .85
+
+        imagebutton:
+            idle "images/preferences/preferences_music.png"
+            xpos 1227
+            ypos 970
+            anchor .5, .5
+            action NullAction()
+            at transform:
+                linear 5 rotate 360
+
+
+
+
+    vbox:
+
+        hbox:
+            style_prefix "slider"
+            box_wrap True
+
+            vbox:
+                label _("Text Speed")
+                bar value Preference("text speed")
+
+            vbox:
+                if config.has_music:
+                    label _("Music Volume")
+                    hbox:
+                        bar value Preference("music volume")
+
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text
@@ -740,7 +830,7 @@ screen help():
 
         text _("Mapa de controls"):
             color '#3c291c'
-            font "fonts/my_font.ttf"
+            font "fonts/my_font.otf"
             size 160
             xalign 0.5
             yalign 0.03
