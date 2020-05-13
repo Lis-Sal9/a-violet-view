@@ -42,107 +42,77 @@ label find_differences_label:
 
 screen find_differences_obos:
     imagemap:
-        idle "images/chapter2/part1/find_differences/our_bodies_our_selves.png"
-        ground "images/chapter2/part1/find_differences/our_bodies_our_selves.png"
+        idle "images/chapter2/part1/find_differences/our_bodies_our_selves_big.png"
+        ground "images/chapter2/part1/find_differences/our_bodies_our_selves_big.png"
 
         if 1 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1035
-                ypos 745
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 987, 845
         else:
-            hotspot (1035, 745, 18, 51):
+            hotspot (987, 845, 25, 55):
                 action Function(addFoundDifference, id=1)
 
         if 2 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1270
-                ypos 782
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1245, 895
         else:
-            hotspot (1270, 782, 16, 24):
+            hotspot (1245, 895, 16, 24):
                 action Function(addFoundDifference, id=2)
 
         if 3 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1200
-                ypos 690
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1170, 790
         else:
-            hotspot (1200, 690, 36, 29):
+            hotspot (1170, 790, 40, 35):
                 action Function(addFoundDifference, id=3)
 
         if 4 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1255
-                ypos 642
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1230, 740
         else:
-            hotspot (1255, 642, 40, 38):
+            hotspot (1230, 740, 45, 45):
                 action Function(addFoundDifference, id=4)
 
         if 5 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1437
-                ypos 548
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1433, 634
         else:
-            hotspot (1437, 548, 30, 25):
+            hotspot (1433, 634, 35, 30):
                 action Function(addFoundDifference, id=5)
 
         if 6 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1397
-                ypos 415
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1385, 485
         else:
-            hotspot (1397, 415, 30, 28):
+            hotspot (1385, 485, 35, 35):
                 action Function(addFoundDifference, id=6)
 
         if 7 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1532
-                ypos 525
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1537, 605
         else:
-            hotspot (1532, 525, 44, 42):
+            hotspot (1537, 605, 50, 45):
                 action Function(addFoundDifference, id=7)
 
         if 8 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1193
-                ypos 290
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1165, 345
         else:
-            hotspot (1193, 290, 37, 39):
+            hotspot (1165, 345, 45, 45):
                 action Function(addFoundDifference, id=8)
 
         if 9 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1405
-                ypos 212
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1397, 259
         else:
-            hotspot (1405, 212, 27, 35):
+            hotspot (1397, 259, 35, 40):
                 action Function(addFoundDifference, id=9)
 
         if 10 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1645
-                ypos 838
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1660, 950
         else:
-            hotspot (1645, 838, 28, 29):
+            hotspot (1660, 950, 45, 45):
                 action Function(addFoundDifference, id=10)
 
     imagebutton:
@@ -163,107 +133,77 @@ screen find_differences_obos:
 
 screen find_differences_manushi:
     imagemap:
-        idle "images/chapter2/part1/find_differences/manushi.png"
-        ground "images/chapter2/part1/find_differences/manushi.png"
+        idle "images/chapter2/part1/find_differences/manushi_big.png"
+        ground "images/chapter2/part1/find_differences/manushi_big.png"
 
         if 1 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1167
-                ypos 253
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1120, 298
         else:
-            hotspot (1167, 253, 25, 20):
+            hotspot (1120, 298, 30, 25):
                 action Function(addFoundDifference, id=1)
 
         if 2 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1605
-                ypos 247
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1605, 295
         else:
-            hotspot (1605, 247, 25, 18):
+            hotspot (1605, 295, 30, 25):
                 action Function(addFoundDifference, id=2)
 
         if 3 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1356
-                ypos 181
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1329, 221
         else:
-            hotspot (1356, 181, 23, 25):
+            hotspot (1329, 221, 30, 30):
                 action Function(addFoundDifference, id=3)
 
         if 4 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1230
-                ypos 498
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1200, 575
         else:
-            hotspot (1230, 498, 45, 35):
+            hotspot (1200, 575, 50, 40):
                 action Function(addFoundDifference, id=4)
 
         if 5 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1327
-                ypos 727
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1300, 825
         else:
-            hotspot (1327, 727, 38, 37):
+            hotspot (1300, 825, 45, 45):
                 action Function(addFoundDifference, id=5)
 
         if 6 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1497
-                ypos 742
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1490, 840
         else:
-            hotspot (1497, 742, 39, 30):
+            hotspot (1490, 840, 45, 35):
                 action Function(addFoundDifference, id=6)
 
         if 7 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1395
-                ypos 695
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1380, 795
         else:
-            hotspot (1395, 695, 43, 49):
+            hotspot (1380, 795, 50, 55):
                 action Function(addFoundDifference, id=7)
 
         if 8 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1465
-                ypos 410
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1450, 475
         else:
-            hotspot (1465, 410, 43, 43):
+            hotspot (1445, 475, 50, 50):
                 action Function(addFoundDifference, id=8)
 
         if 9 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1424
-                ypos 430
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1405, 490
         else:
-            hotspot (1424, 430, 28, 22):
+            hotspot (1405, 490, 30, 25):
                 action Function(addFoundDifference, id=9)
 
         if 10 in found_differences:
-            imagebutton:
-                idle "images/chapter2/part1/find_differences/circle.png"
-                xpos 1365
-                ypos 475
-                action NullAction()
+            image "images/chapter2/part1/find_differences/circle.png":
+                pos 1340, 545
         else:
-            hotspot (1365, 475, 44, 30):
+            hotspot (1340, 545, 50, 35):
                 action Function(addFoundDifference, id=10)
 
     imagebutton:
