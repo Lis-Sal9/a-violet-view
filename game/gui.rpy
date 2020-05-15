@@ -185,6 +185,10 @@ define gui.check_button_borders = Borders(27, 6, 6, 6)
 define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
+define gui.page_button_text_idle_color = "#ffffff"
+define gui.page_button_text_hover_color = gui.accent_color
+define gui.page_button_text_selected_color = "#000000"
+define gui.page_button_text_insensitive_color = "#000000"
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 21
@@ -224,19 +228,18 @@ define gui.choice_button_text_insensitive_color = "#000000"
 define gui.slot_button_width = 414
 define gui.slot_button_height = 309
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
-define gui.slot_button_text_size = 21
+define gui.slot_button_text_size = 38
 define gui.slot_button_text_xalign = 0.5
-define gui.slot_button_text_idle_color = gui.idle_small_color
-define gui.slot_button_text_selected_idle_color = gui.selected_color
-define gui.slot_button_text_selected_hover_color = gui.hover_color
+define gui.slot_button_text_idle_color = "#3f0955"
+define gui.slot_button_text_hover_color = "#025930"
 
 ## The width and height of thumbnails used by the save slots.
 define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 
 ## The number of columns and rows in the grid of save slots.
-define gui.file_slot_cols = 3
-define gui.file_slot_rows = 2
+define gui.file_slot_cols = 4
+define gui.file_slot_rows = 1
 
 
 ## Positioning and Spacing #####################################################
@@ -267,7 +270,7 @@ define gui.pref_spacing = 15
 define gui.pref_button_spacing = 0
 
 ## The spacing between file page buttons.
-define gui.page_spacing = 0
+define gui.page_spacing = 10
 
 ## The spacing between file slots.
 define gui.slot_spacing = 15

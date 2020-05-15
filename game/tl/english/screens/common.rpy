@@ -236,3 +236,7 @@ translate english strings:
     # game/screens/common.rpy:699
     old "Text"
     new "Text"
+
+    # game/screens/common.rpy:655
+    old "Sobre mi"
+    new "About me"
