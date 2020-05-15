@@ -13,6 +13,7 @@ define unknown = Character("...", color="#e57373")
 define unknown_girl = Character(_("Dona"), color="#7986cb")
 define unknown_boy = Character(_("Home"), color="#f06292")
 define unknown_little_boy = Character(_("Nen"), color="#ba68c8")
+define unknown_little_girl = Character(_("Nena"), color="#ba53c8")
 
 ################################################################################
 
