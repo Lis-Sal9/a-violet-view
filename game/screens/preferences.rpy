@@ -3,17 +3,8 @@
 ## The preferences screen allows the player to configure the game to better suit themselves.
 ############################################################################################
 init -10 python:
-    current_lang = "catalan"
-    rounding = False
-
-    def changeLang():
-        global current_lang
-        if current_lang == "english":
-            current_lang = "spanish"
-        elif current_lang == "spanish":
-            current_lang = "catalan"
-        elif current_lang == "catalan":
-            current_lang = "english"
+    LANGUAGES = ["catalan", "english", "spanish"]
+    current_lang = LANGUAGES.index(_preferences.language)
 
     def getCurrentLangShort():
         if _preferences.language == "english":
@@ -83,7 +74,7 @@ screen preferences():
             idle "images/preferences/preferences_language.png"
             hover "images/preferences/preferences_language_hover.png"
             align .351, .817
-            action [Function(changeLang), Language(current_lang)]
+            action [Language(LANGUAGES[(current_lang + 1) % 3]), SetVariable("current_lang", (current_lang + 1) % 3)]
 
         $ curr_lang_short = getCurrentLangShort()
         text curr_lang_short:
