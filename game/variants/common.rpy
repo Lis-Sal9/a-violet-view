@@ -276,8 +276,8 @@ init python:
         gui.quick_button_text_size = 30
 
         ## File button layout.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
+        gui.file_slot_cols = 4
+        gui.file_slot_rows = 1
 
         ## NVL-mode.
         gui.nvl_height = 255
