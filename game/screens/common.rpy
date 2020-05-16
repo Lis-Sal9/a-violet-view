@@ -644,30 +644,45 @@ screen help():
             yalign 0.64
 
 
+
 ## About screen ################################################################
 ## This screen gives credit and copyright information about the game and Ren'Py.
 ################################################################################
 screen about():
     tag menu
-    use game_menu(_("About"), scroll="viewport"):
-        style_prefix "about"
 
-        vbox:
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
-            text _("Work in progress ...")
+    image "images/about_me.png"
 
-            if gui.about:
-                text "[gui.about!t]\n"
+    text _("Sobre mi"):
+        color '#000000'
+        font "fonts/my_font.otf"
+        size 160
+        xalign 0.51
+        yalign 0.04
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+    text _("Sobre mi"):
+        color '#a00f42'
+        font "fonts/my_font.otf"
+        size 160
+        xalign 0.5
+        yalign 0.03
 
-define gui.about = ""
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
-style about_label_text:
-    size gui.label_text_size
+    imagebutton:
+        idle "images/glossary/glossary_return.png"
+        hover "images/glossary/glossary_return_hover.png"
+        align .05, .95
+        action Return()
+
+    viewport:
+        align .8, .5
+        xysize 1228, 580
+        scrollbars "vertical"
+        draggable True
+        mousewheel True
+
+        text _("Ara em sento sola i tinc por. Por perquè quan em miro al mirall, solament veig algú a qui no he estimat com es mereix. A qui no m’havia pres la molèstia de preguntar-li què la fa realment feliç, i si està contenta amb sí mateixa. Ara, em sento sola amb mi mateixa i no sé com he d’actuar, què he de fer o, inclús, què he de sentir i com. La culpa m’ha ennuvolat el pensament i el sentiment, inclús el plaer de ser tocada per algú altre.\nDes de llavors, els dies són grisos per a mi. Però avui he decidit llevar-me amb la millor versió de mi. Forta, lliure i rebel. Sense retre comptes a ningú més que a mi mateixa. Avui, vull agrair a les meves companyes del grup, perquè amb sororitat m’han demostrat que m’estava perdent la fantàstica oportunitat d’estimar-me. De conèixer-me, de no jutjar-me i de confiar en mi. Juntes, totes nosaltres, podem lluitar agafades de la mà per denunciar el patriarcat, la misogínia, la desigualtat sexual i la violència masclista en totes les seves formes. Aquest videojoc és un homenatge a totes vosaltres, les meves companyes de vida.\n\n                         {i}No es neix dona, s'arriba a ser-ho.{/i} - Simone de Beauvoir"):
+            color '#3b0f52'
+
 ################################################################################
 
 
