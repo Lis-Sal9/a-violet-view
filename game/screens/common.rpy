@@ -394,7 +394,7 @@ screen main_menu():
 
         # Preferences
         hotspot (1004, 288, 211, 234):
-            clicked [Hide("hover_main_menu"), ShowMenu("preferences")]
+            clicked [Hide("hover_main_menu"), ShowMenu("preferences", True)]
             hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_preferences_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 

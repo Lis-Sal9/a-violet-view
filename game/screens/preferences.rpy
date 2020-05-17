@@ -18,7 +18,7 @@ init -10 python:
 default show_bar_music_volume = False
 default show_bar_text_speed = False
 
-screen preferences():
+screen preferences(from_main_menu = False):
     tag menu
     add "images/preferences/preferences_bg.png"
 
@@ -70,11 +70,12 @@ screen preferences():
             size 24
             align .31, .817
 
-        imagebutton:
-            idle "images/preferences/preferences_language.png"
-            hover "images/preferences/preferences_language_hover.png"
-            align .351, .817
-            action [Language(LANGUAGES[(current_lang + 1) % 3]), SetVariable("current_lang", (current_lang + 1) % 3)]
+        if from_main_menu:
+            imagebutton:
+                idle "images/preferences/preferences_language.png"
+                hover "images/preferences/preferences_language_hover.png"
+                align .351, .817
+                action [Language(LANGUAGES[(current_lang + 1) % 3]), SetVariable("current_lang", (current_lang + 1) % 3)]
 
         $ curr_lang_short = getCurrentLangShort()
         text curr_lang_short:
