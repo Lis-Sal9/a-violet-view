@@ -105,7 +105,7 @@ label cr_session:
     p_gloria "I, per combatre-la, les dones indígenes s'impliquen més en la lluita ètnica i criden l'atenció en qüestions respectives de les dones, vinculant així l'autonomia femenina i l'ètnia."
     p_gloria "Però la realitat és molt més crua. Moltes varen ser esterilitzades forçosament, desaparegudes i, fins i tot, assassinades."
 
-    $ GiveGlossaryItemToPlayer(29)
+    $ GiveGlossaryItemToPlayer(30)
     $ ShowItems()
 
     user "Cada vegada resulta més necessari el recolzament pràctic i emocional als grups de dones de comunitats amb major risc per erradicar la violació dels drets humans."
@@ -117,7 +117,7 @@ label cr_session:
     adrienne_rich "Gràcies per compartir-ho amb nosaltres, Houda. És que, fins i tot, es pot dir que els matrimonis forçats estan vinculats al tràfic d'éssers humans. I això és més que sèrio."
     adrienne_rich "Per això, com a dones, hem de cedir a allò que l'home ens digui, faci o ens faci fer, independentment de la nostra voluntat i/o consentiment?"
 
-    $ GiveGlossaryItemToPlayer(29)
+    $ GiveGlossaryItemToPlayer(30)
     $ ShowItems()
 
     call no_is_yes

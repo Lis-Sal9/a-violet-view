@@ -32,7 +32,7 @@ label now_scene:
     betty_friedan "El problema principal és l'exclusió de les dones en l'esfera pública."
     betty_friedan "És per aquest motiu que es promou la inclusió de les dones en el mercat laboral i en càrrecs polítics."
 
-    $ GiveGlossaryItemToPlayer(28)
+    $ GiveGlossaryItemToPlayer(29)
     $ ShowItems()
 
     kate_millet "El patriarcat, com a sistema bàsic de dominació en el qual es recolzen tota la resta, és política sexual, com anomeno el meu llibre, és a dir, es refereix a l'establiment de les relacions."
@@ -71,10 +71,10 @@ label now_scene:
     "Quan escoltà això, [tmpSavePlayer] no s'ho pensà més i començà a buscar-les."
 
     if game_state.nyrw_is_seen:
-        $ GiveGlossaryItemToPlayer(31)
+        $ GiveGlossaryItemToPlayer(33)
 
     $ GiveGlossaryItemToPlayer(5)
-    $ GiveGlossaryItemToPlayer(28)
+    $ GiveGlossaryItemToPlayer(29)
     $ ShowItems()
 
     if not game_state.find_differences_done:

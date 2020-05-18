@@ -9,7 +9,7 @@ label suffrage_map:
         $ GiveGlossaryItemToPlayer(25)
         $ GiveGlossaryItemToPlayer(12)
         if len(game_state.maze_objects) == 7:
-            $ GiveGlossaryItemToPlayer(34)
+            $ GiveGlossaryItemToPlayer(36)
         $ ShowItems()
 
     $ setIsInSpecialScreen(True)

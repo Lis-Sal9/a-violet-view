@@ -113,42 +113,54 @@ init -10 python:
             "content": "Nana Asma’u, del califat de Sokoto, destacada per la seva posició com a filla del califa i per la seva saviesa, considerava que l’educació de les nenes havia d’instucionalitzar-se. D’aquesta manera, va crear una xarxa de mestres itinerants conegudes com a {i}jajis{/i}, la missió de les quals era recórrer l’imperi amb la finalitat d’instruir a les dones dins de les seves pròpies cases. Avui dia, el llegat d'Asma'u encara és vigent amb un grapat d’escoles i organitzacions femenines nigerianes que duen el seu nom i record. Així, el seu llegat és una recordatori de l’educació per a tothom en l’islam."
         },
         27: {
+            "name": "Naomi Wolf",
+            "content": "Naomi Wolf escrigué {i}The Beauty Myth{/i} l’any 1990. Les normes de bellesa imposades per la societat patriarcal diuen a les dones que s’han d’esforçar per aconseguir un ideal femení impossible. S’esclavitzen pel seu aspecte físic i s’allunyen de poder gaudir d’una vida plena i de l’activitat feminista. Així, aquest mite impacta econòmicament a les dones com a individus i a la societat capitalista en general; històricament, perquè la convertia en mercaderia, ja que la seva seguretat econòmica depenia de la mesura en què s’adeqüés a l’ideal, i ara en el seu consum de productes i serveis. D’aquesta manera, el mite oprimeix la dona en l’àmbit de la feina, la cultura i la religió, el sexe i l’alimentació, atrapant-la mitjançant els cosmètics, la dieta, l’exercici i la cirugia. L’autora proposa un futur feminista en el qual el valor de les dones depengui d’una definició pròpia de bellesa. Les dones han de tenir opcions i ser reconegudes com a persones multidimensionals, respectades per la societat com a cabals i sexuals, i tenir una vida rica i plena. No importa l’aspecte per sentir-se bella."
+        },
+        28: {
             "name": "Nawal El Saadawi",
             "content": "L’any 1972, Nawal El Saadawi va escriure {i}Dones i sexe{/i}, obra en la qual detalla totes les maneres en què eren oprimides les dones egípcies, entre elles les pràctiques de mutilació genital. És metgessa i activista pels drets de les dones de tendència marxista, i fou empresonada en ocasions vàries. Ella rebutjava la interpretació masculina de l’islam, ja que creia que l’alliberació de les dones no tenia cabuda en la teologia islàmica. Les seves idees es comprenen en la branca secular del feminisme en el món àrab, és a dir, són inspirades en idees occidentals. L’any 1982 fundà l’{i}Associació Solidària de Dones Àrabs{/i} ({i}Arab Women Solidarity Association{/i})."
         },
-        28: {
+        29: {
             "name": "{i}NOW 1966 Statement of Purpose{/i}",
             "content": "L’any 1966 es fundà NOW, {i}National Organization of Women{/i}, organització basada en el principi de que totes les dones són, per sobre de tot, éssers humans que han de tenir l’ocasió de desenvolupar el seu potencial humà en la seva plenitud. Així, l’objectiu d’aquesta és prendre mesures per a què les dones participin en tots els àmbits de la societat, exercint tots els seus privilegis i responsabilitats en una relació d’igual a igual amb els homes. Sota el seu punt de vista, les dones poden assolir aquesta igualtat si són considerades per la presa de decisions en la vida política, social i econòmica nord-americana. D’aquesta manera, els seus membres s’organitzen per iniciar o recolzar accions amb la finalitat de trencar amb els prejudicis i la discriminació contra les dones en qualsevol àmbit important en la societat nord-americana."
         },
-        29: {
+        30: {
             "name": "Paula Gunn Allen",
             "content": "A {i}The Sacred Hoop: Recovering the Feminine in American Indian Traditions{/i} (1986), Paula Gunn Allen reivindica les riques tradicions matriarcals de les dones indígenes, que desenvolupen en les seves comunitats rols de lideratge social, polític i espiritual des de molt abans que es produís la colonització europea. Fa èmfasi en la tradició de poder de les natives americanes i assenyala que les idees contemporànies sobre el gènere estan molt influenciades per les nocions patriarcals de génere introduïdes pels colons europeus."
         },
-        30: {
+        31: {
             "name": "Olympe de Gouges",
             "content": "L’any 1791, Olympe de Gouges, autora teatral i activista, va redactar la {i}Declaració dels drets de la dona i de la ciutadania{/i} ({i}La déclaration des droits de la femme et du citoyenne{/i}) amb la finalitat de reivindicar drets iguals per a les dones. Aquest fet es va dur a terme temps després de que la {i}Declaració dels drets de l’home i del ciutadà{/i} ({i}La déclaration des droits de l’homme et du citoyen{/i}) de 1789 afirmés els drets i la llibertat de tots els homes. En la seva obra, de Gouges va apel·lar als valors de la Il·lustració (els principis igualitaris i l’individualisme) per tal d’exigir els mateixos drets per a les dones. Així, de Gouges va ser detinguda per criticar el govern i fou executada a la guillotina el 1793 durant l’època de Terror de la Revolució Francesa."
         },
-        31: {
+        32: {
+            "name": "{i}Riot Grrrl Manifesto{/i}",
+            "content": "L’any 1991, es publicà el {i}Riot Grrrl Manifesto{/i} en el {i}Bikini Kill Zine 2{/i}, en el qual es donaven setze raons de l’esperit de {i}Riot Grrrl{/i} que responen al lema {i}Dones, sexe i rock and roll{/i}. Exigeixen poder compartir experiències, estratègies i maneres de fer amb les altres dones, crear formes de ser no patriarcals i de fer música, amigues i escenes basades en la comunicació i la comprensió enlloc de la competència i les categoritzacions, exigeixen no voler viure esclavitzades als ideals de l’home ni a les seves inseguretats, sinó ser qui somnien ser, estableixen que les {i}riot grrrl{/i} busquen salvar la vida psicològica i cultural de totes les dones del món, exigeixen la promoció i el suport entre dones i artistes de tota mena com a part integral del procés, estableixen el seu odi al capitalisme en totes les seves formes, i exigeixen poder validar-se i enfortir-se dins de la comunitat femenina fent, llegint, veient i escoltant. I, per últim, creuen que les dones constitueixen l’ànima de la força revolucionària que pot canviar i canviarà el món de debò."
+        },
+        33: {
             "name": "Shulamith Firestone",
             "content": "L’any 1970, es va publicar {i}The Dialectic of Sex{/i}, de Shulamith Firestone.  Diu que estimar resulta ser una relació de poder, i la desigualtat entre homes i dones fonament de totes les formes socials d’opressió, en les quals s’inclou la família nuclear. Reclama la criança dels infants amb neutralitat de gènere, i proposa l’abolició de la família nuclear per parelles igualitàries no casades i col·lectius que criïn plegats els infants. Així mateix, considera que les dones han de tenir més drets i llibertat d’expressió. En conclusió, esmentà que l’origen de l’opressió recau en la divisió sexual."
         },
-        32: {
+        34: {
             "name": "Sojourner Truth",
             "content": "Sojourner Truth fou un símbol pel feminisme antiesclavista i una figura fonamental pel moviment abolicionista. Va néixer esclava però va aconseguir fugir l’any 1826. En la {i}Convenció pro Drets de les Dones{/i} de 1851, va exposar un discurs memorable per la igualtat de les dones, en el qual es declarà igual als homes en força i intel·lecte. Ja no només es reiterava la demanda de sufragi femení, sinó que es feia èmfasi en la igualtat davant la llei sense distinció de sexe ni color, unint així la lluita pels drets de les dones i la lluita per la llibertat dels afroamericans esclavitzats en el moviment abolicionista. En aquest cas, les dones eren doblement discriminades: per la seva condició de dona i pel seu color de pell."
         },
-        33: {
+        35: {
             "name": "Sophia Elisabet Brenner",
             "content": "Sophia Elisabet Brenner va ser una de les primeres dones en reivindicar públicament que homes i dones mereixien els mateixos drets. L’any 1693, va publicar el poema {i}La defensa justificada del sexe femení{/i} ({i}Det Qwinliga Könetz rätmätige Förswar{/i}), en el qual esmentava que la dona era intel·lectualment igual a l’home. A més a més, també defensava en altres escrits que homes i dones eren iguals en tot menys en l’aparença física."
         },
-        34: {
+        36: {
             "name": "Sufragisme",
             "content": "El moviment sufragista fou una iniciativa de finals del segle XIX i principis del XX. Les sufragistes, liderades per Millicent Fawcett i constituents de la {i}Unió Nacional de Societats de Sufragi Femení{/i} (NUWSS), de la qual quasi tots els seus membres eren de clase mitjana o alta, apostaven per una activitat no agressiva mitjançant peticions pacífiques i mítings públics. En canvi, les {i}suffragettes{/i}, liderades per Emmeline Pankhurst i constituents de la {i}Unió Social i Política de les Dones{/i} (WSPU), de la qual alguns membres busquen atraure’s a la classe obrera, aposten per l’acció directa (violència política) per aconseguir publicitat sota el lema {i}Fets, no paraules{/i}. D’aquesta manera, moltes de les {i}suffragettes{/i} varen ser empresonades, alimentades forçosament quan feien vaga de fam a la presó, assassinades, o varen perdre la vida en la lluita per la causa. Destaquen el cas de Emily Wilding Davison i el de Mary Richardson."
         },
-        35: {
+        37: {
+            "name": "Susan Faludi",
+            "content": "L’any 1991, es publicà {i}Backlash: The Undeclared War Against American Women{/i}, de Susan Faludi. Identifica la {i}Nova Dreta{/i} i la seva agenda profamília com a motor de la reacció, que atribueix a la por a l’èxit del feminisme. Critica la bretxa salarial creixent i la hipocresia dels {i}emisaris de la reacció{/i} que impedien aprovar projectes de llei per millorar l’assistència infantil alhora que culpaven les mares treballadores de ser males o les animaven a reprendre els rols tradicionals. Fa èmfasi en el rol dels mitjans de comunicació com a estímul de la reacció antifeminista, que assumeix la construcció de la imatge de la dona treballadora com a insatisfeta i que difón mites sobre {i}la séquia d’homes{/i} o els {i}ventres estèrils{/i}. En la moda i la cultura popular, es dóna pas a siluetes cenyides i amb roba poc pràctica, i al cinema es retracta a les professionals solteres com a dones desagradables o malèvoles. Així mateix, comenta el pic de cosmètics i cirugia plàstica a causa de la pressió de semblar jove, criticant també la psicologia pop i els llibres d’autoajuda."
+        },
+        38: {
             "name": "Suzanne Voilquin",
             "content": "L’any 1832, Suzanne Voilquin va començar a treballar com a editora en la revista feminista de classe treballadora {i}La Tribune des femmes{/i}. Ella va decidir viure de manera independent, ja que volia ser un exemple per altres dones com a defensora dels valors sansimonians, sobretot després de la Revolució de 1830. El moviment sansimonià promovia un estil de vida comunal, lliure de la tirania del matrimoni, en el qual els principis femenins de la pau i la compassió substituïen els valors masculins més agressius."
         },
-        36: {
+        39: {
             "name": "Virginia Woolf",
             "content": "En {i}Una cambra pròpia{/i} ({i}A Room of One’s Own{/i}, 1929), Virginia Woolf va exposar les dificultats que tenien les escriptores per assolir el mateix èxit que els homes. Proposa que les dones necessiten un espai, que dóna nom a l’obra, per poder desenvolupar la seva creativitat, lliures de lligams domèstics. Per a ella, la independència econòmica era necessària per aconseguir-ho, sent inclús més important que el vot. Quan tinguessin aquest espai per pensar, les dones podrien experimentar i desenvolupar un llenguatge femení absent fins llavors en la literatura. Suggereix que les escriptores haurien d’entaular una lluita interior contra l’ideal femení victorià, exemplificat en la muller i mare perfecta."
         }

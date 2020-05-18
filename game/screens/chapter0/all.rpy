@@ -123,7 +123,7 @@ label chapter_0:
         unknown_girl "I no només això, recordem que creia fermament que la dona era intel·lectualment equivalent a l'home."
         unknown_girl "Equivalent en això i en tot, menys en l'aparença física!"
 
-        $ GiveGlossaryItemToPlayer(33)
+        $ GiveGlossaryItemToPlayer(35)
         $ ShowItems()
 
         unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom!!"
@@ -175,7 +175,7 @@ label chapter_0:
             $ GiveGlossaryItemToPlayer(22)
 
         $ GiveGlossaryItemToPlayer(11)
-        $ GiveGlossaryItemToPlayer(33)
+        $ GiveGlossaryItemToPlayer(35)
         $ GiveGlossaryItemToPlayer(15)
         $ GiveGlossaryItemToPlayer(6)
         $ ShowItems()
@@ -262,7 +262,7 @@ label chapter_0:
         "[tmpSavePlayer] acabava d'arribar a l'editorial."
         "La senyora Voilquin, com de costum, estava posant ordre. Era meticulosa amb la feina i volia que tot sortís a la perfecció."
 
-        $ GiveGlossaryItemToPlayer(35)
+        $ GiveGlossaryItemToPlayer(38)
         $ ShowItems()
 
         suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
@@ -275,7 +275,7 @@ label chapter_0:
             $ GiveGlossaryItemToPlayer(23)
 
         $ GiveGlossaryItemToPlayer(18)
-        $ GiveGlossaryItemToPlayer(35)
+        $ GiveGlossaryItemToPlayer(38)
         $ ShowItems()
 
         menu:

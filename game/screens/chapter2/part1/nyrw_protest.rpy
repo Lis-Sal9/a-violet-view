@@ -23,7 +23,7 @@ label nyrw_protest:
     "Enterrem la feminitat tradicional !! La germanor és poderosa !!!"
 
     $ game_state.nyrw_is_seen = True
-    $ GiveGlossaryItemToPlayer(31)
+    $ GiveGlossaryItemToPlayer(33)
     $ ShowItems()
 
     "..."

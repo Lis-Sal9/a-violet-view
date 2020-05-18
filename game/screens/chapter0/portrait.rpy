@@ -66,7 +66,7 @@ label portrait:
         mary_astell "I recordem que la Il·lustració promovia els principis igualitaris i l'individualisme."
         user "Sí, crec que n'havia escoltat a parlar d'aquesta obra, però no sabia ben bé el seu origen ni res la seva autora ..."
 
-        $ GiveGlossaryItemToPlayer(30)
+        $ GiveGlossaryItemToPlayer(31)
         $ ShowItems()
 
         scene salon_entrance
@@ -82,7 +82,7 @@ label portrait:
         "No parava de preguntar-se [tmpSavePlayer] ..."
 
     if game_state.astell_is_nice:
-        $ GiveGlossaryItemToPlayer(30)
+        $ GiveGlossaryItemToPlayer(31)
         $ ShowItems()
 
     return

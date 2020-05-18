@@ -20,7 +20,7 @@ label seneca_falls_convention:
     charlotte_woodward "Encantada de conèixer-vos. Estic molt emocionada pel dia d'avui."
     sojourner_truth "Sí, jo també ho estic."
 
-    $ GiveGlossaryItemToPlayer(32)
+    $ GiveGlossaryItemToPlayer(34)
     $ ShowItems()
 
     "I així, mentre la Convenció no començava, varen estar parlant sobre les seves vides i experiències."
@@ -38,7 +38,7 @@ label seneca_falls_convention:
     elizabeth_cady_stanton "Estan d'acord amb què totes les lleis que impedeixen a la dona ocupar el lloc que desitgi en societat o que la posicionin per sota l'home, no tenen autoritat suficient perquè són contràries a la pròpia naturalesa?"
 
     $ renpy.choice_for_skipping()
-    $ GiveGlossaryItemToPlayer(32)
+    $ GiveGlossaryItemToPlayer(34)
     $ GiveGlossaryItemToPlayer(19)
     if game_state.contraception_is_found:
         $ GiveGlossaryItemToPlayer(21)
@@ -46,9 +46,9 @@ label seneca_falls_convention:
         $ GiveGlossaryItemToPlayer(7)
     if game_state.langham_library_is_seen:
         $ GiveGlossaryItemToPlayer(1)
-        $ GiveGlossaryItemToPlayer(36)
+        $ GiveGlossaryItemToPlayer(39)
         $ GiveGlossaryItemToPlayer(24)
-        $ GiveGlossaryItemToPlayer(27)
+        $ GiveGlossaryItemToPlayer(28)
         if game_state.coverture_is_found:
             $ GiveGlossaryItemToPlayer(10)
             if game_state.mill_are_nice:

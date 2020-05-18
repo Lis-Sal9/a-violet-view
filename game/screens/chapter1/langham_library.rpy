@@ -8,7 +8,7 @@ label langham_library:
     user "A veure què hi ha per aquí ..."
     user "{i}Una habitació pròpia{/i}, de Virginia Woolf ... vaig a llegir la sinopsi ... "
 
-    $ GiveGlossaryItemToPlayer(36)
+    $ GiveGlossaryItemToPlayer(39)
     $ ShowItems()
 
     "Mentre [tmpSavePlayer] llegia la sinopsi d'aquella obra, dues dones prop seu estaven alçant la veu en un debat d'opinió."
@@ -22,7 +22,7 @@ label langham_library:
     clara_zetkin "Un plaer, [tmpSavePlayer]."
     rosa_luxemburg "Per favor, diga-li a la meva amiga que l'obra {i}Dones i sexe{/i} exposa d'una manera més clarificadora el feminisme des d'un punt de vista marxista."
 
-    $ GiveGlossaryItemToPlayer(27)
+    $ GiveGlossaryItemToPlayer(28)
     $ ShowItems()
 
     clara_zetkin "Ja saps que no estic d'acord, Rosa. Per a mi, ho fa millor l'obra {i}Els fonaments socials de la qüestió femenina{/i}. T'ho he dit moltes vegades !"
