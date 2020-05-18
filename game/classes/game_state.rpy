@@ -31,6 +31,7 @@ init -10 python:
         witch_is_seen = False
         find_differences_done = False
         nyrw_is_seen = False
+        answer_phone = False
 
 
         def clear(self):
@@ -62,3 +63,4 @@ init -10 python:
             self.witch_is_seen = False
             self.find_differences_done = False
             self.nyrw_is_seen = False
+            self.answer_phone = False
