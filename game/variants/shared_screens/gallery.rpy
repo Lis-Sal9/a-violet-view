@@ -10,7 +10,9 @@ screen gallery_item_details(item):
         idle Solid("0004")
         action NullAction()
 
-    add "images/gallery/biography.png"
+    image "images/gallery/biography.png":
+        align 0.5, 0.5
+        zoom 1.15
 
     fixed:
         align .5, .5
@@ -30,8 +32,9 @@ screen gallery_item_details(item):
             yoffset 20
 
         text item["content"]:
-            size 25
-            xysize 550, 600
+            size 27
+            xysize 600, 600
             align .99, .35
             xoffset 20
+            yoffset -10
             line_spacing 0
