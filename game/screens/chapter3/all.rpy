@@ -20,6 +20,10 @@ image restaurant_lis = "images/chapter3/restaurant.png"
 image pole_academy = "images/chapter3/pole_academy.png"
 image wfwi = "images/chapter3/wfwi/wfwi.png"
 image wfwi_inside = "images/chapter3/wfwi/wfwi_inside.png"
+image serie1 = "images/chapter3/series/serie1.png"
+image serie2 = "images/chapter3/series/serie2.png"
+image serie3 = "images/chapter3/series/serie3.png"
+image email_susan = "images/chapter3/series/mail.png"
 
 
 # Characters
@@ -35,8 +39,10 @@ define waris_dirie = Character("Waris Dirie", color="#e53935")
 define loretta_ross = Character("Loretta Ross", color="#e53935")
 define judith_butler = Character("Judith Butler", color="#e53935")
 define michel_foucault = Character("Michel Foucault", color="#e53935")
-define eve_kosofsky_sedgwick = Character("Eve Kosofsky Sedgwick", color="#efergr")
+define eve_kosofsky_sedgwick = Character("Eve Kosofsky Sedgwick", color="#e53935")
 define lisbeth_polancer = Character("Lisbeth Polancer", color="#e53935")
+define susan_faludi = Character("Susan Faludi", color="#e53935")
+define alicia_miyares = Character("Alicia Miyares", color="#e53935")
 
 
 
@@ -88,7 +94,7 @@ label ibonne_street:
 
     "Ibonne li va donar la revista a [tmpSavePlayer], que la va fullejar i es va trobar amb una sèrie matemàtica una mica peculiar."
 
-    ## Sèrie 1
+    scene serie1
 
     user "Me'n alegro moltíssim de que estigui tan il·lusionada."
     p_ibonne "Gràcies, [tmpSavePlayer]. Per a mi és molt important això que em diu."
@@ -157,7 +163,7 @@ label drag_musical_morning:
     "Afortunadament, les entrades estaven numerades, així que un cop dins, buscà el seu seient a l'espera de l'inici de la funció."
     "[tmpSavePlayer] aprofità aquell temps mort per fullejar la revista quan va adonar-se d'una sèrie matemàtica una mica peculiar."
 
-    # Sèrie 2
+    scene serie2
 
     scene drag_musical_inside
     "Una estona més tard, ja amb el teló alçat i les llums apagades ..."
@@ -232,13 +238,13 @@ label ong:
     "Rosemary va fer senyals a la senyora Morris, i aquesta començà a parlar."
     jenny_morris "Benvolgudes a totes! Em dic Jenny Morris, i avui us parlaré sobre el {i}model social de la discapacitat{/i} i les dones."
     jenny_morris "El model social té una forta base reivindicativa que pretén la revisió de les definicions que s'han fet del què és i què no és la {i}discapacitat{/i} i de la seva construcció."
-    jerry_morris "En el meu llibre {i}Pride Against Prejudice{/i} exposo el {i}doble inconvenient{/i} que suposa ser dona i ser {i}discapacitada{/i}."
-    jerry_morris "Aquestes dones són objectualitzades perquè no es tenen en compte les seves experiències personals i perquè es limiten a intentar discernir què és 'pitjor' per les oportunitats de vida d'una dona."
-    jerry_morris "De res val la pena si l'enfocament sobre les barreres externes ignora l'experiència del cos i altres aspectes importants, com els drets reproductius de les dones i la vida del fetus físicament impedit."
-    jerry_morris "D'aquesta manera, les dones {i}discapacitades{/i} tenen dificultats per fer-se escoltar, ja sigui en el moviment feminista o en el moviment de {i}discapacitats{/i}."
-    jerry_morris "Són justament les polítiques socials, a priori destinades a ajudar, les que acaben reforçant la dependència produïda per les estructures econòmiques i culturals."
-    jerry_morris "És a dir, en aquesta situació la persona amb {i}discapacitat{/i} és representada com una persona dependent."
-    jerry_morris "Però les defensores del feminisme de la {i}discapacitat{/i} i del model social mantenen que el gènere i la {i}discapacitat{/i} són creacions socials, i que l'eliminació de les barreres creades per la societat permetrà a les persones {i}discapacitades{/i} aconseguir la igualtat."
+    jenny_morris "En el meu llibre {i}Pride Against Prejudice{/i} exposo el {i}doble inconvenient{/i} que suposa ser dona i ser {i}discapacitada{/i}."
+    jenny_morris "Aquestes dones són objectualitzades perquè no es tenen en compte les seves experiències personals i perquè es limiten a intentar discernir què és 'pitjor' per les oportunitats de vida d'una dona."
+    jenny_morris "De res val la pena si l'enfocament sobre les barreres externes ignora l'experiència del cos i altres aspectes importants, com els drets reproductius de les dones i la vida del fetus físicament impedit."
+    jenny_morris "D'aquesta manera, les dones {i}discapacitades{/i} tenen dificultats per fer-se escoltar, ja sigui en el moviment feminista o en el moviment de {i}discapacitats{/i}."
+    jenny_morris "Són justament les polítiques socials, a priori destinades a ajudar, les que acaben reforçant la dependència produïda per les estructures econòmiques i culturals."
+    jenny_morris "És a dir, en aquesta situació la persona amb {i}discapacitat{/i} és representada com una persona dependent."
+    jenny_morris "Però les defensores del feminisme de la {i}discapacitat{/i} i del model social mantenen que el gènere i la {i}discapacitat{/i} són creacions socials, i que l'eliminació de les barreres creades per la societat permetrà a les persones {i}discapacitades{/i} aconseguir la igualtat."
     rosemary_garland_thomson "De fet, mitjançant l'ús del llenguatge el constructe social de la {i}discapacitat{/i} s'hauria d'evitar relacionar amb la paraula 'impediment' per descriure-la, ja que així s'oprimeix a aquestes persones per deficients, sent les persones {i}no discapacitades{/i} superiors."
     rosemary_garland_thomson "És necessari emfatitzar la importància del reconeixement de les diferències dins de la {i}discapacitat{/i} i les categories socials o culturals paral·leles a aquesta (gènere, raça, classe, sexualitat), ja que totes s'entrecreuen i són presents en la societat."
     rosemary_garland_thomson "I, dit això, ja podem donar per conclusa aquesta breu xerrada. Oferim a la senyora Morris un fort aplaudiment."
@@ -248,7 +254,7 @@ label ong:
     rosemary_garland_thomson "Espera! Has vist el diari d'avui? Mira què interessant ..."
     "[tmpSavePlayer] va observar el diari que no havia pogut acabar de llegir de bon matí i va veure una sèrie matemàtica molt curiosa."
 
-    ## Sèrie 2
+    scene serie2
 
     "Fins tard, [tmpSavePlayer] es va quedar a l'ONG cuidant i jugant amb totes aquelles persones especials."
 
@@ -363,11 +369,11 @@ label wfwi_foundation:
                     user "Susan!!! Oh, Susy!!!"
                     "I es van abraçar."
                     user "Com estàs? Et veig molt maca."
-                    susan_faladi "Gràcies. Estic molt feliç. Fa uns dies que acabo de guanyar el Premi Pulitzer pel reportatge divulgatiu que vaig realitzar."
+                    susan_faludi "Gràcies. Estic molt feliç. Fa uns dies que acabo de guanyar el Premi Pulitzer pel reportatge divulgatiu que vaig realitzar."
                     user "Moltíssimes felicitats!! No en sabia res!!"
-                    susan_faladi "Moltes gràcies. Justament, ara vaig a fer una petita xerrada al respecte. Només he passat per aquí per celebrar la notícia d'avui amb les companyes."
-                    susan_faladi "Mira, et dóno aquest tríptic sobre la xerrada, per si t'interessa."
-                    susan_faladi "Si et sembla bé, et trucaré per fer un cafè un dia d'aquests i parlem més tranquil·lament. Ara me'n he d'anar."
+                    susan_faludi "Moltes gràcies. Justament, ara vaig a fer una petita xerrada al respecte. Només he passat per aquí per celebrar la notícia d'avui amb les companyes."
+                    susan_faludi "Mira, et dóno aquest tríptic sobre la xerrada, per si t'interessa."
+                    susan_faludi "Si et sembla bé, et trucaré per fer un cafè un dia d'aquests i parlem més tranquil·lament. Ara me'n he d'anar."
 
                     $ GiveGlossaryItemToPlayer(37)
 
@@ -376,7 +382,7 @@ label wfwi_foundation:
                     "I, amb un comiat efusiu, Susan marxava a la seva xerrada i [tmpSavePlayer] tornava cap a casa seva, aquest cop passejant."
                     "Mentre caminava, va fullejar el tríptic i es va adonar que hi havia una sèrie matemàtica una mica peculiar."
 
-                    # Sèrie 3
+                    scene serie3
 
                     "A l'arribar a casa, necessitava relaxar-se, així que es banyà i es posà a dormir per descansar el cap fins l'endemà."
                     call go_to_hungary
@@ -403,20 +409,49 @@ label go_to_concert:
 
 
 label go_to_hungary:
-    #Posar ítem del glossari abans de l'skipping de les sèries.
-    $ GiveGlossaryItemToPlayer(37)
-    #
-
     scene living_room
+    "Ja era de dia ..."
+    "[tmpSavePlayer] s'acaba de llevar quan, de sobte ..."
+    stop music fadeout 0.5
+    play music "audio/sound/ring.mp3" fadein 0.5
+    "El telèfon estava sonant."
+    "[tmpSavePlayer] atengué."
+    stop music fadeout 0.5
+    play music "audio/music/chapter3.mp3" fadein 0.5
+    susan_faludi "[tmpSavePlayer]!! Sóc la Susan!! He de parlar amb tu!! Necessito mostrar-te una cosa molt estranya!!"
+    user "És massa d'hora encara. Tan urgent és?"
+    susan_faludi "Sí!! Sí!! Ara vinc a casa teva!!"
+    "I penja. [tmpSavePlayer] no va poder dir paraula, solament anar a vestir-se."
+    "Al cap de mitja hora, Susan aparegué."
+    susan_faludi "Obre l'ordinador!! Corre!!!"
+    "Susan va entrar a casa de [tmpSavePlayer] molt agitada."
+    user "Però què et passa? Per a què necessites el meu ordinador?"
+    susan_faludi "No hi ha temps per explicacions. Corre, el temps és or!!"
+    "Amb presses, encengueren l'ordinador. Susan va entrar al seu servidor de correu electrònic."
+    susan_faludi "Mira, això és el què et volia ensenyar!! El meu pare m'ha enviat aquest correu tan estrany. Què deuen voler dir aquests símbols?!"
+    scene email_susan
+    "[tmpSavePlayer] els mirà atentament. D'algun lloc li sonaven, però no aconseguia recordar d'on."
+    susan_faludi "Sempre li ha agradat molt al meu pare amagar missatges. I a mi em posa molt nerviosa!!!"
+    user "Ja ho tinc!!! No sabia de què em sonaven, però ara ja me'n he recordat. Espera."
+    "Va anar a buscar els papers que s'havia trobat el darrer dia."
+    user "Mira, això em vaig trobar!! Podrien estar tots relacionats ... Anem a descobrir-ho!"
 
-    # Ha trobat les sèries
+    if not game_state.series_done:
+        # series is not done
+        $ renpy.call_in_new_context("series_label")
+    else:
+        # series is done
+        "Ja has resolt les sèries. Vols tornar-les a fer?"
+        menu:
+            "Sí":
+                $ renpy.call_in_new_context("series_label")
+            "No":
+                "D'acord. Continues amb la mateixa història com si les haguessis fet."
 
-    # No ha trobat el resultat
-
-    call train
-    call end_chapter(CHAPTERS[5])
+    call series_result
 
     return
+
 
 
 label drag_musical_night:
@@ -429,7 +464,7 @@ label drag_musical_night:
     "Afortunadament, les entrades estaven numerades, així que un cop dins, buscà el seu seient a l'espera de l'inici de la funció."
     "[tmpSavePlayer] aprofità aquell temps mort per fullejar la revista quan va adonar-se d'una sèrie matemàtica una mica peculiar."
 
-    # Sèrie 3
+    scene serie3
 
     "Les 00:19 ..."
     scene drag_musical_inside_night
@@ -488,14 +523,14 @@ label susan_calling:
             user "Susan!!! Oh, Susy!!!"
             "I es van abraçar."
             user "Com estàs? Et veig molt maca."
-            susan_faladi "Gràcies. Estic molt feliç. Fa uns dies que acabo de guanyar el Premi Pulitzer pel reportatge divulgatiu que vaig realitzar."
+            susan_faludi "Gràcies. Estic molt feliç. Fa uns dies que acabo de guanyar el Premi Pulitzer pel reportatge divulgatiu que vaig realitzar."
             user "Moltíssimes felicitats!! No en sabia res!!"
-            susan_faladi "Moltes gràcies. Ara vinc del teatre, he anat a veure {i}Black Lips Live{/i}."
+            susan_faludi "Moltes gràcies. Ara vinc del teatre, he anat a veure {i}Black Lips Live{/i}."
             user "Què dius ara? Jo també!!"
-            susan_faladi "Quina casualitat!! I què t'ha semblat??"
+            susan_faludi "Quina casualitat!! I què t'ha semblat??"
             user "Molt interessant, però ara tinc massa informació al cap i necessito descansar."
-            susan_faladi "Sí, el mateix em passa a mi. Però molt interessant l'espectacle."
-            susan_faladi "Si et sembla bé, et trucaré per fer un cafè un dia d'aquests i parlem més tranquil·lament. Ara me'n he d'anar cap a casa."
+            susan_faludi "Sí, el mateix em passa a mi. Però molt interessant l'espectacle."
+            susan_faludi "Si et sembla bé, et trucaré per fer un cafè un dia d'aquests i parlem més tranquil·lament. Ara me'n he d'anar cap a casa."
 
             $ GiveGlossaryItemToPlayer(37)
 
