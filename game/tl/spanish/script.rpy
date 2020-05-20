@@ -13,3 +13,7 @@ translate spanish strings:
     # game/script.rpy:15
     old "Nen"
     new "Niño"
+
+    # game/script.rpy:16
+    old "Nena"
+    new "Niña"

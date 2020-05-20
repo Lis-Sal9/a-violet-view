@@ -13,3 +13,7 @@ translate catalan strings:
     # game/script.rpy:15
     old "Nen"
     new "Nen"
+
+    # game/script.rpy:16
+    old "Nena"
+    new "Nena"

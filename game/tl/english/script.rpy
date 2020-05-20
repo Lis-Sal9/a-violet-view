@@ -13,3 +13,7 @@ translate english strings:
     # game/script.rpy:15
     old "Nen"
     new "Child"
+
+    # game/script.rpy:16
+    old "Nena"
+    new "Child"
