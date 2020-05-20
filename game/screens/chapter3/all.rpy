@@ -319,6 +319,7 @@ label wfwi_foundation:
 
     menu:
         "Tant de disgust t'ha fet entrar gana":
+            $ game_state.serie_with_susan = False
             "Es dirigí a la zona de menjar, i allà escoltà sense voler la conversa de dues dones que alçaven una mica la veu."
             unknown_girl "Estic farta de que la noció occidental culpi la religió per la desigualtat de gènere argumentant que la probresa i l'autoritarisme són les causes clau de la falta de llibertat de les dones en les societats islàmiques."
             unknown_girl "El feminisme occidental acostuma a menysprear l'islam com a inherentment hostil a la dona, i això no és així."
@@ -337,6 +338,7 @@ label wfwi_foundation:
             call go_to_concert
 
         "L'angoixa t'ha tancat l'estómac i decideixes passejar una mica per la sala":
+            $ game_state.serie_with_susan = False
             "Passejant per la sala, s'adonà de que l'autora Waris Dirie estava fent la presentació de la seva autobiografia, {i}Desert Flower{/i}."
             waris_dirie "Als tres anys, vaig ser mutilada genitalment. I als tretze, vaig ser lliurada a un home molt major per a casar-m'hi. Per sort, vaig poder aconseguir fugir d'aquella vida miserable."
             waris_dirie "En aquesta autobiografia parlo de la mutilació genital femenina."
@@ -375,6 +377,7 @@ label wfwi_foundation:
                     susan_faludi "Mira, et dóno aquest tríptic sobre la xerrada, per si t'interessa."
                     susan_faludi "Si et sembla bé, et trucaré per fer un cafè un dia d'aquests i parlem més tranquil·lament. Ara me'n he d'anar."
 
+                    $ game_state.serie_with_susan = True
                     $ GiveGlossaryItemToPlayer(37)
 
                     user "Perfecte, Susan. Quedem així doncs."
@@ -388,6 +391,7 @@ label wfwi_foundation:
                     call go_to_hungary
 
                 "Ignores la veu, no et trobes bé i no tens ganes de fer bona cara":
+                    $ game_state.serie_with_susan = False
                     "[tmpSavePlayer] va fer com si no hagués escoltat res i seguí el seu camí cap a casa. Tornava a agafar l'autobús perquè volia arribar el més aviat possible."
                     call moving_bus
                     "Ja a casa descansant ..."
@@ -434,7 +438,13 @@ label go_to_hungary:
     susan_faludi "Sempre li ha agradat molt al meu pare amagar missatges. I a mi em posa molt nerviosa!!!"
     user "Ja ho tinc!!! No sabia de què em sonaven, però ara ja me'n he recordat. Espera."
     "Va anar a buscar els papers que s'havia trobat el darrer dia."
-    user "Mira, això em vaig trobar!! Podrien estar tots relacionats ... Anem a descobrir-ho!"
+
+    if game_state.serie_with_susan:
+        user "Mira, això em vaig trobar!! I també està el tríptic que tu em vas donar!!"
+        susan_faludi "El que jo et vaig donar? ... Ah, sí!! El tríptic de la xerrada!! Ni m'hi havia fixat en els símbols ..."
+        user "És igual això ara, no importa. Podrien estar tots els papers relacionats ... Anem a descobrir-ho!"
+    else:
+        user "Mira, això em vaig trobar!! Podrien estar tots relacionats ... Anem a descobrir-ho!"
 
     if not game_state.series_done:
         # series is not done
@@ -532,6 +542,7 @@ label susan_calling:
             susan_faludi "Sí, el mateix em passa a mi. Però molt interessant l'espectacle."
             susan_faludi "Si et sembla bé, et trucaré per fer un cafè un dia d'aquests i parlem més tranquil·lament. Ara me'n he d'anar cap a casa."
 
+            $ game_state.serie_with_susan = False
             $ GiveGlossaryItemToPlayer(37)
 
             user "Perfecte, Susan. Quedem així doncs."

@@ -2,9 +2,14 @@
 ## Preferences screen ######################################################################
 ## The preferences screen allows the player to configure the game to better suit themselves.
 ############################################################################################
-init -10 python:
+init -100 python:
     LANGUAGES = ["catalan", "english", "spanish"]
-    current_lang = LANGUAGES.index(_preferences.language)
+    current_lang = 0
+
+    if not _preferences.language and _preferences.language == "None":
+        _preferences.language = "catalan"
+        current_lang = LANGUAGES.index(_preferences.language)
+
 
     def getCurrentLangShort():
         if _preferences.language == "english":

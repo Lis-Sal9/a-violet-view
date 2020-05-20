@@ -33,6 +33,7 @@ init -10 python:
         nyrw_is_seen = False
         answer_phone = False
         series_done = False
+        serie_with_susan = False
 
 
         def clear(self):
@@ -66,3 +67,4 @@ init -10 python:
             self.nyrw_is_seen = False
             self.answer_phone = False
             self.series_done = False
+            self.serie_with_susan = False

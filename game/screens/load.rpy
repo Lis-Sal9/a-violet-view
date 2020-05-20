@@ -107,8 +107,8 @@ screen load():
                 button:
                     action Show("load_pause", slot=saved_slot_name_display, extra_info=saved_slot_extra_info)
                     xysize 430, 262
-                    yoffset -1
-                    xoffset -1
+                    yoffset 30
+                    xoffset 4
                     has vbox
                     add Frame(slot_screenshot) xalign 0.5
                     text saved_slot_name:
