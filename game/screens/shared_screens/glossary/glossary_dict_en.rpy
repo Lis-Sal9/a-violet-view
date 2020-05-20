@@ -113,42 +113,54 @@ init -10 python:
             "content": "Nana Asma’u, from the Caliphate of Sokoto and highlighted for her position as a Calipha's daughter as well as for her wisdom, considered that girls education should be a matter of state. This way, she created a network of traveling teachers known as {i}jajis{/i}, whose mission was to travel across the empire in order to instruct the women in their own homes. Nowadays the legacy of Asma'u is still alive in a handful of schools and femenine organisations in Nigeria that carry her name and memory. So her legacy is a reminder for everybody's education across the Islam."
         },
         27: {
+            "name": "Naomi Wolf",
+            "content": "Naomi Wolf wrote {i}The Beauty Myth{/i} in 1990. The rules of beautiness imposed by the patriarchal society tells to the women they must strive to achieve an impossible femenine ideal. They enslave themselves by their physical appearance and they keep away from having a full life and from feminist activities. So this myth economically impacts to women as individuals and capitalist society in general; historically, because it converted them in commodities, as their economical security depended upon how close they are to that ideal, and now upon their consumption of goods and services. This way, the myth opresses women in the scopes of work, culture and religion, sex and food, trapping them through cosmetics, diet, physical exercise and plastic surgery. The autor proposes a feminist future in which the value of the women would depend upon an own definition of beautiness. Women have to have multiple chioces and must be recognized as multidimensional persons, to be respected by the society as thorough and sexual people, and to have a full life. The appearances doesn't matter to feel beauty oneself."
+        },
+        28: {
             "name": "Nawal El Saadawi",
             "content": "In 1972 Nawal El Saadawi wrote {i}Women and sex{/i}, in which work she details every way the Egyptian women were oppressed, genital mutilation among them. Of a marxist inclination, she is medical doctor and activist pro rights of women and was imprisoned several times. She rejects the masculine interpretation of the Islam because she believed that women liberation could not fit into the islamic theology. Her ideas are comprised among the secular branch of the feminism in the arabic world, in other words, are influenced by western ideas. In 1982 founded the {i}Arab Women Solidarity Association{/i}."
         },
-        28: {
+        29: {
             "name": "{i}NOW 1966 Statement of Purpose{/i}",
             "content": "In 1966 there was founded NOW, {i}National Organization of Women{/i}, organization based upon the principle of that women are, above everything else, human beings that must have the chance to fully develop their human potential. So the main goal is to take measures so women could participate in every ambit of society, making use of their privileges and responsibilities in a relationship from equal to equal with men. By their point of view, women can achieve this equality if they are considered by their decision making in the political, social and economic American life. This way, its members organize to start or to support actions with the aim of breaking with prejudices and discrimination against women in any important ambit in the American socierty."
         },
-        29: {
+        30: {
             "name": "Paula Gunn Allen",
             "content": "In {i}The Sacred Hoop: Recovering the Feminine in American Indian Traditions{/i} (1986), Paula Gunn Allen vindicates the rich matriarchal traditions from indigenous women, who delevop roles of social, political and spiritual leadership within their communities long before the European colonization. She emphasizes in the tradition of power of the native american women and points out that the contemporary ideas about gender are very influenced by patriarchal notions of gender introduced by European colonists."
         },
-        30: {
+        31: {
             "name": "Olympe de Gouges",
             "content": "In 1791, Olympe de Gouges, theatre author and activist, wrote the {i}Declaration of the Rights of Woman and of the Female Citizen{/i} ({i}La déclaration des droits de la femme et du citoyenne{/i}) with the main goal of vindicate equal rights for the women. This was done some time after in 1789 the {i}Declaration of the Rights of Man and of the Citizen{/i} ({i}La déclaration des droits de l’homme et du citoyen{/i}) affirmed the rights ans liberties of all men. In her work, de Gouges appelated to the values of the Enlightenment (the principles of equality and individualism) to demand the same rights for the women. So de Gouges was detained for criticising the gorvenment and was executed by guillotine in 1793, during the Reign of Terror of the French Revolution."
         },
-        31: {
+        32: {
+            "name": "{i}Riot Grrrl Manifesto{/i}",
+            "content": "In 1991, the {i}Riot Grrrl Manifesto{/i} was published at the {i}Bikini Kill Zine 2{/i}, in which there was sixteen reasons for the {i}Riot Grrrl{/i} spirit which responds to the motto {i}Dones, sexe i rock and roll{/i}. They demanded to be able to share experiences, strategies and ways to do with other women, to create non-patriarchal ways to be and to make music, friends and scenes based on communication and comprehension instead of competition and categorizations. They also demanded to not to live under the males' ideals nor their insecurities, but to be whoever they dream to be. They establish that {i}riot grrrls{/i} look for saving the psychological and cultural life of all women in the world, demanding as well the promotion and support between women and artists of all kind as a key part of the process. They settle their hate to capitalism in all its ways, and they demand to be able to validate and strengthen themselves inside the femenine community by doing, reading, watching and listening. And, last, they believe that women constitute the soul of the revolutionary force that trully can and will change the world."
+        },
+        33: {
             "name": "Shulamith Firestone",
             "content": "In 1970 it was published {i}The Dialectic of Sex{/i}, by Shulamith Firestone. She states that to love is indeed a relationship of power and the inequality between men and women is the foundation of all social forms of oppression, in which it is included the nuclear family. She also demands raising children with gender neutrality and proposes the abolition of the nuclear family replacing it by egalitarian unmarried couples and collectives that raise together the children. This way, she considers that women should have more rights and freedom of speech. To sum up, she states that the origin of the oppression relies upon sexual division."
         },
-        32: {
+        34: {
             "name": "Sojourner Truth",
             "content": "Sojourner Truth was a symbol for anti-slavery feminism and an important icon for the abolitionist movement. She was born as a slave, but managed to escape in 1826. At the {i}Convention for Women's Rights{/i} in 1851 she exposed a memorable speech for women equality, in which she declared herself equal to men in both strenght and intellect. There wasn't just reaffirmed the demand for women's suffrage, but it was emphasized the equality before the law without any distinction due to gender or skin colour, merging this way the fight for women's rights and the fight in the abolitionist movement for freedom for the enslaved african-american. In this case women were twice discriminated: because of being women and due to the colour of their skin."
         },
-        33: {
+        35: {
             "name": "Sophia Elisabet Brenner",
             "content": "Sophia Elisabet Brenner was one of the first women to publicly vindicate that men and women deserve the same rights. In 1693, she published the poem {i}The justified defense of the female sex{/i} ({i}Det Qwinliga Könetz rätmätige Förswar{/i}), in which she stated that the women are intellectually equal to the men. In addition, she also defended in other writings that both men and women are the same except for their physical appearance."
         },
-        34: {
+        36: {
             "name": "Suffragism",
             "content": "The suffragist movement was an initiative from late XIX and early XX century, The suffragist, leaded by Millicent Fawcett and being part of the {i}National Union of Women's Suffrage Societies{/i}, from which almost every member was of middle or higher class, advocated for a non-violent activity and through pacific demands and public meetings. Instead, the {i}suffragettes{/i}, leaded by Emmeline Pankhurst and being part of the {i}Women Social and Political Union{/i}, from which many members were from working class, went through direct action (political violence) under the slogan {i}Deeds, not words{/i} in order to make them being noticed. This way, many {i}suffragettes{/i} were imprisoned, being fed by force when they were on a hunger strike, murdered or killed fighting for the cause. The most iconic cases were those of Emily Wilding Davison and Mary Richardson."
         },
-        35: {
+        37: {
+            "name": "Susan Faludi",
+            "content": "In 1991 it was published {i}Backlash: The Undeclared War Against American Women{/i}, by Susan Faludi. It identifies the {i}New Right{/i} and their pro-family agenda as a motor for reactionarianism, which is attributed to fear of feminism success. She criticizes the growing pay gap and the hypocrisy of the {i}reactionarianism emmisaries{/i} who impede to pass laws which could improve childcare at the same time they blame working mothers of being mean or they encourage them to retake the traditional roles. She also emphasizes the role of the media as a stimulus of the anti-feminist reaction, which assumes the construction of the image of the dissatisfied working women and which spreads myths about the {i}shortage of men{/i} or {i}barren wombs{/i}. in fashion and pop culture, it gives way to tight silhouettes and impractical clothes, and at cinema the single proffessional women are portrayed as mean or unpleasant. This way, she alludes to the peak usage of cosmetics and plastic surgery due to the pressure to look young, criticizing as well the pop psychology and self-help books."
+        },
+        38: {
             "name": "Suzanne Voilquin",
             "content": "In 1832, Suzanne Voilquin started working as editor at the working class feminist magazine {i}La Tribune des femmes{/i}. She decided to live her life in an independent way so that could be a model for other women as a advocate for the Saint-Simonian values, even more after the Revolution of 1830. The Saint-Simonian movement promoted a communal lifestyle in which the femenine principles of peace and compassion substituted the more aggressive masculine principles."
         },
-        36: {
+        39: {
             "name": "Virginia Woolf",
             "content": "In his work from 1929 {i}A Room of One’s Own{/i}, Virginia Woolf exposed the difficulties the female writers had to accomplish the same success than of the male. She proposes that the women need a room, which gives its name to the work, to develop their creativity, free from domestic ties. For her, economic independence was necessary to achieve this, being even more important than the right to vote. When they had this space to think, women could experiment and develop a female language missing from literature until then. She suggested that female writers should establish an inner fight agains the victorian female ideal, exemplified in the image of the perfect wife and mother."
         }

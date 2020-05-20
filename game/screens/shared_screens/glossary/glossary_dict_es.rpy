@@ -113,42 +113,54 @@ init -10 python:
             "content": "Nana Asma’u, del califato de Sokoto, conocida por su posición como hija del califa y por su sabiduría, consideraba que la educación de las niñas tenía que ser institucionalizada. Por este motivo, creó una red de maestras itinerantes conocidas como {i}jajis{/i}, cuya misión era recorrer el imperio con el fin de instruir a las mujeres dentro de sus propias casas. Hoy en día, el legado de Asma'u aún está vigente con un conjunto de escuelas y organizaciones femeninas nigerianas que llevan su nombre y recuerdo. Así, su legado es un recordatorio de la educación para todo el mundo en el islam."
         },
         27: {
+            "name": "Naomi Wolf",
+            "content": "Naomi Wolf escribió {i}The Beauty Myth{/i} en 1990. Las normas de belleza impuestas por la sociedad patriarcal dicen a las mujeres que deben esforzarse para conseguir un ideal femenino imposible. Se esclavizan por su aspecto físico y se alejan de poder disfrutar de una vida plena y de la actividad feminista. Así, este mito impacta económicamente a las mujeres como individuos y a la sociedad capitalista en general; históricamente, porqué la convertía en mercancía, ya que su seguridad económica dependía de la medida en qué se adecuara al ideal, y ahora en su consumo de productos y servicios. De esta manera, el mito oprime a la mujer en el ámbito del trabajo, la cultura y la religión, el sexo y la alimentación, atrapándola mediante los cosméticos, la dieta, el ejercicio y la cirugía. La autora propone un futuro feminista en el cual el valor de las mujeres dependa de una definición propia de belleza. Las mujeres tienen que tener opciones y ser reconocidas como personas multidimensionales, respetadas por la sociedad como cabales y sexuales, y tener una vida rica y plena. No importa el aspecto para sentirse bella."
+        },
+        28: {
             "name": "Nawal El Saadawi",
             "content": "En 1972, Nawal El Saadawi escribió {i}Mujeres y sexo{/i}, cuya obra detalla todas las maneras en las cuales las mujeres egípcias eran oprimidas, entre ellas las prácticas de mutilación genital. Es médica y activista por los derechos de las mujeres de tendencia marxista, y fue prisionera en varias ocasiones. Ella rechazaba la interpretación masculina del islam, ya que creía que la liberación de las mujeres no tenía cabida en la teología islámica. Sus ideas se comprenden en la rama secular del feminismo en el mundo árabe, es decir, están inspiradas en ideas occidentales. En 1982 fundó la {i}Asociación Solidaria de Mujeres Árabes{/i} ({i}Arab Women Solidarity Association{/i})."
         },
-        28: {
+        29: {
             "name": "{i}NOW 1966 Statement of Purpose{/i}",
             "content": "El año 1966 se fundó NOW, {i}National Organization of Women{/i}, organización basada en el principio de que todas las mujeres son, por encima de todo, seres humanos que tienen que tener la ocasión de desarrollar su potencial humano en toda su plenitud. Así, el objetivo de ésta es tomar medidas para que las mujeres participen en todos los ámbitos de la sociedad, ejerciendo todos sus privilegios y responsabilidades en una relación de igual a igual con los hombres. Desde su punto de vista, las mujeres pueden conseguir esta igualdad si son consideradas para la toma de decisiones en la vida política, social y económica norteamericana. De esta manera, sus miembros se organizan para iniciar o apoyar acciones con la finalidad de romper con los prejuicios y la discriminación contra las mujeres en cualquier ámbito importante en la sociedad norteamericana."
         },
-        29: {
+        30: {
             "name": "Paula Gunn Allen",
             "content": "En {i}The Sacred Hoop: Recovering the Feminine in American Indian Traditions{/i} (1986), Paula Gunn Allen reivindica las ricas tradiciones matriarcales de las mujeres indígenas, que desarrollan en sus comunidades roles de liderazgo social, político y espiritual desde mucho antes que se produjera la colonización europea. Pone énfasis en la tradición de poder de las nativas americanas y señala que las ideas contemporáneas sobre el género están muy influenciadas por las nociones patriarcales de género introducidas por los colonos europeos."
         },
-        30: {
+        31: {
             "name": "Olympe de Gouges",
             "content": "El año 1791, Olympe de Gouges, autora teatral y activista, redactó la {i}Declaración de los derechos de la mujer y de la ciudadanía{/i} ({i}La déclaration des droits de la femme et du citoyenne{/i}) con la finalidad de reivindicar derechos iguales para las mujeres. Este hecho sucedió después de que la {i}Declaración de los derechos del hombre y del ciudadano{/i} ({i}La déclaration des droits de l’homme et du citoyen{/i}) de 1789 afirmara los derechos y la libertad de todos los hombres. En su obra, de Gouges apeló a los valores de la Ilustración (los principios igualitarios y el individualismo) para exigir los mismos derechos para las mujeres. De esta manera, de Gouges fue detenida por criticar el gobierno y fue ejecutada en la guillotina en 1793 durante la época de Terror de la Revolución Francesa."
         },
-        31: {
+        32: {
+            "name": "{i}Riot Grrrl Manifesto{/i}",
+            "content": "En 1991, se publicó el {i}Riot Grrrl Manifesto{/i} en el {i}Bikini Kill Zine 2{/i}, en el cual se establecían dieciséis razones del espíritu de {i}Riot Grrrl{/i} que responden al lema {i}Mujeres, sexo y rock and roll{/i}. Exigían poder compartir experiencias, estrategias y maneras de hacer con las otras mujeres, crear formas de ser no patriarcales y de hacer música, amigas y escenas basadas en la comunicación y la comprehensión en lugar de la competencia y las categorizaciones, exigen no querer vivir esclavizadas a los ideales del hombre ni a sus inseguridades, sino ser quién desean ser, establecen que las {i}riot grrrl{/i} buscan salvar la vida psicológica y cultural de todas las mujeres del mundo, exigen la promoción y la ayuda entre mujeres y artistas de todo tipo como parte integral del proceso, establecen su odio hacia el capitalismo en todas sus formas, y exigen poder validarse y fortalecerse dentro de la comunidad femenina haciendo, leyendo, viendo y escuchando. Y, por último, creen que las mujeres constituyen el alma de la fuerza revolucionaria que puede cambiar y cambiará el mundo de verdad."
+        },
+        33: {
             "name": "Shulamith Firestone",
             "content": "El año 1970, se publicó {i}The Dialectic of Sex{/i}, de Shulamith Firestone. Dice que querer resulta ser una relación de poder, y la desigualdad entre hombres y mujeres fundamento de todas las formas sociales de opresión, en las cuales se incluye la família nuclear. Reclama la crianza de los infantes con neutralidad de género, y propone la abolición de la família nuclear por parejas igualitarias no casadas y colectivos que crien juntos los infantes. Asimismo, considera que las mujeres tienen que tener más derechos y libertad de expresión. En conclusión, mencionó que el orígen de la opresión recae en la división sexual."
         },
-        32: {
+        34: {
             "name": "Sojourner Truth",
             "content": "Sojourner Truth fue un símbolo para el feminismo antiesclavista y una figura fundamental para el movimiento abolicionista. Nació esclava pero consiguió huir en 1826. En la {i}Convención pro Derechos de las Mujeres{/i} de 1851, expuso un discurso memorable por la igualdad de las mujeres, en el cual se declaró igual a los hombres en fuerza e intelecto. Ya no sólo se reiteraba la demanda de sufragio femenino, sino que se enfatizaba en la igualdad frente a la ley sin distinción de sexo ni color, uniendo así la lucha por los derechos de las mujeres y la lucha por la libertad de los afroamericanos esclavizados en el movimiento abolicionista. En este caso, las mujeres eran doblemente discriminadas: por su condición de mujer y por su color de piel."
         },
-        33: {
+        35: {
             "name": "Sophia Elisabet Brenner",
             "content": "Sophia Elisabet Brenner fue una de las primeras mujeres en reivindicar públicamente que hombres y mujeres merecían los mismos derechos. El año 1693 publicó el poema {i}La defensa justificada del sexo femenino{/i} ({i}Det Qwinliga Könetz rätmätige Förswar{/i}), en el cual mencionaba que la mujer era intelectualmente igual al hombre. Además, también defensaba en otras obras que hombres y mujeres eran iguales en todo menos en la apariencia física."
         },
-        34: {
+        36: {
             "name": "Sufragismo",
             "content": "El movimiento sufragista fue una iniciativa de finales del siglo XIX y principios del XX. Las sufragistas, lideradas por Millicent Fawcett y constituyentes de la {i}Unión Nacional de Sociedades de Sufragio Femenino{/i} (NUWSS), de la cual casi todos sus miembros eran de clase media o alta, apostaban por una actividad no agresiva mediante peticiones pacíficas y mítines públicos. En cambio, las {i}suffragettes{/i}, lideradas por Emmeline Pankhurst y constituyentes de la {i}Unión Social y Política de las Mujeres {/i} (WSPU), de la cual algunos miembros buscan atraerse a la clase obrera, apuestan por la acción directa (violencia política) para conseguir publicidad con el lema {i}Hechos, no palabras{/i}. De esta manera, muchas de las {i}suffragettes{/i} fueron a prisión, alimentadas a la fuerza cuando allí realizaban huelgas de hambre, asesinadas, o perdieron la vida en la lucha por la causa. Destacan el caso de Emily de Emily Wilding Davison y el de Mary Richardson."
         },
-        35: {
+        37: {
+            "name": "Susan Faludi",
+            "content": "En 1991, se publicó {i}Backlash: The Undeclared War Against American Women{/i}, de Susan Faludi. Identifica la {i}Nueva Derecha{/i} y su agenda profamília como motor de la reacción, que atribuye al miedo al éxito del feminismo. Critica la brecha salarial creciente y la hipocresía de los {i}emisarios de la reacción{/i} que impiden aprobar proyectos de ley para mejorar la asistencia infantil a la vez que culpaban a las madres trabajadoras de ser malas o las animaban a retomar los roles tradicionales. Pone énfasis en el rol de los medios de comunicación como estímulo de la reacción antifeminista, que asume la construcción de la imagen de la mujer trabajadora como insatisfecha y que difunde mitos sobre {i}la escasez de hombres{/i} o los {i}vientres estériles{/i}. En la moda y la cultura popular, se da paso a siluetas ceñidas y con ropa poco práctica, y en el cine se retrata a las profesionales solteras como mujeres desagradables o malvadas. Así mismo, comenta el pico de cosméticos y cirugía plástica debido a la presión de parecer joven, criticando también la psicología pop y los libros de autoayuda."
+        },
+        38: {
             "name": "Suzanne Voilquin",
             "content": "El año 1832, Suzanne Voilquin comenzó a trabajar como editora en la revista feminista de clase trabajadora {i}La Tribune des femmes{/i}. Ella decidió vivir de manera independiente, ya que quería ser un ejemplo para otras mujeres como una defensora de los valores sansimonianos, sobretodo después de la Revolución de 1830. El movimiento sansimoniano promovía un estilo de vida comunal, libre de la tiranía del matrimonio, en el cual los principios femeninos de la paz y la compasión sustituían los valores masculinos más agresivos."
         },
-        36: {
+        39: {
             "name": "Virginia Woolf",
             "content": "En {i}Una habitación propia{/i} ({i}A Room of One’s Own{/i}, 1929), Virginia Woolf expuso las dificultades que tenían las escritoras para conseguir el mismo éxito que los hombres. Propone que las mujeres necesitan un espacio, que da nombre a la obra, para poder desarrollar su creatividad, libres de ataduras domésticas. Para ella, la independencia económica era necesaria para conseguirlo, siendo incluso más importante que el voto. Cuando tuvieran ese espacio para pensar, las mujeres podrían experimentar y desarrollar un lenguaje femenino absente hasta entonces en la literatura. Sugiere que las escritoras tienen que realizar una lucha interior contra el ideal femenino victoriano, ejemplificado en la mujer y madre perfecta."
         }
