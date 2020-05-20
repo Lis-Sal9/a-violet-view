@@ -231,6 +231,10 @@ define config.fast_skipping = True
 default preferences.skip_after_choices = False
 default preferences.skip_unseen = True
 
+## Config rollback limit
+define config.rollback_length = 1000
+define config.hard_rollback_limit = 1000
+
 ## Config the keymap
 init -1 python:
     config.keymap = dict(
