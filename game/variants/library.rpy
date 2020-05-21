@@ -54,6 +54,13 @@ screen library():
                 hovered ShowTransient("hover_library", img="images/library/library_chapter3.png")
                 unhovered Hide("hover_library")
 
+        # Chapter 4
+        if CHAPTERS[5] in game_state.chapters_completed:
+            hotspot (840, 418, 25, 83):
+                clicked Jump("chapter_4")
+                hovered ShowTransient("hover_library", img="images/library/library_chapter4.png")
+                unhovered Hide("hover_library")
+
     ## Quick menu ########################################
     hbox:
         style_prefix "quick"
