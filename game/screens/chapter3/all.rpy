@@ -1,6 +1,6 @@
 
 ## Script for the chapter 3.
-## This chapter explains the feminism between 1990-1990.
+## This chapter explains the feminism between 1900 and 2010.
 
 # Backgrounds
 image train_station_chpt3 = "images/train/train_station_chpt3.png"
