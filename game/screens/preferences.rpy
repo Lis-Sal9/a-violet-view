@@ -40,7 +40,7 @@ screen preferences(from_main_menu = False):
             idle "gui/arrows/return_hover_blue.png"
             hover "gui/arrows/return_brown.png"
             align .03, .94
-            action Return()
+            action [Return(), SetVariable("show_bar_music_volume", False), SetVariable("show_bar_text_speed", False)]
 
         if renpy.variant("pc"):
             text _("Visualització"):
