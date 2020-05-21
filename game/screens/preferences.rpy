@@ -4,13 +4,15 @@
 ############################################################################################
 init -100 python:
     LANGUAGES = ["catalan", "english", "spanish"]
-    current_lang = 0
-
-    if not _preferences.language and _preferences.language == "None":
-        _preferences.language = "catalan"
-        current_lang = LANGUAGES.index(_preferences.language)
-
-
+    def init_language():
+        if _preferences.language is None or _preferences.language is "None":
+            _preferences.language = LANGUAGES[0]
+            return 0
+        else:
+            return LANGUAGES.index(_preferences.language)
+            
+init -10 python:
+    current_lang = init_language()
     def getCurrentLangShort():
         if _preferences.language == "english":
             return "EN"

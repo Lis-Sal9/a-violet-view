@@ -105,9 +105,6 @@ screen main_menu():
     variant "touch"
 
     python:
-        if not _preferences.language:
-            _preferences.language = "catalan"
-
         lang = GetCover()
 
     tag menu
@@ -130,7 +127,7 @@ screen main_menu():
 
         # Preferences
         hotspot (1112, 354, 241, 240):
-            clicked [Hide("hover_main_menu"), ShowMenu("preferences")]
+            clicked [Hide("hover_main_menu"), ShowMenu("preferences", True)]
             hovered ShowTransient("hover_main_menu", img="images/cover/mobile/hover/mobile_hover_preferences_" + str(lang) + ".png")
             unhovered Hide("hover_main_menu")
 

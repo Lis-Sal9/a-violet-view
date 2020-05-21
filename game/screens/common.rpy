@@ -369,9 +369,6 @@ screen hover_main_menu(img):
 
 screen main_menu():
     python:
-        if not _preferences.language:
-            _preferences.language = "catalan"
-
         lang = GetCover()
 
     tag menu
