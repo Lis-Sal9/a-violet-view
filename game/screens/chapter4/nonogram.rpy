@@ -87,15 +87,21 @@ init -10 python:
             remaining_lives = remaining_lives - 1
             set_cell_value(i, j, NONOGRAM_SOLUTION[i][j])
 
-label nonogram_label:
-    $ renpy.choice_for_skipping()
-    $ setIsInSpecialScreen(True)
-    $ init_nonogram()
-    call screen nonogram
-    return
+    def init_all_functions():
+        renpy.choice_for_skipping()
+        setIsInSpecialScreen(True)
+        init_nonogram()
+
+
 
 screen nonogram():
     add Solid("102")
+
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover_blue.png"
+        align .03, .1
+        action Hide("nonogram")
 
     fixed:
         xysize 1440, 1000

@@ -14,13 +14,23 @@
 
 
 label chapter_4:
-    ## Train station scene ######################
+
+
+    play music "audio/music/chapter4.mp3" fadein 0.5
+    call desktop_label
+
+
+
+    return
+
+
+
+label credits:
+
     scene black
 
-    "HITHERE"
-
-    
-    play music "audio/music/chapter4.mp3" fadein 0.5
+    "CAST"
+    "Vanessa Mañas"
 
 
 
