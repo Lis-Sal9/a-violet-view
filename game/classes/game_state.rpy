@@ -34,6 +34,7 @@ init -10 python:
         answer_phone = False
         series_done = False
         serie_with_susan = False
+        published_article = 0
 
 
         def clear(self):
@@ -68,3 +69,4 @@ init -10 python:
             self.answer_phone = False
             self.series_done = False
             self.serie_with_susan = False
+            self.published_article = 0

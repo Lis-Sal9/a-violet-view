@@ -9,8 +9,31 @@ screen femiblog:
         image "images/chapter4/femiblog/femiblog.png":
             align 0.99, 0
 
+        image "images/chapter4/femiblog/nav_tab_selected.png":
+            align .062, 0
+
+        text _("FEMIBLOG"):
+            align .062, 0.002
+            size 30
+            color "#000000"
+
+        imagebutton:
+            idle "images/chapter4/femiblog/nav_tab_idle.png"
+            align .262, 0
+            action [Hide("femiblog"), Show(screen="feminet")]
+
+        text _("FEMINET"):
+            align .242, 0.002
+            size 30
+            color "#455a64"
+
         image "images/chapter4/femiblog/nav_back_disabled.png":
             align .053, .04
+
+        text _("www.femiblog.cat/home"):
+            align .093, .043
+            size 25
+            color "#000000"
 
         imagebutton:
             idle "images/chapter4/femiblog/femiblog_section_idle.png"
@@ -213,6 +236,7 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
             selected_idle "images/chapter4/femiblog/femiblog_section_hover.png"
             selected_hover "images/chapter4/femiblog/femiblog_section_hover.png"
             align .913, .215
+            selected title == "Feministing"
             action [Hide("femiblog"), Show(
             screen="post",
             title="Feministing",
@@ -229,7 +253,10 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
         imagebutton:
             idle "images/chapter4/femiblog/femiblog_section_idle.png"
             hover "images/chapter4/femiblog/femiblog_section_hover.png"
+            selected_idle "images/chapter4/femiblog/femiblog_section_hover.png"
+            selected_hover "images/chapter4/femiblog/femiblog_section_hover.png"
             align .913, .295
+            selected title == "#EverydaySexism"
             action [Hide("femiblog"), Show(
             screen="post",
             title="#EverydaySexism",
@@ -246,7 +273,10 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
         imagebutton:
             idle "images/chapter4/femiblog/femiblog_section_idle.png"
             hover "images/chapter4/femiblog/femiblog_section_hover.png"
+            selected_idle "images/chapter4/femiblog/femiblog_section_hover.png"
+            selected_hover "images/chapter4/femiblog/femiblog_section_hover.png"
             align .913, .375
+            selected title == "#BringBackOurGirls"
             action [Hide("femiblog"), Show(
             screen="post",
             title="#BringBackOurGirls",
@@ -263,7 +293,10 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
         imagebutton:
             idle "images/chapter4/femiblog/femiblog_section_idle.png"
             hover "images/chapter4/femiblog/femiblog_section_hover.png"
+            selected_idle "images/chapter4/femiblog/femiblog_section_hover.png"
+            selected_hover "images/chapter4/femiblog/femiblog_section_hover.png"
             align .913, .455
+            selected title == "The Hunting Ground"
             action [Hide("femiblog"), Show(screen="post", title="The Hunting Ground",
             content_0="The Hunting Ground (2015) és un documental sobre les experiències de dones i persones d’altres gèneres quan informaren de violència sexual en els campus universitaris. La resposta de les autoritats acadèmiques i la policia va consistir en culpar a aquelles persones que havien informat o en demanar que consideressin el futur del perpetrador.",
             image_0="images/chapter4/femiblog/hunting.jpg",

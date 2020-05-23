@@ -80,12 +80,26 @@ init -10 python:
     def set_cell_value(i, j, value):
         nonogram_current[i][j] = value
         check_cell_value(i, j)
+        if check_game_over():
+            renpy.show_screen("nonogram_game_over")
+        elif check_success():
+            renpy.show_screen("nonogram_success")
 
     def check_cell_value(i, j):
         global remaining_lives
         if nonogram_current[i][j] is not NONOGRAM_SOLUTION[i][j]:
             remaining_lives = remaining_lives - 1
-            set_cell_value(i, j, NONOGRAM_SOLUTION[i][j])
+            nonogram_current[i][j] = NONOGRAM_SOLUTION[i][j]
+
+    def check_game_over():
+        return remaining_lives is 0
+
+    def check_success():
+        for i in range(len(nonogram_current)):
+            for j in range(len(nonogram_current[i])):
+                if nonogram_current[i][j] is not 1 and NONOGRAM_SOLUTION[i][j] is 1:
+                    return False
+        return True
 
     def init_all_functions():
         renpy.choice_for_skipping()
@@ -178,3 +192,52 @@ screen nonogram():
                 idle "images/chapter4/nonogram/tile_0_pencil.png"
                 align 0.5, 0.5
                 action SetVariable("pencil", 0)
+
+screen nonogram_game_over():
+    modal True
+    zorder 200
+    style_prefix "confirm"
+    add "gui/overlay/confirm.png"
+
+    frame:
+        has vbox:
+            align .5, .5
+            spacing 20
+
+        text "GAME OVER":
+            color "#ffffff"
+            size 50
+            xalign 0.5
+
+        hbox:
+            textbutton "REINTENTAR":
+                action [Function(init_nonogram), Hide("nonogram_success"), Hide("nonogram_game_over")]
+
+            add Null(width = 170)
+
+            textbutton "SORTIR":
+                action [Hide("nonogram"), Hide("nonogram_success"), Hide("nonogram_game_over")]
+
+            add Null(width = 30)
+
+screen nonogram_success():
+    modal True
+    zorder 200
+    style_prefix "confirm"
+    add "gui/overlay/confirm.png"
+
+    frame:
+        has vbox:
+            align .5, .5
+            spacing 40
+
+        text "FELICITATS!!!\nHas completat el nonograma!":
+            color "#ffffff"
+            size 50
+            xalign 0.5
+            text_align 0.5
+
+        textbutton "SORTIR":
+            ### TODO: donar-li item del glossari ciberfeminisme
+            action [Hide("nonogram"), Hide("nonogram_success"), Hide("nonogram_game_over")]
+            xalign 0.98
