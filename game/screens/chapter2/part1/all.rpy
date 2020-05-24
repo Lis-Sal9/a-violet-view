@@ -162,7 +162,7 @@ label morning:
     unknown_boy "D'acord. Pel camí curt o llarg?"
 
     if game_state.eunuch_is_found:
-        $ GiveGlossaryItemToPlayer(13)
+        $ GiveGlossaryItemToPlayer(15)
     if game_state.vaginal_orgasm_is_found:
         $ GiveGlossaryItemToPlayer(4)
     $ ShowItems()

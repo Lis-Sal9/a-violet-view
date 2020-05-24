@@ -35,6 +35,8 @@ init -10 python:
         series_done = False
         serie_with_susan = False
         published_article = 0
+        eco_is_seen = False
+        killjoy_is_seen = False
 
 
         def clear(self):
@@ -70,3 +72,5 @@ init -10 python:
             self.series_done = False
             self.serie_with_susan = False
             self.published_article = 0
+            self.eco_is_seen = False
+            self.killjoy_is_seen = False

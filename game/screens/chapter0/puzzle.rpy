@@ -97,7 +97,7 @@ label puzzle_done:
 
     user "Ho he aconseguit!!!"
 
-    $ GiveGlossaryItemToPlayer(17)
+    $ GiveGlossaryItemToPlayer(19)
     $ ShowItems()
 
     hide bg_puzzle

@@ -90,7 +90,7 @@ label ibonne_street:
     p_ibonne "Efectivament. De fet, ara som de camí a la botiga de roba. Vol un vestit per estrenar demà a l'escola, i també m'ha demanat fer-li dues cuetes. Està molt emocionada."
     p_ibonne "A més a més, venim de comprar el Bikini Kill Zine 2 i està impacient per llegir-la. N'hem comprat dues, tingui una."
 
-    $ GiveGlossaryItemToPlayer(32)
+    $ GiveGlossaryItemToPlayer(35)
 
     "Ibonne li va donar la revista a [tmpSavePlayer], que la va fullejar i es va trobar amb una sèrie matemàtica una mica peculiar."
 
@@ -126,7 +126,7 @@ label tomorrow_morning:
     stop music fadeout 0.5
     play music "audio/sound/ring.mp3" fadein 0.5
 
-    $ GiveGlossaryItemToPlayer(32)
+    $ GiveGlossaryItemToPlayer(35)
     menu:
         "Agafes el telèfon":
             stop music fadeout 0.5
@@ -218,7 +218,7 @@ label drag_musical_morning:
     "Al cap de deu minuts ..."
     user "Ostres, ja hi tornem a ser amb la publicitat enganyosa sobre la bellesa ..."
 
-    $ GiveGlossaryItemToPlayer(27)
+    $ GiveGlossaryItemToPlayer(30)
 
     "A la parada de l'autobús, hi havia una fotografia d'una noia vestida amb llenceria fina."
     "L'autobús acabava d'arribar i [tmpSavePlayer] pujà."
@@ -315,7 +315,7 @@ label wfwi_foundation:
     zainab_salbi "Bé, ves a donar una volta per aquí, que a mi m'ha entrat una brosseta a l'ull."
     "Digué Zainab mentre s'eixugava una petita llàgrima que queia per la seva galta. I es retirà."
 
-    $ GiveGlossaryItemToPlayer(27)
+    $ GiveGlossaryItemToPlayer(30)
 
     menu:
         "Tant de disgust t'ha fet entrar gana":
@@ -378,7 +378,7 @@ label wfwi_foundation:
                     susan_faludi "Si et sembla bé, et trucaré per fer un cafè un dia d'aquests i parlem més tranquil·lament. Ara me'n he d'anar."
 
                     $ game_state.serie_with_susan = True
-                    $ GiveGlossaryItemToPlayer(37)
+                    $ GiveGlossaryItemToPlayer(41)
 
                     user "Perfecte, Susan. Quedem així doncs."
                     scene street_chpt3
@@ -543,7 +543,7 @@ label susan_calling:
             susan_faludi "Si et sembla bé, et trucaré per fer un cafè un dia d'aquests i parlem més tranquil·lament. Ara me'n he d'anar cap a casa."
 
             $ game_state.serie_with_susan = False
-            $ GiveGlossaryItemToPlayer(37)
+            $ GiveGlossaryItemToPlayer(41)
 
             user "Perfecte, Susan. Quedem així doncs."
             "I, amb un comiat efusiu, Susan i [tmpSavePlayer] tornaven cadascú a les seves respectives cases passejant."

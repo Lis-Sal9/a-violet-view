@@ -1,6 +1,12 @@
 
+## This script is for Femiblog in chapter 4.
 
 
+init -1 python:
+    def checkIfEcoIsSeen():
+        global game_state
+        if not game_state.eco_is_seen:
+            game_state.eco_is_seen = True
 
 screen femiblog:
 
@@ -102,6 +108,22 @@ screen femiblog:
         text _("{i}The Hunting Ground{/i}"):
             align .913, .455
             size 35
+            color "#ffffff"
+
+        if not game_state.eco_is_seen:
+            imagebutton:
+                align .913, .85
+                idle "images/chapter4/femiblog/eco_friendly.png"
+                hover "images/chapter4/femiblog/eco_friendly_hover.png"
+                action [Function(GiveGlossaryItemToPlayer,12), Function(ShowItems), Function(checkIfEcoIsSeen)]
+        else:
+            image "images/chapter4/femiblog/eco_friendly.png":
+                align .913, .85
+
+        text _("Recolza la causa"):
+            size 50
+            align .85, .6
+            xsize 170
             color "#ffffff"
 
         imagebutton:
@@ -265,7 +287,7 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
             selected_idle "images/chapter4/femiblog/femiblog_section_hover.png"
             selected_hover "images/chapter4/femiblog/femiblog_section_hover.png"
             align .913, .215
-            selected title == "Feministing"
+            selected title == "{i}Feministing{/i}"
             action [Hide("femiblog"), Show(
             screen="post",
             title="{i}Feministing{/i}",
@@ -286,7 +308,7 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
             selected_idle "images/chapter4/femiblog/femiblog_section_hover.png"
             selected_hover "images/chapter4/femiblog/femiblog_section_hover.png"
             align .913, .295
-            selected title == "#EverydaySexism"
+            selected title == "{i}#EverydaySexism{/i}"
             action [Hide("femiblog"), Show(
             screen="post",
             title="{i}#EverydaySexism{/i}",
@@ -307,7 +329,7 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
             selected_idle "images/chapter4/femiblog/femiblog_section_hover.png"
             selected_hover "images/chapter4/femiblog/femiblog_section_hover.png"
             align .913, .375
-            selected title == "#BringBackOurGirls"
+            selected title == "{i}#BringBackOurGirls{/i}"
             action [Hide("femiblog"), Show(
             screen="post",
             title="{i}#BringBackOurGirls{/i}",
@@ -328,7 +350,7 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
             selected_idle "images/chapter4/femiblog/femiblog_section_hover.png"
             selected_hover "images/chapter4/femiblog/femiblog_section_hover.png"
             align .913, .455
-            selected title == "The Hunting Ground"
+            selected title == "{i}The Hunting Ground{/i}"
             action [Hide("femiblog"), Show(screen="post", title="{i}The Hunting Ground{/i}",
             content_0="{i}The Hunting Ground{/i} (2015) és un documental sobre les experiències de dones i persones d’altres gèneres quan informaren de violència sexual en els campus universitaris. La resposta de les autoritats acadèmiques i la policia va consistir en culpar a aquelles persones que havien informat o en demanar que consideressin el futur del perpetrador.",
             image_0="images/chapter4/femiblog/hunting.jpg",
@@ -338,4 +360,20 @@ screen post(title="", content_0="", content_1="", image_0="", image_1="", x_0=10
         text _("{i}The Hunting Ground{/i}"):
             align .913, .455
             size 35
+            color "#ffffff"
+
+        if not game_state.eco_is_seen:
+            imagebutton:
+                align .913, .85
+                idle "images/chapter4/femiblog/eco_friendly.png"
+                hover "images/chapter4/femiblog/eco_friendly_hover.png"
+                action [Function(GiveGlossaryItemToPlayer,12), Function(ShowItems), Function(checkIfEcoIsSeen)]
+        else:
+            image "images/chapter4/femiblog/eco_friendly.png":
+                align .913, .85
+
+        text _("Recolza la causa"):
+            size 50
+            align .85, .6
+            xsize 170
             color "#ffffff"

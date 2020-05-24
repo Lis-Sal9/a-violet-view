@@ -238,6 +238,5 @@ screen nonogram_success():
             text_align 0.5
 
         textbutton "SORTIR":
-            ### TODO: donar-li item del glossari ciberfeminisme
-            action [Hide("nonogram"), Hide("nonogram_success"), Hide("nonogram_game_over")]
+            action [Hide("nonogram"), Hide("nonogram_success"), Hide("nonogram_game_over"), Function(GiveGlossaryItemToPlayer,6), Function(ShowItems)]
             xalign 0.98

@@ -5,7 +5,7 @@
 init python:
     def addEunuch():
         game_state.eunuch_is_found = True
-        GiveGlossaryItemToPlayer(13)
+        GiveGlossaryItemToPlayer(15)
         ShowItems()
 
 

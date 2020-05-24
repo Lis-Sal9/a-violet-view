@@ -89,7 +89,7 @@ label chapter_0:
         user "No m'ho puc creure! Jo també hi vaig! Quina casualitat!"
         "Però aquella trobada no era tan fortuïta com aparentment semblava ..."
 
-        $ GiveGlossaryItemToPlayer(22)
+        $ GiveGlossaryItemToPlayer(25)
         $ ShowItems()
 
         "De camí al saló, varen estar parlant de les seves inquietuds, de les seves vivències en aquest temps separades ... "
@@ -114,7 +114,7 @@ label chapter_0:
         scene salon_discussion
         elizabeth_montagu "Benvolgudes a un nou capítol dels {i}Bluestockings{/i}."
 
-        $ GiveGlossaryItemToPlayer(11)
+        $ GiveGlossaryItemToPlayer(13)
         $ ShowItems()
 
         elizabeth_montagu "Aquesta vegada, reflexionarem plegats sobre les poetes escandinaves més rellevants i sobre les seves idees."
@@ -123,7 +123,7 @@ label chapter_0:
         unknown_girl "I no només això, recordem que creia fermament que la dona era intel·lectualment equivalent a l'home."
         unknown_girl "Equivalent en això i en tot, menys en l'aparença física!"
 
-        $ GiveGlossaryItemToPlayer(35)
+        $ GiveGlossaryItemToPlayer(39)
         $ ShowItems()
 
         unknown_boy "Teniu raó, però i què me'n diuen de Charlotta Nordenflycht? Forta, rebel i lliure, fins i tot signava els seus escrits amb el seu nom!!"
@@ -133,7 +133,7 @@ label chapter_0:
         unknown_girl "Doncs no la coneixia, fins ara ... "
         "Va contestar la mateixa noia de la sala ..."
 
-        $ GiveGlossaryItemToPlayer(15)
+        $ GiveGlossaryItemToPlayer(17)
         $ ShowItems()
 
         if game_state.astell_is_nice:
@@ -157,7 +157,7 @@ label chapter_0:
             unknown_girl "Ben fet, home! Hem de començar a ser fortes, valentes i lliures des de ben petites!!!"
             "Va cridar una noia a ple pulmó ..."
 
-        $ GiveGlossaryItemToPlayer(6)
+        $ GiveGlossaryItemToPlayer(7)
         $ ShowItems()
 
         elizabeth_montagu "Calmem-nos tots una mica. Teniu raó en tot allò que s'està debatint en aquesta sala."
@@ -172,12 +172,12 @@ label chapter_0:
             "[tmpSavePlayer] passejava pel saló, quan va trobar una sala d'arts i ..."
 
         if game_state.astell_is_nice:
-            $ GiveGlossaryItemToPlayer(22)
+            $ GiveGlossaryItemToPlayer(25)
 
-        $ GiveGlossaryItemToPlayer(11)
-        $ GiveGlossaryItemToPlayer(35)
-        $ GiveGlossaryItemToPlayer(15)
-        $ GiveGlossaryItemToPlayer(6)
+        $ GiveGlossaryItemToPlayer(13)
+        $ GiveGlossaryItemToPlayer(39)
+        $ GiveGlossaryItemToPlayer(17)
+        $ GiveGlossaryItemToPlayer(7)
         $ ShowItems()
 
 
@@ -239,7 +239,7 @@ label chapter_0:
         "I amb un somriure i una salutació d'adéu, [tmpSavePlayer] va deixant enrere de les seves passes a les dues Mary. Eren una parella peculiar."
 
         $ game_state.wollstonecraft_is_seen = True
-        $ GiveGlossaryItemToPlayer(23)
+        $ GiveGlossaryItemToPlayer(26)
         $ ShowItems()
 
         call editorial
@@ -255,14 +255,14 @@ label chapter_0:
         "I, mentre [tmpSavePlayer] es fon en els seus pensaments, gairebé es passa la seva propera parada."
         "{i}La Tribune des femmes{/i}."
 
-        $ GiveGlossaryItemToPlayer(18)
+        $ GiveGlossaryItemToPlayer(20)
         $ ShowItems()
 
         scene editorial
         "[tmpSavePlayer] acabava d'arribar a l'editorial."
         "La senyora Voilquin, com de costum, estava posant ordre. Era meticulosa amb la feina i volia que tot sortís a la perfecció."
 
-        $ GiveGlossaryItemToPlayer(38)
+        $ GiveGlossaryItemToPlayer(42)
         $ ShowItems()
 
         suzanne_voilquin "Bon dia, [tmpSavePlayer]. Ara mateix estava dient a les teves companyes que en breu tindrem una reunió plegades sobre el nostre nou projecte."
@@ -272,10 +272,10 @@ label chapter_0:
         suzanne_voilquin "Es tracta d'una investigació sobre l'educació de les dones, concretament de les {i}jajis{/i}."
 
         if game_state.wollstonecraft_is_seen:
-            $ GiveGlossaryItemToPlayer(23)
+            $ GiveGlossaryItemToPlayer(26)
 
-        $ GiveGlossaryItemToPlayer(18)
-        $ GiveGlossaryItemToPlayer(38)
+        $ GiveGlossaryItemToPlayer(20)
+        $ GiveGlossaryItemToPlayer(42)
         $ ShowItems()
 
         menu:
@@ -289,7 +289,7 @@ label chapter_0:
                 "El que ningú sabia és que fos tan rellevant per a la seva vida futura allò que estava a punt de viure ... "
 
         if game_state.asmau_is_seen:
-            $ GiveGlossaryItemToPlayer(26)
+            $ GiveGlossaryItemToPlayer(29)
             $ ShowItems()
 
         call train
@@ -318,7 +318,7 @@ label chapter_0:
         suzanne_voilquin "Avui dia, el llegat d'aquesta magnífica dona perviu a Nigèria i, a més a més, és un recordatori de l'anterior mandat de l'islam."
 
         $ game_state.asmau_is_seen = True
-        $ GiveGlossaryItemToPlayer(26)
+        $ GiveGlossaryItemToPlayer(29)
         $ ShowItems()
 
         scene editorial

@@ -16,7 +16,7 @@ label cr_session:
     "La moderadora va assenyalar on podia seure i immediatament després, va començar la sessió."
     unknown_girl "Benvingudes a totes les persones assistents. Novament, avui sumem una sessió més del grup d'autoconsciència."
 
-    $ GiveGlossaryItemToPlayer(8)
+    $ GiveGlossaryItemToPlayer(9)
     $ ShowItems()
 
     unknown_girl "Per les noves incorporacions, jo em dic Adrienne Rich i seré la moderadora del grup durant el transcurs del mateix."
@@ -47,7 +47,7 @@ label cr_session:
     p_alicia "Qualsevol dels sistemes d'opressió, discriminació i/o dominació actuen interrelacionats i suposen identitats socials solapades.."
     p_alicia "És a dir, la interseccionalitat és un risc múltiple, ja que el sexisme s'agreuja en combinació amb el racisme i altres opressions, com la classe."
 
-    $ GiveGlossaryItemToPlayer(16)
+    $ GiveGlossaryItemToPlayer(18)
     $ ShowItems()
 
     user "Sí. De fet, les feministes negres i de classe treballadora denuncien el racisme i els prejudicis subjacents a la germanor del feminisme."
@@ -74,9 +74,9 @@ label cr_session:
     user "La violació en l'esclavitud era la manera rutinària dels propietaris de les esclaves per atemorir-les i recordar als esclaus negres que no podien protegir-les."
     p_lynn "Però la violació no està motivada per la luxúria?"
 
-    $ GiveGlossaryItemToPlayer(8)
+    $ GiveGlossaryItemToPlayer(9)
     $ GiveGlossaryItemToPlayer(0)
-    $ GiveGlossaryItemToPlayer(16)
+    $ GiveGlossaryItemToPlayer(18)
     $ GiveGlossaryItemToPlayer(2)
     $ GiveGlossaryItemToPlayer(3)
     $ ShowItems()
@@ -105,7 +105,7 @@ label cr_session:
     p_gloria "I, per combatre-la, les dones indígenes s'impliquen més en la lluita ètnica i criden l'atenció en qüestions respectives de les dones, vinculant així l'autonomia femenina i l'ètnia."
     p_gloria "Però la realitat és molt més crua. Moltes varen ser esterilitzades forçosament, desaparegudes i, fins i tot, assassinades."
 
-    $ GiveGlossaryItemToPlayer(30)
+    $ GiveGlossaryItemToPlayer(33)
     $ ShowItems()
 
     user "Cada vegada resulta més necessari el recolzament pràctic i emocional als grups de dones de comunitats amb major risc per erradicar la violació dels drets humans."
@@ -117,7 +117,7 @@ label cr_session:
     adrienne_rich "Gràcies per compartir-ho amb nosaltres, Houda. És que, fins i tot, es pot dir que els matrimonis forçats estan vinculats al tràfic d'éssers humans. I això és més que sèrio."
     adrienne_rich "Per això, com a dones, hem de cedir a allò que l'home ens digui, faci o ens faci fer, independentment de la nostra voluntat i/o consentiment?"
 
-    $ GiveGlossaryItemToPlayer(30)
+    $ GiveGlossaryItemToPlayer(33)
     $ ShowItems()
 
     call no_is_yes

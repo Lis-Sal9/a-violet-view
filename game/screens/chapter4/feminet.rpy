@@ -2,6 +2,13 @@
 ## This script is for Feminet in chapter 4.
 
 
+init -1 python:
+    def checkIfKilljoyIsSeen():
+        global game_state
+        if not game_state.killjoy_is_seen:
+            game_state.killjoy_is_seen = True
+
+
 init -10 python:
     def publishArticle(id):
         global game_state
@@ -247,11 +254,13 @@ screen feminet:
                 hbox:
                     spacing 0
 
-                    imagebutton:
-                        idle Frame("images/chapter4/feminet/killjoy.png", xysize=[800, 500])
-                        hover Frame("images/chapter4/feminet/killjoy_hover.png", xysize=[800, 500])
-                        # Afegir item glossari Killjoy
-                        action NullAction()
+                    if not game_state.killjoy_is_seen:
+                        imagebutton:
+                            idle Frame("images/chapter4/feminet/killjoy.png", xysize=[800, 500])
+                            hover Frame("images/chapter4/feminet/killjoy_hover.png", xysize=[800, 500])
+                            action [Function(GiveGlossaryItemToPlayer, 36), Function(ShowItems), Function(checkIfKilljoyIsSeen)]
+                    else:
+                        image Frame("images/chapter4/feminet/killjoy.png", xysize=[800, 500])
 
                     text _("Tens novi?"):
                         size 35
@@ -260,7 +269,6 @@ screen feminet:
                         color "#000000"
                         xysize 150, 250
                         line_spacing -10
-
 
             vbox:
                 spacing 20
@@ -342,8 +350,7 @@ screen post_message:
                 imagebutton:
                     idle "images/chapter4/feminet/social_post_select_border.png"
                     hover "images/chapter4/feminet/social_post_select_border_hover.png"
-                    # Afegir item glossari Slut
-                    action [Function(publishArticle, id=1), Hide("post_message")]
+                    action [Function(publishArticle, id=1), Hide("post_message"), Function(GiveGlossaryItemToPlayer, 23), Function(ShowItems)]
 
                 vbox:
                     xysize 470, 490

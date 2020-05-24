@@ -30,7 +30,7 @@ init -1 python:
 
 
 label series_label:
-    $ GiveGlossaryItemToPlayer(37)
+    $ GiveGlossaryItemToPlayer(41)
     $ renpy.choice_for_skipping()
     $ setIsInSpecialScreen(True)
     $ all_series = []
