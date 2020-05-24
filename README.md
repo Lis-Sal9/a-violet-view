@@ -43,7 +43,7 @@ Once you have a compatible text editor, you can open the project code base by cl
 
 ## Download the latest build
 
-- [Windows](https://drive.google.com/open?id=1xk5bB--dwU1mSS34l-Cg-_T87OQlNmxr)
-- [Android](https://drive.google.com/open?id=18gEvbsS8_43F1RIgXlX0MWaIoVSOlHMX)
-- [Linux](https://drive.google.com/open?id=1ursfNMR2SipGMPVczATStuCS4tPh71zR)
-- [MacOS](https://drive.google.com/open?id=1B3PFouibuAMmjyhs7VlIjnDFir0-UPd_)
+- [Windows](https://drive.google.com/open?id=1loCpA1Lt8ERiWSvMCFT_HICvnz5cUA8r)
+- [Android](https://drive.google.com/open?id=1KdnTU9NK9jgL2rQ6B8Kg-qbybDUr1LDS)
+- [Linux](https://drive.google.com/open?id=1xO3szO5rgfe-vm9ErjzOpIId2IOJI-Tr)
+- [MacOS](https://drive.google.com/open?id=1RJgf8SWOeJp-2KdLUjCzh_6vJvm3lZ33)
