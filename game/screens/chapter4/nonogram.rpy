@@ -165,7 +165,7 @@ screen nonogram():
 
         add Null(height = 250)
 
-        text _("LLÀPIS"):
+        text _("LLAPIS"):
             color "EEE"
             xalign 0.5
 
