@@ -36,7 +36,21 @@ screen feminet:
         imagebutton:
             idle "images/chapter4/femiblog/nav_tab_idle.png"
             align .062, 0
-            action [Hide("feminet"), Show(screen="femiblog")]
+            action [Hide("feminet"),
+                If(femiblog_post_active,
+                    true = [SetVariable("femiblog_post_active", True), Show(
+                        screen = "post",
+                        title = femiblog_post_last_title,
+                        content_0 = femiblog_post_last_content_0,
+                        content_1 = femiblog_post_last_content_1,
+                        image_0 = femiblog_post_last_image_0,
+                        image_1 = femiblog_post_last_image_1,
+                        x_0 = femiblog_post_last_xsize_0,
+                        y_0 = femiblog_post_last_ysize_0,
+                        x_1 = femiblog_post_last_xsize_1,
+                        y_1 = femiblog_post_last_ysize_1,
+                        path = femiblog_post_last_path)],
+                    false = Show(screen="femiblog"))]
 
         text _("FEMIBLOG"):
             align .062, 0.002
