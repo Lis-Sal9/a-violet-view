@@ -3,25 +3,24 @@
 
 
 init -10 python:
-    chimamanda_movie = ""
-
     def publishArticle(id):
         global game_state
         game_state.published_article = id
 
-    def initVideo():
-        global chimamanda_movie
+    def get_chimamanda_video_path():
         if _preferences.language == "english":
-            chimamanda_movie = Movie(play="video/chimamanda_en.mkv")
+            return "video/chimamanda_en.ogg"
         elif _preferences.language == "spanish":
-            chimamanda_movie = Movie(play="video/chimamanda_es.mkv")
+            return "video/chimamanda_es.ogg"
         elif _preferences.language == "catalan":
-            chimamanda_movie = Movie(play="video/chimamanda_ca.mkv")
+            return "video/chimamanda_ca.ogg"
 
+
+define chimamanda_video_path = get_chimamanda_video_path()
+define is_chimamanda_video_playing = False
 
 
 screen feminet:
-
     fixed:
         align .5, .5
         image "images/chapter4/feminet/social_base.png":
@@ -232,7 +231,7 @@ screen feminet:
                 imagebutton:
                     idle Frame("images/chapter4/feminet/social_video.png", xysize=[900, 500])
                     hover Frame("images/chapter4/feminet/social_video_hover.png", xysize=[900, 500])
-                    action Function(initVideo)
+                    action [Hide("feminet"), Call("show_movie")]
 
             vbox:
                 spacing 20
@@ -306,6 +305,13 @@ screen feminet:
         value YScrollValue("vp")
         align .97, .75
         ysize 750
+
+
+label show_movie:
+    $ renpy.movie_cutscene(chimamanda_video_path)
+    show screen desktop
+    call screen feminet
+    return
 
 
 
