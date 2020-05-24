@@ -1,5 +1,5 @@
 
-## This script is for femiblog screen.
+## This script is for desktop screen.
 
 
 
@@ -16,11 +16,16 @@ define is_browser_visible = False
 
 screen desktop:
     add "images/chapter4/desktop/desktop_bg.png"
+
     imagebutton:
         idle "images/chapter4/desktop/off_icon.png"
-        hover "images/chapter4/desktop/off_icon_hover.png"
+        if renpy.variant("pc"):
+            hover "images/chapter4/desktop/off_icon_hover.png"
+        else:
+            hover "images/chapter4/desktop/off_icon.png"
         align 0, 0
         action [Hide("desktop"), Hide("femiblog"), Hide("post"), Hide("feminet"), Hide("post_message"), Jump("credits")]
+
     imagebutton:
         idle "images/chapter4/desktop/browser_icon.png"
         hover "images/chapter4/desktop/browser_icon_hover.png"
@@ -29,6 +34,7 @@ screen desktop:
         selected is_browser_visible
         align 0, .16
         action [SetVariable("is_browser_visible", True), Show(screen="femiblog")]
+
     imagebutton:
         idle "images/chapter4/desktop/ciberfeminism_icon.png"
         hover "images/chapter4/desktop/ciberfeminism_icon_hover.png"
