@@ -9,18 +9,10 @@ label chapter_4:
     return
 
 
-init -1 python:
-    def getCredits():
-        if _preferences.language == "english":
-            return "images/chapter4/title_credits/title_credits_en.png"
-        elif _preferences.language == "spanish":
-            return "images/chapter4/title_credits/title_credits_es.png"
-        elif _preferences.language == "catalan":
-            return "images/chapter4/title_credits/title_credits_ca.png"
-
-
 label credits:
-    image title_credits = getCredits()
+    image title_credits_ca = "images/chapter4/title_credits/title_credits_ca.png"
+    image title_credits_en = "images/chapter4/title_credits/title_credits_en.png"
+    image title_credits_es = "images/chapter4/title_credits/title_credits_es.png"
 
     stop music fadeout .5
     scene black
@@ -29,9 +21,14 @@ label credits:
         xalign 0.05 ypos 1200
         linear 45.0 ypos -5000 xalign 0.85
 
-    show title_credits at falling
-    call screen hold_screen(45)
+    if _preferences.language == "catalan":
+        show title_credits_ca at falling
+    elif _preferences.language == "english":
+        show title_credits_en at falling
+    elif _preferences.language == "spanish":
+        show title_credits_es at falling
 
+    call screen hold_screen(45)
     $ renpy.movie_cutscene("video/credits.avi")
 
     $ title = Text(_("CONTINUARÀ ..."), size=100, color="#ffffff")
