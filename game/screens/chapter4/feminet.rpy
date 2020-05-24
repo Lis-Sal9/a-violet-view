@@ -75,61 +75,97 @@ screen feminet:
         yinitial 0
 
         vbox:
-            spacing 40
+            spacing 70
             xsize 950
 
-            hbox:
-                spacing 20
-                image Frame("images/chapter4/feminet/social_user_avatar.png", xysize=[60,60])
+            vbox:
+                spacing 40
 
-                text _("@chimangoadichie_fan"):
-                    size 50
+                hbox:
+                    spacing 20
+                    image Frame("images/chapter4/feminet/social_user_avatar.png", xysize=[60,60])
+
+                    text _("@chimangoadichie_fan"):
+                        size 50
+                        color "#ffffff"
+
+                text _("{i}Tothom hauria de ser feminista{/i} (2012), de Chimamanda Ngozi Adichie."):
+                    size 30
                     color "#ffffff"
+                    xsize 930
 
-            text _("{i}Tothom hauria de ser feminista{/i} (2012), de Chimamanda Ngozi Adichie."):
-                size 30
-                color "#ffffff"
-                xsize 930
+                imagebutton:
+                    idle Frame("images/chapter4/feminet/social_video.png", xysize=[900, 500])
+                    hover Frame("images/chapter4/feminet/social_video_hover.png", xysize=[900, 500])
+                    action Function(initVideo)
 
-            imagebutton:
-                idle Frame("images/chapter4/feminet/social_video.png", xysize=[900, 500])
-                hover Frame("images/chapter4/feminet/social_video_hover.png", xysize=[900, 500])
-                action Function(initVideo)
+            vbox:
+                spacing 40
 
-            hbox:
-                spacing 20
-                image Frame("images/chapter4/feminet/social_user_avatar.png", xysize=[60,60])
+                hbox:
+                    spacing 20
+                    image Frame("images/chapter4/feminet/social_user_avatar.png", xysize=[60,60])
 
-                text _("@sonyareneetaylor_fan"):
-                    size 50
+                    text _("@meme_fan"):
+                        size 50
+                        color "#ffffff"
+
+                hbox:
+                    spacing 0
+
+                    imagebutton:
+                        idle Frame("images/chapter4/feminet/killjoy.png", xysize=[800, 500])
+                        hover Frame("images/chapter4/feminet/killjoy_hover.png", xysize=[800, 500])
+                        # Afegir item glossari Killjoy
+                        action NullAction()
+
+                    text _("Tens novi?"):
+                        size 35
+                        align -0.99, .16
+                        xoffset -370
+                        color "#000000"
+                        xysize 150, 250
+                        line_spacing -10
+
+
+            vbox:
+                spacing 40
+
+                hbox:
+                    spacing 20
+                    image Frame("images/chapter4/feminet/social_user_avatar.png", xysize=[60,60])
+
+                    text _("@sonyareneetaylor_fan"):
+                        size 50
+                        color "#ffffff"
+
+                text _("Com a feminista negra queer, Sonya Renee Taylor vesteix aquest cosset negre sobre els seus 104 kg per proclamar el seu poder i atractiu. L’empoderament i l’autoestima davant el terrorisme corporal contra les persones marginades ha de ser denunciat! {i}The Body Is Not An Apology{/i}!"):
+                    size 30
                     color "#ffffff"
+                    xsize 930
 
-            text _("Com a feminista negra queer, Sonya Renee Taylor vesteix aquest cosset negre sobre els seus 104 kg per proclamar el seu poder i atractiu. L’empoderament i l’autoestima davant el terrorisme corporal contra les persones marginades ha de ser denunciat! {i}The Body Is Not An Apology{/i}!"):
-                size 30
-                color "#ffffff"
-                xsize 930
+                image Frame("images/chapter4/feminet/sonya_renee_taylor.jpg", xysize=[450, 300])
 
-            image Frame("images/chapter4/feminet/sonya_renee_taylor.jpg", xysize=[450, 300])
+            vbox:
+                spacing 40
 
-            hbox:
-                spacing 20
-                image Frame("images/chapter4/feminet/social_user_avatar.png", xysize=[60,60])
+                hbox:
+                    spacing 20
+                    image Frame("images/chapter4/feminet/social_user_avatar.png", xysize=[60,60])
 
-                text _("@niunamenos_help"):
-                    size 50
+                    text _("@niunamenos_help"):
+                        size 50
+                        color "#ffffff"
+
+                text _("La violència contra les dones no és una simple qüestió d’homes individuals, sinó d’estructures de poder més àmplies que normalitzen el menyspreu d’homes cap a dones, i els assassinats són el cas més extrem. Protesta contra el feminicidi i la inacció policial al respecte. Ja n’hi ha prou d’assassinar a les persones pel seu gènere!! Nos queremos vivas, libres y sin miedo!! Ni una menos!!"):
+                    size 30
                     color "#ffffff"
+                    xsize 930
 
-            text _("La violència contra les dones no és una simple qüestió d’homes individuals, sinó d’estructures de poder més àmplies que normalitzen el menyspreu d’homes cap a dones, i els assassinats són el cas més extrem. Protesta contra el feminicidi i la inacció policial al respecte. Ja n’hi ha prou d’assassinar a les persones pel seu gènere!! Nos queremos vivas, libres y sin miedo!! Ni una menos!!"):
-                size 30
-                color "#ffffff"
-                xsize 930
-
-            hbox:
-                spacing 20
-                image Frame("images/chapter4/feminet/niunamenos_1.jpg", xysize=[450, 300])
-                image Frame("images/chapter4/feminet/niunamenos_2.jpg", xysize=[450, 300])
-
-
+                hbox:
+                    spacing 20
+                    image Frame("images/chapter4/feminet/niunamenos_1.jpg", xysize=[450, 300])
+                    image Frame("images/chapter4/feminet/niunamenos_2.jpg", xysize=[450, 300])
 
     vbar:
         value YScrollValue("vp")

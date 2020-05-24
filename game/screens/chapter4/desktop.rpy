@@ -12,23 +12,23 @@ label desktop_label:
     return
 
 
+define is_browser_visible = False
+
 screen desktop:
     add "images/chapter4/desktop/desktop_bg.png"
-
     imagebutton:
         idle "images/chapter4/desktop/off_icon.png"
         hover "images/chapter4/desktop/off_icon_hover.png"
         align 0, 0
-        action [Hide("desktop"), Jump("credits")]
-
+        action [Hide("desktop"), Hide("femiblog"), Hide("post"), Hide("feminet"), Hide("post_message"), Jump("credits")]
     imagebutton:
         idle "images/chapter4/desktop/browser_icon.png"
         hover "images/chapter4/desktop/browser_icon_hover.png"
         selected_idle "images/chapter4/desktop/browser_icon_hover.png"
         selected_hover "images/chapter4/desktop/browser_icon_hover.png"
+        selected is_browser_visible
         align 0, .16
-        action Show(screen="femiblog")
-
+        action [SetVariable("is_browser_visible", True), Show(screen="femiblog")]
     imagebutton:
         idle "images/chapter4/desktop/ciberfeminism_icon.png"
         hover "images/chapter4/desktop/ciberfeminism_icon_hover.png"
