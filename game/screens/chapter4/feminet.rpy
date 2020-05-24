@@ -23,7 +23,6 @@ init -10 python:
             return "video/chimamanda_ca.ogg"
 
 
-define chimamanda_video_path = get_chimamanda_video_path()
 define is_chimamanda_video_playing = False
 
 
@@ -330,6 +329,7 @@ screen feminet:
 
 
 label show_movie:
+    $ chimamanda_video_path = get_chimamanda_video_path()
     $ renpy.movie_cutscene(chimamanda_video_path)
     show screen desktop
     call screen feminet
