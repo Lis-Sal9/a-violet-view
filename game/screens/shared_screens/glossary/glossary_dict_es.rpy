@@ -99,7 +99,7 @@ init -10 python:
         23: {
             "name": "Leora Tanenbaum",
             "content": "En {i}Slut! Growing Up Female With a Bad Reputation{/i} (1999), Leora Tanenbaum expone cómo se divide a las víctimas de violencia sexual: en buenas y en malas. Las supervivientes {i}malas{/i} son aquellas acusadas de llevar ropa provocativa, de no haberse resistido suficiente o de ser sexualmente muy activas y, por tanto, no se consideran víctimas."
-        }
+        },
         24: {
             "name": "Margaret Sanger",
             "content": "Hasta que Margaret Sanger no vinculó la emancipación de la mujer con el control de la natalidad, muchas otras feministas eran contrarias a la contracepción, ya que la consideraban una práctica corruptora que animaría a las mujeres a ser sexualmente más activas y daría a los hombres una libertad sexual sin límites dentro y fuera del matrimonio. Desafiando la {i}Ley Comstock{/i} ({i}Comstock laws{/i}), que calificaba como inmoral la difusión de información sobre métodos anticonceptivos, escribió artículos explícitos sobre sexo y contracepción para mujeres, y realizó giras de conferencias a las cuales asistieron a menudo mujeres de clase trabajadora. La iglésia católica se opuso al uso de estos métodos y, aunque en la década de 1930 empezara a ser socialmente más aceptado, sólo lo era para las mujeres casadas. No fue hasta 1960 con el movimiento de demanda de derechos reproductivos que las mujeres solteras pudieron usarlos también."
