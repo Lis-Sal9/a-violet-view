@@ -204,18 +204,18 @@ screen nonogram_game_over():
             align .5, .5
             spacing 20
 
-        text "GAME OVER":
+        text _("GAME OVER"):
             color "#ffffff"
             size 50
             xalign 0.5
 
         hbox:
-            textbutton "REINTENTAR":
+            textbutton _("REINTENTAR"):
                 action [Function(init_nonogram), Hide("nonogram_success"), Hide("nonogram_game_over")]
 
             add Null(width = 170)
 
-            textbutton "SORTIR":
+            textbutton _("SORTIR"):
                 action [Hide("nonogram"), Hide("nonogram_success"), Hide("nonogram_game_over")]
 
             add Null(width = 30)
@@ -231,12 +231,12 @@ screen nonogram_success():
             align .5, .5
             spacing 40
 
-        text "FELICITATS!!!\nHas completat el nonograma!":
+        text _("FELICITATS!!!\nHas completat el nonograma!"):
             color "#ffffff"
             size 50
             xalign 0.5
             text_align 0.5
 
-        textbutton "SORTIR":
+        textbutton _("SORTIR"):
             action [Hide("nonogram"), Hide("nonogram_success"), Hide("nonogram_game_over"), Function(GiveGlossaryItemToPlayer,6), Function(ShowItems)]
             xalign 0.98
