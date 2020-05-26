@@ -27,6 +27,7 @@ define p_ibonne = Character("Ibonne", color="#ff8a50")
 
 
 label chapter_2b:
+    call new_day
     ## Train station scene ######################
     scene train_station_chpt2b
     play music "audio/sound/train_station.mp3" fadein 0.5

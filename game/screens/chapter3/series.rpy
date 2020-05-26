@@ -120,6 +120,8 @@ label series_result:
     susan_faludi "He d'anar a Hongria a veure'l. Sigui com sigui."
     user "Segur? Estàs molt afectada ..."
     susan_faludi "Doncs vine amb mi si tant et preocupa."
+    call other_day
+    call new_day
     "I així va ser com Susan i [tmpSavePlayer] varen trobar-se l'endemà per emprendre camí cap a Hongria."
 
     call train

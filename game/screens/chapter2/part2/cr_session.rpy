@@ -142,6 +142,7 @@ label cr_session:
     adrienne_rich "I, amb la consigna 'Accepta i respecta' ens acomiadem de la sessió d'avui."
 
     call rate_options
+    call other_day
     call end_chapter(CHAPTERS[3])
 
     return

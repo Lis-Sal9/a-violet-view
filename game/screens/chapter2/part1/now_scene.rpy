@@ -102,6 +102,7 @@ label now_scene:
 
     "Així, [tmpSavePlayer] decidí marxar de la sala amb la revista en mà. Ja tenia un entreteniment més pel viatge."
 
+    call other_day
     call end_chapter(CHAPTERS[2])
 
     return

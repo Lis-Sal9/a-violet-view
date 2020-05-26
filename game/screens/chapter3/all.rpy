@@ -47,6 +47,7 @@ define alicia_miyares = Character("Alicia Miyares", color="#757575")
 
 
 label chapter_3:
+    call new_day
     ## Train station scene ######################
     scene train_station_chpt3
     play music "audio/sound/train_station.mp3" fadein 0.5
@@ -109,9 +110,10 @@ label ibonne_street:
 
 
 label tomorrow_morning:
-    scene living_room
-    "..."
+    call other_day
+    call new_day
     "Un nou dia havia començat."
+    scene living_room
     "Mentre [tmpSavePlayer] esmorzava, llegia el diari."
     "{i}Rebecca Walker publica 'Becoming the Third Wave' en la revista 'Ms.', després de la confirmació a formar part de la Cort Suprema del jutge Clarence Thomas, acusat d'assetjar sexualment a l'advocada Anita Hill.{i}"
     "{i}L'autora manifesta que la tercera onada del feminisme, una era postfeminista, ja ha començat.{/i}"
@@ -404,6 +406,8 @@ label go_to_concert:
     scene living_room
     user "Quina raó tenia la petita Ivanna. Aquest grup és fantàstic!"
     "[tmpSavePlayer] s'havia aficionat a escoltar Bikini Kill. Tant era així, que va decidir que agafaria un tren per anar a veure-les cantar en directe a la província del costat."
+    call other_day
+    call new_day
     "I, així va ser com dies després, anà a l'estació de tren."
 
     call train

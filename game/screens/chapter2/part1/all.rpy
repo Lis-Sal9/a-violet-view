@@ -32,6 +32,7 @@ define kate_millet = Character("Kate Millet", color="#8bc34a")
 
 
 label chapter_2a:
+    call new_day
     ## Train station scene ######################
     scene train_station_chpt2a
     play music "audio/sound/train_station.mp3" fadein 0.5
@@ -145,7 +146,8 @@ label hostel:
 
 ## Next morning scene ######################
 label morning:
-    "..."
+    call other_day
+    call new_day
     "[tmpSavePlayer] es despertà. Ja era de dia."
 
     if game_state.pizzey_is_seen:

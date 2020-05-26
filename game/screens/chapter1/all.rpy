@@ -38,6 +38,7 @@ define lucy_stone = Character("Lucy Stone", color="#03a9f4")
 
 
 label chapter_1:
+    call new_day
     ## Train station scene ######################
     scene train_station
     play music "audio/sound/train_station.mp3" fadein 0.5
@@ -303,5 +304,6 @@ label return_to_train_station:
     scene train_station
     "Acabat el test, el tren ja era a l'andana. Marxaria en breu."
     call train
+    call other_day
     call end_chapter(CHAPTERS[1])
     return

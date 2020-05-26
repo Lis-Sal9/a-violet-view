@@ -8,6 +8,7 @@ image street_studio = "images/chapter2/part_final/street.png"
 
 ## Final enigma scene ######################
 label chapter_2c:
+    call new_day
     call moving_car
     call art_studio
 
@@ -69,6 +70,7 @@ label see_dinner_party:
     "[tmpSavePlayer] havia de tornar a l'estació. Va decidir fer-ho caminant, ja que volia reflexionar sobre tot el què havia viscut recentment. Molta informació i moltes emocions de cop."
 
     call train
+    call other_day
     call end_chapter(CHAPTERS[4])
 
     return

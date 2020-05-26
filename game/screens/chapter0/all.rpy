@@ -20,6 +20,7 @@ define elizabeth_montagu = Character("Elizabeth Montagu", color="#4db6ac")
 
 
 label chapter_0:
+    call new_day
     play music "audio/music/chapter0.mp3" fadein 0.5
 
     ## Room scene ######################
@@ -292,6 +293,8 @@ label chapter_0:
             $ GiveGlossaryItemToPlayer(29)
             $ ShowItems()
 
+        call other_day
+        call new_day
         call train
         call end_chapter(CHAPTERS[0])
         return
