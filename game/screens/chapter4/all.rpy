@@ -29,9 +29,19 @@ label credits:
         show title_credits_es at falling
 
     call screen hold_screen(45)
+
+    $ phrase = Text(_("TOTHOM HAURIA DE SER FEMINISTA"), size=120, color="#ffffff")
+
+    scene black
+    show text phrase at truecenter
+    with fade
+    call screen hold_screen(2)
+    hide text
+    with dissolve
+
     $ renpy.movie_cutscene("video/credits.avi")
 
-    $ title = Text(_("CONTINUARÀ ..."), size=100, color="#ffffff")
+    $ title = Text(_("CONTINUARÀ ..."), size=120, color="#ffffff")
 
     stop music fadeout .5
     scene black
