@@ -167,16 +167,22 @@ label drag_musical_morning:
 
     scene serie2
 
-    scene drag_musical_inside
+    call curtain_up_inside
+
     "Una estona més tard, ja amb el teló alçat i les llums apagades ..."
+    scene drag_musical_inside
     julia_serano "Em dic Julia Serrano i sóc una persona transgènere!"
     julia_serano "I us preguntareu per què emfatitzo aquest detall. Doncs bé, perquè vull!"
     julia_serano "Jajaja, és broma, és broma. No se'm despisteu."
     julia_serano "És important perquè avui es parlarà sobre l'absència i la desatenció de les dones trans en el moviment feminista."
     julia_serano "Sobre què significa ser una dona trans en una societat patriarcal i sobre què és una vida trans com a tal."
     julia_serano "Perquè sense el reconeixement de la comunitat trans, de vegades oblidat en el moviment feminista i sempre oblidat en el sistema cisgènere-heteronormatiu i patriarcal, no hi ha justícia."
+
+    call curtain_down_inside
     "El públic aplaudeix mentre l'actriu es retira i el teló s'abaixa per donar pas a la següent escena."
     "S'alça el teló ..."
+    call curtain_up_inside
+
     unknown_actress "Mai seràs una dona!! Fas fàstic!!"
     unknown_actress "Quina aberració!!"
     "Un grup d'actrius cridaven insults transfòbics a una altra dona que caminava per l'escenari."
@@ -210,7 +216,8 @@ label drag_musical_morning:
     emi_koyama "Existeixen paral·lelismes entre la lluita de les feministes cisgènere per la justícia i el control reproductius, i les campanyes de les dones trans per l'autonomia corporal en l'assitència sanitària."
     "Les actrius es retiraren de l'escenari mentre el teló s'abaixava."
 
-    "..."
+    call curtain_down_inside
+
     "Una hora més tard ..."
     "La funció acabava de finalitzar."
     user "Ostres, quina funció més impactant. Quina sensació d'espessor amb tanta informació de cop ..."
@@ -481,8 +488,13 @@ label drag_musical_night:
     scene serie3
 
     "Les 00:19 ..."
-    scene drag_musical_inside_night
+
+    call curtain_up_night
+
     "El teló s'alça i les llums s'apaguen ..."
+
+    scene drag_musical_inside_night
+
     judith_butler "Em dic Judith Butler i us presentaré el gènere en disputa."
     judith_butler "Debatrem, farem intercanvi d'opinions i, si cal, discutirem sobre el concepte."
     judith_butler "Començaré dient que el gènere no és una identitat estable, sinó una dèbilment constituïda en el temps, instituïda en un espai exterior mitjançant una repetició estilitzada d'actes. És a dir, el gènere és una temporalitat social constituïda."
@@ -518,6 +530,9 @@ label drag_musical_night:
     alicia_miyares "Discriminació i desigualtat no són conceptes equivalents. La desigualtat existeix quan una classe o grup social, en aquest cas les dones, és exclòs de totes les esferes de realització."
     alicia_miyares "La diversitat i la identitat són substituts de la igualtat política."
     "I, aquest debat continuà durant una hora més, fins que les actrius es retiraren de l'escenari mentre el teló s'abaixava."
+
+    call curtain_down_night
+
     user "Ostres, quina funció més impactant. Quina sensació d'espessor amb tanta informació de cop ..."
     user "Vaig cap a casa, que ja és tard."
     "Així, [tmpSavePlayer] marxà passejant cap a casa, reflexionant sobre l'espectacle que acabava de veure."
