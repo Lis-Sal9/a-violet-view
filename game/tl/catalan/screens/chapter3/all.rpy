@@ -367,10 +367,10 @@ translate catalan drag_musical_morning_30417dd8:
     "Una estona més tard, ja amb el teló alçat i les llums apagades ..."
 
 # game/screens/chapter3/all.rpy:170
-translate catalan drag_musical_morning_50578173:
+translate catalan drag_musical_morning_9c634110:
 
-    # julia_serano "Em dic Julia Serrano i sóc una persona transgènere!"
-    julia_serano "Em dic Julia Serrano i sóc una persona transgènere!"
+    # julia_serano "Em dic Julia Serano i sóc una persona transgènere!"
+    julia_serano "Em dic Julia Serano i sóc una persona transgènere!"
 
 # game/screens/chapter3/all.rpy:171
 translate catalan drag_musical_morning_0074ff90:

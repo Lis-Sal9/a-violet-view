@@ -367,9 +367,9 @@ translate spanish drag_musical_morning_30417dd8:
     "Un poco más tarde, ya con el telón levantado y las luces apagadas ..."
 
 # game/screens/chapter3/all.rpy:170
-translate spanish drag_musical_morning_50578173:
+translate spanish drag_musical_morning_9c634110:
 
-    # julia_serano "Em dic Julia Serrano i sóc una persona transgènere!"
+    # julia_serano "Em dic Julia Serano i sóc una persona transgènere!"
     julia_serano "¡Me llamo Julia Serano y soy una persona transgénero!"
 
 # game/screens/chapter3/all.rpy:171

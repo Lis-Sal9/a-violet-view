@@ -171,7 +171,7 @@ label drag_musical_morning:
 
     "Una estona més tard, ja amb el teló alçat i les llums apagades ..."
     scene drag_musical_inside
-    julia_serano "Em dic Julia Serrano i sóc una persona transgènere!"
+    julia_serano "Em dic Julia Serano i sóc una persona transgènere!"
     julia_serano "I us preguntareu per què emfatitzo aquest detall. Doncs bé, perquè vull!"
     julia_serano "Jajaja, és broma, és broma. No se'm despisteu."
     julia_serano "És important perquè avui es parlarà sobre l'absència i la desatenció de les dones trans en el moviment feminista."
