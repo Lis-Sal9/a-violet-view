@@ -16,7 +16,9 @@ label langham_library:
     unknown_girl "Disculpi, podria venir un moment?"
     "Aquella dona estava cridant a [tmpSavePlayer] per a què s'apropés on éren ..."
     user "I tant. En què les podria ajudar?"
+    show clara_zetkin_pic at left
     unknown_girl "Gràcies. Jo em dic Clara Zetkin."
+    show rosa_luxemburg_pic at right
     unknown_girl "Jo sóc la Rosa Luxemburg."
     user "Molt de gust. Jo em dic [tmpSavePlayer]."
     clara_zetkin "Un plaer, [tmpSavePlayer]."
@@ -40,6 +42,8 @@ label langham_library:
     $ ShowItems()
 
     "Aquelles dones van marxar enfurismades amb [tmpSavePlayer], com si fos una aberració no conèixer aquelles obres."
+    hide rosa_luxemburg_pic
+    hide clara_zetkin_pic
     user "Ostres, quin caràcter que té el personal ..."
 
     if game_state.mill_are_nice and not game_state.coverture_is_found:
