@@ -286,7 +286,7 @@ translate spanish tomorrow_morning_b2c74f6c:
 translate spanish tomorrow_morning_09ac6d0e:
 
     # user "Rosemary, ets tu?"
-    user "Rosemary, ¿eres tú?"
+    user "Rosemarie, ¿eres tú?"
 
 # game/screens/chapter3/all.rpy:138
 translate spanish tomorrow_morning_f046b5cb:
@@ -670,7 +670,7 @@ translate spanish ong_250ee1a0:
 translate spanish ong_5681c43b:
 
     # "Rosemary estava neguitosa. Al veure a [tmpSavePlayer], li va fer senyals perquè s'apropés el més ràpid possible on era ella."
-    "Rosemary estaba nerviosa. Al ver a [tmpSavePlayer], le hizo señales para que se aproximara lo más rápido posible dónde ella se encontraba."
+    "Rosemarie estaba nerviosa. Al ver a [tmpSavePlayer], le hizo señales para que se aproximara lo más rápido posible dónde ella se encontraba."
 
 # game/screens/chapter3/all.rpy:236
 translate spanish ong_386aef87:
@@ -688,7 +688,7 @@ translate spanish ong_82af1ac8:
 translate spanish ong_e2873a04:
 
     # "Rosemary va fer senyals a la senyora Morris, i aquesta començà a parlar."
-    "Rosemary hizo señales a la señora Morris, y ésta comenzó a hablar."
+    "Rosemarie hizo señales a la señora Morris, y ésta comenzó a hablar."
 
 # game/screens/chapter3/all.rpy:239
 translate spanish ong_732cf41c:

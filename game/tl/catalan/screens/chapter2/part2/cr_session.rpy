@@ -268,13 +268,13 @@ translate catalan cr_session_a6982a58:
 translate catalan cr_session_56c33720:
 
     # participant "Aquesta dona subratlla l'entrellaçament de les diferents identitats i opressions, i el considera una forma de neocolonialisme."
-    participant "Aquesta dona subratlla l'entrellaçament de les diferents identitats i opressions, i el considera una forma de neocolonialisme."
+    p_gloria "Aquesta dona subratlla l'entrellaçament de les diferents identitats i opressions, i el considera una forma de neocolonialisme."
 
 # game/screens/chapter2/part2/cr_session.rpy:97
 translate catalan cr_session_b3e0c753:
 
     # participant "És que la perspectiva feminista occidental de la dona del tercer món redueix a la dona real a un estereotip invariable i uniforme, de manera similar al què succeeïx amb les dones negres."
-    participant "És que la perspectiva feminista occidental de la dona del tercer món redueix a la dona real a un estereotip invariable i uniforme, de manera similar al què succeeïx amb les dones negres."
+    p_alicia "És que la perspectiva feminista occidental de la dona del tercer món redueix a la dona real a un estereotip invariable i uniforme, de manera similar al què succeeïx amb les dones negres."
 
 # game/screens/chapter2/part2/cr_session.rpy:98
 translate catalan cr_session_d75f1380:

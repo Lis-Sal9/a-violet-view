@@ -286,7 +286,7 @@ translate catalan tomorrow_morning_b2c74f6c:
 translate catalan tomorrow_morning_09ac6d0e:
 
     # user "Rosemary, ets tu?"
-    user "Rosemary, ets tu?"
+    user "Rosemarie, ets tu?"
 
 # game/screens/chapter3/all.rpy:138
 translate catalan tomorrow_morning_f046b5cb:
@@ -670,7 +670,7 @@ translate catalan ong_250ee1a0:
 translate catalan ong_5681c43b:
 
     # "Rosemary estava neguitosa. Al veure a [tmpSavePlayer], li va fer senyals perquè s'apropés el més ràpid possible on era ella."
-    "Rosemary estava neguitosa. Al veure a [tmpSavePlayer], li va fer senyals perquè s'apropés el més ràpid possible on era ella."
+    "Rosemarie estava neguitosa. Al veure a [tmpSavePlayer], li va fer senyals perquè s'apropés el més ràpid possible on era ella."
 
 # game/screens/chapter3/all.rpy:236
 translate catalan ong_386aef87:
@@ -688,7 +688,7 @@ translate catalan ong_82af1ac8:
 translate catalan ong_e2873a04:
 
     # "Rosemary va fer senyals a la senyora Morris, i aquesta començà a parlar."
-    "Rosemary va fer senyals a la senyora Morris, i aquesta començà a parlar."
+    "Rosemarie va fer senyals a la senyora Morris, i aquesta començà a parlar."
 
 # game/screens/chapter3/all.rpy:239
 translate catalan ong_732cf41c:

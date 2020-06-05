@@ -286,7 +286,7 @@ translate english tomorrow_morning_b2c74f6c:
 translate english tomorrow_morning_09ac6d0e:
 
     # user "Rosemary, ets tu?"
-    user "Rosemary, is that you?"
+    user "Rosemarie, is that you?"
 
 # game/screens/chapter3/all.rpy:138
 translate english tomorrow_morning_f046b5cb:
@@ -670,7 +670,7 @@ translate english ong_250ee1a0:
 translate english ong_5681c43b:
 
     # "Rosemary estava neguitosa. Al veure a [tmpSavePlayer], li va fer senyals perquè s'apropés el més ràpid possible on era ella."
-    "Rosemary was anxious. When she saw [tmpSavePlayer], she made signals to approach quickly to where she was."
+    "Rosemarie was anxious. When she saw [tmpSavePlayer], she made signals to approach quickly to where she was."
 
 # game/screens/chapter3/all.rpy:236
 translate english ong_386aef87:
@@ -688,7 +688,7 @@ translate english ong_82af1ac8:
 translate english ong_e2873a04:
 
     # "Rosemary va fer senyals a la senyora Morris, i aquesta començà a parlar."
-    "Rosemary made signals to Ms Morris so she could start the speech."
+    "Rosemarie made signals to Ms Morris so she could start the speech."
 
 # game/screens/chapter3/all.rpy:239
 translate english ong_732cf41c:
