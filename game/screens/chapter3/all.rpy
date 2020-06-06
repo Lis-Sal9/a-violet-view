@@ -32,7 +32,7 @@ define emi_koyama = Character("Emi Koyama", color="#ff5c8d")
 define kate_bornstein = Character("Kate Bornstein", color="#280680")
 define unknown_actress = Character("Actriu", color="#6f74dd")
 define viviane_k_namaste = Character("Viviane K. Namaste", color="#1e88e5")
-define rosemary_garland_thomson = Character("Rosemary Garland-Thomson", color="#006db3")
+define rosemary_garland_thomson = Character("Rosemarie Garland-Thomson", color="#006db3")
 define jenny_morris = Character("Jenny Morris", color="#00897b")
 define zainab_salbi = Character("Zainab Salbi", color="#00701a")
 define waris_dirie = Character("Waris Dirie", color="#7cb342")
@@ -43,6 +43,27 @@ define eve_kosofsky_sedgwick = Character("Eve Kosofsky Sedgwick", color="#fb8c00
 define lisbeth_polancer = Character("Lisbeth Polancer", color="#b91400")
 define susan_faludi = Character("Susan Faludi", color="#6d4c41")
 define alicia_miyares = Character("Alicia Miyares", color="#757575")
+
+# Character images
+image ibonne_child_pic = "images/chapter3/characters/ibonne_child.png"
+image julia_serano_pic = "images/chapter3/characters/julia_serano.png"
+image emi_koyama_pic = "images/chapter3/characters/emy_koyama.png"
+image kate_bornstein_pic = "images/chapter3/characters/kate_bornstein.png"
+image viviane_k_namaste_pic = "images/chapter3/characters/viviane_k_namaste.png"
+image rosemarie_garland_thomson_pic = "images/chapter3/characters/rosemarie_garland_thomson.png"
+image jenny_morris_pic = "images/chapter3/characters/jenny_morris.png"
+image lisbeth_polancer_pic = "images/chapter3/characters/lisbeth_polancer.png"
+image loretta_ross_pic = "images/chapter3/characters/loretta_ross.png"
+image susan_faludi_pic = "images/chapter3/characters/susan_faludi.png"
+image susan_faludi_black_pic = "images/chapter3/characters/susan_faludi_black.png"
+image waris_dirie_pic = "images/chapter3/characters/waris_dirie.png"
+image zainab_salbi_pic = "images/chapter3/characters/zainab_salbi.png"
+image lila_abulughod_pic = "images/chapter3/characters/lila_abulughod.png"
+image musawah_pic = "images/chapter3/characters/musawah.png"
+image judith_butler_pic = "images/chapter3/characters/judith_butler.png"
+image michel_foucault_pic = "images/chapter3/characters/michel_foucault.png"
+image alicia_miyares_pic = "images/chapter3/characters/alicia_miyares.png"
+image eve_kosofsky_sedgwick_pic = "images/chapter3/characters/eve_kosofsky_sedgwick.png"
 
 
 
@@ -70,6 +91,7 @@ label chapter_3:
 label ibonne_street:
     user "Ibonne !!!"
     user "Quina alegria veure't de nou !!!"
+    show ibonne_child_pic at truecenter
     p_ibonne "Bon dia, [tmpSavePlayer]! Com està?"
     user "Bé, acabo d'arribar de viatge. Vaig cap a casa. I qui és aquest nen tan maco?"
     "[tmpSavePlayer] es dirigia a la persona petita que tenia Ibonne agafada de la mà."
@@ -93,15 +115,19 @@ label ibonne_street:
 
     $ GiveGlossaryItemToPlayer(35)
 
-    "Ibonne li va donar la revista a [tmpSavePlayer], que la va fullejar i es va trobar amb una sèrie matemàtica una mica peculiar."
-
     scene serie1
+    "Ibonne li va donar la revista a [tmpSavePlayer], que la va fullejar i es va trobar amb una sèrie matemàtica una mica peculiar."
+    hide ibonne_child_pic
 
+
+    scene street_chpt3
     user "Me'n alegro moltíssim de que estigui tan il·lusionada."
+    show ibonne_child_pic at truecenter
     p_ibonne "Gràcies, [tmpSavePlayer]. Per a mi és molt important això que em diu."
     "Ivanna va abraçar a la seva mare. Era evident que per aquella nena, la seva mare era tot un exemple a seguir, plena de valentia i coratge. I també ho era que l'estimava incondicionalment."
     user "Bé doncs, no us entretinc més. Fins aviat!"
     "I, amb una salutació cordial, es varen acomiadar i [tmpSavePlayer] seguí el seu camí."
+    hide ibonne_child_pic
     "Estava feliç i la reflexió d'aquella conversa anterior li va fer passar el temps volant fins arribar a casa seva."
 
     call tomorrow_morning
@@ -163,21 +189,21 @@ label drag_musical_morning:
     show pib_ticket at truecenter
     "El guàrdia de seguretat li va fer entrega d'una revista publicitària de l'obra i li demanà l'entrada, així que se la tregué de la butxaca i li donà."
     "Afortunadament, les entrades estaven numerades, així que un cop dins, buscà el seu seient a l'espera de l'inici de la funció."
-    "[tmpSavePlayer] aprofità aquell temps mort per fullejar la revista quan va adonar-se d'una sèrie matemàtica una mica peculiar."
-
     scene serie2
+    "[tmpSavePlayer] aprofità aquell temps mort per fullejar la revista quan va adonar-se d'una sèrie matemàtica una mica peculiar."
 
     call curtain_up_inside
 
     "Una estona més tard, ja amb el teló alçat i les llums apagades ..."
     scene drag_musical_inside
+    show julia_serano_pic at truecenter
     julia_serano "Em dic Julia Serano i sóc una persona transgènere!"
     julia_serano "I us preguntareu per què emfatitzo aquest detall. Doncs bé, perquè vull!"
     julia_serano "Jajaja, és broma, és broma. No se'm despisteu."
     julia_serano "És important perquè avui es parlarà sobre l'absència i la desatenció de les dones trans en el moviment feminista."
     julia_serano "Sobre què significa ser una dona trans en una societat patriarcal i sobre què és una vida trans com a tal."
     julia_serano "Perquè sense el reconeixement de la comunitat trans, de vegades oblidat en el moviment feminista i sempre oblidat en el sistema cisgènere-heteronormatiu i patriarcal, no hi ha justícia."
-
+    hide julia_serano_pic
     call curtain_down_inside
     "El públic aplaudeix mentre l'actriu es retira i el teló s'abaixa per donar pas a la següent escena."
     "S'alça el teló ..."
@@ -187,12 +213,15 @@ label drag_musical_morning:
     unknown_actress "Quina aberració!!"
     "Un grup d'actrius cridaven insults transfòbics a una altra dona que caminava per l'escenari."
     "Seguidament, aparegué una altra."
+    show emi_koyama_pic at truecenter
     emi_koyama "De segur que alguna vegada t'han insultat pel carrer amb frases com les anteriors ... d'entre un llarg etcètera possible."
     emi_koyama "Resulta obvi que existeix una violència masclista contra les dones trans, de la mateixa manera que existeix la violència masclista contra les dones cigènere."
     emi_koyama "És així perquè totes vivim com a dones. I ser una dona en una societat misògina és perillós perquè alguns factors ens fan més vulnerables quan som onjectius de violència sexual i domèstica."
     emi_koyama "Imaginem-nos per un moment que un home ataca una dona trans amb la finalitat de violar-la, sense saber que ho és. Quan se'n adona de la seva 'anatomia masculina', l'atac pot anar in crescendo impulsat per l'homofòbia i la transfòbia."
     emi_koyama "I aquests casos quasi mai són tractats seriosa o compassivament pels mitjans de comunicació i les autoritats."
     emi_koyama "A més a més, les dones trans són més vulnerables a l'abús emocional i verbal per les seves parelles, ja que acostumen a tenir una autoestima baixa, una imatge corporal negativa, i dificultat per trobar feina."
+    hide emi_koyama_pic
+    show kate_bornstein_pic at truecenter
     kate_bornstein "I són objectius també per ser {i}queer{/i}!"
     kate_bornstein "D'acord. No feu aquesta cara tan estranya. Si no n'heu escoltat mai a parlar, avui serà el primer dia!"
     kate_bornstein "La teoria {i}queer{/i} és un conjunt d'idees que considera sexe i gènere no inscrits en la naturalesa humana, sinó com a construcció social, que varia en cada societat i durant la vida de cada persona."
@@ -201,11 +230,16 @@ label drag_musical_morning:
     kate_bornstein "Vaig ser criada com un nen, i castigada i controlada per no conformar-me amb les normes masculines."
     kate_bornstein "Quan vaig poder qüestionar-me el gènere que se'm va assignar al néixer, creia que havia de ser una dona transgènere, però no m'identificava ni com a masculina ni com a femenina."
     kate_bornstein "Així que vaig decidir escriure sobre això per compartir-ho, i aquests escrits varen passar a ser claus per teoritzar el gènere no binari."
+    hide kate_bornstein_pic
+    show viviane_k_namaste_pic at truecenter
     viviane_k_namaste "Però les teòriques {i}queer{/i} formulen hipòtesi sobre les persones transgènere com a simples exemples, sense tenir en compte la crua realitat de les seves vides, com pot ser la vulnerabilitat davant la violència que s'ha comentat abans."
     viviane_k_namaste "De totes maneres, aquesta teoria no es desenvolupa com una afirmació a favor de les identitats marginades, sinó com a crítica a les polítiques identitàries."
     viviane_k_namaste "Es tracta de desestabilitzar les categories d'identitat fixes, sovint limitants, que segueixin la ideologia que considera superior l'heterosexualitat i que estigmatitza l'atracció entre persones del mateix sexe."
     viviane_k_namaste "No obstant això, les teòriques {i}queer{/i} de color critiquen aquesta teoria perquè diuen que únicament està construïda sobre la intersecció amb les persones blanques i la seva problemàtica."
+    hide viviane_k_namaste_pic
+    show emi_koyama_pic at left
     emi_koyama "Inclús moltes feministes recelen de l'abandonament de la política identitària quan un gran nombre de persones continua patint opressió, desigualtat i violència pel seu gènere o la seva sexualitat."
+    show julia_serano_pic at right
     julia_serano "És per aquest motiu que enlloc d'aferrar-nos a la divisió entre les feministes cisgènere i les persones trans, hauríem de coalitzar-nos per combatre la transfòbia i la misogínia."
     julia_serano "Les dones trans també patim ambdós tipus de violència. Totes les dones som diferents, però les nostres experiències se solapen."
     emi_koyama "El problema passa perquè les feministes cisgènere exclouen les dones trans per considerar que no saben què és ser dona, i perquè la seva feminitat és ridiculitzada, tant per homes com dones cisgènere."
@@ -214,6 +248,8 @@ label drag_musical_morning:
     emi_koyama "En aquest sentit, hi ha múltiples tipus de privilegi i opressió, i totes les feministes han d'assumir la responsabilitat de les seves formes de privilegi, sense deixar de sentir-se justificades per parlar de la seva experiència de l'opressió."
     emi_koyama "Les feministes també haurien d'assumir la lluita amb la imatge corporal i la disfòria de gènere de les dones trans, és a dir, el patiment corporal pel gènere, qüestió que se sumaria a donar la mateixa consideració a la violència que s'exerceix sobre elles."
     emi_koyama "Existeixen paral·lelismes entre la lluita de les feministes cisgènere per la justícia i el control reproductius, i les campanyes de les dones trans per l'autonomia corporal en l'assitència sanitària."
+    hide julia_serano_pic
+    hide emi_koyama_pic
     "Les actrius es retiraren de l'escenari mentre el teló s'abaixava."
 
     call curtain_down_inside
@@ -242,9 +278,12 @@ label ong:
     scene ong_session
     "Al cap d'una estona, [tmpSavePlayer] va arribar a l'ONG."
     "Rosemary estava neguitosa. Al veure a [tmpSavePlayer], li va fer senyals perquè s'apropés el més ràpid possible on era ella."
+    show rosemarie_garland_thomson_pic at right
     rosemary_garland_thomson "Per fi!! Hem intentat allargar el màxim possible l'espera per a què no et perdessis cap detall."
     user "Moltíssimes gràcies. T'ho agraeixo molt."
+    hide rosemarie_garland_thomson_pic
     "Rosemary va fer senyals a la senyora Morris, i aquesta començà a parlar."
+    show jenny_morris_pic at left
     jenny_morris "Benvolgudes a totes! Em dic Jenny Morris, i avui us parlaré sobre el {i}model social de la discapacitat{/i} i les dones."
     jenny_morris "El model social té una forta base reivindicativa que pretén la revisió de les definicions que s'han fet del què és i què no és la {i}discapacitat{/i} i de la seva construcció."
     jenny_morris "En el meu llibre {i}Pride Against Prejudice{/i} exposo el {i}doble inconvenient{/i} que suposa ser dona i ser {i}discapacitada{/i}."
@@ -254,13 +293,18 @@ label ong:
     jenny_morris "Són justament les polítiques socials, a priori destinades a ajudar, les que acaben reforçant la dependència produïda per les estructures econòmiques i culturals."
     jenny_morris "És a dir, en aquesta situació la persona amb {i}discapacitat{/i} és representada com una persona dependent."
     jenny_morris "Però les defensores del feminisme de la {i}discapacitat{/i} i del model social mantenen que el gènere i la {i}discapacitat{/i} són creacions socials, i que l'eliminació de les barreres creades per la societat permetrà a les persones {i}discapacitades{/i} aconseguir la igualtat."
+    hide jenny_morris_pic
+    show rosemarie_garland_thomson_pic at right
     rosemary_garland_thomson "De fet, mitjançant l'ús del llenguatge el constructe social de la {i}discapacitat{/i} s'hauria d'evitar relacionar amb la paraula 'impediment' per descriure-la, ja que així s'oprimeix a aquestes persones per deficients, sent les persones {i}no discapacitades{/i} superiors."
     rosemary_garland_thomson "És necessari emfatitzar la importància del reconeixement de les diferències dins de la {i}discapacitat{/i} i les categories socials o culturals paral·leles a aquesta (gènere, raça, classe, sexualitat), ja que totes s'entrecreuen i són presents en la societat."
     rosemary_garland_thomson "I, dit això, ja podem donar per conclusa aquesta breu xerrada. Oferim a la senyora Morris un fort aplaudiment."
+    hide rosemarie_garland_thomson_pic
     "Totes les persones assistents varen aplaudir."
     scene ong_garden
+    show rosemarie_garland_thomson_pic at truecenter
     rosemary_garland_thomson "Poc a poc, podem anar al jardí. Hem preparat un petit dinar de germanor."
     rosemary_garland_thomson "Espera! Has vist el diari d'avui? Mira què interessant ..."
+    hide rosemarie_garland_thomson_pic
     "[tmpSavePlayer] va observar el diari que no havia pogut acabar de llegir de bon matí i va veure una sèrie matemàtica molt curiosa."
 
     scene serie2
@@ -279,11 +323,14 @@ label date_with_lis:
     ## Vídeo gif
     "A l'entrar dins de l'acadèmia, la va veure allà, {i}fent el mico{/i}, com li agradava dir a ella. Lluïnt."
     "Uns minuts més tard, la classe va finalitzar i ella va apropar-se."
+    show lisbeth_polancer_pic at truecenter
     lisbeth_polancer "Ei, [tmpSavePlayer]!!! Com estàs??"
     "Li va dir mentre l'abraçava."
     lisbeth_polancer "Anem a sopar!! Tinc una gana que em moro!!"
+    hide lisbeth_polancer_pic
     scene restaurant_lis
     "Així que varen anar a sopar al seu restaurant xinès preferit. Ja havien perdut el compte de quantes vegades hi havien anat a menjar."
+    show lisbeth_polancer_pic at truecenter
     lisbeth_polancer "Saps què? Avui hem tingut una classe de pole una mica filosòfica."
     user "Ui, aquest to irònic em fa tremolar ..."
     "La Lisbeth va somriure emmurriament."
@@ -296,6 +343,7 @@ label date_with_lis:
     lisbeth_polancer "Llavors, la professora ha posat una mica d'ordre i hem pogut continuar la classe, per sort, tot i que aquella noia ha marxat força enfurismada poca estona després."
     lisbeth_polancer "Em fa molta ràbia que les noies es deixin manipular per aquests pallassos i que acabin fent allò que desitgen ells i no el que elles desitgen."
     lisbeth_polancer "Ja saps que parlo per pròpia experiència. Fa temps que penso que inclús les persones bisexuals com jo hauríem de renunciar als homes. Al final, resultarà que les lesbianes de la segona onada del feminisme tindran raó en això."
+    hide lisbeth_polancer_pic
     "Amb aquesta conversa tan efusiva i detallada, varen passar hores. No obstant això, de matinada, [tmpSavePlayer] tenia una cita i volia ser puntual."
     "D'aquesta manera, s'acomiadaren amb una forta abraçada fins una altra."
     "Per a [tmpSavePlayer], Lisbeth era una persona meravellosa i sempre que estava amb ella sortia amb les piles renovades."
@@ -317,12 +365,14 @@ label wfwi_foundation:
     "Concretament, els drets bàsics de les dones de tot el món, a controlar la seva pròpia sexualitat i el procés reproductiu i, a tenir accés a la mateixa educació i crèdits bancaris."
     "A més a més, es denunciaren els delictes de mutilació genital femenina, declarat dos anys enrere com una forma de violència contra les dones, i el maltractament de dones a casa i al carrer."
     scene wfwi_inside
+    show zainab_salbi_pic at truecenter
     zainab_salbi "Hola, [tmpSavePlayer]! Com estàs?"
     user "Bona tarda, Zainab. Tot bé. És una alegria la notícia. Ha reunit a moltes persones avui."
     zainab_salbi "Sí, avui és un dia per celebrar. Estic molt emocionada."
     "Zainab abraçà a [tmpSavePlayer]."
     zainab_salbi "Bé, ves a donar una volta per aquí, que a mi m'ha entrat una brosseta a l'ull."
     "Digué Zainab mentre s'eixugava una petita llàgrima que queia per la seva galta. I es retirà."
+    hide zainab_salbi_pic
 
     $ GiveGlossaryItemToPlayer(30)
 
@@ -330,17 +380,21 @@ label wfwi_foundation:
         "Tant de disgust t'ha fet entrar gana":
             $ game_state.serie_with_susan = False
             "Es dirigí a la zona de menjar, i allà escoltà sense voler la conversa de dues dones que alçaven una mica la veu."
+            show lila_abulughod_pic at left
             unknown_girl "Estic farta de que la noció occidental culpi la religió per la desigualtat de gènere argumentant que la probresa i l'autoritarisme són les causes clau de la falta de llibertat de les dones en les societats islàmiques."
             unknown_girl "El feminisme occidental acostuma a menysprear l'islam com a inherentment hostil a la dona, i això no és així."
             unknown_girl "Si jo porto el {i}hiyab{/i} és per pròpia elecció, igual que moltes altres dones musulmanes, i crec fermament en què l'islam encarna els nostres drets humans bàsics."
             unknown_girl "Ja ho sé, Lila, però no tothom creu en la certesa del mateix."
             "Es referia a Lila Abu-Lughod."
+            show musawah_pic at right
             unknown_girl "Et convido a la nostra organització, {i}Musawah{/i}, que, com bé ja sabràs, significa igualtat en àrab."
             unknown_girl "Aquesta organització està dirigida per dones amb la finalitat de promoure la justícia i la igualtat en l'islam."
             unknown_girl "Considerem que homes i dones són essencialment iguals i que l'Alcorà és inherentment favorable a les dones, però ha estat interpretat de forma misògina pel patriarcat."
             unknown_girl "El nostre objectiu és desenvolupar i compartir coneixements sobre igualtat i justícia en la família, ajudar a crear organitzacions similars, i recolzar a grups pro drets humans amb objectius similars al nostre."
             unknown_girl "Pel que em comentes, penso que et podria anar força bé venir algun dia per a què puguis compartir la teva opinió."
             "Lila assentí amb el cap."
+            hide lila_abulughod_pic
+            hide musawah_pic
             "L'aclaparament va envair a [tmpSavePlayer], i va decidir marxar perquè s'estava atabalant amb tanta gent en tants pocs metres quadrats."
             "Necessitava descansar la ment una mica, així que tornà a casa caminant."
             "Ja a casa descansant ..."
@@ -349,16 +403,20 @@ label wfwi_foundation:
         "L'angoixa t'ha tancat l'estómac i decideixes passejar una mica per la sala":
             $ game_state.serie_with_susan = False
             "Passejant per la sala, s'adonà de que l'autora Waris Dirie estava fent la presentació de la seva autobiografia, {i}Desert Flower{/i}."
+            show waris_dirie_pic at right
             waris_dirie "Als tres anys, vaig ser mutilada genitalment. I als tretze, vaig ser lliurada a un home molt major per a casar-m'hi. Per sort, vaig poder aconseguir fugir d'aquella vida miserable."
             waris_dirie "En aquesta autobiografia parlo de la mutilació genital femenina."
             waris_dirie "Aquesta, no és específica de cap religió o grup ètnic, sinó que està associada a nocions de puresa i castedat, a una forma de control dels impulsos sexuals, i a garantir la virginitat fins el matrimoni i la seva posterior fidelitat."
             waris_dirie "Òbviament, els danys que causa són permanents i, a més a més, en molts casos no hi ha cap altra opció possible. Aquestes qüestions converteixen a la mutilació genital femenina en una violació dels drets humans."
+            hide waris_dirie_pic
             "[tmpSavePlayer] s'estava començant a trobar pitjor. Entre l'angoixa prèvia i ara haver escoltat a la senyora Dirie ..."
             "No obstant això, decidí fer un petit esforç i quedar-s'hi una estona més."
             "Mentre seguia passejant per la sala, una dona l'aturà. En la seva enganxina hi havia escrit el nom 'Loretta Ross'."
+            show loretta_ross_pic at truecenter
             loretta_ross "Bon dia, tingui! Em dic Loretta Ross. Estic divulgant informació sobre la meva organització, {i}SisterSong{/i}."
             loretta_ross "Aquesta organització preté lluitar per l'assistència sanitària familiar per les dones pobres."
             loretta_ross "En cas que volgués col·laborar amb nosaltres, li deixo aquest tríptic amb més informació. Moltes gràcies per la seva atenció."
+            hide loretta_ross_pic
             "[tmpSavePlayer] assentí i, mentre Loretta seguia passejant per la sala, va llegir el tríptic."
             "{i}Jo, Loretta Ross, denuncio la situació de les dones pobres, sobretot les de color, que tenen poques de les opcions d'assitència mèdica disponibles per a les més acomodades.{/i}"
             "{i}Exigeixo justícia reproductiva per les dones, és a dir, els diferents drets a la maternitat que poden exercir les dones de diferents races i classes socials{/i}."
@@ -372,10 +430,13 @@ label wfwi_foundation:
             "[tmpSavePlayer] té un malestar general, produït per l'emoció d'aquell munt de persones reunit per aquell motiu."
             "Decideix marxar perquè no se sent bé, i creu que ningú se'n adonarà que no hi és."
             "Però quan era a punt de sortir per la porta, sent una veu que crida ..."
+            show susan_faludi_black_pic at truecenter
             unknown "[tmpSavePlayer], ets tu?"
+            hide susan_faludi_black_pic
 
             menu:
                 "Et gires, tens curiositat":
+                    show susan_faludi_pic at truecenter
                     "[tmpSavePlayer] es girà i la veié. Bonica i amb un somriure com sempre."
                     user "Susan!!! Oh, Susy!!!"
                     "I es van abraçar."
@@ -390,6 +451,7 @@ label wfwi_foundation:
                     $ GiveGlossaryItemToPlayer(41)
 
                     user "Perfecte, Susan. Quedem així doncs."
+                    hide susan_faludi_pic
                     scene street_chpt3
                     "I, amb un comiat efusiu, Susan marxava a la seva xerrada i [tmpSavePlayer] tornava cap a casa seva, aquest cop passejant."
                     "Mentre caminava, va fullejar el tríptic i es va adonar que hi havia una sèrie matemàtica una mica peculiar."
@@ -438,12 +500,14 @@ label go_to_hungary:
     susan_faludi "Sí!! Sí!! Ara vinc a casa teva!!"
     "I penja. [tmpSavePlayer] no va poder dir paraula, solament anar a vestir-se."
     "Al cap de mitja hora, Susan aparegué."
+    show susan_faludi_pic at truecenter
     susan_faludi "Obre l'ordinador!! Corre!!!"
     "Susan va entrar a casa de [tmpSavePlayer] molt agitada."
     user "Però què et passa? Per a què necessites el meu ordinador?"
     susan_faludi "No hi ha temps per explicacions. Corre, el temps és or!!"
     "Amb presses, encengueren l'ordinador. Susan va entrar al seu servidor de correu electrònic."
     susan_faludi "Mira, això és el què et volia ensenyar!! El meu pare m'ha enviat aquest correu tan estrany. Què deuen voler dir aquests símbols?!"
+    hide susan_faludi_pic
     scene email_susan
     "[tmpSavePlayer] els mirà atentament. D'algun lloc li sonaven, però no aconseguia recordar d'on."
     susan_faludi "Sempre li ha agradat molt al meu pare amagar missatges. I a mi em posa molt nerviosa!!!"
@@ -495,12 +559,17 @@ label drag_musical_night:
 
     scene drag_musical_inside_night
 
+    show judith_butler_pic at truecenter
     judith_butler "Em dic Judith Butler i us presentaré el gènere en disputa."
     judith_butler "Debatrem, farem intercanvi d'opinions i, si cal, discutirem sobre el concepte."
     judith_butler "Començaré dient que el gènere no és una identitat estable, sinó una dèbilment constituïda en el temps, instituïda en un espai exterior mitjançant una repetició estilitzada d'actes. És a dir, el gènere és una temporalitat social constituïda."
+    hide judith_butler_pic
+    show michel_foucault_pic at right
     michel_foucault "Partint de teories postestructuralistes, considerem la realitat social com una cosa constituïda mitjançant el llenguatge usat per descriure-la. Per això, ens centrem en estructures lingüístiques, en el discurs i en actes."
     michel_foucault "Jo, Michel Foucault, mantinc que la sexualitat no és un fet biològic, sinó un fet construït socialment. Rebutjo els tòpics i considero que les prohibicions sexuals indiquen una fascinació pel sexe."
     michel_foucault "De fet, anomenar, regular i castigar les perversions fa que l'Estat pugui controlar i regular la sexualitat."
+    hide michel_foucault_pic
+    show judith_butler_pic at left
     judith_butler "Jo em qüestiono la idea {i}natural{/i} de i sobre els cossos i les identitats de gènere i sexuals."
     judith_butler "La societat es basa en un marc regulatori que reforça l'heterosexualitat com a orientació sexual {i}natural{/i}, donant per suposat l'existència de dos gèneres diferents i oposats: masculí i femení."
     judith_butler "És per aquest motiu que critico les feministes precedents per suposar que l'heterosexualitat és un estat natural de l'ésser."
@@ -508,9 +577,13 @@ label drag_musical_night:
     judith_butler "Aquesta identificació s'ha repetit tant que s'ha convertit en una norma cultural, és a dir, en heteronormativitat. I, tota desviació és castigada perquè l'heterosexualitat és la força dominant considerada normal, natural i ideal."
     judith_butler "Al final, les relacions de gènere estan determinades pel sexe. És opressiu considerar binari el sexe i no ho és construir una jerarquia sobre aquesta diferència."
     judith_butler "Al respecte, el feminisme estableix que no es produeix opressió si s'aboleix el gènere, no si es reconeixen infinitat de categories."
+    show eve_kosofsky_sedgwick_pic at right
     eve_kosofsky_sedgwick "Doncs jo poso en dubte aquesta divisió binària entre heterosexuals i homosexuals, i insisteixo en el reconeixement de les diferències de gènere entre els gais i les lesbianes."
     eve_kosofsky_sedgwick "Justament per això m'agrada parlar en aquests casos de la teoria {i}queer{/i}."
     eve_kosofsky_sedgwick "Aquesta teoria es resisteix a la categorizació de les persones, desafia la idea de les identitats sexuals, qüestiona els binarismes i les relacions de poder subjacents, i assegura que la comprensió del sexe, del gènere i la identitat és contextual."
+    hide eve_kosofsky_sedgwick_pic
+    hide judith_butler_pic
+    show judith_butler_pic at right
     judith_butler "Bé, el que és cert és que la percepció del gènere també s'aplica al sexe, i això porta a moltes persones intersexuals a recórrer a la cirugia per adequar el seu cos al que mèdicament es considera 'mascle' o 'femella'."
     judith_butler "D'aquesta manera, es pot observar que el sexe és construït socialment perquè el llenguatge emprat per descriure els genitals és el mateix que l'emprat pel gènere. En aquest cas, el sexe ja està condicionat a allò que suposa ser 'masculí' o 'femení'."
     judith_butler "En un context social, hi ha regles i restriccions sobre com ha d'actuar una persona en funció de les espectatives socials. Aquesta distinció de gènere o binarisme es manté mitjançant actes, com són l'aspecte, els gestos i la parla."
@@ -522,6 +595,7 @@ label drag_musical_night:
     judith_butler "Per aquest motiu, critico que les feministes hagin creat noves construccions del què significa ser dona, ja que suposen que el gènere és real i que les dones com a grup comparteixen alguna classe de naturalesa comuna o realitat cultural."
     judith_butler "I és inexistent aquesta essència comuna en una 'dona', ja que cap experiència vital és compartida per totes les dones i, per tant, no permet agrupar-les en una única categoria."
     judith_butler "Novament, aquestes suposades característiques comunes entre dones són sovint associades a la conjunció entre gènere i cos femenins."
+    show alicia_miyares_pic at left
     alicia_miyares "El problema és que el què tu esmentes no és feminisme, és teoria de la identitat. La teoria {i}queer{/i} converteix el gènere en una categoria d'identitat."
     alicia_miyares "A més a més, qüestiones a les dones com a subjectes polítics femenins, i consideres que el patriarcat capitalista ja no és el nostre enemic, sinó que ho és la categoria amb la qual les dones s'empenyen en identificar-se per conformar un front de lluita."
     alicia_miyares "L'heteropatriarcat acaba invisibilitzant la misogínia entre altres persones."
@@ -530,6 +604,8 @@ label drag_musical_night:
     alicia_miyares "Discriminació i desigualtat no són conceptes equivalents. La desigualtat existeix quan una classe o grup social, en aquest cas les dones, és exclòs de totes les esferes de realització."
     alicia_miyares "La diversitat i la identitat són substituts de la igualtat política."
     "I, aquest debat continuà durant una hora més, fins que les actrius es retiraren de l'escenari mentre el teló s'abaixava."
+    hide alicia_miyares_pic
+    hide judith_butler_pic
 
     call curtain_down_night
 
@@ -544,10 +620,13 @@ label drag_musical_night:
 
 
 label susan_calling:
+    show susan_faludi_black_pic at truecenter
     unknown "[tmpSavePlayer], ets tu?"
+    hide susan_faludi_black_pic
 
     menu:
         "Et gires, tens curiositat":
+            show susan_faludi_pic at truecenter
             "[tmpSavePlayer] es girà i la veié. Bonica i amb un somriure com sempre."
             user "Susan!!! Oh, Susy!!!"
             "I es van abraçar."
@@ -565,6 +644,7 @@ label susan_calling:
             $ GiveGlossaryItemToPlayer(41)
 
             user "Perfecte, Susan. Quedem així doncs."
+            hide susan_faludi_pic
             "I, amb un comiat efusiu, Susan i [tmpSavePlayer] tornaven cadascú a les seves respectives cases passejant."
             "Necessitava un descans, així que es banyà i es posà a dormir per descansar el cap fins l'endemà."
             call go_to_hungary
