@@ -11,8 +11,8 @@ init python:
 
 screen the_myth_of_the_vaginal_orgasm():
     imagemap:
-        idle "images/chapter2/part1/hostel/amazonas_hostel.png"
-        ground "images/chapter2/part1/hostel/amazonas_hostel.png"
+        idle "images/chapter2/part1/hostel/amazonas_hostel_right.png"
+        ground "images/chapter2/part1/hostel/amazonas_hostel_right.png"
         hotspot (1587, 696, 314, 60):
             clicked [Function(addVaginalOrgasm), Hide("the_myth_of_the_vaginal_orgasm"), Hide("hover_vaginal_orgasm")]
             hovered ShowTransient("hover_vaginal_orgasm", img="images/chapter2/part1/hostel/amazonas_hostel_hover.png")
