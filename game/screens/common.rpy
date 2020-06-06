@@ -118,10 +118,11 @@ screen say(who, what):
                 idle "gui/icons/pause.png"
                 hover "gui/icons/pause_border.png"
 
-            imagebutton:
-                action Rollback()
-                idle "gui/icons/return.png"
-                hover "gui/icons/return_border.png"
+            if not is_in_special_screen:
+                imagebutton:
+                    action Rollback()
+                    idle "gui/icons/return.png"
+                    hover "gui/icons/return_border.png"
 
             imagebutton:
                 action Skip() alternate Skip(fast=True, confirm=True)
