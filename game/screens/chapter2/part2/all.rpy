@@ -61,6 +61,7 @@ label nyrw_building:
     "La dona del mostrador d'informació estava comprovant si [tmpSavePlayer] tenia accés o no."
     unknown_girl "M'haurà de disculpar, però en la llista de persones alienes que tenen permís per accedir a l'edifici no figura cap persona amb el nom [tmpSavePlayer]."
     "[tmpSavePlayer] començà a notar com els nervis envaïen el seu cos. I ara què faria?"
+    show judy_chicago_pic at right
     unknown_girl "Kathie, deixi passar a aquesta persona. Ve al grup que porta l'Adrienne."
     "[tmpSavePlayer] mirà a aquella dona que s'apropà. Tenia una cara familiar, però no aconseguia esbrinar d'on la coneixia."
     unknown_girl "Perdoni, [tmpSavePlayer]. Disculpi les molèsties. Acompanyi a la senyora Chicago."
@@ -80,6 +81,7 @@ label nyrw_building:
     user "Perdoni, Judy, sí, serà un plaer ajudar-la. Serà la meva manera de tornar-li el petit favor que m'ha fet."
     "[tmpSavePlayer] posà cara de vergonya, però assentí amb el cap."
     judy_chicago "Moltes gràcies. Ai, miri, és aquí el grup."
+    hide judy_chicago_pic
     "Acabaven d'arribar a la sala. S'acomiadà de la senyora Chicago amb complicitat i, mentre ella s'allunyava, [tmpSavePlayer] trucà a la porta i entrà."
 
     call cr_session

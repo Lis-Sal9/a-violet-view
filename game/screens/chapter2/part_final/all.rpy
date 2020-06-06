@@ -39,9 +39,11 @@ label art_studio:
     "Tal com havien quedat, ella tenia una proposta en la qual [tmpSavePlayer] podia donar-li un cop de mà."
 
     user "Bon dia, Judy! Com va?"
+    show judy_chicago_pic at truecenter
     judy_chicago "Bon dia, [tmpSavePlayer]! Ha vingut!"
     user "I tant! Li vaig donar la meva paraula que l'ajudaria després del favor que em va fer."
     judy_chicago "No és per tant. Deixem-nos de punyetes i comencem a treballar."
+    hide judy_chicago_pic
     "Judy va ensenyar l'estudi a [tmpSavePlayer] i li va presentar l'obra que volia crear que, segons ella, seria un símbol emblemàtic de l'art feminista."
     "Ja amb tot el material necessari a punt, començaren la creació ..."
 
@@ -57,6 +59,7 @@ label see_dinner_party:
     scene black
     show portrait_dinner at truecenter
     user "Què bonic ens ha quedat !!!"
+    show judy_chicago_pic at right
     judy_chicago "I tant que sí !!! Sense dubte, jo tenia raó. Serà un símbol emblemàtic !!"
     judy_chicago "És una obra que explica la història simbòlica de la dona en la civilització occidental."
     judy_chicago "I que el seu objectiu és finalitzar el cicle d'invisibilitat al qual han estat sotmeses les dones al llarg de la història."
@@ -64,6 +67,7 @@ label see_dinner_party:
     judy_chicago "Sí. La forma de triangle és tradicionalment vinculada a la feminitat, i les tretze dones que hi ha a cada costat del triangle equilàter fa referència a les persones que assistiren a l'últim sopar."
     user "Una comparació molt interessant, tenint en compte que en aquell sopar varen ser tot homes i aquí són tot dones."
     judy_chicago "Efectivament ... ja tinc el nom de l'obra! Es dirà {i}The Dinner Party{/i}!!"
+    hide judy_chicago_pic
     "I, amb alegria, recolliren el material usat i s'acomiadaren."
 
     scene street_studio

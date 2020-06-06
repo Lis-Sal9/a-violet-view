@@ -5,11 +5,15 @@
 label misses_protest:
     "..."
     "[tmpSavePlayer] portava una estona de camí quan, de sobte ..."
+    show taxist at left
     unknown_boy "Però què és això ?????"
+    hide taxist
     "El conductor del taxi havia frenat molt bruscament. Estava enfurismat."
     "[tmpSavePlayer] es va espantar, però de seguida va veure què estava succeïnt."
     "Moltes dones havien pres els carrers per manifestar-se."
+    show taxist at left
     unknown_boy "Disculpi, un grup de dones amargades han tallat els carrers per queixar-se. Ara haurem d'esperar una bona estona fins que se'ls passi la bestiesa."
+    hide taxist
 
     menu:
         "Disculpi, senyor, però vostè és un mal educat":
@@ -30,7 +34,9 @@ label misses_protest:
             "Passaren dues hores fins que la manifestació no va permetre al taxi avançar pels carrers novament."
             hide miss_inside
             scene taxi
+            show taxist at left
             unknown_boy "Ja s'ha acabat la neciesa i podem continuar el trajecte."
+            hide taxist
             scene now_building
             "Una estona més tard, el taxi ja havia arribat a la seva destinació."
             user "Gràcies, senyor."
@@ -52,12 +58,16 @@ label inside_misses_protest:
     "Però no només això, sinó el racisme existent en aquest tipus de concursos."
     "Particularment, les dones negres pateixen una doble discriminació: sexista i racista."
     "Més enllà, algú cridava ..."
+    show unknown_girl_protest at left
     unknown_girl "Destruïm la mirada masculina en la pantalla !!!"
     hide miss_figure
+    hide unknown_girl_protest
     show miss_inside at truecenter
+    show unknown_girl_protest at left
     unknown_girl "Abolim el punt de vista actiu i masculí de la càmara i el paper passiu de la dona en la pantalla !!!"
     unknown_girl "No som la fantasia de l'home !!! Ni ens han de projectar conforme a això !!!"
     unknown_girl "Fem que no ens converteixin en objectes eròtics de desig de ningú, ni pels propis personatges ni pel públic !!!"
+    hide unknown_girl_protest
     hide miss_inside
     show miss_trash at truecenter
     "Juntes cap a la llibertat !!!!! - varen cridar moltes persones alhora."
