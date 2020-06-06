@@ -369,8 +369,8 @@ label true_or_false_question(label_name):
     $ renpy.choice_for_skipping()
     menu:
         "Vertader":
-            $ renpy.call_in_new_context(label_name, True)
+            $ renpy.call(label_name, True)
         "Fals":
-            $ renpy.call_in_new_context(label_name, False)
+            $ renpy.call(label_name, False)
 
     return
