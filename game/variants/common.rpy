@@ -177,13 +177,13 @@ screen say(who, what):
                 xysize mobile_icon_size, mobile_icon_size
                 idle Frame("gui/icons/pause.png")
                 hover Frame("gui/icons/pause_border.png")
-                
+
             if not is_in_special_screen:
                 imagebutton:
                     action Rollback()
                     xysize mobile_icon_size, mobile_icon_size
-                    idle "gui/icons/return.png"
-                    hover "gui/icons/return_border.png"
+                    idle Frame("gui/icons/return.png")
+                    hover Frame("gui/icons/return_border.png")
 
             imagebutton:
                 action Skip() alternate Skip(fast=True, confirm=True)

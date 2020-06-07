@@ -8,6 +8,9 @@ screen crosswords():
          align 0.5, 0.5
          zoom 1.15
 
+    python:
+        y_fix = float(config.screen_height - renpy.get_physical_size()[1])
+
     fixed:
         imagebutton:
             idle "gui/arrows/return_white.png"
@@ -27,11 +30,11 @@ screen crosswords():
                     text getRenderedWord(i):
                         anchor 0.5, 0
                         font "fonts/courier_new.ttf"
-                        kerning 6.75
+                        kerning 6.75 + (y_fix / 600)
                         bold True
                         size 23
-                        xpos int((COORD_WORDS[i][0] - 124) * 1.15) + 17
-                        ypos int((COORD_WORDS[i][1] - 70) * 1.15) - 15
+                        xpos int((COORD_WORDS[i][0] - 124) * 1.15) + 17 - int(y_fix / 200)
+                        ypos int((COORD_WORDS[i][1] - 70) * 1.15) - 15 - int(y_fix / 20)
                         vertical True
                 else:
                     text getRenderedWord(i):

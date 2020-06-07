@@ -60,6 +60,8 @@ label crosswords_label:
 
 screen crosswords():
     add "images/chapter2/part_final/crosswords/crosswords.png"
+    python:
+        y_fix = float(config.screen_height - renpy.get_physical_size()[1])
 
     fixed:
         imagebutton:
@@ -80,11 +82,11 @@ screen crosswords():
                     text getRenderedWord(i):
                         anchor 0.5, 0
                         font "fonts/courier_new.ttf"
-                        kerning 3.4
+                        kerning 3.4 + (y_fix / 600)
                         bold True
                         size 21
-                        xpos COORD_WORDS[i][0] + 15
-                        ypos COORD_WORDS[i][1] - 17
+                        xpos COORD_WORDS[i][0] + 15 - int(y_fix / 200)
+                        ypos COORD_WORDS[i][1] - 17 - int(y_fix / 20)
                         vertical True
                 else:
                     text getRenderedWord(i):
