@@ -2,81 +2,83 @@
 ## This is script for the quiz of women's suffrage.
 
 
-init -10 python:
-    is_in_suffrage_map = False
-    def isInSuffrageMapSection(result):
-        global is_in_suffrage_map
-        is_in_suffrage_map = result
-
-
 label suffrage_map:
     $ renpy.choice_for_skipping()
 
     if game_state.maze_is_seen:
-        $ GiveGlossaryItemToPlayer(17)
-        $ GiveGlossaryItemToPlayer(6)
+        $ GiveGlossaryItemToPlayer(28)
+        $ GiveGlossaryItemToPlayer(14)
         if len(game_state.maze_objects) == 7:
-            $ GiveGlossaryItemToPlayer(23)
+            $ GiveGlossaryItemToPlayer(40)
         $ ShowItems()
 
+    $ setIsInSpecialScreen(True)
+    $ shuffleStages()
+    $ stages_completed = []
+    $ num_selected_correct_options = 0
     call screen women_suffrage_map(num = 0)
-    $ isInSuffrageMapSection(False)
     return
+
 
 init python:
     import random
 
     OPTIONS = ["Abans de 1914", "1914 - 1920", "1921 - 1940", "1941 - 1955", "1956 - 1970", "Després de 1970", "Sense sufragi"]
     COLORS = ["#e5ffde", "#bbcbcb", "#9590a8", "#634b66", "#3e2739", "#18020c", "#ffffff"]
-    stage = 0
+    STAGES = list(range(0, len(OPTIONS)))
+    stages_completed = []
     num_selected_correct_options = 0
 
+    def shuffleStages():
+        global STAGES
+        STAGES = list(range(0, len(OPTIONS)))
+        random.shuffle(STAGES)
 
-    def getRandomNumbers():
-        random_options = []
-        random_options.append(stage)
-        i = 0
-        while i < 3:
-            num = random.randrange(7)
+    def getRandomNumbers(stage):
+        random_options = [STAGES[stage]]
+
+        while len(random_options) < 4:
+            num = random.randrange(len(OPTIONS))
             if num not in random_options:
                 random_options.append(num)
-                i = i + 1
+
         random.shuffle(random_options)
         return random_options
 
-    def checkCorrectOption(option):
+    def checkCorrectOption(option, stage):
         global num_selected_correct_options
-        global stage
-        if option == OPTIONS[stage]:
+        stages_completed.append(stage)
+        if option == stage:
             num_selected_correct_options = num_selected_correct_options + 1
-        stage = stage + 1
 
     def showCorrectStars():
         global game_state
         game_state.suffrage_map_done = True
-        if num_selected_correct_options > 2 and num_selected_correct_options < 6:
+        if num_selected_correct_options > 2:
             # achieve one item
             GiveGalleryItemToPlayer(0)
-        elif num_selected_correct_options == 6 or num_selected_correct_options == 7:
+        if num_selected_correct_options > 5:
             # achieve two items
-            GiveGalleryItemToPlayer(0)
             GiveGalleryItemToPlayer(2)
-
+        setIsInSpecialScreen(False)
 
 
 screen women_suffrage_map(num):
-    python:
-        isInSuffrageMapSection(True)
-
+    $ current_stage = STAGES[num]
     add "images/chapter1/suffrage_map/suffrage_map_bg.png"
-    add "images/chapter1/suffrage_map/suffrage_map_[num].png"
+    add "images/chapter1/suffrage_map/suffrage_map_[current_stage].png"
+
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover_blue.png"
+        align .03, .9
+        action Rollback()
 
     text _("Sufragi femení"):
-        size 50
-        bold True
+        size 70
         color "#ffffff"
         align .97, 0
-        yoffset 20
+        yoffset 5
 
     fixed:
         xysize 250, 250
@@ -87,21 +89,22 @@ screen women_suffrage_map(num):
 
         vbox:
             text _("Esculli l'interval :"):
-                bold True
                 color "#ffffff"
-                size 20
+                size 30
                 align 0.5, 0.5
                 yoffset 20
 
-            $ random_options = getRandomNumbers()
+            $ random_options = getRandomNumbers(num)
             for i in range(0, 4):
+                $ option = random_options[i]
+                $ option_text = OPTIONS[option]
                 fixed:
                     yoffset 40
                     ysize 40
 
-                    text _(OPTIONS[random_options[i]]):
+                    text _(option_text):
                         color "#ffffff"
-                        size 17
+                        size 25
                         align 0.5, 0.5
 
                     imagebutton:
@@ -109,7 +112,9 @@ screen women_suffrage_map(num):
                         hover "images/chapter1/suffrage_map/map_item_hover.png"
                         align 0.5, 0.5
                         xysize 230, 40
-                        action [Hide("women_suffrage_map"), Function(checkCorrectOption, OPTIONS[random_options[i]]), If(num == 6, true=Show("correct_suffrage_map"), false=Show("women_suffrage_map", num=num + 1))]
+                        action [Hide("women_suffrage_map"),
+                                Function(checkCorrectOption, option, current_stage),
+                                If(num == 6, true = Show("correct_suffrage_map"), false = Show("women_suffrage_map", num = num + 1))]
 
 
 
@@ -117,11 +122,10 @@ screen correct_suffrage_map():
     add "images/chapter1/suffrage_map/suffrage_map_correct.png"
 
     text _("Sufragi femení"):
-        size 50
-        bold True
+        size 70
         color "#ffffff"
         align .97, 0
-        yoffset 20
+        yoffset 5
 
     imagebutton:
         idle "gui/arrows/arrow_right.png"
@@ -152,12 +156,15 @@ screen correct_suffrage_map():
 
                     text _(OPTIONS[i]):
                         color "#ffffff"
-                        size 17
+                        size 25
                         align 0.5, 0.5
 
 
 
 screen show_map_result():
+    python:
+        setIsInSpecialScreen(False)
+
     modal True
     zorder 200
     style_prefix "confirm"
@@ -171,7 +178,8 @@ screen show_map_result():
             spacing 10
 
         text _("Resultat"):
-            size 40
+            color "#ffffff"
+            size 50
             xalign 0.5
 
         hbox:
@@ -194,9 +202,16 @@ screen show_map_result():
                         yalign .1
                         action NullAction()
 
-        $ items_length = str(len(game_state.gallery_items))
+        python:
+            items_length = 0
+            if num_selected_correct_options > 5:
+                items_length = 2
+            elif num_selected_correct_options > 2:
+                items_length = 1
+
         text _("En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS'han desbloquejat [items_length] ítems a la {b}Galeria{/b}."):
-            size 20
+            size 30
+            color "#f0c388"
             yoffset 10
             xoffset 20
 

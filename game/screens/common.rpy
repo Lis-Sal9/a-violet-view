@@ -4,6 +4,12 @@
 
 init offset = -1
 
+init -10 python:
+    is_in_special_screen = False
+
+    def setIsInSpecialScreen(value):
+        global is_in_special_screen
+        is_in_special_screen = value
 
 
 ################################################################################
@@ -96,7 +102,64 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
-        text what id "what"
+        text what:
+            id "what"
+            line_spacing -16
+
+        ####### Quick menu ##################
+        hbox:
+            style_prefix "quick"
+            xalign 0.82
+            yalign 0.15
+            spacing 5
+
+            imagebutton:
+                action Show('pause')
+                idle "gui/icons/pause.png"
+                hover "gui/icons/pause_border.png"
+
+            if not is_in_special_screen:
+                imagebutton:
+                    action Rollback()
+                    idle "gui/icons/return.png"
+                    hover "gui/icons/return_border.png"
+
+            imagebutton:
+                action Skip() alternate Skip(fast=True, confirm=True)
+                idle "gui/icons/skip_action.png"
+                hover "gui/icons/skip_action_border.png"
+
+            imagebutton:
+                action ShowMenu('glossary')
+                hover "gui/icons/glossary_new_icon.png"
+                if len(game_state.glossary_items_unread) > 0:
+                    idle "gui/icons/glossary_new_icon.png"
+                else:
+                    idle "gui/icons/glossary_icon.png"
+
+            imagebutton:
+                action ShowMenu('gallery')
+                hover "gui/icons/gallery_new_icon.png"
+                if len(game_state.gallery_items_unread) > 0:
+                    idle "gui/icons/gallery_new_icon.png"
+                else:
+                    idle "gui/icons/gallery_icon.png"
+
+            imagebutton:
+                if is_in_special_screen:
+                    action NullAction()
+                    hover "gui/icons/save.png"
+                else:
+                    action [Show(screen="save_menu"), FileTakeScreenshot()]
+                    hover "gui/icons/save_border.png"
+                idle "gui/icons/save.png"
+
+            if renpy.variant("pc"):
+                imagebutton:
+                    action ShowMenu('help')
+                    idle "gui/icons/help.png"
+                    hover "gui/icons/help_border.png"
+        ##############################################################
 
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
@@ -120,7 +183,7 @@ style window:
 
 style namebox:
     xpos gui.name_xpos
-    xanchor gui.name_xalign
+    xanchor 0.5
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
@@ -129,8 +192,8 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
-    yalign 0.5
+    xalign 0.6
+    yalign gui.name_yalign
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -180,6 +243,12 @@ screen choice(items):
         for i in items:
             textbutton i.caption action i.action
 
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover_blue.png"
+        align .03, .9
+        action Rollback()
+
 define config.narrator_menu = True
 
 style choice_vbox is vbox
@@ -197,78 +266,6 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
-################################################################################
-
-
-## Quick Menu screen ###########################################################
-## The quick menu is displayed in-game to provide easy access to the out-of-game menus.
-################################################################################
-screen quick_menu():
-    zorder 100
-
-    if quick_menu:
-        hbox:
-            style_prefix "quick"
-            xalign 0.5
-            yalign 1.0
-
-            imagebutton:
-                action Show('pause')
-                idle "gui/icons/pause.png"
-                hover "gui/icons/pause_border.png"
-
-            imagebutton:
-                action Rollback()
-                idle "gui/icons/return.png"
-                hover "gui/icons/return_border.png"
-
-            imagebutton:
-                action Skip() alternate Skip(fast=True, confirm=True)
-                idle "gui/icons/skip_action.png"
-                hover "gui/icons/skip_action_border.png"
-
-            imagebutton:
-                action ShowMenu('glossary')
-                hover "gui/icons/glossary_new_icon.png"
-                if len(game_state.glossary_items_unread) > 0:
-                    idle "gui/icons/glossary_new_icon.png"
-                else:
-                    idle "gui/icons/glossary_icon.png"
-
-            imagebutton:
-                action ShowMenu('gallery')
-                hover "gui/icons/gallery_new_icon.png"
-                if len(game_state.gallery_items_unread) > 0:
-                    idle "gui/icons/gallery_new_icon.png"
-                else:
-                    idle "gui/icons/gallery_icon.png"
-
-            imagebutton:
-                if is_in_puzzle or is_in_suffrage_map or is_in_maze:
-                    action NullAction()
-                    hover "gui/icons/save.png"
-                else:
-                    action [Show(screen="save_menu"), FileTakeScreenshot()]
-                    hover "gui/icons/save_border.png"
-                idle "gui/icons/save.png"
-
-            imagebutton:
-                action ShowMenu('help')
-                idle "gui/icons/help.png"
-                hover "gui/icons/help_border.png"
-
-init python:
-    config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
-style quick_button is default
-style quick_button_text is button_text
-
-style quick_button:
-    properties gui.button_properties("quick_button")
-
-style quick_button_text:
-    properties gui.button_text_properties("quick_button")
 ################################################################################
 
 
@@ -340,6 +337,7 @@ style confirm_frame:
 
 style confirm_prompt_text:
     text_align 0.5
+    color "#ffffff"
     layout "subtitle"
 
 style confirm_button:
@@ -358,54 +356,64 @@ style confirm_button_text:
 ## Main Menu screen ############################################################
 ## Used to display the main menu when Ren'Py starts.
 ################################################################################
+init -2 python:
+    def GetCover():
+        if _preferences.language == "english":
+            return "en"
+        elif _preferences.language == "spanish":
+            return "es"
+        elif _preferences.language == "catalan":
+            return "ca"
+
+screen hover_main_menu(img):
+    add img at truecenter
+
 screen main_menu():
-    tag menu
-    style_prefix "main_menu"
-    add gui.main_menu_background
-
     python:
-        if not _preferences.language:
-            _preferences.language = "english"
+        lang = GetCover()
 
-    frame:
-        pass
+    tag menu
 
-    use navigation
+    imagemap:
+        idle "images/cover/desktop/full_" + str(lang) + ".png"
+        ground "images/cover/desktop/full_" + str(lang) + ".png"
 
-    if gui.show_name:
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
+        # Start
+        hotspot (1594, 90, 225, 225):
+            clicked [Hide("hover_main_menu"), Show(screen="name_input", message="Please, enter your name.", ok_action=Function(FinishEnterName))]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_start_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-            text "Vanessa Mañas":
-                style "main_menu_version"
+        # Load
+        hotspot (1310, 375, 232, 246):
+            clicked [Hide("hover_main_menu"), ShowMenu("load")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_load_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
+        # Preferences
+        hotspot (1004, 288, 211, 234):
+            clicked [Hide("hover_main_menu"), ShowMenu("preferences", True)]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_preferences_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_frame:
-    xsize 420
-    yfill True
-    background "gui/overlay/main_menu.png"
+        # About
+        hotspot (1624, 645, 219, 223):
+            clicked [Hide("hover_main_menu"), ShowMenu("about")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_about_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
+        # Help
+        hotspot (1184, 732, 226, 241):
+            clicked [Hide("hover_main_menu"), ShowMenu("help")]
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_help_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
+        # Exit
+        hotspot (819, 786, 200, 196):
+            clicked Quit(confirm=not main_menu)
+            hovered ShowTransient("hover_main_menu", img="images/cover/desktop/hover/full_hover_exit_" + str(lang) + ".png")
+            unhovered Hide("hover_main_menu")
 
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
 
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
 ################################################################################
 
 
@@ -591,119 +599,6 @@ screen name_input(message, ok_action):
 ################################################################################
 
 
-## Preferences screen ######################################################################
-## The preferences screen allows the player to configure the game to better suit themselves.
-############################################################################################
-screen preferences():
-    tag menu
-    use game_menu(_("Preferences"), scroll="viewport"):
-        vbox:
-            hbox:
-                box_wrap True
-
-                if renpy.variant("pc") or renpy.variant("web"):
-                    vbox:
-                        style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
-
-                vbox:
-                    style_prefix "radio"
-                    label _("Language")
-                    textbutton _("English") action Language("english")
-                    textbutton _("Spanish") action Language("spanish")
-                    textbutton _("Catalan") action Language("catalan")
-
-            null height (4 * gui.pref_spacing)
-
-            hbox:
-                style_prefix "slider"
-                box_wrap True
-
-                vbox:
-                    label _("Text Speed")
-                    bar value Preference("text speed")
-
-                vbox:
-                    if config.has_music:
-                        label _("Music Volume")
-                        hbox:
-                            bar value Preference("music volume")
-
-                    if config.has_music:
-                        null height gui.pref_spacing
-                        textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
-
-style pref_label is gui_label
-style pref_label_text is gui_label_text
-style pref_vbox is vbox
-style radio_label is pref_label
-style radio_label_text is pref_label_text
-style radio_button is gui_button
-style radio_button_text is gui_button_text
-style radio_vbox is pref_vbox
-style check_label is pref_label
-style check_label_text is pref_label_text
-style check_button is gui_button
-style check_button_text is gui_button_text
-style check_vbox is pref_vbox
-style slider_label is pref_label
-style slider_label_text is pref_label_text
-style slider_slider is gui_slider
-style slider_button is gui_button
-style slider_button_text is gui_button_text
-style slider_pref_vbox is pref_vbox
-style mute_all_button is check_button
-style mute_all_button_text is check_button_text
-
-style pref_label:
-    top_margin gui.pref_spacing
-    bottom_margin 3
-
-style pref_label_text:
-    yalign 1.0
-
-style pref_vbox:
-    xsize 338
-
-style radio_vbox:
-    spacing gui.pref_button_spacing
-
-style radio_button:
-    properties gui.button_properties("radio_button")
-    foreground "gui/button/radio_[prefix_]foreground.png"
-
-style radio_button_text:
-    properties gui.button_text_properties("radio_button")
-
-style check_vbox:
-    spacing gui.pref_button_spacing
-
-style check_button:
-    properties gui.button_properties("check_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
-
-style check_button_text:
-    properties gui.button_text_properties("check_button")
-
-style slider_slider:
-    xsize 525
-
-style slider_button:
-    properties gui.button_properties("slider_button")
-    yalign 0.5
-    left_margin 15
-
-style slider_button_text:
-    properties gui.button_text_properties("slider_button")
-
-style slider_vbox:
-    xsize 675
-################################################################################
-
 
 ## Help screen #################################################################
 ## A screen that gives information about key and mouse bindings. It uses other screens
@@ -711,116 +606,41 @@ style slider_vbox:
 ################################################################################
 screen help():
     tag menu
-    default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
-        style_prefix "help"
-        vbox:
-            spacing 23
+    fixed:
+        xalign .5 yalign .5
+        add "images/keymap.png"
 
-            hbox:
-                textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
-                textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+        imagebutton:
+            idle "images/glossary/glossary_return.png"
+            hover "images/glossary/glossary_return_hover.png"
+            align .04, .1
+            yoffset -45
+            action Return()
 
-            if device == "keyboard":
-                use keyboard_help
-            elif device == "mouse":
-                use mouse_help
+        text _("Mapa de controls"):
+            color '#3c291c'
+            font "fonts/my_font.otf"
+            size 160
+            xalign 0.5
+            yalign 0.03
 
-style help_button is gui_button
-style help_button_text is gui_button_text
-style help_label is gui_label
-style help_label_text is gui_label_text
-style help_text is gui_text
+        text _("Avançar / Seleccionar / Arrossegar"):
+            xalign 0.43
+            yalign 0.25
 
-style help_button:
-    properties gui.button_properties("help_button")
-    xmargin 12
+        text _("Avançar / Seleccionar / Arrossegar"):
+            xalign 0.95
+            yalign 0.78
 
-style help_button_text:
-    properties gui.button_text_properties("help_button")
+        text _("Desplaçar-se"):
+            xalign 0.4
+            yalign 0.42
 
-style help_label:
-    xsize 375
-    right_padding 30
+        text _("Sortir (des de diàlegs)"):
+            xalign 0.75
+            yalign 0.64
 
-style help_label_text:
-    size gui.text_size
-    xalign 1.0
-    text_align 1.0
-################################################################################
-
-
-## Keyboard help screen ########################################################
-## A screen that gives information about keyboard help.
-################################################################################
-screen keyboard_help():
-    hbox:
-        label _("Enter")
-        text _("Advances dialogue and activates the interface.")
-
-    hbox:
-        label _("Space")
-        text _("Advances dialogue without selecting choices.")
-
-    hbox:
-        label _("Arrow Keys")
-        text _("Navigate the interface.")
-
-    hbox:
-        label _("Escape")
-        text _("Accesses the game menu.")
-
-    hbox:
-        label _("Ctrl")
-        text _("Skips dialogue while held down.")
-
-    hbox:
-        label _("Tab")
-        text _("Toggles dialogue skipping.")
-
-    hbox:
-        label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Page Down")
-        text _("Rolls forward to later dialogue.")
-
-    hbox:
-        label "H"
-        text _("Hides the user interface.")
-
-    hbox:
-        label "S"
-        text _("Takes a screenshot.")
-################################################################################
-
-
-## Mouse help screen ########################################################
-## A screen that gives information about mouse help.
-################################################################################
-screen mouse_help():
-    hbox:
-        label _("Left Click")
-        text _("Advances dialogue and activates the interface.")
-
-    hbox:
-        label _("Middle Click")
-        text _("Hides the user interface.")
-
-    hbox:
-        label _("Right Click")
-        text _("Accesses the game menu.")
-
-    hbox:
-        label _("Mouse Wheel Up")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Mouse Wheel Down")
-        text _("Rolls forward to later dialogue.")
-################################################################################
 
 
 ## About screen ################################################################
@@ -828,25 +648,40 @@ screen mouse_help():
 ################################################################################
 screen about():
     tag menu
-    use game_menu(_("About"), scroll="viewport"):
-        style_prefix "about"
 
-        vbox:
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
-            text _("Work in progress ...")
+    image "images/about_me.png"
 
-            if gui.about:
-                text "[gui.about!t]\n"
+    text _("Sobre mi"):
+        color '#000000'
+        font "fonts/my_font.otf"
+        size 160
+        xalign 0.51
+        yalign 0.04
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+    text _("Sobre mi"):
+        color '#a00f42'
+        font "fonts/my_font.otf"
+        size 160
+        xalign 0.5
+        yalign 0.03
 
-define gui.about = ""
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
-style about_label_text:
-    size gui.label_text_size
+    imagebutton:
+        idle "images/glossary/glossary_return.png"
+        hover "images/glossary/glossary_return_hover.png"
+        align .05, .95
+        action Return()
+
+    viewport:
+        align .77, .5
+        xysize 1270, 580
+        scrollbars "vertical"
+        draggable True
+        mousewheel True
+
+        text _("Ara em sento sola i tinc por. Por perquè quan em miro al mirall, solament veig algú a qui no he estimat com es mereix. A qui no m’havia pres la molèstia de preguntar-li què la fa realment feliç, i si està contenta amb sí mateixa. Ara, em sento sola amb mi mateixa i no sé com he d’actuar, què he de fer o, inclús, què he de sentir i com. La culpa m’ha ennuvolat el pensament i el sentiment, inclús el plaer de ser tocada per algú altre.\nDes de llavors, els dies són grisos per a mi. Però avui he decidit llevar-me amb la millor versió de mi. Forta, lliure i rebel. Sense retre comptes a ningú més que a mi mateixa. Avui, vull agrair a les meves companyes del grup, perquè amb sororitat m’han demostrat que m’estava perdent la fantàstica oportunitat d’estimar-me. De conèixer-me, de no jutjar-me i de confiar en mi. Juntes, totes nosaltres, podem lluitar agafades de la mà per denunciar el patriarcat, la misogínia, la desigualtat sexual i la violència masclista en totes les seves formes. Aquest videojoc és un homenatge a totes vosaltres, les meves companyes de vida.\n\n                         {i}No es neix dona, s'arriba a ser-ho.{/i} - Simone de Beauvoir"):
+            color '#3b0f52'
+            size 41
+
 ################################################################################
 
 
@@ -879,7 +714,6 @@ style notify_text is gui_text
 
 style notify_frame:
     ypos gui.notify_ypos
-
     background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
     padding gui.notify_frame_borders.padding
 

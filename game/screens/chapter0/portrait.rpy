@@ -25,12 +25,13 @@ label portrait:
                 "D'acord. Continues amb la mateixa història com si l'haguessis fet."
 
     if game_state.portrait_done:
-        $ GiveGlossaryItemToPlayer(9)
+        $ GiveGlossaryItemToPlayer(19)
         $ ShowItems()
 
     scene salon_portrait
 
     if game_state.astell_is_nice:
+        show mary_astell_pic at left
         mary_astell "Diràs 'ho hem aconseguit' ..."
         user "Però si ho he fet tot jo!"
         mary_astell "Nye, nye, nye ..."
@@ -66,9 +67,10 @@ label portrait:
         mary_astell "I recordem que la Il·lustració promovia els principis igualitaris i l'individualisme."
         user "Sí, crec que n'havia escoltat a parlar d'aquesta obra, però no sabia ben bé el seu origen ni res la seva autora ..."
 
-        $ GiveGlossaryItemToPlayer(20)
+        $ GiveGlossaryItemToPlayer(34)
         $ ShowItems()
 
+        hide mary_astell_pic
         scene salon_entrance
         "I, amb aquesta conversa tan interessant, es van acomiadar al sortir del saló amb una gran abraçada."
         scene street_all
@@ -82,7 +84,7 @@ label portrait:
         "No parava de preguntar-se [tmpSavePlayer] ..."
 
     if game_state.astell_is_nice:
-        $ GiveGlossaryItemToPlayer(20)
+        $ GiveGlossaryItemToPlayer(34)
         $ ShowItems()
 
     return

@@ -16,9 +16,11 @@ label maze_nightstick:
     user "Una porra ... això em comença a fer por de veritat ..."
 
     show parliament at truecenter
+    show emmeline_pankhurst at right
     emmeline_pankhurst "Noies, hem de seguir lluitant per a què el govern liberal estudiï el Projecte de Llei de Conciliació."
     "{i}Votes for Women !!!!!{/i} - varen cridar totes les noies alhora."
     "La líder de la WSPU va convocar una reunió de trobada a Caxton Hall a la Cambra dels Comuns."
+    hide emmeline_pankhurst
     hide parliament with fade
     "Aquell dia, ocorregué una tragèdia. El famós {i}Divendres Negre{/i}."
     show fight_1 at truecenter

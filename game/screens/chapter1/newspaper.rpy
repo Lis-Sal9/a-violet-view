@@ -11,6 +11,14 @@ screen reading_newspaper():
         add "images/chapter1/newspaper/newspaper.png"
 
         imagebutton:
+            idle "gui/arrows/arrow_left.png"
+            hover "gui/arrows/arrow_left_hover.png"
+            xpos 100
+            yalign .1
+            yoffset -45
+            action Rollback()
+
+        imagebutton:
             idle "gui/arrows/arrow_right.png"
             hover "gui/arrows/arrow_right_hover.png"
             xpos 1800

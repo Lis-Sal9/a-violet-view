@@ -192,3 +192,55 @@ translate english strings:
     # game/screens/common.rpy:822
     old "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
     new "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
+
+    # game/screens/common.rpy:856
+    old "Work in progress ..."
+    new "Work in progress ..."
+
+    # game/screens/common.rpy:714
+    old "Sound Volume"
+    new "Sound Volume"
+
+    # game/screens/common.rpy:741
+    old "Mapa de controls"
+    new "Keymap"
+
+    # game/screens/common.rpy:748
+    old "Avançar / Seleccionar / Arrossegar"
+    new "Continue / Select / Drag and drop"
+
+    # game/screens/common.rpy:756
+    old "Desplaçar-se"
+    new "Scroll"
+
+    # game/screens/common.rpy:760
+    old "Sortir (des de diàlegs)"
+    new "Exit (from dialogues)"
+
+    # game/screens/common.rpy:629
+    old "Preferències"
+    new "Preferences"
+
+    # game/screens/common.rpy:642
+    old "Visualització"
+    new "Display"
+
+    # game/screens/common.rpy:669
+    old "Idioma"
+    new "Language"
+
+    # game/screens/common.rpy:687
+    old "Música"
+    new "Music"
+
+    # game/screens/common.rpy:699
+    old "Text"
+    new "Text"
+
+    # game/screens/common.rpy:655
+    old "Sobre mi"
+    new "About me"
+
+    # game/screens/common.rpy:683
+    old "Ara em sento sola i tinc por. Por perquè quan em miro al mirall, solament veig algú a qui no he estimat com es mereix. A qui no m’havia pres la molèstia de preguntar-li què la fa realment feliç, i si està contenta amb sí mateixa. Ara, em sento sola amb mi mateixa i no sé com he d’actuar, què he de fer o, inclús, què he de sentir i com. La culpa m’ha ennuvolat el pensament i el sentiment, inclús el plaer de ser tocada per algú altre.\nDes de llavors, els dies són grisos per a mi. Però avui he decidit llevar-me amb la millor versió de mi. Forta, lliure i rebel. Sense retre comptes a ningú més que a mi mateixa. Avui, vull agrair a les meves companyes del grup, perquè amb sororitat m’han demostrat que m’estava perdent la fantàstica oportunitat d’estimar-me. De conèixer-me, de no jutjar-me i de confiar en mi. Juntes, totes nosaltres, podem lluitar agafades de la mà per denunciar el patriarcat, la misogínia, la desigualtat sexual i la violència masclista en totes les seves formes. Aquest videojoc és un homenatge a totes vosaltres, les meves companyes de vida.\n\n                         {i}No es neix dona, s'arriba a ser-ho.{/i} - Simone de Beauvoir"
+    new "Now I feel alone and I am scared. Scared because whenever I look to myself at the mirror, I only see someone who I never loved as she deserved. Who I never took the time to ask her what makes her trully happy, and if she is pleased with herself. Now, I feel lonely with myself and I don't know how to act, what to do or even what or how to feel. Guilt befogged my thoughts and feelings, even the pleasure of being touched by another person.\nSince then, the days are gray for me. But today I decided to get up with the best version of me. Strong, free and rebel. Without being held accountable to noone but myself. Today I want to thank my sisters from the group, because with sorority they showed me that I was missing the fantastic chance to love me. To know myself, not to judge and trust myself. Together, all of us, we can fight holding hands to denounce the patriarchy, the misogyny, the sexual inequality and male violence in all their shapes. This videogame is a tribute to all of you, my sisters in life.\n\n                         {i}One is not born, but rather becomes, a woman.{/i} - Simone de Beauvoir"

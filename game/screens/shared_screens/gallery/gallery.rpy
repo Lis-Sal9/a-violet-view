@@ -47,12 +47,13 @@ screen gallery():
 
         imagebutton:
             idle "images/gallery/gallery_return.png"
+            hover "images/gallery/gallery_return_hover.png"
             align .05, .9
             action Return()
 
         text _("Dones rellevants"):
             color '#f1dde0'
-            font "fonts/my_font.ttf"
+            font "fonts/my_font.otf"
             size 100
             align .3, .05
 
@@ -102,7 +103,9 @@ screen gallery_item_details(item):
         idle Solid("0004")
         action NullAction()
 
-    add "images/gallery/biography.png"
+    image "images/gallery/biography.png":
+        align 0.5, 0.5
+        zoom 1.15
 
     fixed:
         align .5, .5
@@ -121,8 +124,8 @@ screen gallery_item_details(item):
             yoffset 20
 
         text item["content"]:
-            size 17
-            xysize 550, 600
+            size 25
+            xysize 600, 600
             align .99, .35
             xoffset 20
-            line_spacing 15
+            line_spacing 0

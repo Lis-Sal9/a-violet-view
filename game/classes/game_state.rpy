@@ -5,7 +5,7 @@ init -10 python:
     class GameState(NoRollback):
         player = ""
         save_name = ""
-        chapter = 0
+        chapters_completed = []
         glossary_items = []
         glossary_items_unread = []
         portrait_done = False
@@ -24,12 +24,25 @@ init -10 python:
         gallery_items_unread = []
         campoamor_is_seen = False
         langham_library_is_seen = False
+        crosswords_done = False
+        pizzey_is_seen = False
+        eunuch_is_found = False
+        vaginal_orgasm_is_found = False
+        witch_is_seen = False
+        find_differences_done = False
+        nyrw_is_seen = False
+        answer_phone = False
+        series_done = False
+        serie_with_susan = False
+        published_article = 0
+        eco_is_seen = False
+        killjoy_is_seen = False
 
 
         def clear(self):
             self.player = ""
             self.save_name = ""
-            self.chapter = 0
+            self.chapters_completed = []
             self.glossary_items = []
             self.glossary_items_unread = []
             self.portrait_done = False
@@ -48,3 +61,16 @@ init -10 python:
             self.gallery_items_unread = []
             self.campoamor_is_seen = False
             self.langham_library_is_seen = False
+            self.crosswords_done = False
+            self.pizzey_is_seen = False
+            self.eunuch_is_found = False
+            self.vaginal_orgasm_is_found = False
+            self.witch_is_seen = False
+            self.find_differences_done = False
+            self.nyrw_is_seen = False
+            self.answer_phone = False
+            self.series_done = False
+            self.serie_with_susan = False
+            self.published_article = 0
+            self.eco_is_seen = False
+            self.killjoy_is_seen = False

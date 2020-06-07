@@ -12,9 +12,13 @@ label maze_scarf:
     scene black
 
     show empson at truecenter
+    show emily_davison at left
     emily_davison "Sí, és el millor moment. Vull interrompre el Derby de l'hipòdrom Epsom per donar a conèixer la nostra causa."
+    show mary_richardson at right
     mary_richardson "Però no creus que és molt arriscat? Hi ha molta gent aquí i tots estan pendents de la carrera dels cavalls ..."
     emily_davison "Justament per això, perquè ens hem de fer notar. Hem d'aconseguir repercussió social per a la nostra causa."
+    hide emily_davison
+    hide mary_richardson
     "Així, Emily va endinsar-se enmig de la multitud i Mary la va perdre de vista."
     "De sobte, es va escoltar un soroll estrany i la multitud es començà a agitar ..."
     hide empson with fade

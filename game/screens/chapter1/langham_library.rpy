@@ -8,7 +8,7 @@ label langham_library:
     user "A veure què hi ha per aquí ..."
     user "{i}Una habitació pròpia{/i}, de Virginia Woolf ... vaig a llegir la sinopsi ... "
 
-    $ GiveGlossaryItemToPlayer(25)
+    $ GiveGlossaryItemToPlayer(43)
     $ ShowItems()
 
     "Mentre [tmpSavePlayer] llegia la sinopsi d'aquella obra, dues dones prop seu estaven alçant la veu en un debat d'opinió."
@@ -16,18 +16,20 @@ label langham_library:
     unknown_girl "Disculpi, podria venir un moment?"
     "Aquella dona estava cridant a [tmpSavePlayer] per a què s'apropés on éren ..."
     user "I tant. En què les podria ajudar?"
+    show clara_zetkin_pic at left
     unknown_girl "Gràcies. Jo em dic Clara Zetkin."
+    show rosa_luxemburg_pic at right
     unknown_girl "Jo sóc la Rosa Luxemburg."
     user "Molt de gust. Jo em dic [tmpSavePlayer]."
     clara_zetkin "Un plaer, [tmpSavePlayer]."
     rosa_luxemburg "Per favor, diga-li a la meva amiga que l'obra {i}Dones i sexe{/i} exposa d'una manera més clarificadora el feminisme des d'un punt de vista marxista."
 
-    $ GiveGlossaryItemToPlayer(19)
+    $ GiveGlossaryItemToPlayer(31)
     $ ShowItems()
 
     clara_zetkin "Ja saps que no estic d'acord, Rosa. Per a mi, ho fa millor l'obra {i}Els fonaments socials de la qüestió femenina{/i}. T'ho he dit moltes vegades !"
 
-    $ GiveGlossaryItemToPlayer(0)
+    $ GiveGlossaryItemToPlayer(1)
     $ ShowItems()
 
     "[tmpSavePlayer] feia cara d'estranyesa."
@@ -36,10 +38,12 @@ label langham_library:
     rosa_luxemburg "Ja t'ho deia jo que aquesta persona no valia la pena. Anem ..."
     clara_zetkin "Sí, en això tenies raó ..."
 
-    $ GiveGlossaryItemToPlayer(16)
+    $ GiveGlossaryItemToPlayer(27)
     $ ShowItems()
 
     "Aquelles dones van marxar enfurismades amb [tmpSavePlayer], com si fos una aberració no conèixer aquelles obres."
+    hide rosa_luxemburg_pic
+    hide clara_zetkin_pic
     user "Ostres, quin caràcter que té el personal ..."
 
     if game_state.mill_are_nice and not game_state.coverture_is_found:
@@ -53,7 +57,7 @@ screen langham_library_secret():
     imagemap:
         idle "images/chapter1/langham_place/langham_library.png"
         ground "images/chapter1/langham_place/langham_library.png"
-        hotspot (719, 587, 6, 72):
+        hotspot (717, 584, 16, 71):
             clicked [Hide("langham_library_secret"), Hide("hover_langham_library"), Jump("langham_library_book")]
             hovered ShowTransient("hover_langham_library", img="images/chapter1/langham_place/langham_library_hover.png")
             unhovered Hide("hover_langham_library")
@@ -66,7 +70,7 @@ label langham_library_book:
     user "Sembla una espècie de llibre legal o de llei ..."
     user "{i}Llei coverture: absorció dels drets de les dones casades{/i}"
 
-    $ GiveGlossaryItemToPlayer(4)
+    $ GiveGlossaryItemToPlayer(11)
     $ ShowItems()
 
     user "Al final, una dona soltera acaba tenint més drets que una dona casada. Això és el món al revés."

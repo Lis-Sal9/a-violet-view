@@ -15,5 +15,5 @@ translate english strings:
     new "Result"
 
     # game/screens/chapter1/women_suffrage_map.rpy:186
-    old "En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS’han desbloquejat [items_length] ítems a la {b}Galeria{/b}."
+    old "En el mapa del sufragi femení, [tmpSavePlayer] ha obtingut [num_selected_correct_options] estrelles.\nS'han desbloquejat [items_length] ítems a la {b}Galeria{/b}."
     new "In the map of women's suffrage, [tmpSavePlayer] has obtained [num_selected_correct_options] stars.\nThere was unlocked [items_length] items in the {b}Gallery{/b}."

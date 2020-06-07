@@ -1,18 +1,12 @@
 
 ## Script for the train scene.
-## To change the chapter ...
 
-
-init python:
-    def setChapter():
-        global game_state
-        game_state.chapter = game_state.chapter + 1
 
 
 # Train background
 label train:
     $ renpy.choice_for_skipping()
-    $ setChapter()
+    $ setIsInSpecialScreen(True)
 
     image bg_train = "images/train/train_bg.png"
     image img_train = "images/train/train_img.png"
@@ -24,12 +18,14 @@ label train:
 
     stop music fadeout 0.5
     scene bg_train
+    $ renpy.show_screen("show_return", x=80, y=980, img="return.png", img_hover="return_hover_blue.png")
     play music "audio/sound/train.mp3" fadein 0.5
     show img_train at moving
     call screen hold_screen(15)
     stop music fadeout 0.5
+    $ renpy.hide_screen("show_return")
 
-    if game_state.chapter < 2:
-        call screen library
+
+    $ setIsInSpecialScreen(False)
 
     return

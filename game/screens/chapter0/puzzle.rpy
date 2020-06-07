@@ -8,12 +8,6 @@ image puzzle_background = "images/chapter0/portrait_puzzle/background_puzzle.png
 image chosen_img = "images/chapter0/portrait_puzzle/portrait.png"
 
 
-init -10 python:
-    is_in_puzzle = False
-    def isInPuzzleSection(result):
-        global is_in_puzzle
-        is_in_puzzle = result
-
 init python:
     ## Manage dragged pieces
     def piece_dragged(drags, drop):
@@ -70,8 +64,10 @@ label puzzle:
     $ renpy.choice_for_skipping()
     scene puzzle_background
 
+    $ renpy.show_screen("show_return", x=100, y=900, img="return.png", img_hover="return_hover.png")
+
     python:
-        isInPuzzleSection(True)
+        setIsInSpecialScreen(True)
         mainimage = im.Composite((1050, 850),(25, 25), "images/chapter0/portrait_puzzle/portrait.png")
         piecelist = dict()
         imagelist = dict()
@@ -84,6 +80,7 @@ label puzzle:
                 placedlist[i,j] = False
 
     call screen jigsaw_puzzle
+    $ renpy.hide_screen("show_return")
     jump puzzle_done
 ################################################################################
 
@@ -91,7 +88,7 @@ label puzzle:
 ## Call it when the puzzle is done. ############################################
 label puzzle_done:
     python:
-        isInPuzzleSection(False)
+        setIsInSpecialScreen(False)
         game_state.portrait_done = True
 
     show black as bg_puzzle
@@ -100,7 +97,7 @@ label puzzle_done:
 
     user "Ho he aconseguit!!!"
 
-    $ GiveGlossaryItemToPlayer(9)
+    $ GiveGlossaryItemToPlayer(19)
     $ ShowItems()
 
     hide bg_puzzle

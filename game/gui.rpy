@@ -22,7 +22,7 @@ init python:
 ################################################################################
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#000066'
+define gui.accent_color = '#f0c388'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#aaaaaa'
@@ -32,7 +32,7 @@ define gui.idle_color = '#aaaaaa'
 define gui.idle_small_color = '#888888'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#000066'
+define gui.hover_color = '#d8c2cd'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -47,23 +47,23 @@ define gui.muted_color = '#6666a3'
 define gui.hover_muted_color = '#9999c1'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#404040'
-define gui.interface_text_color = '#404040'
+define gui.text_color = '#000000'
+define gui.interface_text_color = '#000000'
 
 
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "fonts/vinchand.otf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/vinchand.otf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/vinchand.otf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 33
+define gui.text_size = 41.5
 
 ## The size of character names.
 define gui.name_text_size = 45
@@ -75,7 +75,7 @@ define gui.interface_text_size = 33
 define gui.label_text_size = 36
 
 ## The size of text on the notify screen.
-define gui.notify_text_size = 24
+define gui.notify_text_size = 30
 
 ## The size of the game's title.
 define gui.title_text_size = 75
@@ -103,17 +103,18 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 450
+define gui.name_ypos = -90
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.name_xalign = 0.0
+define gui.name_xalign = -0.1
+define gui.name_yalign = 0.85
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width = 550
+define gui.namebox_height = 200
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
@@ -127,11 +128,11 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_xpos = 350
+define gui.dialogue_ypos = 102
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1116
+define gui.dialogue_width = 1250
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -184,6 +185,10 @@ define gui.check_button_borders = Borders(27, 6, 6, 6)
 define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
+define gui.page_button_text_idle_color = "#ffffff"
+define gui.page_button_text_hover_color = gui.accent_color
+define gui.page_button_text_selected_color = "#000000"
+define gui.page_button_text_insensitive_color = "#000000"
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 21
@@ -208,9 +213,9 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = "#cccccc"
-define gui.choice_button_text_hover_color = "#ffffff"
-define gui.choice_button_text_insensitive_color = "#444444"
+define gui.choice_button_text_idle_color = "#3f0955"
+define gui.choice_button_text_hover_color = "#d8c2cd"
+define gui.choice_button_text_insensitive_color = "#000000"
 
 
 ## File Slot Buttons ###########################################################
@@ -223,19 +228,18 @@ define gui.choice_button_text_insensitive_color = "#444444"
 define gui.slot_button_width = 414
 define gui.slot_button_height = 309
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
-define gui.slot_button_text_size = 21
+define gui.slot_button_text_size = 38
 define gui.slot_button_text_xalign = 0.5
-define gui.slot_button_text_idle_color = gui.idle_small_color
-define gui.slot_button_text_selected_idle_color = gui.selected_color
-define gui.slot_button_text_selected_hover_color = gui.hover_color
+define gui.slot_button_text_idle_color = "#3f0955"
+define gui.slot_button_text_hover_color = "#025930"
 
 ## The width and height of thumbnails used by the save slots.
 define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 
 ## The number of columns and rows in the grid of save slots.
-define gui.file_slot_cols = 3
-define gui.file_slot_rows = 2
+define gui.file_slot_cols = 4
+define gui.file_slot_rows = 1
 
 
 ## Positioning and Spacing #####################################################
@@ -266,7 +270,7 @@ define gui.pref_spacing = 15
 define gui.pref_button_spacing = 0
 
 ## The spacing between file page buttons.
-define gui.page_spacing = 0
+define gui.page_spacing = 10
 
 ## The spacing between file slots.
 define gui.slot_spacing = 15
@@ -290,7 +294,7 @@ define gui.confirm_frame_borders = Borders(60, 60, 60, 60)
 define gui.skip_frame_borders = Borders(24, 8, 75, 8)
 
 ## The frame that is used as part of the notify screen.
-define gui.notify_frame_borders = Borders(24, 8, 60, 8)
+define gui.notify_frame_borders = Borders(10, 8, 60, 8)
 
 ## Should frame backgrounds be tiled?
 define gui.frame_tile = False

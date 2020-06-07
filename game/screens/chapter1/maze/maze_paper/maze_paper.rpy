@@ -19,25 +19,24 @@ screen maze_paper():
             xpos 1800
             yalign .1
             yoffset -45
-            action Rollback()
+            action Jump("maze_label")
 
         vbox:
-            align .56, .55
+            align .535, .565
 
             text _("Sufragisme femení"):
-                size 30
+                size 40
                 align 1, 1
-                xpos 350
+                xpos 385
                 yoffset -30
-                bold True
 
             grid 3 29:
                 transpose True
                 xspacing 30
-                yspacing 7
+                yspacing 0
                 for i in range(0, len(all_countries)):
                     $ name = all_countries.get(i)["name"] + ", " + all_countries.get(i)["year"]
                     text name:
-                        size 13
+                        size 17
                 add Null()
                 add Null()

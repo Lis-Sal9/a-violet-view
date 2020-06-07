@@ -5,7 +5,7 @@
 
 label maze_survival_kit:
     image bill = "images/chapter1/maze/maze_survival_kit/conciliation_bill.jpg"
-    image paint = "images/chapter1/maze/maze_survival_kit/paint_1.png"
+    image paint_1 = "images/chapter1/maze/maze_survival_kit/paint_1.png"
     image weapons = "images/chapter1/maze/maze_survival_kit/weapons.jpg"
 
     scene black
@@ -18,16 +18,17 @@ label maze_survival_kit:
     hide weapons with fade
 
     show bill at truecenter
+    show emmeline_pankhurst at right
     emmeline_pankhurst "El govern liberal ens ha traït. Guanya les eleccions novament prometent una reforma del dret de sufragi, i l'únic que els importa és el sufragi masculí, no el nostre."
-    unknown_girl "Traïdors !!!!!"
     emmeline_pankhurst "Hem de protestar! Això no es pot quedar així! Ens han enganyat !!!"
+    hide emmeline_pankhurst
     hide bill with fade
     "La líder de la NUWSS, Millicent Fawcett, decideix trencar vincles amb la WSPU perquè no comparteix els mètodes de la seva líder."
     "Així, la WSPU decideix organitzar una campanya massiva per iniciar tot tipus d'activitats de protesta al carrer."
-    show paint at truecenter
+    show paint_1 at truecenter
     "Es trenquen vidres, es bombardeja la mansió del ministre d'Hisenda, en David Lloyd George, s'escriu amb àcid el lema {i}Votes for Women{/i}, es danyen les bústies dels carrers ..."
     "Les protestes acabaren amb la detenció i posterior incorporament a presó de moltes de les suffragettes."
-    hide paint with fade
+    hide paint_1 with fade
     "Malgrat això, la líder de la WSPU va decidir aturar les protestes pel vot femení, a causa de l'arribada de la guerra."
     "Contràriament, la líder de la NUWSS va decidir seguir fent campanya política respecte el sufragi femení per vies pacífiques."
 

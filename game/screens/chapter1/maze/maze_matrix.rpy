@@ -180,9 +180,10 @@ init -10 python:
             game_state.maze_is_seen = True
 
             if len(game_state.maze_objects) == 7:
-                GiveGlossaryItemToPlayer(23)
+                GiveGlossaryItemToPlayer(40)
                 ShowItems()
 
+            setIsInSpecialScreen(False)
             renpy.jump("patio")
 
 

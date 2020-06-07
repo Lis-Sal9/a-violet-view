@@ -9,74 +9,100 @@ label seneca_falls_convention:
     unknown_girl "Oi que sí?"
     "[tmpSavePlayer] es girà. Una dona afroamericana somreia."
     user "Bona tarda, senyora. El meu nom és [tmpSavePlayer]."
+    show sojourner_truth_pic at left
     unknown_girl "Encantada de conèixer-te. Jo em dic Sojourner Truth."
     user "Un plaer, Sojourner. Ha vingut a la Convenció?"
     sojourner_truth "I tant ! Jo vull lluitar en aquest activisme polític contra l'esclavitud. Anem a agafar lloc."
     "[tmpSavePlayer] i Sojourner van entrar dins de la capella per buscar un lloc on seure's."
     unknown_girl "Hola, senyores. Podria seure amb vosaltres?"
     user "I tant que sí ! El meu nom és [tmpSavePlayer]. Com es diu aquesta nena tan maca?"
+    show charlotte_woodward_pic at right
     unknown_girl "Em dic Charlotte Woodward."
     sojourner_truth "Hola, maca. Jo em dic Sojourner Truth."
     charlotte_woodward "Encantada de conèixer-vos. Estic molt emocionada pel dia d'avui."
     sojourner_truth "Sí, jo també ho estic."
 
-    $ GiveGlossaryItemToPlayer(21)
+    $ GiveGlossaryItemToPlayer(38)
     $ ShowItems()
 
     "I així, mentre la Convenció no començava, varen estar parlant sobre les seves vides i experiències."
+    hide charlotte_woodward_pic
+    hide sojourner_truth_pic
     "Quinze minuts després ..."
 
     scene seneca_falls_full_act
+    show elizabeth_cady_stanton_pic at right
     elizabeth_cady_stanton "Bona tarda a tothom. Som aquí reunides per debatre sobre els drets de les dones. L'home ha tingut tirania absoluta sobre la dona."
+    hide elizabeth_cady_stanton_pic
+    show lucrecia_mott_pic at truecenter
     lucrecia_mott "Som aquí per evidenciar que homes i dones són creats de la mateixa manera i que el Creador els atorga els mateixos drets."
+    hide lucrecia_mott_pic
+    show susan_b_anthony_pic at truecenter
     susan_b_anthony "Som aquí per combatre la manca de drets socials, civils i religiosos de les dones."
+    hide susan_b_anthony_pic
+    show lucy_stone_pic at truecenter
     lucy_stone "NWSA i AWSA han unit forces per formar NAWSA. Aquesta organització ha estat creada per advocar a favor del sufragi femení."
-    elizabeth_cady_stanton "Feta aquesta petita introducció, procedim a la votació de les resolucions."
+    hide lucy_stone_pic
 
+    show elizabeth_cady_stanton_pic at right
+    elizabeth_cady_stanton "Feta aquesta petita introducció, procedim a la votació de les resolucions."
     elizabeth_cady_stanton "Primera qüestió. S'ha adjudicat un codi moral diferent per homes i dones."
     elizabeth_cady_stanton "Mitjançant aquest, les delinqüents morals (dones de la societat excloses) no són tolerades i són considerades de poca importància per l'home."
     elizabeth_cady_stanton "Estan d'acord amb què totes les lleis que impedeixen a la dona ocupar el lloc que desitgi en societat o que la posicionin per sota l'home, no tenen autoritat suficient perquè són contràries a la pròpia naturalesa?"
+    hide elizabeth_cady_stanton_pic
 
     $ renpy.choice_for_skipping()
+    $ GiveGlossaryItemToPlayer(38)
     $ GiveGlossaryItemToPlayer(21)
-    $ GiveGlossaryItemToPlayer(11)
     if game_state.contraception_is_found:
-        $ GiveGlossaryItemToPlayer(13)
+        $ GiveGlossaryItemToPlayer(24)
     if game_state.campoamor_is_seen:
-        $ GiveGlossaryItemToPlayer(2)
+        $ GiveGlossaryItemToPlayer(8)
     if game_state.langham_library_is_seen:
-        $ GiveGlossaryItemToPlayer(0)
-        $ GiveGlossaryItemToPlayer(25)
-        $ GiveGlossaryItemToPlayer(16)
-        $ GiveGlossaryItemToPlayer(19)
+        $ GiveGlossaryItemToPlayer(1)
+        $ GiveGlossaryItemToPlayer(43)
+        $ GiveGlossaryItemToPlayer(27)
+        $ GiveGlossaryItemToPlayer(31)
         if game_state.coverture_is_found:
-            $ GiveGlossaryItemToPlayer(4)
+            $ GiveGlossaryItemToPlayer(11)
             if game_state.mill_are_nice:
-                $ GiveGlossaryItemToPlayer(7)
+                $ GiveGlossaryItemToPlayer(16)
     $ ShowItems()
+    $ seneca_agrees = 0
 
     call yes_or_not_question
 
+    show lucrecia_mott_pic at truecenter
     lucrecia_mott "Segona qüestió. Els homes han monopolitzat quasi totes les feines rendibles i, les dones que treballen reben una remuneració escassa."
     lucrecia_mott "Es tanquen portes cap a la riquesa i la distinció per a la dona, ja que es considera més honorable per l'home."
     lucrecia_mott "Estan d'acord amb què està en les nostres mans assegurar una participació igualitària a les dones respecte de feines, professions i comerç?"
+    hide lucrecia_mott_pic
     call yes_or_not_question
 
+    show susan_b_anthony_pic at truecenter
     susan_b_anthony "Tercera qüestió. L'home s'ha esforçat en destruir la confiança de la dona en els seus propis poders, en disminuir-li l'autoestima i en disposar-la a dur una vida dependent i abjecta."
     susan_b_anthony "Estan d'acord amb què la dona ja ha estat massa temps en els límits circumscrits en els costums corruptes i en l'aplicació perversa de les escriptures, i que ja és hora d'ampliar l'esfera que el seu Creador li ha assignat?"
+    hide susan_b_anthony_pic
     call yes_or_not_question
 
+    show lucy_stone_pic at truecenter
     lucy_stone "Ara, passem a l'última quëstió. No es permet exercir a la dona el seu dret a votar. Se la obliga a complir la llei, en la qual ella no té ni veu ni vot."
     lucy_stone "S'atorguen els seus drets als homes més ignorants i degradants, tant natius com estrangers."
     lucy_stone "Estan d'acord amb què les dones tenen el deure d'assegurar-se el seu sagrat dret a votar?"
+    hide lucy_stone_pic
     call yes_or_not_question
 
+    show lucrecia_mott_pic at truecenter
     lucrecia_mott "Molt bé doncs. Les persones signants juren emprar tots els mètodes disponibles al seu abast per combatre aquestes injustícies."
+    hide lucrecia_mott_pic
+
+    show elizabeth_cady_stanton_pic at right
     elizabeth_cady_stanton "D'aquesta manera, donem per finalitzada la Convenció. Passeu a signar aquelles persones que ho desitgeu."
+    hide elizabeth_cady_stanton_pic
     "En aquell moment, moltes de les persones assistents varen apropar-se a les moderadores del debat per signar el document. Amb [tmpSavePlayer] es podien comptar unes cent persones."
 
     $ renpy.choice_for_skipping()
-    $ GiveGlossaryItemToPlayer(3)
+    $ GiveGlossaryItemToPlayer(10)
     $ ShowItems()
     $ renpy.show_screen("sf_document")
     "Així, quedava signat el document que passà a conèixer-se més tard com a {i}Declaració de Sentiments i Resolucions{/i}."
@@ -94,6 +120,7 @@ label seneca_falls_convention:
 label yes_or_not_question:
     menu:
         "Sí":
+            $ seneca_agrees = seneca_agrees + 1
             "[tmpSavePlayer] està d'acord amb la resolució anterior."
         "No":
             "[tmpSavePlayer] no està d'acord amb la resolució anterior."
@@ -108,9 +135,11 @@ screen sf_document():
         image "images/chapter1/seneca_falls_convention/woman_rights_convention.png":
             align .5, 0
 
-        text _("Amb {b}[tmpSavePlayer]{/b}\ncom a persona\nconvidada"):
-            font "fonts/my_font.ttf"
-            size 20
-            align .4, .22
-            at transform:
-                rotate -3
+        if seneca_agrees >= 3:
+            text _("Amb {b}[tmpSavePlayer]{/b}\ncom a persona\nconvidada"):
+                font "fonts/lemon_tuesday.otf"
+                size 15
+                align .415, .24
+                anchor .5, .5
+                at transform:
+                    rotate -5

@@ -16,28 +16,48 @@ image seneca_falls_full_act = "images/chapter1/seneca_falls_convention/full_act.
 image seneca_falls_street = "images/chapter1/seneca_falls_convention/sfc_street.png"
 
 # Characters
-define liam = Character("Liam", color="#FED876")
-define emily_davison = Character("Emily Davison", color="#F5B2AC")
-define mary_richardson = Character("Mary Richardson", color="#8CBA51")
-define edith_garrud = Character("Edith Garrud", color="#231F20")
-define emmeline_pankhurst = Character("Emmeline Pankhurst", color="#FFFFFF")
-define rosa_mary_billinghurst = Character("Rosa Mary Billinghurst", color="#FF4F6F")
-define rosa_luxemburg = Character("Rosa Luxemburg", color="#FED876")
-define clara_zetkin = Character("Clara Zetkin", color="#F5B2AC")
-define john_stuart_mill = Character("John Stuart Mill", color="#231F20")
-define harriet_taylor_mill = Character("Harriet Taylor Mill", color="#FFFFFF")
-define clara_campoamor = Character("Clara Campoamor", color="#FF4F6F")
-define emma_goldman = Character("Emma Goldman", color="#FED876")
-define sojourner_truth = Character("Sojourner Truth", color="#231F20")
-define charlotte_woodward = Character("Charlotte Woodward", color="#FF4F6F")
-define elizabeth_cady_stanton = Character("Elizabeth Cady Stanton", color="#F5B2AC")
-define lucrecia_mott = Character("Lucrecia Mott", color="#8CBA51")
-define susan_b_anthony = Character("Susan B. Anthony", color="#231F20")
-define lucy_stone = Character("Lucy Stone", color="#FF4F6F")
+define liam = Character("Liam", color="#81c784")
+define emily_davison = Character("Emily Davison", color="#aed581")
+define mary_richardson = Character("Mary Richardson", color="#ef5350")
+define edith_garrud = Character("Edith Garrud", color="#ec407a")
+define emmeline_pankhurst = Character("Emmeline Pankhurst", color="#ab47bc")
+define rosa_mary_billinghurst = Character("Rosa May Billinghurst", color="#5c6bc0")
+define rosa_luxemburg = Character("Rosa Luxemburg", color="#42a5f5")
+define clara_zetkin = Character("Clara Zetkin", color="#29b6f6")
+define john_stuart_mill = Character("John Stuart Mill", color="#26c6da")
+define harriet_taylor_mill = Character("Harriet Taylor Mill", color="#26a69a")
+define clara_campoamor = Character("Clara Campoamor", color="#66bb6a")
+define emma_goldman = Character("Emma Goldman", color="#9ccc65")
+define sojourner_truth = Character("Sojourner Truth", color="#f44336")
+define charlotte_woodward = Character("Charlotte Woodward", color="#e91e63")
+define elizabeth_cady_stanton = Character("Elizabeth Cady Stanton", color="#9c27b0")
+define lucrecia_mott = Character("Lucrecia Mott", color="#3f51b5")
+define susan_b_anthony = Character("Susan B. Anthony", color="#2196f3")
+define lucy_stone = Character("Lucy Stone", color="#03a9f4")
 
+# Character images
+image liam_pic = "images/chapter1/characters/liam.png"
+image emily_davison_pic = "images/chapter1/characters/emily_davison.png"
+image mary_richardson_pic = "images/chapter1/characters/mary_richardson.png"
+image edith_garrud_pic = "images/chapter1/characters/edith_garrud.png"
+image emmeline_pankhurst_pic = "images/chapter1/characters/emmeline_pankhurst.png"
+image rosa_luxemburg_pic = "images/chapter1/characters/rosa_luxemburg.png"
+image clara_zetkin_pic = "images/chapter1/characters/clara_zetkin.png"
+image the_mill_pic = "images/chapter1/characters/harriet_stuart_mill.png"
+image harriet_mill_pic = "images/chapter1/characters/harriet_mill.png"
+image clara_campoamor_pic = "images/chapter1/characters/clara_campoamor.png"
+image emma_goldman_pic = "images/chapter1/characters/emma_goldman.png"
+image sojourner_truth_pic = "images/chapter1/characters/sojourner_truth.png"
+image charlotte_woodward_pic = "images/chapter1/characters/charlotte_woodward.png"
+image elizabeth_cady_stanton_pic = "images/chapter1/characters/elizabeth_cady_stanton.png"
+image lucrecia_mott_pic = "images/chapter1/characters/lucrecia_mott.png"
+image susan_b_anthony_pic = "images/chapter1/characters/susan_b_anthony.png"
+image lucy_stone_pic = "images/chapter1/characters/lucy_stone.png"
+image unknown_boy = "images/chapter1/characters/unknown_boy.png"
 
 
 label chapter_1:
+    call new_day
     ## Train station scene ######################
     scene train_station
     play music "audio/sound/train_station.mp3" fadein 0.5
@@ -45,7 +65,9 @@ label chapter_1:
     "El tren acaba d'arribar a l'estació."
     "[tmpSavePlayer] baixa del tren i emprèn camí cap a la sortida."
     "A meitat de camí, sent un nen que crida ..."
+    show liam_pic at truecenter
     unknown_little_boy "Notícies fresques d'avui !!! Compri'n aquí el diari !!!"
+    hide liam_pic
 
     menu:
         "Vas a recollir el diari":
@@ -67,11 +89,13 @@ label chapter_1:
 ## Inside train station scene ######################
 label train_station_discussion:
     user "Hola! Com es diu aquest nen tan maco?"
+    show liam_pic at truecenter
     unknown_little_boy "El meu nom és Liam."
     "Li digué aquell nen amb un dolç somriure."
     user "Hola, Liam. Series tan amable de donar-me un diari, si us plau?"
     liam "I tant que sí! Tingui."
     "Liam li va apropar el diari a [tmpSavePlayer], que va pagar i va girar cua."
+    hide liam_pic
 
     return
 
@@ -100,11 +124,13 @@ label near_station:
 ## Langham Place scene ###############################
 label langham_place:
     scene langham
+    show unknown_boy at right
     unknown_boy "És aquí."
     user "Gràcies, senyor."
+    hide unknown_boy
     "[tmpSavePlayer] paga i baixa del carruatge. És davant del 19 de Langham Place."
 
-    $ GiveGlossaryItemToPlayer(12)
+    $ GiveGlossaryItemToPlayer(22)
     $ ShowItems()
 
     "[tmpSavePlayer] entra a dins."
@@ -113,21 +139,27 @@ label langham_place:
     "Mentrestant, [tmpSavePlayer] va fent una ullada a la sala d'estar. És plena de llibres que encurioseixen."
     "Està passejant quan, de sobte ..."
 
+    show harriet_mill_pic at right
     unknown_girl "Aiiiiiaaaaaaaaaaahhhh ..."
+    hide harriet_mill_pic
     "[tmpSavePlayer] i aquella dona havien xocat i se li havia caigut la pila de llibres que duïa a terra."
 
-    $ GiveGlossaryItemToPlayer(12)
+    $ GiveGlossaryItemToPlayer(22)
     $ ShowItems()
 
     menu:
         "Ajudes a la dona a recollir els llibres":
             user "Disculpi, senyora, em sap molt de greu. No l'he vista."
+            show harriet_mill_pic at right
             unknown_girl "No pateixi, no passa res. Gràcies per ajudar-me a recollir els llibres."
+            hide harriet_mill_pic
             $ game_state.mill_are_nice = True
         "Et disculpes":
             user "Disculpi, senyora, no l'he vista."
+            show harriet_mill_pic at right
             unknown_girl "Podria almenys ajudar-me a recollir els llibres, no? O és massa demanar?"
             user "Podria, però no ho faré perquè m'ha escridassat. Que l'ajudi la seva parella."
+            hide harriet_mill_pic
             "I, deixant-la amb la paraula a la boca, [tmpSavePlayer] toca el dos."
             $ game_state.mill_are_nice = False
         "Però miri per on va, senyora !!!":
@@ -156,10 +188,11 @@ label langham_place:
             scene black
 
             $ renpy.choice_for_skipping()
-            $ renpy.movie_cutscene("video/open_door.ogg")
+            $ renpy.movie_cutscene("video/open_door.mkv")
 
             if not game_state.maze_is_seen:
-                call maze_label
+                $ game_state.maze_coords = [36, 0]
+                $ renpy.call_in_new_context("maze_label")
             else:
                 #maze is done
                 "Ja has fet el laberint anteriorment. Vols tornar-lo a fer?"
@@ -167,7 +200,7 @@ label langham_place:
                 menu:
                     "Sí":
                         $ game_state.maze_coords = [36, 0]
-                        call maze_label
+                        $ renpy.call_in_new_context("maze_label")
                     "No":
                         "D'acord. Continues amb la mateixa història com si l'haguessis fet."
                         call patio
@@ -185,6 +218,7 @@ label patio:
     else:
         call contraception
 
+    scene near_train_station
     call return_to_train_station
     return
 
@@ -194,10 +228,12 @@ label langham_inside_out:
     "[tmpSavePlayer] es disposa a baixar les escales."
 
     if game_state.mill_are_nice and game_state.coverture_is_found:
+        scene langham_inside
         "Quan és al pis de baix, sent una veu coneguda que crida ..."
         unknown_girl "Vingui, vingui !!!"
         user "[tmpSavePlayer] es gira i pregunta si ha de ser la persona interessada."
         "Rep un gest afirmatiu i s'apropa a la dona que crida."
+        show the_mill_pic at truecenter
         unknown_girl "Per cert, em dic Harriet Mill. Aquest és el meu marit, en John Stuart Mill."
         john_stuart_mill "Un plaer."
         user "El plaer és meu."
@@ -206,8 +242,9 @@ label langham_inside_out:
         harriet_taylor_mill "El meu marit i jo hem escrit plegats un assaig que tracta sobre el matrimoni i el divorci."
         user "Sembla interessant, però ara mateix he de complir una altra missió. Hauran de disculpar-me."
         john_stuart_mill "D'acord, no es preocupi pas. Era un simple oferiment. Sempre pot llegir l'assaig quan ho desitgi."
+        hide the_mill_pic
 
-        $ GiveGlossaryItemToPlayer(7)
+        $ GiveGlossaryItemToPlayer(16)
         $ ShowItems()
 
         "I així, [tmpSavePlayer] s'acomiadà d'aquella parella tan peculiar."
@@ -223,6 +260,7 @@ label langham_inside_out:
 ## Langham library interaction scene ###############################
 label langham_inside_interaction:
     user "Bon dia, tingui. Puc acompanyar-la?"
+    show clara_campoamor_pic at left
     unknown_girl "Sí, és clar ! El meu nom és Clara Campoamor. Com es diu vostè?"
     user "Jo em dic [tmpSavePlayer]. Què hi fa aquí vostè?"
     clara_campoamor "He vingut a impartir una xerrada sobre l'actuació política que vaig emprendre en la lluita per aconseguir el dret a vot de les dones a Espanya."
@@ -231,11 +269,12 @@ label langham_inside_interaction:
     user "I tant, no ho dubti ! Moltes gràcies per aquesta conversa tan interessant."
     clara_campoamor "A vostè ! A reveure !"
 
-    $ GiveGlossaryItemToPlayer(2)
+    $ GiveGlossaryItemToPlayer(8)
     $ ShowItems()
     $ game_state.campoamor_is_seen = True
 
     "[tmpSavePlayer] s'acomiadà de la senyora Campoamor i es retirà de la sala."
+    hide clara_campoamor_pic
 
     return
 
@@ -246,9 +285,10 @@ label free_women:
     "Caminant, arribà a una sala on hi havia persones que treballaven. Semblava una redacció."
     user "Perdoni, aquest lloc és una redacció?"
     "La dona mirà a [tmpSavePlayer] i, amb amabilitat i aprofitant l'ocasió, li va fer una mica de publicitat."
+    show emma_goldman_pic at truecenter
     unknown_girl "Bon dia. El meu nom és Emma Goldman. Aquí ens reunim les persones associades a l'organització de Dones Lliures."
 
-    $ GiveGlossaryItemToPlayer(17)
+    $ GiveGlossaryItemToPlayer(28)
     $ ShowItems()
 
     emma_goldman "La coneix?"
@@ -262,8 +302,9 @@ label free_women:
     emma_goldman "Si vol, li deixo un tríptic d'informació sobre l'organització, per si decideix afiliar-s'hi en algun moment."
     emma_goldman "I, cortesia de la casa, li faig entrega del nou número que hem publicat recentment les altres dones de la revista i jo. Tingui."
     user "Moltes gràcies, Emma! Molt amable!"
+    hide emma_goldman_pic
 
-    $ GiveGlossaryItemToPlayer(6)
+    $ GiveGlossaryItemToPlayer(14)
     $ ShowItems()
 
     "Abans de marxar, [tmpSavePlayer] va observar detingudament de nou aquell espai. Semblava amagar alguna cosa, però alhora semblava tenir les idees molt clares."
@@ -275,7 +316,6 @@ label free_women:
 
 ## Return to train station scene ###############################
 label return_to_train_station:
-    scene near_train_station
     "El carruatge acaba d'arribar a l'estació. [tmpSavePlayer] baixa i paga."
     user "Gràcies, senyor!"
     "El senyor del carruatge mou el cap assentint i [tmpSavePlayer] entra a l'estació."
@@ -291,15 +331,17 @@ label return_to_train_station:
         call suffrage_map
     else:
         #suffrage map is done
-        "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar-lo a fer?"
+        "Ja has fet el mapa del sufragi femení anteriorment. Vols tornar a fer-lo?"
 
         menu:
             "Sí":
-                call suffrage_map
+                $ renpy.call_in_new_context("suffrage_map")
             "No":
                 "D'acord. Continues amb la mateixa història com si l'haguessis fet."
 
     scene train_station
     "Acabat el test, el tren ja era a l'andana. Marxaria en breu."
     call train
+    call other_day
+    call end_chapter(CHAPTERS[1])
     return

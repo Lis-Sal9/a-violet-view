@@ -13,17 +13,23 @@ label maze_key:
     user "Una clau. Deu ser per obrir aquesta porta tancada d'aquí ..."
 
     show key_fight at truecenter
+    show edith_garrud at left
     edith_garrud "D'aquesta manera, podreu subjectar millor a la persona ..."
+    hide edith_garrud
     "[tmpSavePlayer] es trobava en la sala secreta de les suffragettes, en la qual Edith estava ensenyant l'art marcial del jiu-jitsu a les seves companyes."
     unknown_girl "Senyora Garrud, podria repetir aquesta última clau? No l'he acabada d'entendre ..."
     hide key_fight with fade
     show young_women at truecenter
+    show edith_garrud at left
     edith_garrud "I tant que sí. L'explicaré amb una demostració que faran dues companyes teves. Elisa i Beth, per favor, feu-ne una demostració."
+    hide edith_garrud
     "I, mentre Edith tornava a repetir detalladament els passos, les noies els reproduïren."
     hide young_women with fade
+    show edith_garrud at left
     edith_garrud "Molt bé noies, la classe ha finalitzat. Recordeu que sempre heu d'estar alerta i, si cal, defenseu-vos."
     show fight at truecenter
     edith_garrud "Ja coneixeu la història de quan em vaig haver de defensar jo del policia que em volia retenir a la força."
+    hide edith_garrud
     "Edith feia referència a una manifestació que varen realitzar temps enrere, en la qual es va veure forçada a fer ús de les seves tècniques marcials per defensar-se de les autoritats."
     hide fight with fade
     "{i}Gràcies, senyora Garrud !!{/i} - varen cridar totes les noies alhora i varen marxar."

@@ -4,12 +4,6 @@
 ## In this scene, the player has to collect some objects.
 
 
-init -10 python:
-    is_in_maze = False
-    def isInMazeSection(result):
-        global is_in_maze
-        is_in_maze = result
-
 init python:
     viewport_x = 19
     viewport_y = 11
@@ -17,13 +11,12 @@ init python:
 label maze_label:
     $ renpy.choice_for_skipping()
     call screen maze
-    $ isInMazeSection(False)
 
 screen maze():
-
-    $ badge = Image("images/chapter1/maze/badge.png")
-    $ map = Image("images/chapter1/maze/map.png")
-    $ isInMazeSection(True)
+    python:
+        badge = Image("images/chapter1/maze/badge.png")
+        map = Image("images/chapter1/maze/map.png")
+        setIsInSpecialScreen(True)
 
     add Solid("000")
 
@@ -127,3 +120,9 @@ screen maze():
                 idle "images/chapter1/maze/maze_objects/survival_kit_enabled.png"
                 action Jump("maze_survival_kit")
                 pos 245, 100
+
+    imagebutton:
+        idle "gui/arrows/return_white.png"
+        hover "gui/arrows/return_hover.png"
+        align .03, .9
+        action Rollback()

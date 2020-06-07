@@ -61,7 +61,7 @@ define config.has_voice = False
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/music/main_theme.mp3"
 
 
 ## Transitions #################################################################
@@ -209,10 +209,11 @@ init python:
 
 
 ## Config the cursor
-if renpy.variant("pc"):
-    define config.mouse = {"default":[ ("gui/cursor.png", 10, 10) ] }
-elif renpy.variant("mobile"):
-    define config.mouse = None
+init -100 python:
+    if renpy.variant("mobile"):
+        config.mouse = None
+    elif renpy.variant("pc"):
+        config.mouse = {"default":[ ("gui/cursor.png", 10, 10) ] }
 
 ## Config the quicksave
 define config.quicksave_slots = 0
@@ -229,6 +230,10 @@ define config.allow_skipping = True
 define config.fast_skipping = True
 default preferences.skip_after_choices = False
 default preferences.skip_unseen = True
+
+## Config rollback limit
+define config.rollback_length = 1000
+define config.hard_rollback_limit = 1000
 
 ## Config the keymap
 init -1 python:
