@@ -320,8 +320,11 @@ label date_with_lis:
     scene pole_academy
     "Al vespre, [tmpSavePlayer] tenia una cita."
     "Per donar-li una sorpresa, va apropar-se a l'acadèmia de pole dance on era fent classe la Lisbeth, la seva amiga."
-    ## Vídeo gif
     "A l'entrar dins de l'acadèmia, la va veure allà, {i}fent el mico{/i}, com li agradava dir a ella. Lluïnt."
+
+    $ renpy.choice_for_skipping()
+    $ renpy.movie_cutscene("video/lisbeth_polancer.mkv")
+
     "Uns minuts més tard, la classe va finalitzar i ella va apropar-se."
     show lisbeth_polancer_pic at truecenter
     lisbeth_polancer "Ei, [tmpSavePlayer]!!! Com estàs??"
